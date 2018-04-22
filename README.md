@@ -13,11 +13,21 @@ GeoService.config({
 		icon : "/assets/icon.png",
 		title : "You position",
 		subtitle: ""
+	},
+	adapter : {
+		uri: "https://"
+		requestHeaders: [],
+		extraParameters : {
+			uid : "1111"
+		},
+		method : "POST",
+		timeout : 100000
 	}
 })
+GeoService.addEventListener("change",function(){})
 GeoService.start({
 	intervall : 2 // sec.
-	duration : 3600 // optional
+	duration : 3600 // optional,
 });
 
 // later:

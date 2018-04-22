@@ -15,24 +15,33 @@ import org.appcelerator.titanium.TiApplication;
 import org.appcelerator.kroll.common.Log;
 import org.appcelerator.kroll.common.TiConfig;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+
 @Kroll.module(name = "Locationupdatesservice", id = "ti.locationupdatesservice")
 public class LocationupdatesserviceModule extends KrollModule {
 
 	// Standard Debugging variables
 	private static final String LCAT = "TiGeoLogger";
-
+	Context ctx;
 	private static String dbName = "geologger";
 	private static String notChannel = "channel1";
 	private static String notIcon = null;
 	private static String notTitle = "";
 	private static int interval = 0;
 	private static int duration = 0;
+	public static String rootActivityClassName = "";
+	final static String ACTION = "LocationUpdatesServiceAction";
+	final static int RQS_STOP_TRACKER = 1;
+	final static int RQS_REMOVE_TRACKER = 2;
 
 	// You can define constants with @Kroll.constant, for example:
 	// @Kroll.constant public static final String EXTERNAL_NAME = value;
 
 	public LocationupdatesserviceModule() {
 		super();
+		ctx = TiApplication.getInstance().getApplicationContext();
 	}
 
 	@Kroll.onAppCreate
@@ -63,30 +72,40 @@ public class LocationupdatesserviceModule extends KrollModule {
 
 	@Kroll.method
 	public void start(KrollDict opts) {
-		if (opts.containsKeyStartingWith("dbName"))
-			dbName = opts.getString("dbName");
-		if (opts.containsKeyStartingWith("notification")
-				&& opts.get("notification") instanceof KrollDict) {
-			KrollDict notification = opts.getKrollDict("notification");
-			if (notification.containsKeyAndNotNull("channel"))
-				notChannel = notification.getString("channel");
-			if (notification.containsKeyAndNotNull("icon"))
-				notIcon = notification.getString("icon");
-			if (notification.containsKeyAndNotNull("title"))
-				notTitle = notification.getString("title");
-		}
-		dbName = opts.getString("dbName");
+		if (opts.containsKeyStartingWith("interval"))
+			interval = opts.getInt("interval");
+		callServices(null, null, 0);
 
 	}
 
 	@Kroll.method
 	public void stop() {
-
+		Intent intent = new Intent(ctx.getPackageName());
+		intent.setAction(ACTION);
+		intent.putExtra(SERVICE_COMMAND_KEY, RQS_STOP_SERVICE);
+		// ctx.sendBroadcast(intent);
+		Log.d(LCAT, "RQS_STOP_SERVICE sent");
+		callServices(ACTION, SERVICE_COMMAND_KEY, RQS_STOP_SERVICE);
 	}
 
-	@Kroll.setProperty
-	public void setExampleProp(String value) {
-		Log.d(LCAT, "set example property: " + value);
+	private void callServices(String action, String extrakey, int extravalue) {
+		try {
+
+			ctx.startService(new Intent(ctx, LocationUpdatesService.class));
+		} catch (Exception ex) {
+			Log.e(LCAT, "Exception caught:" + ex);
+		}
+	}
+
+	@Override
+	public void onStart(Activity activity) {
+		rootActivityClassName = TiApplication.getInstance()
+				.getApplicationContext().getPackageName()
+				+ "."
+				+ TiApplication.getAppRootOrCurrentActivity().getClass()
+						.getSimpleName();
+		Log.d(LCAT, "Module started " + rootActivityClassName);
+		super.onStart(activity);
 	}
 
 }
