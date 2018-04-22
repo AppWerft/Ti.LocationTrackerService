@@ -6,17 +6,19 @@
 ```javascript
 
 var GeoService = require("ti.locationupdatesservice");
-GeoService.initialise({
-	interval : 5 // sec
-	dbname  : "geolog", 
-	fields: ["ctime","latitude","longitude","altitude"," accuracy"],
+GeoService.config({
+	database : "geolog", 		
 	notification: {
+		channel : "cannel1",
 		icon : "/assets/icon.png",
 		title : "You position",
 		subtitle: ""
 	}
 })
-GeoService.start();
+GeoService.start({
+	intervall : 2 // sec.
+	duration : 3600 // optional
+});
 
 // later:
 GeoService.stop();

@@ -8,53 +8,81 @@
  */
 package ti.locationupdatesservice;
 
+import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.annotations.Kroll;
-
 import org.appcelerator.titanium.TiApplication;
 import org.appcelerator.kroll.common.Log;
 import org.appcelerator.kroll.common.TiConfig;
 
-
-@Kroll.module(name="Locationupdatesservice", id="ti.locationupdatesservice")
-public class LocationupdatesserviceModule extends KrollModule
-{
+@Kroll.module(name = "Locationupdatesservice", id = "ti.locationupdatesservice")
+public class LocationupdatesserviceModule extends KrollModule {
 
 	// Standard Debugging variables
-	private static final String LCAT = "LocationupdatesserviceModule";
-	private static final boolean DBG = TiConfig.LOGD;
+	private static final String LCAT = "TiGeoLogger";
+
+	private static String dbName = "geologger";
+	private static String notChannel = "channel1";
+	private static String notIcon = null;
+	private static String notTitle = "";
+	private static int interval = 0;
+	private static int duration = 0;
 
 	// You can define constants with @Kroll.constant, for example:
 	// @Kroll.constant public static final String EXTERNAL_NAME = value;
 
-	public LocationupdatesserviceModule()
-	{
+	public LocationupdatesserviceModule() {
 		super();
 	}
 
 	@Kroll.onAppCreate
-	public static void onAppCreate(TiApplication app)
-	{
+	public static void onAppCreate(TiApplication app) {
 		Log.d(LCAT, "inside onAppCreate");
-		// put module init code that needs to run when the application is created
+		// put module init code that needs to run when the application is
+		// created
 	}
 
 	// Methods
 	@Kroll.method
-	public String example()
-	{
-		Log.d(LCAT, "example called");
-		return "hello world";
+	public void config(KrollDict opts) {
+		if (opts.containsKeyStartingWith("dbName"))
+			dbName = opts.getString("dbName");
+		if (opts.containsKeyStartingWith("notification")
+				&& opts.get("notification") instanceof KrollDict) {
+			KrollDict notification = opts.getKrollDict("notification");
+			if (notification.containsKeyAndNotNull("channel"))
+				notChannel = notification.getString("channel");
+			if (notification.containsKeyAndNotNull("icon"))
+				notIcon = notification.getString("icon");
+			if (notification.containsKeyAndNotNull("title"))
+				notTitle = notification.getString("title");
+		}
+		dbName = opts.getString("dbName");
+
 	}
 
-	// Properties
-	@Kroll.getProperty
-	public String getExampleProp()
-	{
-		Log.d(LCAT, "get example property");
-		return "hello world";
+	@Kroll.method
+	public void start(KrollDict opts) {
+		if (opts.containsKeyStartingWith("dbName"))
+			dbName = opts.getString("dbName");
+		if (opts.containsKeyStartingWith("notification")
+				&& opts.get("notification") instanceof KrollDict) {
+			KrollDict notification = opts.getKrollDict("notification");
+			if (notification.containsKeyAndNotNull("channel"))
+				notChannel = notification.getString("channel");
+			if (notification.containsKeyAndNotNull("icon"))
+				notIcon = notification.getString("icon");
+			if (notification.containsKeyAndNotNull("title"))
+				notTitle = notification.getString("title");
+		}
+		dbName = opts.getString("dbName");
+
 	}
 
+	@Kroll.method
+	public void stop() {
+
+	}
 
 	@Kroll.setProperty
 	public void setExampleProp(String value) {
@@ -62,4 +90,3 @@ public class LocationupdatesserviceModule extends KrollModule
 	}
 
 }
-

@@ -291,12 +291,13 @@ public class LocationUpdatesService extends Service {
             // TODO
             //    new Intent(this, MainActivity.class), 0);
 
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(ctx).addAction(R.drawable.ic_launch, getString(R.string.launch_activity),
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(ctx)
+                 .addAction(R.drawable.ic_launch, getString(R.string.launch_activity),
                         activityPendingIntent)
                 .addAction(R.drawable.ic_cancel, getString(R.string.remove_location_updates),
                         servicePendingIntent)
                 .setContentText(text)
-                .setContentTitle(Utils.getLocationTitle(this))
+                .setContentTitle(Utils.getLocationTitle(ctx))
                 .setOngoing(true)
                 .setPriority(Notification.PRIORITY_HIGH)
                 .setSmallIcon(R.mipmap.ic_launcher)
@@ -341,7 +342,7 @@ public class LocationUpdatesService extends Service {
 				.sendBroadcast(intent);
 
 		// Update notification content if running as a foreground service.
-		if (serviceIsRunningInForeground(this)) {
+		if (serviceIsRunningInForeground(ctx)) {
 			mNotificationManager.notify(NOTIFICATION_ID, getNotification());
 		}
 	}
