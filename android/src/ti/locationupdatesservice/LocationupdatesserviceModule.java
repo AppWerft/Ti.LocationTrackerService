@@ -33,8 +33,10 @@ public class LocationupdatesserviceModule extends KrollModule {
 	private static int duration = 0;
 	public static String rootActivityClassName = "";
 	final static String ACTION = "LocationUpdatesServiceAction";
-	final static int RQS_STOP_TRACKER = 1;
+	final static int RQS_STOP_TRACKER = 0;
+	final static int RQS_START_TRACKER = 1;
 	final static int RQS_REMOVE_TRACKER = 2;
+	final static String SERVICE_COMMAND_KEY = "SERVICECOMMANDKEY";
 
 	// You can define constants with @Kroll.constant, for example:
 	// @Kroll.constant public static final String EXTERNAL_NAME = value;
@@ -74,23 +76,20 @@ public class LocationupdatesserviceModule extends KrollModule {
 	public void start(KrollDict opts) {
 		if (opts.containsKeyStartingWith("interval"))
 			interval = opts.getInt("interval");
-		callServices(null, null, 0);
+		callServices(ACTION, SERVICE_COMMAND_KEY, RQS_START_TRACKER);
 
 	}
 
 	@Kroll.method
 	public void stop() {
-		Intent intent = new Intent(ctx.getPackageName());
-		intent.setAction(ACTION);
-		intent.putExtra(SERVICE_COMMAND_KEY, RQS_STOP_SERVICE);
-		// ctx.sendBroadcast(intent);
-		Log.d(LCAT, "RQS_STOP_SERVICE sent");
-		callServices(ACTION, SERVICE_COMMAND_KEY, RQS_STOP_SERVICE);
+		callServices(ACTION, SERVICE_COMMAND_KEY, RQS_STOP_TRACKER);
 	}
 
 	private void callServices(String action, String extrakey, int extravalue) {
+		Intent intent = new Intent(ctx.getPackageName());
+		intent.setAction(action);
+		intent.putExtra(extrakey, extravalue);
 		try {
-
 			ctx.startService(new Intent(ctx, LocationUpdatesService.class));
 		} catch (Exception ex) {
 			Log.e(LCAT, "Exception caught:" + ex);
