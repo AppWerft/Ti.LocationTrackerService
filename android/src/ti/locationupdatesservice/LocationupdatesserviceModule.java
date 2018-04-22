@@ -8,6 +8,9 @@
  */
 package ti.locationupdatesservice;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.annotations.Kroll;
@@ -76,6 +79,18 @@ public class LocationupdatesserviceModule extends KrollModule {
 	public void start(KrollDict opts) {
 		if (opts.containsKeyStartingWith("interval"))
 			interval = opts.getInt("interval");
+		if (opts.containsKeyStartingWith("duration"))
+			duration = opts.getInt("duration");
+		if (duration > 0) {
+			Timer timer = new Timer();
+			timer.schedule(new TimerTask() {
+				@Override
+				public void run() {
+					stop();
+				}
+			}, duration * 1000);
+
+		}
 		callServices(ACTION, SERVICE_COMMAND_KEY, RQS_START_TRACKER);
 
 	}
