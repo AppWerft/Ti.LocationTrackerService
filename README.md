@@ -15,7 +15,7 @@ GeoService.config({
 		channel : "cannel1",
 		title : "You position",
 		stopTracking : "Stop tracking",
-		startTracking : "Start trac	",
+		startTracking : "Start tracking",
 	},
 	adapter : {  // not yet implemetented ;-(
 		uri: "https://"
