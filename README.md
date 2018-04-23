@@ -10,14 +10,14 @@ GeoService.addEventListener("ServiceConnectionChanged",function(e) {
 	console.log(e);
 });
 GeoService.config({
-	database : "geolog", 		
+	database : "geolog",  // tablename the same		
 	notification: {
 		channel : "cannel1",
 		title : "You position",
 		stopTracking : "Stop tracking",
 		startTracking : "Start trac	",
 	},
-	adapter : {
+	adapter : {  // not yet implemetented ;-(
 		uri: "https://"
 		requestHeaders: [],
 		extraParameters : {
@@ -27,7 +27,14 @@ GeoService.config({
 		timeout : 100000
 	}
 })
-GeoService.addEventListener("LocationChanged",function(){})
+GeoService.addEventListener("LocationChanged",function(e){
+	 Object.keys.forEach(function(k){
+	 	console.log(k + " :  " + e[k])
+	 	/* 
+	 		location,time,latitude,longitude,accuracy,bearing,provider,speed 
+	 	*/
+	 });
+});
 GeoService.requestLocationUpdates({
 	intervall : 2 // sec.
 	duration : 3600 // optional,

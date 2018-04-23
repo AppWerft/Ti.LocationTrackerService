@@ -56,10 +56,8 @@ import com.google.android.gms.tasks.Task;
  * the notification assocaited with that service is removed.
  */
 public class LocationUpdatesService extends Service {
-
 	private static final String PACKAGE_NAME = TiApplication.getInstance()
 			.getPackageName();
-
 	private static final String TAG = LocationUpdatesService.class
 			.getSimpleName();
 	Context ctx;
@@ -324,7 +322,6 @@ public class LocationUpdatesService extends Service {
 						servicePendingIntent)
 				.setContentTitle(Utils.getLocationTitle(ctx)).setOngoing(true)
 				.setPriority(Notification.PRIORITY_HIGH)
-				// .setSmallIcon(R.mipmap.ic_launcher).setTicker(text)
 				.setWhen(System.currentTimeMillis());
 
 		return builder.build();

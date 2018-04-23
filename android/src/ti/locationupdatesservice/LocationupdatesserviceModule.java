@@ -68,10 +68,10 @@ public class LocationupdatesserviceModule extends KrollModule {
 	// You can define constants with @Kroll.constant, for example:
 	// @Kroll.constant public static final String EXTERNAL_NAME = value;
 	// A reference to the service used to get location updates.
-	private LocationUpdatesService mService = null;
+	private LocationUpdatesService locationtrackingservice = null;
 
 	// Tracks the bound state of the service.
-	private boolean mBound = false;
+	private boolean boundState = false;
 
 	public LocationupdatesserviceModule() {
 		super();
@@ -129,8 +129,6 @@ public class LocationupdatesserviceModule extends KrollModule {
 			if (notification.containsKeyAndNotNull("stopTracking"))
 				stopTracking = notification.getString("stopTracking");
 		}
-		dbName = opts.getString("dbName");
-
 	}
 
 	@Kroll.method
@@ -144,36 +142,28 @@ public class LocationupdatesserviceModule extends KrollModule {
 			timer.schedule(new TimerTask() {
 				@Override
 				public void run() {
-					mService.removeLocationUpdates();
+					removeLocationUpdates();
 				}
 			}, duration * 1000);
 
 		}
-		mService.requestLocationUpdates();
+		locationtrackingservice.requestLocationUpdates();
 		LocalBroadcastManager.getInstance(ctx).registerReceiver(myReceiver,
 				new IntentFilter(LocationUpdatesService.ACTION_BROADCAST));
 
 	}
 
-	/*
-	 * public static void fireLocation(Location location) { if
-	 * (hasListeners("LocationChanged")) { KrollDict res = new KrollDict();
-	 * res.put("latitude", location.getLatitude()); res.put("longitude",
-	 * location.getLongitude()); res.put("time", location.getTime());
-	 * fireEvent("LocationChanged", res); } }
-	 */
-
 	@Kroll.method
 	public void removeLocationUpdates() {
-		mService.removeLocationUpdates();
-		if (mBound) {
+		locationtrackingservice.removeLocationUpdates();
+		if (boundState) {
 			// Unbind from the service. This signals to the service that this
 			// activity is no longer
 			// in the foreground, and the service can respond by promoting
 			// itself to a foreground
 			// service.
-			ctx.unbindService(mServiceConnection);
-			mBound = false;
+			ctx.unbindService(locationtrackingserviceConnection);
+			boundState = false;
 		}
 
 	}
@@ -197,28 +187,27 @@ public class LocationupdatesserviceModule extends KrollModule {
 	}
 
 	// Monitors the state of the connection to the service.
-	private final ServiceConnection mServiceConnection = new ServiceConnection() {
-
+	private final ServiceConnection locationtrackingserviceConnection = new ServiceConnection() {
 		@Override
 		public void onServiceConnected(ComponentName name, IBinder service) {
 			LocationUpdatesService.LocalBinder binder = (LocationUpdatesService.LocalBinder) service;
-			mService = binder.getService();
-			mBound = true;
+			locationtrackingservice = binder.getService();
+			boundState = true;
 			KrollDict res = new KrollDict();
 			res.put("connected", true);
 			if (hasListeners("ServiceConnectionChanged"))
-				fireEvent("ServiceConnectionChanged", mBound);
+				fireEvent("ServiceConnectionChanged", boundState);
 
 		}
 
 		@Override
 		public void onServiceDisconnected(ComponentName name) {
-			mService = null;
-			mBound = false;
+			locationtrackingservice = null;
+			boundState = false;
 			KrollDict res = new KrollDict();
 			res.put("connected", true);
 			if (hasListeners("ServiceConnectionChanged"))
-				fireEvent("ServiceConnectionChanged", mBound);
+				fireEvent("ServiceConnectionChanged", res);
 		}
 	};
 

@@ -16,3 +16,4 @@ moduleid: ti.locationupdatesservice
 guid: eb47c697-cd26-48eb-927d-96ff42778826
 platform: android
 minsdk: 7.0.0.
+respackage : ti.locationupdatesservice 
