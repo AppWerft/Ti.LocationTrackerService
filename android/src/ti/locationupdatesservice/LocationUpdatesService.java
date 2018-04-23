@@ -358,8 +358,6 @@ public class LocationUpdatesService extends Service {
 		intent.putExtra(EXTRA_LOCATION, location);
 		LocalBroadcastManager.getInstance(getApplicationContext())
 				.sendBroadcast(intent);
-
-		// Update notification content if running as a foreground service.
 		if (serviceIsRunningInForeground(ctx)) {
 			mNotificationManager.notify(NOTIFICATION_ID, getNotification());
 		}

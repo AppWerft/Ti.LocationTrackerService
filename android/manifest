@@ -2,7 +2,7 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 1.0.0
+version: 1.0.1
 apiversion: 4
 architectures: arm64-v8a armeabi-v7a x86
 description: locationupdatesservice
@@ -15,4 +15,4 @@ name: locationupdatesservice
 moduleid: ti.locationupdatesservice
 guid: eb47c697-cd26-48eb-927d-96ff42778826
 platform: android
-minsdk: 7.1.0.GA
+minsdk: 7.0.0.

@@ -18,12 +18,16 @@ import org.appcelerator.kroll.common.Log;
 import org.appcelerator.titanium.TiApplication;
 
 import android.app.Activity;
+import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.content.pm.ApplicationInfo;
+import android.support.v4.content.LocalBroadcastManager;
 import android.graphics.Bitmap;
+import android.location.Location;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
 
@@ -33,7 +37,8 @@ public class LocationupdatesserviceModule extends KrollModule {
 			.getPackageName();
 
 	static final String ACTION_BROADCAST = PACKAGE_NAME + ".broadcast";
-
+	// The BroadcastReceiver used to listen from broadcasts from the service.
+	private MyReceiver myReceiver;
 	static final String EXTRA_LOCATION = PACKAGE_NAME + ".location";
 	private static final String EXTRA_STARTED_FROM_NOTIFICATION = PACKAGE_NAME
 			+ ".started_from_notification";
@@ -70,6 +75,7 @@ public class LocationupdatesserviceModule extends KrollModule {
 	public LocationupdatesserviceModule() {
 		super();
 		ctx = TiApplication.getInstance().getApplicationContext();
+		myReceiver = new MyReceiver();
 		notificationName = getApplicationName(ctx);
 
 	}
@@ -77,8 +83,31 @@ public class LocationupdatesserviceModule extends KrollModule {
 	@Kroll.onAppCreate
 	public static void onAppCreate(TiApplication app) {
 		Log.d(LCAT, "inside onAppCreate");
+
 		// put module init code that needs to run when the application is
 		// created
+	}
+
+	private class MyReceiver extends BroadcastReceiver {
+		@Override
+		public void onReceive(Context context, Intent intent) {
+			Location location = intent
+					.getParcelableExtra(LocationUpdatesService.EXTRA_LOCATION);
+			if (location != null && hasListeners("LocationChanged")) {
+				KrollDict res = new KrollDict();
+				res.put("location", location.toString());
+				res.put("time", location.getTime());
+				res.put("latitude", location.getLatitude());
+				res.put("longitude", location.getLongitude());
+				res.put("accuracy", location.getAccuracy());
+				res.put("bearing", location.getBearing());
+				res.put("provider", location.getProvider());
+				res.put("speed", location.getSpeed());
+				res.put("speedaccuracymeterspersecond",
+						location.getSpeedAccuracyMetersPerSecond());
+				fireEvent("LocationChanged", res);
+			}
+		}
 	}
 
 	// Methods
@@ -113,17 +142,27 @@ public class LocationupdatesserviceModule extends KrollModule {
 			timer.schedule(new TimerTask() {
 				@Override
 				public void run() {
-					stop();
+					mService.removeLocationUpdates();
 				}
 			}, duration * 1000);
 
 		}
 		mService.requestLocationUpdates();
+		LocalBroadcastManager.getInstance(ctx).registerReceiver(myReceiver,
+				new IntentFilter(LocationUpdatesService.ACTION_BROADCAST));
 
 	}
 
+	/*
+	 * public static void fireLocation(Location location) { if
+	 * (hasListeners("LocationChanged")) { KrollDict res = new KrollDict();
+	 * res.put("latitude", location.getLatitude()); res.put("longitude",
+	 * location.getLongitude()); res.put("time", location.getTime());
+	 * fireEvent("LocationChanged", res); } }
+	 */
+
 	@Kroll.method
-	public void stop() {
+	public void removeLocationUpdates() {
 		mService.removeLocationUpdates();
 	}
 

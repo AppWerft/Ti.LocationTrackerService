@@ -6,13 +6,16 @@
 ```javascript
 
 var GeoService = require("ti.locationupdatesservice");
+GeoService.addEventListener("ServiceConnectionChanged",function(e) {
+	console.log(e);
+});
 GeoService.config({
 	database : "geolog", 		
 	notification: {
 		channel : "cannel1",
-		icon : "/assets/icon.png",
 		title : "You position",
-		subtitle: ""
+		stopTracking : "Stop tracking",
+		startTracking : "Start trac	",
 	},
 	adapter : {
 		uri: "https://"
@@ -24,14 +27,14 @@ GeoService.config({
 		timeout : 100000
 	}
 })
-GeoService.addEventListener("change",function(){})
-GeoService.start({
+GeoService.addEventListener("LocationChanged",function(){})
+GeoService.requestLocationUpdates({
 	intervall : 2 // sec.
 	duration : 3600 // optional,
 });
 
 // later:
-GeoService.stop();
+GeoService.removeLocationUpdates();
 
 ```
 
