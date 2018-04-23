@@ -14,26 +14,44 @@ import java.util.TimerTask;
 import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.annotations.Kroll;
-import org.appcelerator.titanium.TiApplication;
 import org.appcelerator.kroll.common.Log;
-import org.appcelerator.kroll.common.TiConfig;
+import org.appcelerator.titanium.TiApplication;
 
 import android.app.Activity;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.ServiceConnection;
+import android.content.pm.ApplicationInfo;
+import android.graphics.Bitmap;
+import android.os.IBinder;
+import android.preference.PreferenceManager;
 
 @Kroll.module(name = "Locationupdatesservice", id = "ti.locationupdatesservice")
 public class LocationupdatesserviceModule extends KrollModule {
+	private static final String PACKAGE_NAME = TiApplication.getInstance()
+			.getPackageName();
 
+	static final String ACTION_BROADCAST = PACKAGE_NAME + ".broadcast";
+
+	static final String EXTRA_LOCATION = PACKAGE_NAME + ".location";
+	private static final String EXTRA_STARTED_FROM_NOTIFICATION = PACKAGE_NAME
+			+ ".started_from_notification";
 	// Standard Debugging variables
-	private static final String LCAT = "TiGeoLogger";
-	Context ctx;
-	private static String dbName = "geologger";
-	private static String notChannel = "channel1";
-	private static String notIcon = null;
-	private static String notTitle = "";
-	private static int interval = 0;
-	private static int duration = 0;
+	public static final String LCAT = "TiGeoLogger";
+	private Context ctx;
+	public static String dbName = "geologger";
+	public static String notificationChannel = "channel1";
+	public static String notificationIcon = null;
+
+	public static String notificationName = "";
+	public static Bitmap cancelIcon;
+	public static Bitmap launchIcon;
+	public static String startTracking = "Start";
+	public static String stopTracking = "Stop";
+
+	public static int interval = 0;
+	public static int duration = 0;
 	public static String rootActivityClassName = "";
 	final static String ACTION = "LocationUpdatesServiceAction";
 	final static int RQS_STOP_TRACKER = 0;
@@ -43,10 +61,17 @@ public class LocationupdatesserviceModule extends KrollModule {
 
 	// You can define constants with @Kroll.constant, for example:
 	// @Kroll.constant public static final String EXTERNAL_NAME = value;
+	// A reference to the service used to get location updates.
+	private LocationUpdatesService mService = null;
+
+	// Tracks the bound state of the service.
+	private boolean mBound = false;
 
 	public LocationupdatesserviceModule() {
 		super();
 		ctx = TiApplication.getInstance().getApplicationContext();
+		notificationName = getApplicationName(ctx);
+
 	}
 
 	@Kroll.onAppCreate
@@ -64,19 +89,21 @@ public class LocationupdatesserviceModule extends KrollModule {
 		if (opts.containsKeyStartingWith("notification")
 				&& opts.get("notification") instanceof KrollDict) {
 			KrollDict notification = opts.getKrollDict("notification");
+			if (notification.containsKeyAndNotNull("name"))
+				notificationName = notification.getString("name");
 			if (notification.containsKeyAndNotNull("channel"))
-				notChannel = notification.getString("channel");
-			if (notification.containsKeyAndNotNull("icon"))
-				notIcon = notification.getString("icon");
-			if (notification.containsKeyAndNotNull("title"))
-				notTitle = notification.getString("title");
+				notificationChannel = notification.getString("channel");
+			if (notification.containsKeyAndNotNull("startTracking"))
+				startTracking = notification.getString("startTracking");
+			if (notification.containsKeyAndNotNull("stopTracking"))
+				stopTracking = notification.getString("stopTracking");
 		}
 		dbName = opts.getString("dbName");
 
 	}
 
 	@Kroll.method
-	public void start(KrollDict opts) {
+	public void requestLocationUpdates(KrollDict opts) {
 		if (opts.containsKeyStartingWith("interval"))
 			interval = opts.getInt("interval");
 		if (opts.containsKeyStartingWith("duration"))
@@ -91,13 +118,13 @@ public class LocationupdatesserviceModule extends KrollModule {
 			}, duration * 1000);
 
 		}
-		callServices(ACTION, SERVICE_COMMAND_KEY, RQS_START_TRACKER);
+		mService.requestLocationUpdates();
 
 	}
 
 	@Kroll.method
 	public void stop() {
-		callServices(ACTION, SERVICE_COMMAND_KEY, RQS_STOP_TRACKER);
+		mService.removeLocationUpdates();
 	}
 
 	private void callServices(String action, String extrakey, int extravalue) {
@@ -121,5 +148,38 @@ public class LocationupdatesserviceModule extends KrollModule {
 		Log.d(LCAT, "Module started " + rootActivityClassName);
 		super.onStart(activity);
 	}
+
+	private static String getApplicationName(Context context) {
+		ApplicationInfo applicationInfo = context.getApplicationInfo();
+		int stringId = applicationInfo.labelRes;
+		return stringId == 0 ? applicationInfo.nonLocalizedLabel.toString()
+				: context.getString(stringId);
+	}
+
+	// Monitors the state of the connection to the service.
+	private final ServiceConnection mServiceConnection = new ServiceConnection() {
+
+		@Override
+		public void onServiceConnected(ComponentName name, IBinder service) {
+			LocationUpdatesService.LocalBinder binder = (LocationUpdatesService.LocalBinder) service;
+			mService = binder.getService();
+			mBound = true;
+			KrollDict res = new KrollDict();
+			res.put("connected", true);
+			if (hasListeners("ServiceConnectionChanged"))
+				fireEvent("ServiceConnectionChanged", mBound);
+
+		}
+
+		@Override
+		public void onServiceDisconnected(ComponentName name) {
+			mService = null;
+			mBound = false;
+			KrollDict res = new KrollDict();
+			res.put("connected", true);
+			if (hasListeners("ServiceConnectionChanged"))
+				fireEvent("ServiceConnectionChanged", mBound);
+		}
+	};
 
 }

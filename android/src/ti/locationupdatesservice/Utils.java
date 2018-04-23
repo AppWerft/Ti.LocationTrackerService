@@ -23,6 +23,8 @@ import android.preference.PreferenceManager;
 import java.text.DateFormat;
 import java.util.Date;
 
+import org.appcelerator.titanium.TiApplication;
+
 class Utils {
 
 	static final String KEY_REQUESTING_LOCATION_UPDATES = "requesting_locaction_updates";
@@ -65,7 +67,20 @@ class Utils {
 	}
 
 	static String getLocationTitle(Context context) {
-		return context.getString(R.string.location_updated, DateFormat
+		return context.getString(R("location_updated", "string"), DateFormat
 				.getDateTimeInstance().format(new Date()));
+	}
+
+	/* helper function for safety getting resources */
+	public static int R(String name, String type) {
+		Context ctx = TiApplication.getInstance().getApplicationContext();
+		int id = 0;
+		try {
+			id = ctx.getResources().getIdentifier(name, type,
+					ctx.getPackageName());
+		} catch (Exception e) {
+			return id;
+		}
+		return id;
 	}
 }

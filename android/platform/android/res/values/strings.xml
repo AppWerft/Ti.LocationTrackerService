@@ -1,0 +1,4 @@
+<resources>
+	<string name="ic_start_tracking">Start</string>
+	<string name="ic_stop_tracking">Stop</string>
+</resources>

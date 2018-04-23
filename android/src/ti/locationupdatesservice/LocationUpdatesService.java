@@ -1,6 +1,11 @@
 package ti.locationupdatesservice;
 
+import java.io.IOException;
+
 import org.appcelerator.titanium.TiApplication;
+import org.appcelerator.titanium.io.TiBaseFile;
+import org.appcelerator.titanium.io.TiFileFactory;
+import org.appcelerator.titanium.util.TiUIHelper;
 
 import android.R;
 import android.app.ActivityManager;
@@ -18,6 +23,8 @@ import android.os.Build;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.IBinder;
+import android.content.ComponentName;
+import android.graphics.Bitmap;
 import android.os.Looper;
 import android.support.annotation.NonNull;
 import android.support.v4.content.LocalBroadcastManager;
@@ -50,7 +57,8 @@ import com.google.android.gms.tasks.Task;
  */
 public class LocationUpdatesService extends Service {
 
-	private static final String PACKAGE_NAME = "com.google.android.gms.location.sample.locationupdatesforegroundservice";
+	private static final String PACKAGE_NAME = TiApplication.getInstance()
+			.getPackageName();
 
 	private static final String TAG = LocationUpdatesService.class
 			.getSimpleName();
@@ -65,14 +73,14 @@ public class LocationUpdatesService extends Service {
 	static final String EXTRA_LOCATION = PACKAGE_NAME + ".location";
 	private static final String EXTRA_STARTED_FROM_NOTIFICATION = PACKAGE_NAME
 			+ ".started_from_notification";
-
+	private Notification.Builder builder;
 	private final IBinder mBinder = new LocalBinder();
 
 	/**
 	 * The desired interval for location updates. Inexact. Updates may be more
 	 * or less frequent.
 	 */
-	private static final long UPDATE_INTERVAL_IN_MILLISECONDS = 10000;
+	private static final long UPDATE_INTERVAL_IN_MILLISECONDS = LocationupdatesserviceModule.interval;
 
 	/**
 	 * The fastest rate for active location updates. Updates will never be more
@@ -111,7 +119,7 @@ public class LocationUpdatesService extends Service {
 	private LocationCallback mLocationCallback;
 
 	private Handler mServiceHandler;
-
+	private static String LCAT = LocationupdatesserviceModule.LCAT;
 	/**
 	 * The current location.
 	 */
@@ -145,7 +153,7 @@ public class LocationUpdatesService extends Service {
 
 		// Android O requires a Notification Channel.
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-			CharSequence name = getString(R.string.app_name);
+			CharSequence name = LocationupdatesserviceModule.notificationName;
 			// Create the channel for the notification
 			NotificationChannel mChannel = new NotificationChannel(CHANNEL_ID,
 					name, NotificationManager.IMPORTANCE_DEFAULT);
@@ -275,42 +283,52 @@ public class LocationUpdatesService extends Service {
 	 */
 	@SuppressWarnings("deprecation")
 	private Notification getNotification() {
-        Intent intent = new Intent(this, LocationUpdatesService.class);
+		Intent intent = new Intent(this, LocationUpdatesService.class);
 
-        CharSequence text = Utils.getLocationText(mLocation);
+		CharSequence text = Utils.getLocationText(mLocation);
 
-        // Extra to help us figure out if we arrived in onStartCommand via the notification or not.
-        intent.putExtra(EXTRA_STARTED_FROM_NOTIFICATION, true);
+		// Extra to help us figure out if we arrived in onStartCommand via the
+		// notification or not.
+		intent.putExtra(EXTRA_STARTED_FROM_NOTIFICATION, true);
 
-        // The PendingIntent that leads to a call to onStartCommand() in this service.
-        PendingIntent servicePendingIntent = PendingIntent.getService(this, 0, intent,
-                PendingIntent.FLAG_UPDATE_CURRENT);
+		// The PendingIntent that leads to a call to onStartCommand() in this
+		// service.
+		PendingIntent servicePendingIntent = PendingIntent.getService(ctx, 0,
+				intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
-        // The PendingIntent to launch activity.
-        PendingIntent activityPendingIntent = PendingIntent.getActivity(this, 0,
-            // TODO
-            //    new Intent(this, MainActivity.class), 0);
+		// The activityIntent calls the app
+		Intent activityIntent = new Intent(Intent.ACTION_MAIN);
+		activityIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
+				| Intent.FLAG_ACTIVITY_NEW_TASK);
+		String packageName = TiApplication.getInstance().getPackageName();
+		String className = packageName
+				+ "."
+				+ TiApplication.getAppRootOrCurrentActivity()
+						.getLocalClassName();
 
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(ctx)
-                 .addAction(R.drawable.ic_launch, getString(R.string.launch_activity),
-                        activityPendingIntent)
-                .addAction(R.drawable.ic_cancel, getString(R.string.remove_location_updates),
-                        servicePendingIntent)
-                .setContentText(text)
-                .setContentTitle(Utils.getLocationTitle(ctx))
-                .setOngoing(true)
-                .setPriority(Notification.PRIORITY_HIGH)
-                .setSmallIcon(R.mipmap.ic_launcher)
-                .setTicker(text)
-                .setWhen(System.currentTimeMillis());
+		activityIntent.setComponent(new ComponentName(packageName, className));
 
-        // Set the Channel ID for Android O.
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            builder.setChannelId(CHANNEL_ID); // Channel ID
-        }
+		PendingIntent activityPendingIntent = PendingIntent.getActivity(ctx, 1,
+				activityIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
-        return builder.build();
-    }
+		// PendingIntent activityPendingIntent = PendingIntent.getActivity(this,
+		// 0,
+		// new Intent(this, MainActivity.class), 0);
+
+		builder = new Notification.Builder(ctx, CHANNEL_ID)
+				.addAction(R("tracker_launch_icon", "drawable"),
+						LocationupdatesserviceModule.startTracking,
+						activityPendingIntent)
+				.addAction(R("tracker_cancel_icon", "drawable"),
+						LocationupdatesserviceModule.stopTracking,
+						servicePendingIntent)
+				.setContentTitle(Utils.getLocationTitle(ctx)).setOngoing(true)
+				.setPriority(Notification.PRIORITY_HIGH)
+				// .setSmallIcon(R.mipmap.ic_launcher).setTicker(text)
+				.setWhen(System.currentTimeMillis());
+
+		return builder.build();
+	}
 
 	private void getLastLocation() {
 		try {
@@ -388,13 +406,16 @@ public class LocationUpdatesService extends Service {
 		return false;
 	}
 
-	private int R(String name, String type, String pn) {
+	/* helper function for safety getting resources */
+	private int R(String name, String type) {
 		int id = 0;
 		try {
-			id = ctx.getResources().getIdentifier(name, type, pn);
+			id = ctx.getResources().getIdentifier(name, type,
+					ctx.getPackageName());
 		} catch (Exception e) {
 			return id;
 		}
 		return id;
 	}
+
 }
