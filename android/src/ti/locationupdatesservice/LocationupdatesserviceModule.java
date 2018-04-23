@@ -24,6 +24,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
+import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
 import android.support.v4.content.LocalBroadcastManager;
 import android.graphics.Bitmap;
@@ -63,7 +64,7 @@ public class LocationupdatesserviceModule extends KrollModule {
 	final static int RQS_START_TRACKER = 1;
 	final static int RQS_REMOVE_TRACKER = 2;
 	final static String SERVICE_COMMAND_KEY = "SERVICECOMMANDKEY";
-
+	SharedPreferences sharedPreferences;
 	// You can define constants with @Kroll.constant, for example:
 	// @Kroll.constant public static final String EXTERNAL_NAME = value;
 	// A reference to the service used to get location updates.
@@ -77,6 +78,7 @@ public class LocationupdatesserviceModule extends KrollModule {
 		ctx = TiApplication.getInstance().getApplicationContext();
 		myReceiver = new MyReceiver();
 		notificationName = getApplicationName(ctx);
+		sharedPreferences = PreferenceManager.getDefaultSharedPreferences(ctx);
 
 	}
 
@@ -164,17 +166,16 @@ public class LocationupdatesserviceModule extends KrollModule {
 	@Kroll.method
 	public void removeLocationUpdates() {
 		mService.removeLocationUpdates();
-	}
-
-	private void callServices(String action, String extrakey, int extravalue) {
-		Intent intent = new Intent(ctx.getPackageName());
-		intent.setAction(action);
-		intent.putExtra(extrakey, extravalue);
-		try {
-			ctx.startService(new Intent(ctx, LocationUpdatesService.class));
-		} catch (Exception ex) {
-			Log.e(LCAT, "Exception caught:" + ex);
+		if (mBound) {
+			// Unbind from the service. This signals to the service that this
+			// activity is no longer
+			// in the foreground, and the service can respond by promoting
+			// itself to a foreground
+			// service.
+			ctx.unbindService(mServiceConnection);
+			mBound = false;
 		}
+
 	}
 
 	@Override
