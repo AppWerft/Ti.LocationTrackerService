@@ -3021,13 +3021,13 @@ containing a value of this type.
         public static int abc_textfield_search_material=0x7f020051;
         public static int abc_vector_test=0x7f020052;
         public static int avd_hide_password=0x7f020053;
-        public static int avd_hide_password_1=0x7f02007c;
-        public static int avd_hide_password_2=0x7f02007d;
-        public static int avd_hide_password_3=0x7f02007e;
+        public static int avd_hide_password_1=0x7f02007e;
+        public static int avd_hide_password_2=0x7f02007f;
+        public static int avd_hide_password_3=0x7f020080;
         public static int avd_show_password=0x7f020054;
-        public static int avd_show_password_1=0x7f02007f;
-        public static int avd_show_password_2=0x7f020080;
-        public static int avd_show_password_3=0x7f020081;
+        public static int avd_show_password_1=0x7f020081;
+        public static int avd_show_password_2=0x7f020082;
+        public static int avd_show_password_3=0x7f020083;
         public static int btn_check_buttonless_on_144=0x7f020055;
         public static int btn_check_buttonless_on_192=0x7f020056;
         public static int btn_check_buttonless_on_36=0x7f020057;
@@ -3061,12 +3061,14 @@ containing a value of this type.
         public static int notification_bg_normal=0x7f020073;
         public static int notification_bg_normal_pressed=0x7f020074;
         public static int notification_icon_background=0x7f020075;
-        public static int notification_template_icon_bg=0x7f02007a;
-        public static int notification_template_icon_low_bg=0x7f02007b;
+        public static int notification_template_icon_bg=0x7f02007c;
+        public static int notification_template_icon_low_bg=0x7f02007d;
         public static int notification_tile_bg=0x7f020076;
         public static int notify_panel_notification_icon_bg=0x7f020077;
         public static int tooltip_frame_dark=0x7f020078;
         public static int tooltip_frame_light=0x7f020079;
+        public static int tracker_start_icon=0x7f02007a;
+        public static int tracker_stop_icon=0x7f02007b;
     }
     public static final class id {
         public static int ALT=0x7f0c0031;
