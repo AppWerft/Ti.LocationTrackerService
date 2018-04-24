@@ -104,6 +104,19 @@ Local<FunctionTemplate> LocationupdatesserviceModule::getProxyTemplate(Isolate* 
 		titanium::Proxy::setIndexedProperty);
 
 	// Constants --------------------------------------------------------------
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		LOGE(TAG, "Failed to get environment in LocationupdatesserviceModule");
+		//return;
+	}
+
+
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "PRIORITY_HIGH_ACCURACY", 100);
+
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "PRIORITY_LOW_POWER", 104);
+
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "PRIORITY_BALANCED_POWER_ACCURACY", 102);
+
 
 	// Dynamic properties -----------------------------------------------------
 

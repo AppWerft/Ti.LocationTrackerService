@@ -17,6 +17,8 @@ import org.appcelerator.kroll.annotations.Kroll;
 import org.appcelerator.kroll.common.Log;
 import org.appcelerator.titanium.TiApplication;
 
+import com.google.android.gms.location.LocationRequest;
+
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -34,9 +36,15 @@ import android.preference.PreferenceManager;
 
 @Kroll.module(name = "Locationupdatesservice", id = "ti.locationupdatesservice")
 public class LocationupdatesserviceModule extends KrollModule {
+	@Kroll.constant
+	final int PRIORITY_BALANCED_POWER_ACCURACY = LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY;
+	@Kroll.constant
+	final int PRIORITY_HIGH_ACCURACY = LocationRequest.PRIORITY_HIGH_ACCURACY;
+	@Kroll.constant
+	final int PRIORITY_LOW_POWER = LocationRequest.PRIORITY_LOW_POWER;
+
 	private static final String PACKAGE_NAME = TiApplication.getInstance()
 			.getPackageName();
-
 	static final String ACTION_BROADCAST = PACKAGE_NAME + ".broadcast";
 	// The BroadcastReceiver used to listen from broadcasts from the service.
 	private MyReceiver myReceiver;
@@ -55,6 +63,8 @@ public class LocationupdatesserviceModule extends KrollModule {
 	public static String database = null;
 	public static int interval = 10; // sec.
 	public static int duration = 0;
+	public static int priority = LocationRequest.PRIORITY_NO_POWER;
+
 	public static String rootActivityClassName = "";
 	final static String ACTION = "LocationUpdatesServiceAction";
 	final static int RQS_STOP_TRACKER = 0;
@@ -72,7 +82,7 @@ public class LocationupdatesserviceModule extends KrollModule {
 	private final ServiceConnection mServiceConnection = new ServiceConnection() {
 		@Override
 		public void onServiceConnected(ComponentName name, IBinder service) {
-			Log.i(LCAT, "ServiceConnection:onServiceConnected");
+			Log.i(LCAT, "ServiceConnection: locationTrackingService created");
 			LocationUpdatesService.LocalBinder binder = (LocationUpdatesService.LocalBinder) service;
 			locationTrackingService = binder.getService();
 			boundState = true;
@@ -116,16 +126,19 @@ public class LocationupdatesserviceModule extends KrollModule {
 		public void onReceive(Context context, Intent intent) {
 			Location location = intent
 					.getParcelableExtra(LocationUpdatesService.EXTRA_LOCATION);
+			KrollDict res = new KrollDict();
+			res.put("time", location.getTime());
+			res.put("latitude", location.getLatitude());
+			res.put("longitude", location.getLongitude());
+			res.put("accuracy", location.getAccuracy());
+			res.put("bearing", location.getBearing());
+			res.put("provider", location.getProvider());
+			res.put("speed", location.getSpeed());
 			if (location != null && hasListeners("LocationChanged")) {
-				KrollDict res = new KrollDict();
-				res.put("time", location.getTime());
-				res.put("latitude", location.getLatitude());
-				res.put("longitude", location.getLongitude());
-				res.put("accuracy", location.getAccuracy());
-				res.put("bearing", location.getBearing());
-				res.put("provider", location.getProvider());
-				res.put("speed", location.getSpeed());
 				fireEvent("LocationChanged", res);
+			}
+			if (location != null && hasListeners("location")) {
+				fireEvent("location", res);
 			}
 		}
 	}
@@ -155,6 +168,8 @@ public class LocationupdatesserviceModule extends KrollModule {
 		Log.i(LCAT, "===> requestLocationUpdates" + opts.toString());
 		if (opts.containsKeyStartingWith("interval"))
 			interval = opts.getInt("interval");
+		if (opts.containsKeyStartingWith("priority"))
+			priority = opts.getInt("priority");
 		if (opts.containsKeyStartingWith("duration"))
 			duration = opts.getInt("duration");
 		if (duration > 0) {
@@ -170,7 +185,8 @@ public class LocationupdatesserviceModule extends KrollModule {
 		if (locationTrackingService != null)
 			locationTrackingService.requestLocationUpdates();
 		else
-			Log.e(LCAT, "locationTrackingService was null, cannot start");
+			Log.e(LCAT,
+					"locationTrackingService was null, cannot start.\nMaybe you forgot to add `<service android:name=\"ti.locationupdatesservice.LocationUpdatesService\"/>` to application section of manifest");
 		LocalBroadcastManager.getInstance(ctx).registerReceiver(myReceiver,
 				new IntentFilter(LocationUpdatesService.ACTION_BROADCAST));
 

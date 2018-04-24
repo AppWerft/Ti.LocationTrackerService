@@ -51,6 +51,7 @@ GeoService.addEventListener("LocationChanged",function(e){
 GeoService.requestLocationUpdates({
 	interval : 2 // sec.
 	duration : 3600 // optional,
+	priority : GeoService.PRIORITY_BALANCED_POWER_ACCURACY // or PRIORITY_LOW_POWER or PRIORITY_HIGH_ACCURACY
 });
 
 // later:

@@ -337,6 +337,7 @@ public class LocationUpdatesService extends Service {
 		LocalBroadcastManager.getInstance(getApplicationContext())
 				.sendBroadcast(intent);
 		if (serviceIsRunningInForeground(ctx)) {
+			Log.i(LCAT, "serviceIsRunningInForeground");
 			mNotificationManager.notify(NOTIFICATION_ID, getNotification());
 		}
 		if (LocationupdatesserviceModule.database != null) {
@@ -353,7 +354,7 @@ public class LocationUpdatesService extends Service {
 		mLocationRequest.setInterval(UPDATE_INTERVAL_IN_MILLISECONDS);
 		mLocationRequest
 				.setFastestInterval(FASTEST_UPDATE_INTERVAL_IN_MILLISECONDS);
-		mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+		mLocationRequest.setPriority(LocationupdatesserviceModule.priority);
 	}
 
 	/**
@@ -380,7 +381,7 @@ public class LocationUpdatesService extends Service {
 
 			if (getClass().getName().equals(service.service.getClassName())) {
 				if (service.foreground) {
-					return false;
+					return true;
 				}
 			}
 		}
