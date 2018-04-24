@@ -1,39 +1,32 @@
-// This is a test harness for your module
-// You should do something interesting in this harness
-// to test out the module and to provide instructions
-// to users on how to use it by example.
+var win = Ti.UI.createWindow();
 
-
-// open a single window
-var win = Ti.UI.createWindow({
-	backgroundColor:'white'
-});
-var label = Ti.UI.createLabel();
-win.add(label);
-win.open();
-
-// TODO: write your module tests here
-var locationupdatesservice = require('ti.locationupdatesservice');
-Ti.API.info("module is => " + locationupdatesservice);
-
-label.text = locationupdatesservice.example();
-
-Ti.API.info("module exampleProp is => " + locationupdatesservice.exampleProp);
-locationupdatesservice.exampleProp = "This is a test value";
-
-if (Ti.Platform.name == "android") {
-	var proxy = locationupdatesservice.createExample({
-		message: "Creating an example Proxy",
-		backgroundColor: "red",
-		width: 100,
-		height: 100,
-		top: 100,
-		left: 150
+var LUS = require("ti.locationupdatesservice");
+win.addEventListener("open", function() {
+	console.log("open");
+	LUS.requestLocationUpdates({
+		interval : 10
 	});
+});
+win.addEventListener("close", function() {
+	console.log("TiGeoLogger: close");
+	LUS.removeLocationUpdates();
+});
 
-	proxy.printMessage("Hello world!");
-	proxy.message = "Hi world!.  It's me again.";
-	proxy.printMessage("Hello world!");
-	win.add(proxy);
-}
+LUS.config({
+	database : "geolog", // tablename the same
+	notification : {
+		channel : "cannel1",
+		title : "Your position",
+		stopTracking : "Stop tracking", // or null if you don't need
+		startTracking : "Start tracking", // or null if you don't need
 
+	}
+});
+LUS.addEventListener("ServiceConnectionChanged", function(e) {
+	console.log(e.connected);
+});
+LUS.addEventListener("LocationChanged", function(e) {
+	console.log(e.latitude + ',' + e.longitude + ' @' + e.time);
+});
+
+win.open();
