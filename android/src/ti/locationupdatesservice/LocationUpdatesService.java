@@ -1,13 +1,7 @@
 package ti.locationupdatesservice;
 
-import java.io.IOException;
-
 import org.appcelerator.titanium.TiApplication;
-import org.appcelerator.titanium.io.TiBaseFile;
-import org.appcelerator.titanium.io.TiFileFactory;
-import org.appcelerator.titanium.util.TiUIHelper;
 
-import android.R;
 import android.app.ActivityManager;
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -24,9 +18,8 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.IBinder;
 import android.content.ComponentName;
-import android.graphics.Bitmap;
 import android.os.Looper;
-import android.support.annotation.NonNull;
+//import android.support.annotation.NonNull;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.NotificationCompat;
 import android.util.Log;
@@ -39,22 +32,6 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
-/**
- * A bound and started service that is promoted to a foreground service when
- * location updates have been requested and all clients unbind.
- *
- * For apps running in the background on "O" devices, location is computed only
- * once every 10 minutes and delivered batched every 30 minutes. This
- * restriction applies even to apps targeting "N" or lower which are run on "O"
- * devices.
- *
- * This sample show how to use a long-running service for location updates. When
- * an activity is bound to this service, frequent location updates are
- * permitted. When the activity is removed from the foreground, the service
- * promotes itself to a foreground service, and location updates continue. When
- * the activity comes back to the foreground, the foreground service stops, and
- * the notification assocaited with that service is removed.
- */
 public class LocationUpdatesService extends Service {
 	private static final String PACKAGE_NAME = TiApplication.getInstance()
 			.getPackageName();
@@ -117,7 +94,7 @@ public class LocationUpdatesService extends Service {
 	private LocationCallback mLocationCallback;
 
 	private Handler mServiceHandler;
-	private static String LCAT = LocationupdatesserviceModule.LCAT;
+	private static String LCAT = "💎" + LocationupdatesserviceModule.LCAT;
 	/**
 	 * The current location.
 	 */
@@ -126,6 +103,7 @@ public class LocationUpdatesService extends Service {
 	public LocationUpdatesService() {
 		super();
 		ctx = TiApplication.getInstance().getApplicationContext();
+		Log.i(LCAT, "Service created");
 	}
 
 	@Override
@@ -163,7 +141,7 @@ public class LocationUpdatesService extends Service {
 
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
-		Log.i(TAG, "Service started");
+		Log.i(LCAT, "Service started");
 		boolean startedFromNotification = intent.getBooleanExtra(
 				EXTRA_STARTED_FROM_NOTIFICATION, false);
 
@@ -191,7 +169,7 @@ public class LocationUpdatesService extends Service {
 		// and binds with this service. The service should cease to be a
 		// foreground service
 		// when that happens.
-		Log.i(TAG, "in onBind()");
+		Log.i(LCAT, "in onBind()");
 		stopForeground(true);
 		mChangingConfiguration = false;
 		return mBinder;
@@ -204,7 +182,7 @@ public class LocationUpdatesService extends Service {
 		// and binds once again with this service. The service should cease to
 		// be a foreground
 		// service when that happens.
-		Log.i(TAG, "in onRebind()");
+		Log.i(LCAT, "in onRebind()");
 		stopForeground(true);
 		mChangingConfiguration = false;
 		super.onRebind(intent);
@@ -212,7 +190,7 @@ public class LocationUpdatesService extends Service {
 
 	@Override
 	public boolean onUnbind(Intent intent) {
-		Log.i(TAG, "Last client unbound from service");
+		Log.i(LCAT, "Last client unbound from service");
 
 		// Called when the last client (MainActivity in case of this sample)
 		// unbinds from this
@@ -220,7 +198,7 @@ public class LocationUpdatesService extends Service {
 		// MainActivity, we
 		// do nothing. Otherwise, we make this service a foreground service.
 		if (!mChangingConfiguration && Utils.requestingLocationUpdates(this)) {
-			Log.i(TAG, "Starting foreground service");
+			Log.i(LCAT, "Starting foreground service");
 			/*
 			 * // TODO(developer). If targeting O, use the following code. if
 			 * (Build.VERSION.SDK_INT == Build.VERSION_CODES.O) {
@@ -244,7 +222,7 @@ public class LocationUpdatesService extends Service {
 	 * log the {@link SecurityException}.
 	 */
 	public void requestLocationUpdates() {
-		Log.i(TAG, "Requesting location updates");
+		Log.i(LCAT, "Requesting location updates");
 		Utils.setRequestingLocationUpdates(this, true);
 		startService(new Intent(getApplicationContext(),
 				LocationUpdatesService.class));
@@ -253,7 +231,7 @@ public class LocationUpdatesService extends Service {
 					mLocationCallback, Looper.myLooper());
 		} catch (SecurityException unlikely) {
 			Utils.setRequestingLocationUpdates(this, false);
-			Log.e(TAG, "Lost location permission. Could not request updates. "
+			Log.e(LCAT, "Lost location permission. Could not request updates. "
 					+ unlikely);
 		}
 	}
@@ -263,14 +241,16 @@ public class LocationUpdatesService extends Service {
 	 * {@link SecurityException}.
 	 */
 	public void removeLocationUpdates() {
-		Log.i(TAG, "Removing location updates");
+		Log.i(LCAT, "Removing location updates inside service");
 		try {
 			mFusedLocationClient.removeLocationUpdates(mLocationCallback);
+			Log.i(LCAT, "removedLocationUpdates from mFusedLocationClient");
 			Utils.setRequestingLocationUpdates(this, false);
 			stopSelf();
+			Log.i(LCAT, "stopSelf ");
 		} catch (SecurityException unlikely) {
 			Utils.setRequestingLocationUpdates(this, true);
-			Log.e(TAG, "Lost location permission. Could not remove updates. "
+			Log.e(LCAT, "Lost location permission. Could not remove updates. "
 					+ unlikely);
 		}
 	}
@@ -281,10 +261,10 @@ public class LocationUpdatesService extends Service {
 	 */
 	@SuppressWarnings("deprecation")
 	private Notification getNotification() {
+		Log.i(LCAT, "getNotification started");
 		Intent intent = new Intent(this, LocationUpdatesService.class);
-
 		CharSequence text = Utils.getLocationText(mLocation);
-
+		Log.i(LCAT, text.toString());
 		// Extra to help us figure out if we arrived in onStartCommand via the
 		// notification or not.
 		intent.putExtra(EXTRA_STARTED_FROM_NOTIFICATION, true);
@@ -313,14 +293,17 @@ public class LocationUpdatesService extends Service {
 		// 0,
 		// new Intent(this, MainActivity.class), 0);
 
-		builder = new Notification.Builder(ctx, CHANNEL_ID)
-				.addAction(R("tracker_launch_icon", "drawable"),
-						LocationupdatesserviceModule.startTracking,
-						activityPendingIntent)
-				.addAction(R("tracker_cancel_icon", "drawable"),
-						LocationupdatesserviceModule.stopTracking,
-						servicePendingIntent)
-				.setContentTitle(Utils.getLocationTitle(ctx)).setOngoing(true)
+		builder = new Notification.Builder(ctx, CHANNEL_ID);
+		if (LocationupdatesserviceModule.startTracking != null)
+			builder.addAction(R("tracker_launch_icon", "drawable"),
+					LocationupdatesserviceModule.startTracking,
+					activityPendingIntent);
+		if (LocationupdatesserviceModule.stopTracking != null)
+			builder.addAction(R("tracker_cancel_icon", "drawable"),
+					LocationupdatesserviceModule.stopTracking,
+					servicePendingIntent);
+
+		builder.setContentTitle(Utils.getLocationTitle(ctx)).setOngoing(true)
 				.setPriority(Notification.PRIORITY_HIGH)
 				.setWhen(System.currentTimeMillis());
 
@@ -332,24 +315,22 @@ public class LocationUpdatesService extends Service {
 			mFusedLocationClient.getLastLocation().addOnCompleteListener(
 					new OnCompleteListener<Location>() {
 						@Override
-						public void onComplete(@NonNull Task<Location> task) {
+						public void onComplete(Task<Location> task) {
 							if (task.isSuccessful() && task.getResult() != null) {
 								mLocation = task.getResult();
 							} else {
-								Log.w(TAG, "Failed to get location.");
+								Log.w(LCAT, "Failed to get location.");
 							}
 						}
 					});
 		} catch (SecurityException unlikely) {
-			Log.e(TAG, "Lost location permission." + unlikely);
+			Log.e(LCAT, "Lost location permission." + unlikely);
 		}
 	}
 
 	private void onNewLocation(Location location) {
-		Log.i(TAG, "New location: " + location);
-
+		// Log.i(LCAT, "New location: " + location);
 		mLocation = location;
-
 		// Notify anyone listening for broadcasts about the new location.
 		Intent intent = new Intent(ACTION_BROADCAST);
 		intent.putExtra(EXTRA_LOCATION, location);
@@ -357,6 +338,10 @@ public class LocationUpdatesService extends Service {
 				.sendBroadcast(intent);
 		if (serviceIsRunningInForeground(ctx)) {
 			mNotificationManager.notify(NOTIFICATION_ID, getNotification());
+		}
+		if (LocationupdatesserviceModule.database != null) {
+			new SaveAndSend(ctx, location,
+					LocationupdatesserviceModule.database);
 		}
 	}
 
@@ -392,9 +377,10 @@ public class LocationUpdatesService extends Service {
 				.getSystemService(Context.ACTIVITY_SERVICE);
 		for (ActivityManager.RunningServiceInfo service : manager
 				.getRunningServices(Integer.MAX_VALUE)) {
+
 			if (getClass().getName().equals(service.service.getClassName())) {
 				if (service.foreground) {
-					return true;
+					return false;
 				}
 			}
 		}

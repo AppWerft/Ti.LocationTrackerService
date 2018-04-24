@@ -2,30 +2,45 @@ package ti.locationupdatesservice;
 
 import java.util.Date;
 
+import org.json.JSONArray;
+
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.location.Location;
 
 public class SaveAndSend {
 	private static int MODE_PRIVATE = 0;
+	private Context ctx;
+	private String database;
 
-	public SaveAndSend(Context ctx, Location location) {
-		saveToSQL(ctx, location);
+	public SaveAndSend(Context ctx, Location location, String database) {
+		this.ctx = ctx;
+		this.database = database;
+		saveToSQL(location);
 		sendToServer();
 	}
 
-	static public void saveToSQL(Context ctx, Location location) {
-		SQLiteDatabase db = ctx.openOrCreateDatabase(
-				LocationupdatesserviceModule.dbName, MODE_PRIVATE, null);
-		db.execSQL("CREATE TABLE IF NOT EXISTS geologger(Latitude Real,Longitude Real, Ctime Integer, Done Integer);");
-		db.execSQL("INSERT INTO geologgerVALUES(" + location.getLatitude()
-				+ "," + location.getLongitude() + "," + location.getTime()
-				+ ",0);");
+	private void saveToSQL(Location location) {
+		SQLiteDatabase db = ctx.openOrCreateDatabase(this.database,
+				MODE_PRIVATE, null);
+		db.execSQL("CREATE TABLE IF NOT EXISTS "
+				+ this.database
+				+ "(Latitude Real,Longitude Real, Ctime Integer, Done Integer);");
+		db.execSQL("INSERT INTO " + this.database + " VALUES("
+				+ location.getLatitude() + "," + location.getLongitude() + ","
+				+ location.getTime() + ",0);");
 		db.close();
 	}
 
-	static private void sendToServer() {
+	private void sendToServer() {
+		JSONArray resultList = new JSONArray();
+		SQLiteDatabase db = ctx.openOrCreateDatabase(this.database,
+				MODE_PRIVATE, null);
+		Cursor resultSet = db.rawQuery("Select * from " + this.database
+				+ " Where done=0", null);
 
+		db.close();
 	}
 
 }

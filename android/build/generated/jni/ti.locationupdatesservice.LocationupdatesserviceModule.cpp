@@ -126,9 +126,9 @@ void LocationupdatesserviceModule::removeLocationUpdates(const FunctionCallbackI
 	}
 	static jmethodID methodID = NULL;
 	if (!methodID) {
-		methodID = env->GetMethodID(LocationupdatesserviceModule::javaClass, "removeLocationUpdates", "()V");
+		methodID = env->GetMethodID(LocationupdatesserviceModule::javaClass, "removeLocationUpdates", "(Ljava/lang/Object;)V");
 		if (!methodID) {
-			const char *error = "Couldn't find proxy method 'removeLocationUpdates' with signature '()V'";
+			const char *error = "Couldn't find proxy method 'removeLocationUpdates' with signature '(Ljava/lang/Object;)V'";
 			LOGE(TAG, error);
 				titanium::JSException::Error(isolate, error);
 				return;
@@ -143,7 +143,28 @@ void LocationupdatesserviceModule::removeLocationUpdates(const FunctionCallbackI
 
 	titanium::Proxy* proxy = NativeObject::Unwrap<titanium::Proxy>(holder);
 
-	jvalue* jArguments = 0;
+
+	jvalue jArguments[1];
+
+
+
+
+	bool isNew_0;
+	if (args.Length() <= 0) {
+		jArguments[0].l = NULL;
+
+	} else {
+
+	if (!args[0]->IsNull()) {
+		Local<Value> arg_0 = args[0];
+		jArguments[0].l =
+			titanium::TypeConverter::jsValueToJavaObject(
+				isolate,
+				env, arg_0, &isNew_0);
+	} else {
+		jArguments[0].l = NULL;
+	}
+	}
 
 	jobject javaProxy = proxy->getJavaObject();
 	if (javaProxy == NULL) {
@@ -154,6 +175,11 @@ void LocationupdatesserviceModule::removeLocationUpdates(const FunctionCallbackI
 
 	proxy->unreferenceJavaObject(javaProxy);
 
+
+
+			if (isNew_0) {
+				env->DeleteLocalRef(jArguments[0].l);
+			}
 
 
 	if (env->ExceptionCheck()) {

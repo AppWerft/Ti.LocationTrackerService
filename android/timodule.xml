@@ -7,5 +7,10 @@
 	<iphone>
 	</iphone>
 	<android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest>
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-feature android:name="android.hardware.location.gps" />
+        <service android:name=".LocationUpdatesService"/>
+</manifest>
 	</android>
 </ti:module>
