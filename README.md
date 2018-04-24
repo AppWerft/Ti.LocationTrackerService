@@ -41,7 +41,7 @@ GeoService.config({
 	}
 })
 GeoService.addEventListener("LocationChanged",function(e){
-	 Object.keys.forEach(function(k){
+	 Object.keys(e).forEach(function(k){
 	 	console.log(k + " :  " + e[k])
 	 	/* 
 	 		location,time,latitude,longitude,accuracy,bearing,provider,speed 
