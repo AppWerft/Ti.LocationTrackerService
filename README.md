@@ -40,8 +40,8 @@ GeoService.config({
 		timeout : 100000
 	}
 })
-GeoService.addEventListener("LocationChanged",function(e){
-	 Object.keys(e).forEach(function(k){
+GeoService.addEventListener("location",function(e){
+	 Object.keys.forEach(function(k){
 	 	console.log(k + " :  " + e[k])
 	 	/* 
 	 		location,time,latitude,longitude,accuracy,bearing,provider,speed 
@@ -51,7 +51,9 @@ GeoService.addEventListener("LocationChanged",function(e){
 GeoService.requestLocationUpdates({
 	interval : 2 // sec.
 	duration : 3600 // optional,
-	priority : GeoService.PRIORITY_BALANCED_POWER_ACCURACY // or PRIORITY_LOW_POWER or PRIORITY_HIGH_ACCURACY
+	onlocation : function(e) { // optional
+	  // same as eventlistener
+	}
 });
 
 // later:

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resources xmlns:ns1="http://schemas.android.com/tools">
+<resources xmlns:ns1="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 	<declare-styleable name="RecyclerView"><attr format="string" name="layoutManager"/><attr name="android:orientation"/><attr name="android:descendantFocusability"/><attr format="integer" name="spanCount"/><attr format="boolean" name="reverseLayout"/><attr format="boolean" name="stackFromEnd"/><attr format="boolean" name="fastScrollEnabled"/><attr format="reference" name="fastScrollVerticalThumbDrawable"/><attr format="reference" name="fastScrollVerticalTrackDrawable"/><attr format="reference" name="fastScrollHorizontalThumbDrawable"/><attr format="reference" name="fastScrollHorizontalTrackDrawable"/></declare-styleable>
 	<declare-styleable name="ActionBar"><attr name="navigationMode">
             
@@ -362,6 +362,299 @@
             
             <enum name="screen" value="15"/>
         </attr></declare-styleable>
+	<declare-styleable name="AdsAttrs">
+<attr name="adSize" format="string"/>
+
+<attr name="adSizes" format="string"/>
+
+<attr name="adUnitId" format="string"/>
+</declare-styleable>
+	<declare-styleable name="LoadingImageView"><attr name="imageAspectRatioAdjust">
+<enum name="none" value="0"/>
+
+<enum name="adjust_width" value="1"/>
+
+<enum name="adjust_height" value="2"/>
+
+</attr>
+
+<attr name="imageAspectRatio" format="float"/>
+
+<attr name="circleCrop" format="boolean"/>
+</declare-styleable>
+	<declare-styleable name="SignInButton"><attr name="buttonSize" format="reference">
+<enum name="standard" value="0"/>
+
+<enum name="wide" value="1"/>
+
+<enum name="icon_only" value="2"/>
+
+</attr>
+<attr name="colorScheme" format="reference">
+<enum name="dark" value="0"/>
+
+<enum name="light" value="1"/>
+
+<enum name="auto" value="2"/>
+
+</attr>
+
+<attr name="scopeUris" format="reference|string"/>
+</declare-styleable>
+	<declare-styleable name="CastExpandedController">
+<attr name="castButtonColor"/>
+
+<attr name="castControlButtons"/>
+
+<attr name="castSeekBarProgressDrawable" format="reference"/>
+
+<attr name="castSeekBarThumbDrawable" format="reference"/>
+
+<attr name="castPlayButtonDrawable"/>
+
+<attr name="castPauseButtonDrawable"/>
+
+<attr name="castStopButtonDrawable"/>
+
+<attr name="castSkipPreviousButtonDrawable"/>
+
+<attr name="castSkipNextButtonDrawable"/>
+
+<attr name="castRewind30ButtonDrawable"/>
+
+<attr name="castForward30ButtonDrawable"/>
+
+<attr name="castMuteToggleButtonDrawable"/>
+
+<attr name="castClosedCaptionsButtonDrawable"/>
+</declare-styleable>
+	<declare-styleable name="CastIntroOverlay">
+<attr name="castBackgroundColor" format="color|reference"/>
+
+<attr name="castButtonBackgroundColor" format="color|reference"/>
+
+<attr name="castButtonTextAppearance" format="reference"/>
+
+<attr name="castButtonText" format="reference|string"/>
+
+<attr name="castTitleTextAppearance" format="reference"/>
+
+<attr name="castFocusRadius" format="dimension|reference"/>
+</declare-styleable>
+	<declare-styleable name="CastMiniController">
+<attr name="castShowImageThumbnail" format="boolean"/>
+
+<attr name="castTitleTextAppearance"/>
+
+<attr name="castSubtitleTextAppearance" format="reference"/>
+
+<attr name="castControlButtons" format="reference"/>
+
+<attr name="castBackground" format="color|reference"/>
+
+<attr name="castProgressBarColor" format="color"/>
+
+<attr name="castButtonColor" format="color|reference"/>
+
+<attr name="castPlayButtonDrawable" format="reference"/>
+
+<attr name="castPauseButtonDrawable" format="reference"/>
+
+<attr name="castStopButtonDrawable" format="reference"/>
+
+<attr name="castLargePlayButtonDrawable" format="reference"/>
+
+<attr name="castLargePauseButtonDrawable" format="reference"/>
+
+<attr name="castLargeStopButtonDrawable" format="reference"/>
+
+<attr name="castSkipPreviousButtonDrawable" format="reference"/>
+
+<attr name="castSkipNextButtonDrawable" format="reference"/>
+
+<attr name="castRewind30ButtonDrawable" format="reference"/>
+
+<attr name="castForward30ButtonDrawable" format="reference"/>
+
+<attr name="castMuteToggleButtonDrawable" format="reference"/>
+
+<attr name="castClosedCaptionsButtonDrawable" format="reference"/>
+</declare-styleable>
+	<declare-styleable name="CustomCastTheme">
+<attr name="castIntroOverlayStyle" format="reference"/>
+
+<attr name="castMiniControllerStyle" format="reference"/>
+
+<attr name="castExpandedControllerStyle" format="reference"/>
+</declare-styleable>
+	<declare-styleable name="MapAttrs"><attr name="mapType">
+<enum name="none" value="0"/>
+
+<enum name="normal" value="1"/>
+
+<enum name="satellite" value="2"/>
+
+<enum name="terrain" value="3"/>
+
+<enum name="hybrid" value="4"/>
+
+</attr>
+
+<attr name="cameraBearing" format="float"/>
+
+<attr name="cameraTargetLat" format="float"/>
+
+<attr name="cameraTargetLng" format="float"/>
+
+<attr name="cameraTilt" format="float"/>
+
+<attr name="cameraZoom" format="float"/>
+
+<attr name="liteMode" format="boolean"/>
+
+<attr name="uiCompass" format="boolean"/>
+
+<attr name="uiRotateGestures" format="boolean"/>
+
+<attr name="uiScrollGestures" format="boolean"/>
+
+<attr name="uiTiltGestures" format="boolean"/>
+
+<attr name="uiZoomControls" format="boolean"/>
+
+<attr name="uiZoomGestures" format="boolean"/>
+
+<attr name="useViewLifecycle" format="boolean"/>
+
+<attr name="zOrderOnTop" format="boolean"/>
+
+<attr name="uiMapToolbar" format="boolean"/>
+
+<attr name="ambientEnabled" format="boolean"/>
+
+<attr name="cameraMinZoomPreference" format="float"/>
+
+<attr name="cameraMaxZoomPreference" format="float"/>
+
+<attr name="latLngBoundsSouthWestLatitude" format="float"/>
+
+<attr name="latLngBoundsSouthWestLongitude" format="float"/>
+
+<attr name="latLngBoundsNorthEastLatitude" format="float"/>
+
+<attr name="latLngBoundsNorthEastLongitude" format="float"/>
+</declare-styleable>
+	<declare-styleable name="CustomWalletTheme"><attr name="windowTransitionStyle">
+<enum name="slide" value="1"/>
+
+<enum name="none" value="2"/>
+
+</attr>
+<attr name="toolbarTextColorStyle">
+<enum name="light" value="1"/>
+
+<enum name="dark" value="2"/>
+
+</attr>
+</declare-styleable>
+	<declare-styleable name="WalletFragmentOptions"><attr name="appTheme">
+<enum name="holo_dark" value="0"/>
+
+<enum name="holo_light" value="1"/>
+
+</attr>
+<attr name="environment">
+<enum name="production" value="1"/>
+
+<enum name="test" value="3"/>
+
+<enum name="sandbox" value="0"/>
+
+<enum name="strict_sandbox" value="2"/>
+
+</attr>
+
+<attr name="fragmentStyle" format="reference"/>
+<attr name="fragmentMode">
+<enum name="buyButton" value="1"/>
+
+<enum name="selectionDetails" value="2"/>
+
+</attr>
+</declare-styleable>
+	<declare-styleable name="WalletFragmentStyle"><attr name="buyButtonHeight" format="dimension">
+<enum name="match_parent" value="-1"/>
+
+<enum name="wrap_content" value="-2"/>
+
+</attr>
+<attr name="buyButtonWidth" format="dimension">
+<enum name="match_parent" value="-1"/>
+
+<enum name="wrap_content" value="-2"/>
+
+</attr>
+<attr name="buyButtonText">
+<enum name="buy_with" value="5"/>
+
+<enum name="logo_only" value="6"/>
+
+<enum name="donate_with" value="7"/>
+
+<enum name="buy_with_google" value="1"/>
+
+<enum name="buy_now" value="2"/>
+
+<enum name="book_now" value="3"/>
+
+<enum name="donate_with_google" value="4"/>
+
+</attr>
+<attr name="buyButtonAppearance">
+<enum name="google_wallet_classic" value="1"/>
+
+<enum name="google_wallet_grayscale" value="2"/>
+
+<enum name="google_wallet_monochrome" value="3"/>
+
+<enum name="android_pay_dark" value="4"/>
+
+<enum name="android_pay_light" value="5"/>
+
+<enum name="android_pay_light_with_border" value="6"/>
+
+<enum name="classic" value="1"/>
+
+<enum name="grayscale" value="2"/>
+
+<enum name="monochrome" value="3"/>
+
+</attr>
+
+<attr name="maskedWalletDetailsTextAppearance" format="reference"/>
+
+<attr name="maskedWalletDetailsHeaderTextAppearance" format="reference"/>
+
+<attr name="maskedWalletDetailsBackground" format="color|reference"/>
+
+<attr name="maskedWalletDetailsButtonTextAppearance" format="reference"/>
+
+<attr name="maskedWalletDetailsButtonBackground" format="color|reference"/>
+
+<attr name="maskedWalletDetailsLogoTextColor" format="color"/>
+<attr name="maskedWalletDetailsLogoImageType">
+<enum name="google_wallet_classic" value="1"/>
+
+<enum name="google_wallet_monochrome" value="2"/>
+
+<enum name="android_pay" value="3"/>
+
+<enum name="classic" value="1"/>
+
+<enum name="monochrome" value="2"/>
+
+</attr>
+</declare-styleable>
 	<dimen name="fastscroll_default_thickness">8dp</dimen>
 	<dimen name="fastscroll_margin">0dp</dimen>
 	<dimen name="fastscroll_minimum_range">50dp</dimen>
@@ -503,6 +796,34 @@
 	<dimen name="design_tab_scrollable_min_width">72dp</dimen>
 	<dimen name="design_tab_text_size">14sp</dimen>
 	<dimen name="design_tab_text_size_2line">12sp</dimen>
+	<dimen name="cast_expanded_controller_ad_background_layout_height">350dp</dimen>
+	<dimen name="cast_expanded_controller_ad_background_layout_width">-1px</dimen>
+	<dimen name="cast_expanded_controller_ad_layout_height">350dp</dimen>
+	<dimen name="cast_expanded_controller_ad_layout_width">420dp</dimen>
+	<dimen name="cast_expanded_controller_control_button_margin">24dp</dimen>
+	<dimen name="cast_expanded_controller_control_toolbar_min_height">56dp</dimen>
+	<dimen name="cast_expanded_controller_margin_between_seek_bar_and_control_buttons">12dp</dimen>
+	<dimen name="cast_expanded_controller_margin_between_status_text_and_seek_bar">24dp</dimen>
+	<dimen name="cast_intro_overlay_button_margin_bottom">50dp</dimen>
+	<dimen name="cast_intro_overlay_focus_radius">35dp</dimen>
+	<dimen name="cast_intro_overlay_title_margin_top">100dp</dimen>
+	<dimen name="cast_libraries_material_featurehighlight_center_horizontal_offset">20dp</dimen>
+	<dimen name="cast_libraries_material_featurehighlight_center_threshold">88dp</dimen>
+	<dimen name="cast_libraries_material_featurehighlight_inner_margin">20dp</dimen>
+	<dimen name="cast_libraries_material_featurehighlight_inner_radius">40dp</dimen>
+	<dimen name="cast_libraries_material_featurehighlight_outer_padding">40dp</dimen>
+	<dimen name="cast_libraries_material_featurehighlight_text_body_size">16sp</dimen>
+	<dimen name="cast_libraries_material_featurehighlight_text_header_size">20sp</dimen>
+	<dimen name="cast_libraries_material_featurehighlight_text_horizontal_margin">40dp</dimen>
+	<dimen name="cast_libraries_material_featurehighlight_text_horizontal_offset">20dp</dimen>
+	<dimen name="cast_libraries_material_featurehighlight_text_max_width">320dp</dimen>
+	<dimen name="cast_libraries_material_featurehighlight_text_vertical_space">16dp</dimen>
+	<dimen name="cast_mini_controller_control_button_margin">16dp</dimen>
+	<dimen name="cast_mini_controller_icon_height">64dp</dimen>
+	<dimen name="cast_mini_controller_icon_width">64dp</dimen>
+	<dimen name="cast_notification_image_size">64dp</dimen>
+	<dimen name="cast_tracks_chooser_dialog_no_message_text_size">18sp</dimen>
+	<dimen name="cast_tracks_chooser_dialog_row_text_size">18sp</dimen>
 	<item name="item_touch_helper_previous_elevation" type="id"/>
 	<item name="ghost_view" type="id"/>
 	<item name="parent_matrix" type="id"/>
@@ -548,6 +869,20 @@
 	<item name="textinput_counter" type="id"/>
 	<item name="textinput_error" type="id"/>
 	<item name="view_offset_helper" type="id"/>
+	<item name="cast_notification_id" type="id"/>
+	<item name="cast_expanded_controller_seekbar_disabled_alpha" format="float" type="dimen">0.4</item>
+	<item name="cast_button_type_closed_caption" type="id"/>
+	<item name="cast_button_type_custom" type="id"/>
+	<item name="cast_button_type_empty" type="id"/>
+	<item name="cast_button_type_forward_30_seconds" type="id"/>
+	<item name="cast_button_type_mute_toggle" type="id"/>
+	<item name="cast_button_type_play_pause_toggle" type="id"/>
+	<item name="cast_button_type_rewind_30_seconds" type="id"/>
+	<item name="cast_button_type_skip_next" type="id"/>
+	<item name="cast_button_type_skip_previous" type="id"/>
+	<item name="cast_featurehighlight_help_text_body_view" type="id"/>
+	<item name="cast_featurehighlight_help_text_header_view" type="id"/>
+	<item name="cast_featurehighlight_view" type="id"/>
 	<color name="notification_material_background_media_default_color">#ff424242</color>
 	<color name="primary_text_default_material_dark">#ffffffff</color>
 	<color name="secondary_text_default_material_dark">#b3ffffff</color>
@@ -623,6 +958,36 @@
 	<color name="design_fab_stroke_top_inner_color">#1AFFFFFF</color>
 	<color name="design_fab_stroke_top_outer_color">#2EFFFFFF</color>
 	<color name="design_snackbar_background_color">#323232</color>
+	<color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
+	<color name="common_google_signin_btn_text_dark_disabled">#1F000000</color>
+	<color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
+	<color name="common_google_signin_btn_text_dark_pressed">@android:color/white</color>
+	<color name="common_google_signin_btn_text_light_default">#90000000</color>
+	<color name="common_google_signin_btn_text_light_disabled">#1F000000</color>
+	<color name="common_google_signin_btn_text_light_focused">#90000000</color>
+	<color name="common_google_signin_btn_text_light_pressed">#DE000000</color>
+	<color name="cast_expanded_controller_ad_container_white_stripe_color">#1AFFFFFF</color>
+	<color name="cast_expanded_controller_ad_label_background_color">#2F000000</color>
+	<color name="cast_expanded_controller_background_color">#000000</color>
+	<color name="cast_expanded_controller_progress_text_color">#E5FFFFFF</color>
+	<color name="cast_expanded_controller_seek_bar_progress_background_tint_color">#46FFFFFF</color>
+	<color name="cast_expanded_controller_text_color">#FFFFFF</color>
+	<color name="cast_intro_overlay_background_color">#CC000000</color>
+	<color name="cast_intro_overlay_button_background_color">#BB33B5E5</color>
+	<color name="cast_libraries_material_featurehighlight_outer_highlight_default_color">#2196F3</color>
+	<color name="cast_libraries_material_featurehighlight_text_body_color">#FFFFFFFF</color>
+	<color name="cast_libraries_material_featurehighlight_text_header_color">#FFFFFFFF</color>
+	<color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+	<color name="wallet_bright_foreground_holo_dark">#fff3f3f3</color>
+	<color name="wallet_bright_foreground_holo_light">#ff000000</color>
+	<color name="wallet_dim_foreground_disabled_holo_dark">#80bebebe</color>
+	<color name="wallet_dim_foreground_holo_dark">#bebebe</color>
+	<color name="wallet_highlighted_text_holo_dark">#6633b5e5</color>
+	<color name="wallet_highlighted_text_holo_light">#6633b5e5</color>
+	<color name="wallet_hint_foreground_holo_dark">#808080</color>
+	<color name="wallet_hint_foreground_holo_light">#808080</color>
+	<color name="wallet_holo_blue_light">#ff33b5e5</color>
+	<color name="wallet_link_text_light">#0000ee</color>
 	<integer name="cancel_button_image_alpha">127</integer>
 	<integer name="abc_config_activityDefaultDur">220</integer>
 	<integer name="abc_config_activityShortDur">150</integer>
@@ -633,6 +998,8 @@
 	<integer name="design_snackbar_text_max_lines">2</integer>
 	<integer name="hide_password_duration">320</integer>
 	<integer name="show_password_duration">200</integer>
+	<integer name="google_play_services_version">11020000</integer>
+	<integer name="cast_libraries_material_featurehighlight_pulse_base_alpha">138</integer>
 	<style name="TextAppearance.Compat.Notification.Info.Media"/>
 	<style name="TextAppearance.Compat.Notification.Line2.Media" parent="TextAppearance.Compat.Notification.Info.Media"/>
 	<style name="TextAppearance.Compat.Notification.Media"/>
@@ -2187,10 +2554,116 @@
         <item name="passwordToggleTint">@color/design_tint_password_toggle</item>
         <item name="passwordToggleContentDescription">@string/password_toggle_content_description</item>
     </style>
+	<style name="Theme.IAPTheme" parent="android:Theme">
+<item name="android:windowIsFloating">true</item>
+<item name="android:windowBackground">@android:color/transparent</item>
+<item name="android:windowContentOverlay">@null</item>
+<item name="android:windowNoTitle">true</item>
+<item name="android:backgroundDimEnabled">false</item>
+<item name="android:windowIsTranslucent">true</item>
+</style>
+	<style name="Theme.AppInvite.Preview" parent="Theme.AppInvite.Preview.Base">
+<item name="android:colorBackground">@android:color/white</item>
+<item name="android:windowBackground">@android:color/white</item>
+<item name="android:windowIsTranslucent">true</item>
+</style>
+	<style name="Theme.AppInvite.Preview.Base" parent="@android:style/Theme.Light.NoTitleBar">
+</style>
+	<style name="CastExpandedController">
+<item name="castForward30ButtonDrawable">@drawable/cast_ic_expanded_controller_forward30</item>
+<item name="castClosedCaptionsButtonDrawable">@drawable/cast_ic_expanded_controller_closed_caption</item>
+<item name="castControlButtons">@array/cast_expanded_controller_default_control_buttons</item>
+<item name="castSkipNextButtonDrawable">@drawable/cast_ic_expanded_controller_skip_next</item>
+<item name="castPauseButtonDrawable">@drawable/cast_ic_expanded_controller_pause</item>
+<item name="castStopButtonDrawable">@drawable/cast_ic_expanded_controller_stop</item>
+<item name="castButtonColor">@null</item>
+<item name="castRewind30ButtonDrawable">@drawable/cast_ic_expanded_controller_rewind30</item>
+<item name="castSkipPreviousButtonDrawable">@drawable/cast_ic_expanded_controller_skip_previous</item>
+<item name="castMuteToggleButtonDrawable">@drawable/cast_ic_expanded_controller_mute</item>
+<item name="castPlayButtonDrawable">@drawable/cast_ic_expanded_controller_play</item>
+<item name="castSeekBarProgressDrawable">@drawable/cast_expanded_controller_seekbar_track</item>
+<item name="castSeekBarThumbDrawable">@drawable/cast_expanded_controller_seekbar_thumb</item>
+</style>
+	<style name="CastIntroOverlay">
+<item name="castButtonTextAppearance">@style/TextAppearance.CastIntroOverlay.Button</item>
+<item name="castFocusRadius">@dimen/cast_intro_overlay_focus_radius</item>
+<item name="castTitleTextAppearance">@style/TextAppearance.CastIntroOverlay.Title</item>
+<item name="castButtonText">@string/cast_intro_overlay_button_text</item>
+<item name="castBackgroundColor">@color/cast_intro_overlay_background_color</item>
+<item name="castButtonBackgroundColor">@color/cast_intro_overlay_button_background_color</item>
+</style>
+	<style name="CastMiniController">
+<item name="castLargePauseButtonDrawable">@drawable/cast_ic_mini_controller_pause_large</item>
+<item name="castForward30ButtonDrawable">@drawable/cast_ic_mini_controller_forward30</item>
+<item name="castClosedCaptionsButtonDrawable">@drawable/cast_ic_mini_controller_closed_caption</item>
+<item name="castControlButtons">@array/cast_mini_controller_default_control_buttons</item>
+<item name="castSkipNextButtonDrawable">@drawable/cast_ic_mini_controller_skip_next</item>
+<item name="castSubtitleTextAppearance">@style/TextAppearance.CastMiniController.Subtitle</item>
+<item name="castPauseButtonDrawable">@drawable/cast_ic_mini_controller_pause</item>
+<item name="castStopButtonDrawable">@drawable/cast_ic_mini_controller_stop</item>
+<item name="castButtonColor">@null</item>
+<item name="castBackground">?android:attr/colorBackground</item>
+<item name="castLargePlayButtonDrawable">@drawable/cast_ic_mini_controller_play_large</item>
+<item name="castTitleTextAppearance">@style/TextAppearance.CastMiniController.Title</item>
+<item name="castLargeStopButtonDrawable">@drawable/cast_ic_mini_controller_stop_large</item>
+<item name="castRewind30ButtonDrawable">@drawable/cast_ic_mini_controller_rewind30</item>
+<item name="castSkipPreviousButtonDrawable">@drawable/cast_ic_mini_controller_skip_prev</item>
+<item name="castMuteToggleButtonDrawable">@drawable/cast_ic_mini_controller_mute</item>
+<item name="castPlayButtonDrawable">@drawable/cast_ic_mini_controller_play</item>
+<item name="castShowImageThumbnail">true</item>
+</style>
+	<style name="CustomCastTheme">
+<item name="castExpandedControllerStyle">@style/CastExpandedController</item>
+<item name="castIntroOverlayStyle">@style/CastIntroOverlay</item>
+<item name="castMiniControllerStyle">@style/CastMiniController</item>
+</style>
+	<style name="TextAppearance.CastIntroOverlay.Button" parent="android:style/TextAppearance">
+<item name="android:textColor">#FFFFFF</item>
+</style>
+	<style name="TextAppearance.CastIntroOverlay.Title" parent="android:style/TextAppearance.Large">
+<item name="android:textColor">#FFFFFF</item>
+</style>
+	<style name="TextAppearance.CastMiniController.Subtitle" parent="android:style/TextAppearance.Small">
+</style>
+	<style name="TextAppearance.CastMiniController.Title" parent="android:style/TextAppearance.Medium">
+</style>
+	<style name="WalletFragmentDefaultButtonTextAppearance">
+<item name="android:textColorLink">@color/wallet_link_text_light</item>
+<item name="android:textColorHint">@color/wallet_hint_foreground_holo_light</item>
+<item name="android:textStyle">normal</item>
+<item name="android:textSize">18sp</item>
+<item name="android:textColorHighlight">@color/wallet_highlighted_text_holo_light</item>
+<item name="android:textColor">@color/wallet_primary_text_holo_light</item>
+</style>
+	<style name="WalletFragmentDefaultDetailsHeaderTextAppearance" parent="WalletFragmentDefaultDetailsTextAppearance">
+<item name="android:textStyle">bold</item>
+</style>
+	<style name="WalletFragmentDefaultDetailsTextAppearance">
+<item name="android:textColorLink">@color/wallet_holo_blue_light</item>
+<item name="android:textColorHint">@color/wallet_hint_foreground_holo_dark</item>
+<item name="android:textStyle">normal</item>
+<item name="android:textSize">14sp</item>
+<item name="android:textColorHighlight">@color/wallet_highlighted_text_holo_dark</item>
+<item name="android:textColor">@color/wallet_secondary_text_holo_dark</item>
+</style>
+	<style name="WalletFragmentDefaultStyle">
+<item name="maskedWalletDetailsLogoImageType">android_pay</item>
+<item name="maskedWalletDetailsLogoTextColor">@color/wallet_bright_foreground_holo_dark</item>
+<item name="buyButtonText">buy_with</item>
+<item name="maskedWalletDetailsTextAppearance">@style/WalletFragmentDefaultDetailsTextAppearance</item>
+<item name="buyButtonAppearance">android_pay_dark</item>
+<item name="maskedWalletDetailsButtonTextAppearance">@style/WalletFragmentDefaultButtonTextAppearance</item>
+<item name="maskedWalletDetailsButtonBackground">@android:drawable/btn_default</item>
+<item name="buyButtonWidth">match_parent</item>
+<item name="maskedWalletDetailsHeaderTextAppearance">@style/WalletFragmentDefaultDetailsHeaderTextAppearance</item>
+<item name="buyButtonHeight">48dp</item>
+<item name="maskedWalletDetailsBackground">@color/wallet_bright_foreground_holo_light</item>
+</style>
 	<attr format="reference" name="drawerArrowStyle"/>
 	<attr format="dimension" name="height"/>
 	<attr format="boolean" name="isLightTheme"/>
 	<attr format="string" name="title"/>
+	<attr name="castExpandedControllerToolbarStyle" format="reference"/>
 	<bool name="abc_action_bar_embed_tabs">true</bool>
 	<bool name="abc_allow_stacked_button_bar">true</bool>
 	<bool name="abc_config_actionMenuItemAllCaps">true</bool>
@@ -2240,8 +2713,74 @@
 	<string name="app_name">Titanium UI Module</string>
 	<string name="drawer_layout_open">Open</string>
 	<string name="drawer_layout_close">Close</string>
+	<string name="common_google_play_services_enable_button" msgid="2523291102206661146">Enable</string>
+	<string name="common_google_play_services_enable_text" msgid="227660514972886228"><xliff:g id="app_name">%1$s</xliff:g> won\'t work unless you enable Google Play services.</string>
+	<string name="common_google_play_services_enable_title" msgid="5122002158466380389">Enable Google Play services</string>
+	<string name="common_google_play_services_install_button" msgid="7153882981874058840">Install</string>
+	<string name="common_google_play_services_install_text"><xliff:g id="app_name">%1$s</xliff:g> won\'t run without Google Play services, which are missing from your device.</string>
+	<string name="common_google_play_services_install_title" msgid="7215213145546190223">Get Google Play services</string>
+	<string name="common_google_play_services_notification_ticker">Google Play services error</string>
+	<string name="common_google_play_services_unsupported_text"><xliff:g id="app_name">%1$s</xliff:g> won\'t run without Google Play services, which are not supported by your device.</string>
+	<string name="common_google_play_services_update_button" msgid="6556509956452265614">Update</string>
+	<string name="common_google_play_services_update_text" msgid="9053896323427875356"><xliff:g id="app_name">%1$s</xliff:g> won\'t run unless you update Google Play services.</string>
+	<string name="common_google_play_services_update_title" msgid="6006316683626838685">Update Google Play services</string>
+	<string name="common_google_play_services_updating_text"><xliff:g id="app_name">%1$s</xliff:g> won\'t run without Google Play services, which are currently updating.</string>
+	<string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+	<string name="common_open_on_phone">Open on phone</string>
+	<string name="common_signin_button_text">Sign in</string>
+	<string name="common_signin_button_text_long">Sign in with Google</string>
+	<string name="common_google_play_services_unknown_issue"><xliff:g id="app_name">%1$s</xliff:g> is having trouble with Google Play services. Please try again.</string>
+	<string name="cast_notification_connected_message">Connected to <xliff:g id="name">%1$s</xliff:g></string>
+	<string name="cast_notification_connecting_message">Connecting to <xliff:g id="name">%1$s</xliff:g></string>
+	<string name="cast_notification_disconnect">Disconnect</string>
+	<string name="cast_ad_label">Ad</string>
+	<string name="cast_casting_to_device">Casting to %1$s</string>
+	<string name="cast_closed_captions">Closed captions</string>
+	<string name="cast_closed_captions_unavailable">Closed captions unavailable</string>
+	<string name="cast_disconnect">Disconnect</string>
+	<string name="cast_expanded_controller_ad_image_description">Image displayed while the cast receiver is playing an ad"</string>
+	<string name="cast_expanded_controller_ad_in_progress">Ad in progress…</string>
+	<string name="cast_expanded_controller_background_image">Album art</string>
+	<string name="cast_expanded_controller_live_stream_indicator">Live stream</string>
+	<string name="cast_expanded_controller_loading">Loading…</string>
+	<string name="cast_expanded_controller_skip_ad_label">Skip</string>
+	<string name="cast_forward">Forward</string>
+	<string name="cast_forward_10">Forward ten seconds</string>
+	<string name="cast_forward_30">Forward thirty seconds</string>
+	<string name="cast_intro_overlay_button_text">@android:string/ok</string>
+	<string name="cast_invalid_stream_duration_text" translatable="false">--:--</string>
+	<string name="cast_invalid_stream_position_text" translatable="false">--:--</string>
+	<string name="cast_mute">Mute</string>
+	<string name="cast_pause">Pause</string>
+	<string name="cast_play">Play</string>
+	<string name="cast_rewind">Rewind</string>
+	<string name="cast_rewind_10">Rewind ten seconds</string>
+	<string name="cast_rewind_30">Rewind thirty seconds</string>
+	<string name="cast_seek_bar">Playback seek control</string>
+	<string name="cast_skip_next">Skip to next item</string>
+	<string name="cast_skip_prev">Skip to previous item</string>
+	<string name="cast_stop">Stop</string>
+	<string name="cast_stop_live_stream">Stop live stream</string>
+	<string name="cast_tracks_chooser_dialog_audio">Audio</string>
+	<string name="cast_tracks_chooser_dialog_cancel">Cancel</string>
+	<string name="cast_tracks_chooser_dialog_closed_captions">Closed Captions</string>
+	<string name="cast_tracks_chooser_dialog_default_track_name">Track <xliff:g id="position" example="2">%1$d</xliff:g></string>
+	<string name="cast_tracks_chooser_dialog_none">None</string>
+	<string name="cast_tracks_chooser_dialog_ok">OK</string>
+	<string name="cast_tracks_chooser_dialog_subtitles">Subtitles</string>
+	<string name="cast_unmute">Unmute</string>
+	<string name="wallet_buy_button_place_holder">Buy with Google</string>
 	<string name="ic_start_tracking">Start</string>
 	<string name="ic_stop_tracking">Stop</string>
 	<drawable name="notification_template_icon_bg">#3333B5E5</drawable>
 	<drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+	<array name="cast_expanded_controller_default_control_buttons"><item>@id/cast_button_type_closed_caption</item>
+<item>@id/cast_button_type_skip_previous</item>
+<item>@id/cast_button_type_skip_next</item>
+<item>@id/cast_button_type_mute_toggle</item>
+</array>
+	<array name="cast_mini_controller_default_control_buttons"><item>@id/cast_button_type_empty</item>
+<item>@id/cast_button_type_empty</item>
+<item>@id/cast_button_type_play_pause_toggle</item>
+</array>
 </resources>

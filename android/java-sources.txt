@@ -7,5 +7,6 @@
 "/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationUpdatesService/android/build/generated/r/android/support/design/R.java"
 "/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationUpdatesService/android/build/generated/r/android/support/v7/appcompat/R.java"
 "/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationUpdatesService/android/build/generated/r/android/support/v7/cardview/R.java"
+"/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationUpdatesService/android/build/generated/r/com/google/android/gms/R.java"
 "/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationUpdatesService/android/build/generated/r/ti/locationupdatesservice/R.java"
 "/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationUpdatesService/android/build/generated/r/ti/modules/titanium/ui/R.java"

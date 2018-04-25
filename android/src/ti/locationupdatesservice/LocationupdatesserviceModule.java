@@ -12,6 +12,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import org.appcelerator.kroll.KrollDict;
+import org.appcelerator.kroll.KrollFunction;
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.annotations.Kroll;
 import org.appcelerator.kroll.common.Log;
@@ -19,6 +20,7 @@ import org.appcelerator.titanium.TiApplication;
 
 import com.google.android.gms.location.LocationRequest;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -28,6 +30,8 @@ import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.LocalBroadcastManager;
 import android.graphics.Bitmap;
 import android.location.Location;
@@ -63,8 +67,8 @@ public class LocationupdatesserviceModule extends KrollModule {
 	public static String database = null;
 	public static int interval = 10; // sec.
 	public static int duration = 0;
-	public static int priority = LocationRequest.PRIORITY_NO_POWER;
-
+	public static int priority = LocationRequest.PRIORITY_LOW_POWER;
+	public static KrollFunction onLocationCallback;
 	public static String rootActivityClassName = "";
 	final static String ACTION = "LocationUpdatesServiceAction";
 	final static int RQS_STOP_TRACKER = 0;
@@ -126,6 +130,8 @@ public class LocationupdatesserviceModule extends KrollModule {
 		public void onReceive(Context context, Intent intent) {
 			Location location = intent
 					.getParcelableExtra(LocationUpdatesService.EXTRA_LOCATION);
+			boolean isforeground = intent
+					.getBooleanExtra("INFOREGROUND", false);
 			KrollDict res = new KrollDict();
 			res.put("time", location.getTime());
 			res.put("latitude", location.getLatitude());
@@ -134,11 +140,15 @@ public class LocationupdatesserviceModule extends KrollModule {
 			res.put("bearing", location.getBearing());
 			res.put("provider", location.getProvider());
 			res.put("speed", location.getSpeed());
+			res.put("isforeground", isforeground);
 			if (location != null && hasListeners("LocationChanged")) {
 				fireEvent("LocationChanged", res);
 			}
 			if (location != null && hasListeners("location")) {
 				fireEvent("location", res);
+			}
+			if (onLocationCallback != null) {
+				onLocationCallback.call(getKrollObject(), res);
 			}
 		}
 	}
@@ -165,6 +175,10 @@ public class LocationupdatesserviceModule extends KrollModule {
 
 	@Kroll.method
 	public void requestLocationUpdates(KrollDict opts) {
+		if (!checkPermissions()) {
+			Log.w(LCAT, "no permission granted");
+			return;
+		}
 		Log.i(LCAT, "===> requestLocationUpdates" + opts.toString());
 		if (opts.containsKeyStartingWith("interval"))
 			interval = opts.getInt("interval");
@@ -172,6 +186,8 @@ public class LocationupdatesserviceModule extends KrollModule {
 			priority = opts.getInt("priority");
 		if (opts.containsKeyStartingWith("duration"))
 			duration = opts.getInt("duration");
+		if (opts.containsKeyStartingWith("onlocation"))
+			onLocationCallback = (KrollFunction) (opts.get("onlocation"));
 		if (duration > 0) {
 			Timer timer = new Timer();
 			timer.schedule(new TimerTask() {
@@ -231,6 +247,12 @@ public class LocationupdatesserviceModule extends KrollModule {
 		int stringId = applicationInfo.labelRes;
 		return stringId == 0 ? applicationInfo.nonLocalizedLabel.toString()
 				: context.getString(stringId);
+	}
+
+	private boolean checkPermissions() {
+		return PackageManager.PERMISSION_GRANTED == ActivityCompat
+				.checkSelfPermission(ctx,
+						Manifest.permission.ACCESS_FINE_LOCATION);
 	}
 
 }

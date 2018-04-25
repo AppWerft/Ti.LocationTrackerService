@@ -4,7 +4,8 @@ var LUS = require("ti.locationupdatesservice");
 win.addEventListener("open", function() {
 	console.log("open");
 	LUS.requestLocationUpdates({
-		interval : 10
+		interval : 10,
+		priority: LUS.PRIORITY_BALANCED_POWER_ACCURACY
 	});
 });
 win.addEventListener("close", function() {

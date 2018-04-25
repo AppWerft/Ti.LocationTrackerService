@@ -48,7 +48,7 @@ public class LocationUpdatesService extends Service {
 	static final String EXTRA_LOCATION = PACKAGE_NAME + ".location";
 	private static final String EXTRA_STARTED_FROM_NOTIFICATION = PACKAGE_NAME
 			+ ".started_from_notification";
-	private Notification.Builder builder;
+
 	private final IBinder mBinder = new LocalBinder();
 
 	/**
@@ -108,6 +108,7 @@ public class LocationUpdatesService extends Service {
 
 	@Override
 	public void onCreate() {
+		Log.i(LCAT, "onCreate of services");
 		mFusedLocationClient = LocationServices
 				.getFusedLocationProviderClient(this);
 
@@ -293,7 +294,9 @@ public class LocationUpdatesService extends Service {
 		// 0,
 		// new Intent(this, MainActivity.class), 0);
 
-		builder = new Notification.Builder(ctx, CHANNEL_ID);
+		// https://stackoverflow.com/questions/45462666/notificationcompat-builder-deprecated-in-android-o
+
+		Notification.Builder builder = new Notification.Builder(ctx);
 		if (LocationupdatesserviceModule.startTracking != null)
 			builder.addAction(R("tracker_launch_icon", "drawable"),
 					LocationupdatesserviceModule.startTracking,
@@ -306,7 +309,9 @@ public class LocationUpdatesService extends Service {
 		builder.setContentTitle(Utils.getLocationTitle(ctx)).setOngoing(true)
 				.setPriority(Notification.PRIORITY_HIGH)
 				.setWhen(System.currentTimeMillis());
-
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+			builder.setChannelId(CHANNEL_ID); // Channel ID
+		}
 		return builder.build();
 	}
 
@@ -329,7 +334,6 @@ public class LocationUpdatesService extends Service {
 	}
 
 	private void onNewLocation(Location location) {
-		// Log.i(LCAT, "New location: " + location);
 		mLocation = location;
 		// Notify anyone listening for broadcasts about the new location.
 		Intent intent = new Intent(ACTION_BROADCAST);
@@ -337,9 +341,10 @@ public class LocationUpdatesService extends Service {
 		LocalBroadcastManager.getInstance(getApplicationContext())
 				.sendBroadcast(intent);
 		if (serviceIsRunningInForeground(ctx)) {
-			Log.i(LCAT, "serviceIsRunningInForeground");
+			Log.i(LCAT, "Foreground");
 			mNotificationManager.notify(NOTIFICATION_ID, getNotification());
-		}
+		} else
+			Log.i(LCAT, "Backgroundground");
 		if (LocationupdatesserviceModule.database != null) {
 			new SaveAndSend(ctx, location,
 					LocationupdatesserviceModule.database);
@@ -350,10 +355,12 @@ public class LocationUpdatesService extends Service {
 	 * Sets the location request parameters.
 	 */
 	private void createLocationRequest() {
+		Log.i(LCAT, "createLocationRequest: " + UPDATE_INTERVAL_IN_MILLISECONDS);
 		mLocationRequest = new LocationRequest();
 		mLocationRequest.setInterval(UPDATE_INTERVAL_IN_MILLISECONDS);
 		mLocationRequest
 				.setFastestInterval(FASTEST_UPDATE_INTERVAL_IN_MILLISECONDS);
+		Log.i(LCAT, "setPriority: " + LocationupdatesserviceModule.priority);
 		mLocationRequest.setPriority(LocationupdatesserviceModule.priority);
 	}
 
@@ -373,12 +380,12 @@ public class LocationUpdatesService extends Service {
 	 * @param context
 	 *            The {@link Context}.
 	 */
+	@SuppressWarnings("deprecation")
 	public boolean serviceIsRunningInForeground(Context context) {
 		ActivityManager manager = (ActivityManager) context
 				.getSystemService(Context.ACTIVITY_SERVICE);
 		for (ActivityManager.RunningServiceInfo service : manager
 				.getRunningServices(Integer.MAX_VALUE)) {
-
 			if (getClass().getName().equals(service.service.getClassName())) {
 				if (service.foreground) {
 					return true;

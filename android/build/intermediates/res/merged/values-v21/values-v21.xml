@@ -301,6 +301,8 @@
         <item name="android:stateListAnimator">@animator/design_appbar_state_list_animator</item>
     </style>
 	<style name="Base.Widget.Design.AppBarLayout" parent="Base.V21.Widget.Design.AppBarLayout"/>
+	<style name="Theme.AppInvite.Preview.Base" parent="@android:style/Theme.Material.Light.DialogWhenLarge.NoActionBar">
+</style>
 	<color name="notification_action_color_filter">@color/secondary_text_default_material_light</color>
 	<dimen name="notification_content_margin_start">0dp</dimen>
 	<dimen name="notification_main_column_padding_top">0dp</dimen>
