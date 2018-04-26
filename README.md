@@ -49,8 +49,8 @@ GeoService.addEventListener("location",function(e){
 	 });
 });
 GeoService.requestLocationUpdates({
-	interval : 2 // sec.
-	duration : 3600 // optional,
+	interval : 2, // sec.
+	duration : 3600, // optional,
 	onlocation : function(e) { // optional
 	  // same as eventlistener
 	}
