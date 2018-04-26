@@ -33,9 +33,9 @@ var Tracker = GeoService.createTracker(opts,function(){
 Tracker.setNotification(notification({
 		channel : "cannel1",
 		subText : "Text nearby (on left) of titlebar",
-		contentTitle : "Title abobe the text",
+		contentTitle : "Title above the text",
 		contentText : "Longer text above",
-		largeIcon : "/assets/example.png"  
+		largeIcon : "/assets/icon_on_right_side.png"  
 
 });
 Tracker.setAdapter( {  // not yet implemetented ;-(
