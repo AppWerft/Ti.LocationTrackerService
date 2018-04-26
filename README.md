@@ -17,51 +17,45 @@ A bound and started service that is promoted to a foreground service when locati
 
 ```javascript
 
-var GeoService = require("ti.locationupdatesservice");
+var GeoService = require("ti.locationtrackerservice");
 GeoService.addEventListener("ServiceConnectionChanged",function(e) {
 	console.log(e);
 });
-GeoService.config({
-	database : "geolog",  // tablename the same		
-	notification: {
+var opts = {
+	lifecycleContainer : win, 
+	interval :10,
+	priority : GeoService.PRIORITY_BALANCED_POWER_ACCURACY,
+};
+var Tracker = GeoService.createTracker(opts,function(){
+		console.log(e.coord);
+	}
+);
+Tracker.setNotification(notification({
 		channel : "cannel1",
-		title : "Sua posição",
-		stopTracking : "Stop tracking", // or null if you don't need
-		startTracking : "Omeçar a rastrear", // or null if you don't need
-		
-	},
-	adapter : {  // not yet implemetented ;-(
+		subText : "Text nearby (on left) of titlebar",
+		contentTitle : "Title abobe the text",
+		contentText : "Longer text above",
+		largeIcon : "/assets/example.png"  
+
+});
+Tracker.setAdapter( {  // not yet implemetented ;-(
 		uri: "https://"
 		requestHeaders: [],
 		extraParameters : {
-			uid : "1111"
+			uid : "1111",
+			foo : bar
 		},
 		method : "POST",
 		timeout : 100000
-	}
-})
-GeoService.addEventListener("location",function(e){
-	 Object.keys.forEach(function(k){
-	 	console.log(k + " :  " + e[k])
-	 	/* 
-	 		location,time,latitude,longitude,accuracy,bearing,provider,speed 
-	 	*/
-	 });
 });
-GeoService.requestLocationUpdates({
-	interval : 2 // sec.
-	duration : 3600 // optional,
-	onlocation : function(e) { // optional
-	  // same as eventlistener
-	}
-});
+
+Tracker.requestLocationUpdates();
 
 // later:
-GeoService.removeLocationUpdates();
-
-win.addEventListener('close',GeoService.removeLocationUpdates);
+Tracker.removeLocationUpdates();
 
 ```
+The parameters for notification you can modify in res folder of module or as opts
 
 
 INSTALL YOUR MODULE
@@ -87,7 +81,7 @@ Register your module with your application by editing `tiapp.xml` and adding you
 Example:
 
 <modules>
-	<module version="0.1">ti.locationupdatesservice</module>
+	<module version="0.1">ti.locationtrackerservice</module>
 </modules>
 
 When you run your project, the compiler will combine your module along with its dependencies

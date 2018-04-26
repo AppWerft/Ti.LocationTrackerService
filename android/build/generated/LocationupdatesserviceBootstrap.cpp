@@ -18,7 +18,7 @@
 #include "BootstrapJS.cpp"
 #include "KrollGeneratedBindings.cpp"
 
-#define TAG "ti.locationupdatesservice"
+#define TAG "ti.locationtrackerservice"
 
 using namespace v8;
 
@@ -113,16 +113,16 @@ static void Locationupdatesservice_dispose(Isolate* isolate)
 }
 
 static titanium::bindings::BindEntry LocationupdatesserviceBinding = {
-	"ti.locationupdatesservice",
+	"ti.locationtrackerservice",
 	Locationupdatesservice_init,
 	Locationupdatesservice_dispose
 };
 
 // Main module entry point
 extern "C" JNIEXPORT void JNICALL
-Java_ti_locationupdatesservice_LocationupdatesserviceBootstrap_nativeBootstrap
+Java_ti_locationtrackerservice_LocationupdatesserviceBootstrap_nativeBootstrap
 	(JNIEnv *env, jobject self)
 {
-	titanium::KrollBindings::addExternalBinding("ti.locationupdatesservice", &LocationupdatesserviceBinding);
+	titanium::KrollBindings::addExternalBinding("ti.locationtrackerservice", &LocationupdatesserviceBinding);
 	titanium::KrollBindings::addExternalLookup(&(titanium::bindings::LocationupdatesserviceBindings::lookupGeneratedInit));
 }

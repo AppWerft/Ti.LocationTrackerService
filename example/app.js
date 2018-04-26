@@ -2,10 +2,14 @@ var win = Ti.UI.createWindow();
 
 var LUS = require("ti.locationupdatesservice");
 win.addEventListener("open", function() {
-	console.log("open");
 	LUS.requestLocationUpdates({
 		interval : 10,
-		priority: LUS.PRIORITY_BALANCED_POWER_ACCURACY
+		priority : LUS.PRIORITY_BALANCED_POWER_ACCURACY,
+		onlocation : function(e) {
+			e.coords && Object.keys(e.coords).forEach(function(k) {
+				console.log(k + "=" + e.coords[k]);
+			});
+		}
 	});
 });
 win.addEventListener("close", function() {
@@ -18,6 +22,9 @@ LUS.config({
 	notification : {
 		channel : "cannel1",
 		title : "Your position",
+		subText : "Text neben Kopflinie",
+		contentText : "Sie sind hier {LOCATION}",
+		contentTitle : "Es ist {TIME}",
 		stopTracking : "Stop tracking", // or null if you don't need
 		startTracking : "Start tracking", // or null if you don't need
 

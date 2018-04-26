@@ -1,4 +1,7 @@
 <resources>
-	<string name="ic_start_tracking">Start</string>
-	<string name="ic_stop_tracking">Stop</string>
+	<string name="subText">subText</string>
+	<string name="contentText">all texts/parameters you can edit in res/values/…</string>
+	<string name="contentTitle">contentTitle</string>
+	<string name="channel">channel</string>
+	<integer name="interval">10</integer>
 </resources>

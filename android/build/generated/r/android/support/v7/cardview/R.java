@@ -9,29 +9,29 @@ package android.support.v7.cardview;
 
 public final class R {
     public static final class anim {
-        public static int abc_fade_in=0x7f040000;
-        public static int abc_fade_out=0x7f040001;
-        public static int abc_grow_fade_in_from_bottom=0x7f040002;
-        public static int abc_popup_enter=0x7f040003;
-        public static int abc_popup_exit=0x7f040004;
-        public static int abc_shrink_fade_out_from_bottom=0x7f040005;
-        public static int abc_slide_in_bottom=0x7f040006;
-        public static int abc_slide_in_top=0x7f040007;
-        public static int abc_slide_out_bottom=0x7f040008;
-        public static int abc_slide_out_top=0x7f040009;
-        public static int design_bottom_sheet_slide_in=0x7f04000a;
-        public static int design_bottom_sheet_slide_out=0x7f04000b;
-        public static int design_snackbar_in=0x7f04000c;
-        public static int design_snackbar_out=0x7f04000d;
-        public static int tooltip_enter=0x7f04000e;
-        public static int tooltip_exit=0x7f04000f;
+        public static int abc_fade_in=0x7f050000;
+        public static int abc_fade_out=0x7f050001;
+        public static int abc_grow_fade_in_from_bottom=0x7f050002;
+        public static int abc_popup_enter=0x7f050003;
+        public static int abc_popup_exit=0x7f050004;
+        public static int abc_shrink_fade_out_from_bottom=0x7f050005;
+        public static int abc_slide_in_bottom=0x7f050006;
+        public static int abc_slide_in_top=0x7f050007;
+        public static int abc_slide_out_bottom=0x7f050008;
+        public static int abc_slide_out_top=0x7f050009;
+        public static int design_bottom_sheet_slide_in=0x7f05000a;
+        public static int design_bottom_sheet_slide_out=0x7f05000b;
+        public static int design_snackbar_in=0x7f05000c;
+        public static int design_snackbar_out=0x7f05000d;
+        public static int tooltip_enter=0x7f05000e;
+        public static int tooltip_exit=0x7f05000f;
     }
     public static final class animator {
-        public static int design_appbar_state_list_animator=0x7f050000;
+        public static int design_appbar_state_list_animator=0x7f060000;
     }
     public static final class array {
-        public static int cast_expanded_controller_default_control_buttons=0x7f0d0000;
-        public static int cast_mini_controller_default_control_buttons=0x7f0d0001;
+        public static int cast_expanded_controller_default_control_buttons=0x7f0e0000;
+        public static int cast_mini_controller_default_control_buttons=0x7f0e0001;
     }
     public static final class attr {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -3269,336 +3269,336 @@ containing a value of this type.
         public static int zOrderOnTop=0x7f010195;
     }
     public static final class bool {
-        public static int abc_action_bar_embed_tabs=0x7f090000;
-        public static int abc_allow_stacked_button_bar=0x7f090001;
-        public static int abc_config_actionMenuItemAllCaps=0x7f090002;
-        public static int abc_config_closeDialogWhenTouchOutside=0x7f090003;
-        public static int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f090004;
+        public static int abc_action_bar_embed_tabs=0x7f0a0000;
+        public static int abc_allow_stacked_button_bar=0x7f0a0001;
+        public static int abc_config_actionMenuItemAllCaps=0x7f0a0002;
+        public static int abc_config_closeDialogWhenTouchOutside=0x7f0a0003;
+        public static int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f0a0004;
     }
     public static final class color {
-        public static int abc_background_cache_hint_selector_material_dark=0x7f0b0069;
-        public static int abc_background_cache_hint_selector_material_light=0x7f0b006a;
-        public static int abc_btn_colored_borderless_text_material=0x7f0b006b;
-        public static int abc_btn_colored_text_material=0x7f0b006c;
-        public static int abc_color_highlight_material=0x7f0b006d;
-        public static int abc_hint_foreground_material_dark=0x7f0b006e;
-        public static int abc_hint_foreground_material_light=0x7f0b006f;
-        public static int abc_input_method_navigation_guard=0x7f0b000c;
-        public static int abc_primary_text_disable_only_material_dark=0x7f0b0070;
-        public static int abc_primary_text_disable_only_material_light=0x7f0b0071;
-        public static int abc_primary_text_material_dark=0x7f0b0072;
-        public static int abc_primary_text_material_light=0x7f0b0073;
-        public static int abc_search_url_text=0x7f0b0074;
-        public static int abc_search_url_text_normal=0x7f0b000d;
-        public static int abc_search_url_text_pressed=0x7f0b000e;
-        public static int abc_search_url_text_selected=0x7f0b000f;
-        public static int abc_secondary_text_material_dark=0x7f0b0075;
-        public static int abc_secondary_text_material_light=0x7f0b0076;
-        public static int abc_tint_btn_checkable=0x7f0b0077;
-        public static int abc_tint_default=0x7f0b0078;
-        public static int abc_tint_edittext=0x7f0b0079;
-        public static int abc_tint_seek_thumb=0x7f0b007a;
-        public static int abc_tint_spinner=0x7f0b007b;
-        public static int abc_tint_switch_track=0x7f0b007c;
-        public static int accent_material_dark=0x7f0b0010;
-        public static int accent_material_light=0x7f0b0011;
-        public static int background_floating_material_dark=0x7f0b0012;
-        public static int background_floating_material_light=0x7f0b0013;
-        public static int background_material_dark=0x7f0b0014;
-        public static int background_material_light=0x7f0b0015;
-        public static int bright_foreground_disabled_material_dark=0x7f0b0016;
-        public static int bright_foreground_disabled_material_light=0x7f0b0017;
-        public static int bright_foreground_inverse_material_dark=0x7f0b0018;
-        public static int bright_foreground_inverse_material_light=0x7f0b0019;
-        public static int bright_foreground_material_dark=0x7f0b001a;
-        public static int bright_foreground_material_light=0x7f0b001b;
-        public static int button_material_dark=0x7f0b001c;
-        public static int button_material_light=0x7f0b001d;
-        public static int cardview_dark_background=0x7f0b0045;
-        public static int cardview_light_background=0x7f0b0046;
-        public static int cardview_shadow_end_color=0x7f0b0047;
-        public static int cardview_shadow_start_color=0x7f0b0048;
-        public static int cast_expanded_controller_ad_container_white_stripe_color=0x7f0b0053;
-        public static int cast_expanded_controller_ad_label_background_color=0x7f0b0054;
-        public static int cast_expanded_controller_background_color=0x7f0b0055;
-        public static int cast_expanded_controller_progress_text_color=0x7f0b0056;
-        public static int cast_expanded_controller_seek_bar_progress_background_tint_color=0x7f0b0057;
-        public static int cast_expanded_controller_text_color=0x7f0b0058;
-        public static int cast_intro_overlay_background_color=0x7f0b0059;
-        public static int cast_intro_overlay_button_background_color=0x7f0b005a;
-        public static int cast_libraries_material_featurehighlight_outer_highlight_default_color=0x7f0b005b;
-        public static int cast_libraries_material_featurehighlight_text_body_color=0x7f0b005c;
-        public static int cast_libraries_material_featurehighlight_text_header_color=0x7f0b005d;
-        public static int common_google_signin_btn_text_dark=0x7f0b007d;
-        public static int common_google_signin_btn_text_dark_default=0x7f0b0001;
-        public static int common_google_signin_btn_text_dark_disabled=0x7f0b0002;
-        public static int common_google_signin_btn_text_dark_focused=0x7f0b0003;
-        public static int common_google_signin_btn_text_dark_pressed=0x7f0b0004;
-        public static int common_google_signin_btn_text_light=0x7f0b007e;
-        public static int common_google_signin_btn_text_light_default=0x7f0b0005;
-        public static int common_google_signin_btn_text_light_disabled=0x7f0b0006;
-        public static int common_google_signin_btn_text_light_focused=0x7f0b0007;
-        public static int common_google_signin_btn_text_light_pressed=0x7f0b0008;
-        public static int common_google_signin_btn_tint=0x7f0b007f;
-        public static int design_bottom_navigation_shadow_color=0x7f0b004a;
-        public static int design_error=0x7f0b0080;
-        public static int design_fab_shadow_end_color=0x7f0b004b;
-        public static int design_fab_shadow_mid_color=0x7f0b004c;
-        public static int design_fab_shadow_start_color=0x7f0b004d;
-        public static int design_fab_stroke_end_inner_color=0x7f0b004e;
-        public static int design_fab_stroke_end_outer_color=0x7f0b004f;
-        public static int design_fab_stroke_top_inner_color=0x7f0b0050;
-        public static int design_fab_stroke_top_outer_color=0x7f0b0051;
-        public static int design_snackbar_background_color=0x7f0b0052;
-        public static int design_tint_password_toggle=0x7f0b0081;
-        public static int dim_foreground_disabled_material_dark=0x7f0b001e;
-        public static int dim_foreground_disabled_material_light=0x7f0b001f;
-        public static int dim_foreground_material_dark=0x7f0b0020;
-        public static int dim_foreground_material_light=0x7f0b0021;
-        public static int error_color_material=0x7f0b0022;
-        public static int foreground_material_dark=0x7f0b0023;
-        public static int foreground_material_light=0x7f0b0024;
-        public static int highlighted_text_material_dark=0x7f0b0025;
-        public static int highlighted_text_material_light=0x7f0b0026;
-        public static int material_blue_grey_800=0x7f0b0027;
-        public static int material_blue_grey_900=0x7f0b0028;
-        public static int material_blue_grey_950=0x7f0b0029;
-        public static int material_deep_teal_200=0x7f0b002a;
-        public static int material_deep_teal_500=0x7f0b002b;
-        public static int material_grey_100=0x7f0b002c;
-        public static int material_grey_300=0x7f0b002d;
-        public static int material_grey_50=0x7f0b002e;
-        public static int material_grey_600=0x7f0b002f;
-        public static int material_grey_800=0x7f0b0030;
-        public static int material_grey_850=0x7f0b0031;
-        public static int material_grey_900=0x7f0b0032;
-        public static int notification_action_color_filter=0x7f0b0000;
-        public static int notification_icon_bg_color=0x7f0b0049;
-        public static int notification_material_background_media_default_color=0x7f0b0009;
-        public static int primary_dark_material_dark=0x7f0b0033;
-        public static int primary_dark_material_light=0x7f0b0034;
-        public static int primary_material_dark=0x7f0b0035;
-        public static int primary_material_light=0x7f0b0036;
-        public static int primary_text_default_material_dark=0x7f0b000a;
-        public static int primary_text_default_material_light=0x7f0b0037;
-        public static int primary_text_disabled_material_dark=0x7f0b0038;
-        public static int primary_text_disabled_material_light=0x7f0b0039;
-        public static int ripple_material_dark=0x7f0b003a;
-        public static int ripple_material_light=0x7f0b003b;
-        public static int secondary_text_default_material_dark=0x7f0b000b;
-        public static int secondary_text_default_material_light=0x7f0b003c;
-        public static int secondary_text_disabled_material_dark=0x7f0b003d;
-        public static int secondary_text_disabled_material_light=0x7f0b003e;
-        public static int switch_thumb_disabled_material_dark=0x7f0b003f;
-        public static int switch_thumb_disabled_material_light=0x7f0b0040;
-        public static int switch_thumb_material_dark=0x7f0b0082;
-        public static int switch_thumb_material_light=0x7f0b0083;
-        public static int switch_thumb_normal_material_dark=0x7f0b0041;
-        public static int switch_thumb_normal_material_light=0x7f0b0042;
-        public static int tooltip_background_dark=0x7f0b0043;
-        public static int tooltip_background_light=0x7f0b0044;
-        public static int wallet_bright_foreground_disabled_holo_light=0x7f0b005e;
-        public static int wallet_bright_foreground_holo_dark=0x7f0b005f;
-        public static int wallet_bright_foreground_holo_light=0x7f0b0060;
-        public static int wallet_dim_foreground_disabled_holo_dark=0x7f0b0061;
-        public static int wallet_dim_foreground_holo_dark=0x7f0b0062;
-        public static int wallet_highlighted_text_holo_dark=0x7f0b0063;
-        public static int wallet_highlighted_text_holo_light=0x7f0b0064;
-        public static int wallet_hint_foreground_holo_dark=0x7f0b0065;
-        public static int wallet_hint_foreground_holo_light=0x7f0b0066;
-        public static int wallet_holo_blue_light=0x7f0b0067;
-        public static int wallet_link_text_light=0x7f0b0068;
-        public static int wallet_primary_text_holo_light=0x7f0b0084;
-        public static int wallet_secondary_text_holo_dark=0x7f0b0085;
+        public static int abc_background_cache_hint_selector_material_dark=0x7f0c0069;
+        public static int abc_background_cache_hint_selector_material_light=0x7f0c006a;
+        public static int abc_btn_colored_borderless_text_material=0x7f0c006b;
+        public static int abc_btn_colored_text_material=0x7f0c006c;
+        public static int abc_color_highlight_material=0x7f0c006d;
+        public static int abc_hint_foreground_material_dark=0x7f0c006e;
+        public static int abc_hint_foreground_material_light=0x7f0c006f;
+        public static int abc_input_method_navigation_guard=0x7f0c000c;
+        public static int abc_primary_text_disable_only_material_dark=0x7f0c0070;
+        public static int abc_primary_text_disable_only_material_light=0x7f0c0071;
+        public static int abc_primary_text_material_dark=0x7f0c0072;
+        public static int abc_primary_text_material_light=0x7f0c0073;
+        public static int abc_search_url_text=0x7f0c0074;
+        public static int abc_search_url_text_normal=0x7f0c000d;
+        public static int abc_search_url_text_pressed=0x7f0c000e;
+        public static int abc_search_url_text_selected=0x7f0c000f;
+        public static int abc_secondary_text_material_dark=0x7f0c0075;
+        public static int abc_secondary_text_material_light=0x7f0c0076;
+        public static int abc_tint_btn_checkable=0x7f0c0077;
+        public static int abc_tint_default=0x7f0c0078;
+        public static int abc_tint_edittext=0x7f0c0079;
+        public static int abc_tint_seek_thumb=0x7f0c007a;
+        public static int abc_tint_spinner=0x7f0c007b;
+        public static int abc_tint_switch_track=0x7f0c007c;
+        public static int accent_material_dark=0x7f0c0010;
+        public static int accent_material_light=0x7f0c0011;
+        public static int background_floating_material_dark=0x7f0c0012;
+        public static int background_floating_material_light=0x7f0c0013;
+        public static int background_material_dark=0x7f0c0014;
+        public static int background_material_light=0x7f0c0015;
+        public static int bright_foreground_disabled_material_dark=0x7f0c0016;
+        public static int bright_foreground_disabled_material_light=0x7f0c0017;
+        public static int bright_foreground_inverse_material_dark=0x7f0c0018;
+        public static int bright_foreground_inverse_material_light=0x7f0c0019;
+        public static int bright_foreground_material_dark=0x7f0c001a;
+        public static int bright_foreground_material_light=0x7f0c001b;
+        public static int button_material_dark=0x7f0c001c;
+        public static int button_material_light=0x7f0c001d;
+        public static int cardview_dark_background=0x7f0c0045;
+        public static int cardview_light_background=0x7f0c0046;
+        public static int cardview_shadow_end_color=0x7f0c0047;
+        public static int cardview_shadow_start_color=0x7f0c0048;
+        public static int cast_expanded_controller_ad_container_white_stripe_color=0x7f0c0053;
+        public static int cast_expanded_controller_ad_label_background_color=0x7f0c0054;
+        public static int cast_expanded_controller_background_color=0x7f0c0055;
+        public static int cast_expanded_controller_progress_text_color=0x7f0c0056;
+        public static int cast_expanded_controller_seek_bar_progress_background_tint_color=0x7f0c0057;
+        public static int cast_expanded_controller_text_color=0x7f0c0058;
+        public static int cast_intro_overlay_background_color=0x7f0c0059;
+        public static int cast_intro_overlay_button_background_color=0x7f0c005a;
+        public static int cast_libraries_material_featurehighlight_outer_highlight_default_color=0x7f0c005b;
+        public static int cast_libraries_material_featurehighlight_text_body_color=0x7f0c005c;
+        public static int cast_libraries_material_featurehighlight_text_header_color=0x7f0c005d;
+        public static int common_google_signin_btn_text_dark=0x7f0c007d;
+        public static int common_google_signin_btn_text_dark_default=0x7f0c0001;
+        public static int common_google_signin_btn_text_dark_disabled=0x7f0c0002;
+        public static int common_google_signin_btn_text_dark_focused=0x7f0c0003;
+        public static int common_google_signin_btn_text_dark_pressed=0x7f0c0004;
+        public static int common_google_signin_btn_text_light=0x7f0c007e;
+        public static int common_google_signin_btn_text_light_default=0x7f0c0005;
+        public static int common_google_signin_btn_text_light_disabled=0x7f0c0006;
+        public static int common_google_signin_btn_text_light_focused=0x7f0c0007;
+        public static int common_google_signin_btn_text_light_pressed=0x7f0c0008;
+        public static int common_google_signin_btn_tint=0x7f0c007f;
+        public static int design_bottom_navigation_shadow_color=0x7f0c004a;
+        public static int design_error=0x7f0c0080;
+        public static int design_fab_shadow_end_color=0x7f0c004b;
+        public static int design_fab_shadow_mid_color=0x7f0c004c;
+        public static int design_fab_shadow_start_color=0x7f0c004d;
+        public static int design_fab_stroke_end_inner_color=0x7f0c004e;
+        public static int design_fab_stroke_end_outer_color=0x7f0c004f;
+        public static int design_fab_stroke_top_inner_color=0x7f0c0050;
+        public static int design_fab_stroke_top_outer_color=0x7f0c0051;
+        public static int design_snackbar_background_color=0x7f0c0052;
+        public static int design_tint_password_toggle=0x7f0c0081;
+        public static int dim_foreground_disabled_material_dark=0x7f0c001e;
+        public static int dim_foreground_disabled_material_light=0x7f0c001f;
+        public static int dim_foreground_material_dark=0x7f0c0020;
+        public static int dim_foreground_material_light=0x7f0c0021;
+        public static int error_color_material=0x7f0c0022;
+        public static int foreground_material_dark=0x7f0c0023;
+        public static int foreground_material_light=0x7f0c0024;
+        public static int highlighted_text_material_dark=0x7f0c0025;
+        public static int highlighted_text_material_light=0x7f0c0026;
+        public static int material_blue_grey_800=0x7f0c0027;
+        public static int material_blue_grey_900=0x7f0c0028;
+        public static int material_blue_grey_950=0x7f0c0029;
+        public static int material_deep_teal_200=0x7f0c002a;
+        public static int material_deep_teal_500=0x7f0c002b;
+        public static int material_grey_100=0x7f0c002c;
+        public static int material_grey_300=0x7f0c002d;
+        public static int material_grey_50=0x7f0c002e;
+        public static int material_grey_600=0x7f0c002f;
+        public static int material_grey_800=0x7f0c0030;
+        public static int material_grey_850=0x7f0c0031;
+        public static int material_grey_900=0x7f0c0032;
+        public static int notification_action_color_filter=0x7f0c0000;
+        public static int notification_icon_bg_color=0x7f0c0049;
+        public static int notification_material_background_media_default_color=0x7f0c0009;
+        public static int primary_dark_material_dark=0x7f0c0033;
+        public static int primary_dark_material_light=0x7f0c0034;
+        public static int primary_material_dark=0x7f0c0035;
+        public static int primary_material_light=0x7f0c0036;
+        public static int primary_text_default_material_dark=0x7f0c000a;
+        public static int primary_text_default_material_light=0x7f0c0037;
+        public static int primary_text_disabled_material_dark=0x7f0c0038;
+        public static int primary_text_disabled_material_light=0x7f0c0039;
+        public static int ripple_material_dark=0x7f0c003a;
+        public static int ripple_material_light=0x7f0c003b;
+        public static int secondary_text_default_material_dark=0x7f0c000b;
+        public static int secondary_text_default_material_light=0x7f0c003c;
+        public static int secondary_text_disabled_material_dark=0x7f0c003d;
+        public static int secondary_text_disabled_material_light=0x7f0c003e;
+        public static int switch_thumb_disabled_material_dark=0x7f0c003f;
+        public static int switch_thumb_disabled_material_light=0x7f0c0040;
+        public static int switch_thumb_material_dark=0x7f0c0082;
+        public static int switch_thumb_material_light=0x7f0c0083;
+        public static int switch_thumb_normal_material_dark=0x7f0c0041;
+        public static int switch_thumb_normal_material_light=0x7f0c0042;
+        public static int tooltip_background_dark=0x7f0c0043;
+        public static int tooltip_background_light=0x7f0c0044;
+        public static int wallet_bright_foreground_disabled_holo_light=0x7f0c005e;
+        public static int wallet_bright_foreground_holo_dark=0x7f0c005f;
+        public static int wallet_bright_foreground_holo_light=0x7f0c0060;
+        public static int wallet_dim_foreground_disabled_holo_dark=0x7f0c0061;
+        public static int wallet_dim_foreground_holo_dark=0x7f0c0062;
+        public static int wallet_highlighted_text_holo_dark=0x7f0c0063;
+        public static int wallet_highlighted_text_holo_light=0x7f0c0064;
+        public static int wallet_hint_foreground_holo_dark=0x7f0c0065;
+        public static int wallet_hint_foreground_holo_light=0x7f0c0066;
+        public static int wallet_holo_blue_light=0x7f0c0067;
+        public static int wallet_link_text_light=0x7f0c0068;
+        public static int wallet_primary_text_holo_light=0x7f0c0084;
+        public static int wallet_secondary_text_holo_dark=0x7f0c0085;
     }
     public static final class dimen {
-        public static int abc_action_bar_content_inset_material=0x7f070012;
-        public static int abc_action_bar_content_inset_with_nav=0x7f070013;
-        public static int abc_action_bar_default_height_material=0x7f070001;
-        public static int abc_action_bar_default_padding_end_material=0x7f070014;
-        public static int abc_action_bar_default_padding_start_material=0x7f070015;
-        public static int abc_action_bar_elevation_material=0x7f070029;
-        public static int abc_action_bar_icon_vertical_padding_material=0x7f07002a;
-        public static int abc_action_bar_overflow_padding_end_material=0x7f07002b;
-        public static int abc_action_bar_overflow_padding_start_material=0x7f07002c;
-        public static int abc_action_bar_progress_bar_size=0x7f070002;
-        public static int abc_action_bar_stacked_max_height=0x7f07002d;
-        public static int abc_action_bar_stacked_tab_max_width=0x7f07002e;
-        public static int abc_action_bar_subtitle_bottom_margin_material=0x7f07002f;
-        public static int abc_action_bar_subtitle_top_margin_material=0x7f070030;
-        public static int abc_action_button_min_height_material=0x7f070031;
-        public static int abc_action_button_min_width_material=0x7f070032;
-        public static int abc_action_button_min_width_overflow_material=0x7f070033;
-        public static int abc_alert_dialog_button_bar_height=0x7f070000;
-        public static int abc_button_inset_horizontal_material=0x7f070034;
-        public static int abc_button_inset_vertical_material=0x7f070035;
-        public static int abc_button_padding_horizontal_material=0x7f070036;
-        public static int abc_button_padding_vertical_material=0x7f070037;
-        public static int abc_cascading_menus_min_smallest_width=0x7f070038;
-        public static int abc_config_prefDialogWidth=0x7f07000b;
-        public static int abc_control_corner_material=0x7f070039;
-        public static int abc_control_inset_material=0x7f07003a;
-        public static int abc_control_padding_material=0x7f07003b;
-        public static int abc_dialog_fixed_height_major=0x7f07000c;
-        public static int abc_dialog_fixed_height_minor=0x7f07000d;
-        public static int abc_dialog_fixed_width_major=0x7f07000e;
-        public static int abc_dialog_fixed_width_minor=0x7f07000f;
-        public static int abc_dialog_list_padding_bottom_no_buttons=0x7f07003c;
-        public static int abc_dialog_list_padding_top_no_title=0x7f07003d;
-        public static int abc_dialog_min_width_major=0x7f070010;
-        public static int abc_dialog_min_width_minor=0x7f070011;
-        public static int abc_dialog_padding_material=0x7f07003e;
-        public static int abc_dialog_padding_top_material=0x7f07003f;
-        public static int abc_dialog_title_divider_material=0x7f070040;
-        public static int abc_disabled_alpha_material_dark=0x7f0700af;
-        public static int abc_disabled_alpha_material_light=0x7f0700b0;
-        public static int abc_dropdownitem_icon_width=0x7f070041;
-        public static int abc_dropdownitem_text_padding_left=0x7f070042;
-        public static int abc_dropdownitem_text_padding_right=0x7f070043;
-        public static int abc_edit_text_inset_bottom_material=0x7f070044;
-        public static int abc_edit_text_inset_horizontal_material=0x7f070045;
-        public static int abc_edit_text_inset_top_material=0x7f070046;
-        public static int abc_floating_window_z=0x7f070047;
-        public static int abc_list_item_padding_horizontal_material=0x7f070048;
-        public static int abc_panel_menu_list_width=0x7f070049;
-        public static int abc_progress_bar_height_material=0x7f07004a;
-        public static int abc_search_view_preferred_height=0x7f07004b;
-        public static int abc_search_view_preferred_width=0x7f07004c;
-        public static int abc_seekbar_track_background_height_material=0x7f07004d;
-        public static int abc_seekbar_track_progress_height_material=0x7f07004e;
-        public static int abc_select_dialog_padding_start_material=0x7f07004f;
-        public static int abc_switch_padding=0x7f07001f;
-        public static int abc_text_size_body_1_material=0x7f070050;
-        public static int abc_text_size_body_2_material=0x7f070051;
-        public static int abc_text_size_button_material=0x7f070052;
-        public static int abc_text_size_caption_material=0x7f070053;
-        public static int abc_text_size_display_1_material=0x7f070054;
-        public static int abc_text_size_display_2_material=0x7f070055;
-        public static int abc_text_size_display_3_material=0x7f070056;
-        public static int abc_text_size_display_4_material=0x7f070057;
-        public static int abc_text_size_headline_material=0x7f070058;
-        public static int abc_text_size_large_material=0x7f070059;
-        public static int abc_text_size_medium_material=0x7f07005a;
-        public static int abc_text_size_menu_header_material=0x7f07005b;
-        public static int abc_text_size_menu_material=0x7f07005c;
-        public static int abc_text_size_small_material=0x7f07005d;
-        public static int abc_text_size_subhead_material=0x7f07005e;
-        public static int abc_text_size_subtitle_material_toolbar=0x7f070003;
-        public static int abc_text_size_title_material=0x7f07005f;
-        public static int abc_text_size_title_material_toolbar=0x7f070004;
-        public static int cardview_compat_inset_shadow=0x7f070068;
-        public static int cardview_default_elevation=0x7f070069;
-        public static int cardview_default_radius=0x7f07006a;
-        public static int cast_expanded_controller_ad_background_layout_height=0x7f070005;
-        public static int cast_expanded_controller_ad_background_layout_width=0x7f070006;
-        public static int cast_expanded_controller_ad_layout_height=0x7f070007;
-        public static int cast_expanded_controller_ad_layout_width=0x7f070008;
-        public static int cast_expanded_controller_control_button_margin=0x7f070099;
-        public static int cast_expanded_controller_control_toolbar_min_height=0x7f07009a;
-        public static int cast_expanded_controller_margin_between_seek_bar_and_control_buttons=0x7f070009;
-        public static int cast_expanded_controller_margin_between_status_text_and_seek_bar=0x7f07000a;
-        public static int cast_expanded_controller_seekbar_disabled_alpha=0x7f0700ba;
-        public static int cast_intro_overlay_button_margin_bottom=0x7f07009b;
-        public static int cast_intro_overlay_focus_radius=0x7f07009c;
-        public static int cast_intro_overlay_title_margin_top=0x7f07009d;
-        public static int cast_libraries_material_featurehighlight_center_horizontal_offset=0x7f07009e;
-        public static int cast_libraries_material_featurehighlight_center_threshold=0x7f07009f;
-        public static int cast_libraries_material_featurehighlight_inner_margin=0x7f0700a0;
-        public static int cast_libraries_material_featurehighlight_inner_radius=0x7f0700a1;
-        public static int cast_libraries_material_featurehighlight_outer_padding=0x7f0700a2;
-        public static int cast_libraries_material_featurehighlight_text_body_size=0x7f0700a3;
-        public static int cast_libraries_material_featurehighlight_text_header_size=0x7f0700a4;
-        public static int cast_libraries_material_featurehighlight_text_horizontal_margin=0x7f0700a5;
-        public static int cast_libraries_material_featurehighlight_text_horizontal_offset=0x7f0700a6;
-        public static int cast_libraries_material_featurehighlight_text_max_width=0x7f0700a7;
-        public static int cast_libraries_material_featurehighlight_text_vertical_space=0x7f0700a8;
-        public static int cast_mini_controller_control_button_margin=0x7f0700a9;
-        public static int cast_mini_controller_icon_height=0x7f0700aa;
-        public static int cast_mini_controller_icon_width=0x7f0700ab;
-        public static int cast_notification_image_size=0x7f0700ac;
-        public static int cast_tracks_chooser_dialog_no_message_text_size=0x7f0700ad;
-        public static int cast_tracks_chooser_dialog_row_text_size=0x7f0700ae;
-        public static int compat_button_inset_horizontal_material=0x7f07006b;
-        public static int compat_button_inset_vertical_material=0x7f07006c;
-        public static int compat_button_padding_horizontal_material=0x7f07006d;
-        public static int compat_button_padding_vertical_material=0x7f07006e;
-        public static int compat_control_corner_material=0x7f07006f;
-        public static int design_appbar_elevation=0x7f07007b;
-        public static int design_bottom_navigation_active_item_max_width=0x7f07007c;
-        public static int design_bottom_navigation_active_text_size=0x7f07007d;
-        public static int design_bottom_navigation_elevation=0x7f07007e;
-        public static int design_bottom_navigation_height=0x7f07007f;
-        public static int design_bottom_navigation_item_max_width=0x7f070080;
-        public static int design_bottom_navigation_item_min_width=0x7f070081;
-        public static int design_bottom_navigation_margin=0x7f070082;
-        public static int design_bottom_navigation_shadow_height=0x7f070083;
-        public static int design_bottom_navigation_text_size=0x7f070084;
-        public static int design_bottom_sheet_modal_elevation=0x7f070085;
-        public static int design_bottom_sheet_peek_height_min=0x7f070086;
-        public static int design_fab_border_width=0x7f070087;
-        public static int design_fab_elevation=0x7f070088;
-        public static int design_fab_image_size=0x7f070089;
-        public static int design_fab_size_mini=0x7f07008a;
-        public static int design_fab_size_normal=0x7f07008b;
-        public static int design_fab_translation_z_pressed=0x7f07008c;
-        public static int design_navigation_elevation=0x7f07008d;
-        public static int design_navigation_icon_padding=0x7f07008e;
-        public static int design_navigation_icon_size=0x7f07008f;
-        public static int design_navigation_max_width=0x7f070016;
-        public static int design_navigation_padding_bottom=0x7f070090;
-        public static int design_navigation_separator_vertical_padding=0x7f070091;
-        public static int design_snackbar_action_inline_max_width=0x7f070017;
-        public static int design_snackbar_background_corner_radius=0x7f070018;
-        public static int design_snackbar_elevation=0x7f070092;
-        public static int design_snackbar_extra_spacing_horizontal=0x7f070019;
-        public static int design_snackbar_max_width=0x7f07001a;
-        public static int design_snackbar_min_width=0x7f07001b;
-        public static int design_snackbar_padding_horizontal=0x7f070093;
-        public static int design_snackbar_padding_vertical=0x7f070094;
-        public static int design_snackbar_padding_vertical_2lines=0x7f07001c;
-        public static int design_snackbar_text_size=0x7f070095;
-        public static int design_tab_max_width=0x7f070096;
-        public static int design_tab_scrollable_min_width=0x7f07001d;
-        public static int design_tab_text_size=0x7f070097;
-        public static int design_tab_text_size_2line=0x7f070098;
-        public static int disabled_alpha_material_dark=0x7f0700b1;
-        public static int disabled_alpha_material_light=0x7f0700b2;
-        public static int fastscroll_default_thickness=0x7f070023;
-        public static int fastscroll_margin=0x7f070024;
-        public static int fastscroll_minimum_range=0x7f070025;
-        public static int highlight_alpha_material_colored=0x7f0700b3;
-        public static int highlight_alpha_material_dark=0x7f0700b4;
-        public static int highlight_alpha_material_light=0x7f0700b5;
-        public static int hint_alpha_material_dark=0x7f0700b6;
-        public static int hint_alpha_material_light=0x7f0700b7;
-        public static int hint_pressed_alpha_material_dark=0x7f0700b8;
-        public static int hint_pressed_alpha_material_light=0x7f0700b9;
-        public static int item_touch_helper_max_drag_scroll_per_frame=0x7f070026;
-        public static int item_touch_helper_swipe_escape_max_velocity=0x7f070027;
-        public static int item_touch_helper_swipe_escape_velocity=0x7f070028;
-        public static int notification_action_icon_size=0x7f070070;
-        public static int notification_action_text_size=0x7f070071;
-        public static int notification_big_circle_margin=0x7f070072;
-        public static int notification_content_margin_start=0x7f070020;
-        public static int notification_large_icon_height=0x7f070073;
-        public static int notification_large_icon_width=0x7f070074;
-        public static int notification_main_column_padding_top=0x7f070021;
-        public static int notification_media_narrow_margin=0x7f070022;
-        public static int notification_right_icon_size=0x7f070075;
-        public static int notification_right_side_padding_top=0x7f07001e;
-        public static int notification_small_icon_background_padding=0x7f070076;
-        public static int notification_small_icon_size_as_large=0x7f070077;
-        public static int notification_subtext_size=0x7f070078;
-        public static int notification_top_pad=0x7f070079;
-        public static int notification_top_pad_large_text=0x7f07007a;
-        public static int tooltip_corner_radius=0x7f070060;
-        public static int tooltip_horizontal_padding=0x7f070061;
-        public static int tooltip_margin=0x7f070062;
-        public static int tooltip_precise_anchor_extra_offset=0x7f070063;
-        public static int tooltip_precise_anchor_threshold=0x7f070064;
-        public static int tooltip_vertical_padding=0x7f070065;
-        public static int tooltip_y_offset_non_touch=0x7f070066;
-        public static int tooltip_y_offset_touch=0x7f070067;
+        public static int abc_action_bar_content_inset_material=0x7f080012;
+        public static int abc_action_bar_content_inset_with_nav=0x7f080013;
+        public static int abc_action_bar_default_height_material=0x7f080001;
+        public static int abc_action_bar_default_padding_end_material=0x7f080014;
+        public static int abc_action_bar_default_padding_start_material=0x7f080015;
+        public static int abc_action_bar_elevation_material=0x7f080029;
+        public static int abc_action_bar_icon_vertical_padding_material=0x7f08002a;
+        public static int abc_action_bar_overflow_padding_end_material=0x7f08002b;
+        public static int abc_action_bar_overflow_padding_start_material=0x7f08002c;
+        public static int abc_action_bar_progress_bar_size=0x7f080002;
+        public static int abc_action_bar_stacked_max_height=0x7f08002d;
+        public static int abc_action_bar_stacked_tab_max_width=0x7f08002e;
+        public static int abc_action_bar_subtitle_bottom_margin_material=0x7f08002f;
+        public static int abc_action_bar_subtitle_top_margin_material=0x7f080030;
+        public static int abc_action_button_min_height_material=0x7f080031;
+        public static int abc_action_button_min_width_material=0x7f080032;
+        public static int abc_action_button_min_width_overflow_material=0x7f080033;
+        public static int abc_alert_dialog_button_bar_height=0x7f080000;
+        public static int abc_button_inset_horizontal_material=0x7f080034;
+        public static int abc_button_inset_vertical_material=0x7f080035;
+        public static int abc_button_padding_horizontal_material=0x7f080036;
+        public static int abc_button_padding_vertical_material=0x7f080037;
+        public static int abc_cascading_menus_min_smallest_width=0x7f080038;
+        public static int abc_config_prefDialogWidth=0x7f08000b;
+        public static int abc_control_corner_material=0x7f080039;
+        public static int abc_control_inset_material=0x7f08003a;
+        public static int abc_control_padding_material=0x7f08003b;
+        public static int abc_dialog_fixed_height_major=0x7f08000c;
+        public static int abc_dialog_fixed_height_minor=0x7f08000d;
+        public static int abc_dialog_fixed_width_major=0x7f08000e;
+        public static int abc_dialog_fixed_width_minor=0x7f08000f;
+        public static int abc_dialog_list_padding_bottom_no_buttons=0x7f08003c;
+        public static int abc_dialog_list_padding_top_no_title=0x7f08003d;
+        public static int abc_dialog_min_width_major=0x7f080010;
+        public static int abc_dialog_min_width_minor=0x7f080011;
+        public static int abc_dialog_padding_material=0x7f08003e;
+        public static int abc_dialog_padding_top_material=0x7f08003f;
+        public static int abc_dialog_title_divider_material=0x7f080040;
+        public static int abc_disabled_alpha_material_dark=0x7f0800af;
+        public static int abc_disabled_alpha_material_light=0x7f0800b0;
+        public static int abc_dropdownitem_icon_width=0x7f080041;
+        public static int abc_dropdownitem_text_padding_left=0x7f080042;
+        public static int abc_dropdownitem_text_padding_right=0x7f080043;
+        public static int abc_edit_text_inset_bottom_material=0x7f080044;
+        public static int abc_edit_text_inset_horizontal_material=0x7f080045;
+        public static int abc_edit_text_inset_top_material=0x7f080046;
+        public static int abc_floating_window_z=0x7f080047;
+        public static int abc_list_item_padding_horizontal_material=0x7f080048;
+        public static int abc_panel_menu_list_width=0x7f080049;
+        public static int abc_progress_bar_height_material=0x7f08004a;
+        public static int abc_search_view_preferred_height=0x7f08004b;
+        public static int abc_search_view_preferred_width=0x7f08004c;
+        public static int abc_seekbar_track_background_height_material=0x7f08004d;
+        public static int abc_seekbar_track_progress_height_material=0x7f08004e;
+        public static int abc_select_dialog_padding_start_material=0x7f08004f;
+        public static int abc_switch_padding=0x7f08001f;
+        public static int abc_text_size_body_1_material=0x7f080050;
+        public static int abc_text_size_body_2_material=0x7f080051;
+        public static int abc_text_size_button_material=0x7f080052;
+        public static int abc_text_size_caption_material=0x7f080053;
+        public static int abc_text_size_display_1_material=0x7f080054;
+        public static int abc_text_size_display_2_material=0x7f080055;
+        public static int abc_text_size_display_3_material=0x7f080056;
+        public static int abc_text_size_display_4_material=0x7f080057;
+        public static int abc_text_size_headline_material=0x7f080058;
+        public static int abc_text_size_large_material=0x7f080059;
+        public static int abc_text_size_medium_material=0x7f08005a;
+        public static int abc_text_size_menu_header_material=0x7f08005b;
+        public static int abc_text_size_menu_material=0x7f08005c;
+        public static int abc_text_size_small_material=0x7f08005d;
+        public static int abc_text_size_subhead_material=0x7f08005e;
+        public static int abc_text_size_subtitle_material_toolbar=0x7f080003;
+        public static int abc_text_size_title_material=0x7f08005f;
+        public static int abc_text_size_title_material_toolbar=0x7f080004;
+        public static int cardview_compat_inset_shadow=0x7f080068;
+        public static int cardview_default_elevation=0x7f080069;
+        public static int cardview_default_radius=0x7f08006a;
+        public static int cast_expanded_controller_ad_background_layout_height=0x7f080005;
+        public static int cast_expanded_controller_ad_background_layout_width=0x7f080006;
+        public static int cast_expanded_controller_ad_layout_height=0x7f080007;
+        public static int cast_expanded_controller_ad_layout_width=0x7f080008;
+        public static int cast_expanded_controller_control_button_margin=0x7f080099;
+        public static int cast_expanded_controller_control_toolbar_min_height=0x7f08009a;
+        public static int cast_expanded_controller_margin_between_seek_bar_and_control_buttons=0x7f080009;
+        public static int cast_expanded_controller_margin_between_status_text_and_seek_bar=0x7f08000a;
+        public static int cast_expanded_controller_seekbar_disabled_alpha=0x7f0800ba;
+        public static int cast_intro_overlay_button_margin_bottom=0x7f08009b;
+        public static int cast_intro_overlay_focus_radius=0x7f08009c;
+        public static int cast_intro_overlay_title_margin_top=0x7f08009d;
+        public static int cast_libraries_material_featurehighlight_center_horizontal_offset=0x7f08009e;
+        public static int cast_libraries_material_featurehighlight_center_threshold=0x7f08009f;
+        public static int cast_libraries_material_featurehighlight_inner_margin=0x7f0800a0;
+        public static int cast_libraries_material_featurehighlight_inner_radius=0x7f0800a1;
+        public static int cast_libraries_material_featurehighlight_outer_padding=0x7f0800a2;
+        public static int cast_libraries_material_featurehighlight_text_body_size=0x7f0800a3;
+        public static int cast_libraries_material_featurehighlight_text_header_size=0x7f0800a4;
+        public static int cast_libraries_material_featurehighlight_text_horizontal_margin=0x7f0800a5;
+        public static int cast_libraries_material_featurehighlight_text_horizontal_offset=0x7f0800a6;
+        public static int cast_libraries_material_featurehighlight_text_max_width=0x7f0800a7;
+        public static int cast_libraries_material_featurehighlight_text_vertical_space=0x7f0800a8;
+        public static int cast_mini_controller_control_button_margin=0x7f0800a9;
+        public static int cast_mini_controller_icon_height=0x7f0800aa;
+        public static int cast_mini_controller_icon_width=0x7f0800ab;
+        public static int cast_notification_image_size=0x7f0800ac;
+        public static int cast_tracks_chooser_dialog_no_message_text_size=0x7f0800ad;
+        public static int cast_tracks_chooser_dialog_row_text_size=0x7f0800ae;
+        public static int compat_button_inset_horizontal_material=0x7f08006b;
+        public static int compat_button_inset_vertical_material=0x7f08006c;
+        public static int compat_button_padding_horizontal_material=0x7f08006d;
+        public static int compat_button_padding_vertical_material=0x7f08006e;
+        public static int compat_control_corner_material=0x7f08006f;
+        public static int design_appbar_elevation=0x7f08007b;
+        public static int design_bottom_navigation_active_item_max_width=0x7f08007c;
+        public static int design_bottom_navigation_active_text_size=0x7f08007d;
+        public static int design_bottom_navigation_elevation=0x7f08007e;
+        public static int design_bottom_navigation_height=0x7f08007f;
+        public static int design_bottom_navigation_item_max_width=0x7f080080;
+        public static int design_bottom_navigation_item_min_width=0x7f080081;
+        public static int design_bottom_navigation_margin=0x7f080082;
+        public static int design_bottom_navigation_shadow_height=0x7f080083;
+        public static int design_bottom_navigation_text_size=0x7f080084;
+        public static int design_bottom_sheet_modal_elevation=0x7f080085;
+        public static int design_bottom_sheet_peek_height_min=0x7f080086;
+        public static int design_fab_border_width=0x7f080087;
+        public static int design_fab_elevation=0x7f080088;
+        public static int design_fab_image_size=0x7f080089;
+        public static int design_fab_size_mini=0x7f08008a;
+        public static int design_fab_size_normal=0x7f08008b;
+        public static int design_fab_translation_z_pressed=0x7f08008c;
+        public static int design_navigation_elevation=0x7f08008d;
+        public static int design_navigation_icon_padding=0x7f08008e;
+        public static int design_navigation_icon_size=0x7f08008f;
+        public static int design_navigation_max_width=0x7f080016;
+        public static int design_navigation_padding_bottom=0x7f080090;
+        public static int design_navigation_separator_vertical_padding=0x7f080091;
+        public static int design_snackbar_action_inline_max_width=0x7f080017;
+        public static int design_snackbar_background_corner_radius=0x7f080018;
+        public static int design_snackbar_elevation=0x7f080092;
+        public static int design_snackbar_extra_spacing_horizontal=0x7f080019;
+        public static int design_snackbar_max_width=0x7f08001a;
+        public static int design_snackbar_min_width=0x7f08001b;
+        public static int design_snackbar_padding_horizontal=0x7f080093;
+        public static int design_snackbar_padding_vertical=0x7f080094;
+        public static int design_snackbar_padding_vertical_2lines=0x7f08001c;
+        public static int design_snackbar_text_size=0x7f080095;
+        public static int design_tab_max_width=0x7f080096;
+        public static int design_tab_scrollable_min_width=0x7f08001d;
+        public static int design_tab_text_size=0x7f080097;
+        public static int design_tab_text_size_2line=0x7f080098;
+        public static int disabled_alpha_material_dark=0x7f0800b1;
+        public static int disabled_alpha_material_light=0x7f0800b2;
+        public static int fastscroll_default_thickness=0x7f080023;
+        public static int fastscroll_margin=0x7f080024;
+        public static int fastscroll_minimum_range=0x7f080025;
+        public static int highlight_alpha_material_colored=0x7f0800b3;
+        public static int highlight_alpha_material_dark=0x7f0800b4;
+        public static int highlight_alpha_material_light=0x7f0800b5;
+        public static int hint_alpha_material_dark=0x7f0800b6;
+        public static int hint_alpha_material_light=0x7f0800b7;
+        public static int hint_pressed_alpha_material_dark=0x7f0800b8;
+        public static int hint_pressed_alpha_material_light=0x7f0800b9;
+        public static int item_touch_helper_max_drag_scroll_per_frame=0x7f080026;
+        public static int item_touch_helper_swipe_escape_max_velocity=0x7f080027;
+        public static int item_touch_helper_swipe_escape_velocity=0x7f080028;
+        public static int notification_action_icon_size=0x7f080070;
+        public static int notification_action_text_size=0x7f080071;
+        public static int notification_big_circle_margin=0x7f080072;
+        public static int notification_content_margin_start=0x7f080020;
+        public static int notification_large_icon_height=0x7f080073;
+        public static int notification_large_icon_width=0x7f080074;
+        public static int notification_main_column_padding_top=0x7f080021;
+        public static int notification_media_narrow_margin=0x7f080022;
+        public static int notification_right_icon_size=0x7f080075;
+        public static int notification_right_side_padding_top=0x7f08001e;
+        public static int notification_small_icon_background_padding=0x7f080076;
+        public static int notification_small_icon_size_as_large=0x7f080077;
+        public static int notification_subtext_size=0x7f080078;
+        public static int notification_top_pad=0x7f080079;
+        public static int notification_top_pad_large_text=0x7f08007a;
+        public static int tooltip_corner_radius=0x7f080060;
+        public static int tooltip_horizontal_padding=0x7f080061;
+        public static int tooltip_margin=0x7f080062;
+        public static int tooltip_precise_anchor_extra_offset=0x7f080063;
+        public static int tooltip_precise_anchor_threshold=0x7f080064;
+        public static int tooltip_vertical_padding=0x7f080065;
+        public static int tooltip_y_offset_non_touch=0x7f080066;
+        public static int tooltip_y_offset_touch=0x7f080067;
     }
     public static final class drawable {
         public static int abc_ab_share_pack_mtrl_alpha=0x7f020000;
@@ -3851,888 +3851,894 @@ containing a value of this type.
         public static int tracker_stop_icon=0x7f0200ef;
     }
     public static final class id {
-        public static int ALT=0x7f0c003e;
-        public static int CTRL=0x7f0c003f;
-        public static int FUNCTION=0x7f0c0040;
-        public static int META=0x7f0c0041;
-        public static int SHIFT=0x7f0c0042;
-        public static int SYM=0x7f0c0043;
-        public static int action0=0x7f0c00ef;
-        public static int action_bar=0x7f0c00ad;
-        public static int action_bar_activity_content=0x7f0c000b;
-        public static int action_bar_container=0x7f0c00ac;
-        public static int action_bar_root=0x7f0c00a8;
-        public static int action_bar_spinner=0x7f0c000c;
-        public static int action_bar_subtitle=0x7f0c008c;
-        public static int action_bar_title=0x7f0c008b;
-        public static int action_container=0x7f0c00ec;
-        public static int action_context_bar=0x7f0c00ae;
-        public static int action_divider=0x7f0c00f3;
-        public static int action_image=0x7f0c00ed;
-        public static int action_menu_divider=0x7f0c000d;
-        public static int action_menu_presenter=0x7f0c000e;
-        public static int action_mode_bar=0x7f0c00aa;
-        public static int action_mode_bar_stub=0x7f0c00a9;
-        public static int action_mode_close_button=0x7f0c008d;
-        public static int action_text=0x7f0c00ee;
-        public static int actions=0x7f0c00fc;
-        public static int activity_chooser_view_content=0x7f0c008e;
-        public static int ad_container=0x7f0c00c2;
-        public static int ad_image_view=0x7f0c00c5;
-        public static int ad_in_progress_label=0x7f0c00c4;
-        public static int ad_label=0x7f0c00c3;
-        public static int add=0x7f0c0038;
-        public static int adjust_height=0x7f0c0066;
-        public static int adjust_width=0x7f0c0067;
-        public static int alertTitle=0x7f0c00a1;
-        public static int all=0x7f0c0062;
-        public static int always=0x7f0c0044;
-        public static int android_pay=0x7f0c008a;
-        public static int android_pay_dark=0x7f0c0081;
-        public static int android_pay_light=0x7f0c0082;
-        public static int android_pay_light_with_border=0x7f0c0083;
-        public static int async=0x7f0c004b;
-        public static int audio_list_view=0x7f0c00dd;
-        public static int auto=0x7f0c0054;
-        public static int background_image_view=0x7f0c00bd;
-        public static int background_place_holder_image_view=0x7f0c00c1;
-        public static int beginning=0x7f0c003b;
-        public static int blocking=0x7f0c004c;
-        public static int blurred_background_image_view=0x7f0c00be;
-        public static int book_now=0x7f0c007a;
-        public static int bottom=0x7f0c0049;
-        public static int button=0x7f0c00d4;
-        public static int buttonPanel=0x7f0c0094;
-        public static int button_0=0x7f0c00ce;
-        public static int button_1=0x7f0c00cf;
-        public static int button_2=0x7f0c00d1;
-        public static int button_3=0x7f0c00d2;
-        public static int button_play_pause_toggle=0x7f0c00d0;
-        public static int buyButton=0x7f0c0077;
-        public static int buy_now=0x7f0c007b;
-        public static int buy_with=0x7f0c007c;
-        public static int buy_with_google=0x7f0c007d;
-        public static int cancel_action=0x7f0c00f0;
-        public static int cast_button_type_closed_caption=0x7f0c001d;
-        public static int cast_button_type_custom=0x7f0c001e;
-        public static int cast_button_type_empty=0x7f0c001f;
-        public static int cast_button_type_forward_30_seconds=0x7f0c0020;
-        public static int cast_button_type_mute_toggle=0x7f0c0021;
-        public static int cast_button_type_play_pause_toggle=0x7f0c0022;
-        public static int cast_button_type_rewind_30_seconds=0x7f0c0023;
-        public static int cast_button_type_skip_next=0x7f0c0024;
-        public static int cast_button_type_skip_previous=0x7f0c0025;
-        public static int cast_featurehighlight_help_text_body_view=0x7f0c0026;
-        public static int cast_featurehighlight_help_text_header_view=0x7f0c0027;
-        public static int cast_featurehighlight_view=0x7f0c0028;
-        public static int cast_notification_id=0x7f0c001c;
-        public static int center=0x7f0c0055;
-        public static int center_horizontal=0x7f0c0056;
-        public static int center_vertical=0x7f0c0057;
-        public static int checkbox=0x7f0c00a4;
-        public static int chronometer=0x7f0c00f8;
-        public static int classic=0x7f0c0084;
-        public static int clip_horizontal=0x7f0c005e;
-        public static int clip_vertical=0x7f0c005f;
-        public static int collapseActionView=0x7f0c0045;
-        public static int container=0x7f0c00e0;
-        public static int container_all=0x7f0c00d5;
-        public static int container_current=0x7f0c00d6;
-        public static int contentPanel=0x7f0c0097;
-        public static int controllers=0x7f0c00c0;
-        public static int coordinator=0x7f0c00e1;
-        public static int custom=0x7f0c009e;
-        public static int customPanel=0x7f0c009d;
-        public static int dark=0x7f0c006b;
-        public static int decor_content_parent=0x7f0c00ab;
-        public static int default_activity_button=0x7f0c0091;
-        public static int design_bottom_sheet=0x7f0c00e3;
-        public static int design_menu_item_action_area=0x7f0c00ea;
-        public static int design_menu_item_action_area_stub=0x7f0c00e9;
-        public static int design_menu_item_text=0x7f0c00e8;
-        public static int design_navigation_view=0x7f0c00e7;
-        public static int disableHome=0x7f0c002c;
-        public static int donate_with=0x7f0c007e;
-        public static int donate_with_google=0x7f0c007f;
-        public static int drawer_layout_container=0x7f0c0101;
-        public static int drawer_layout_toolbar=0x7f0c0102;
-        public static int edit_query=0x7f0c00af;
-        public static int end=0x7f0c003c;
-        public static int end_padder=0x7f0c00fe;
-        public static int end_text=0x7f0c00ca;
-        public static int enterAlways=0x7f0c004f;
-        public static int enterAlwaysCollapsed=0x7f0c0050;
-        public static int exitUntilCollapsed=0x7f0c0051;
-        public static int expand_activities_button=0x7f0c008f;
-        public static int expanded_controller_layout=0x7f0c00bc;
-        public static int expanded_menu=0x7f0c00a3;
-        public static int fill=0x7f0c0060;
-        public static int fill_horizontal=0x7f0c0061;
-        public static int fill_vertical=0x7f0c0058;
-        public static int fixed=0x7f0c0064;
-        public static int forever=0x7f0c004d;
-        public static int ghost_view=0x7f0c0001;
-        public static int google_wallet_classic=0x7f0c0085;
-        public static int google_wallet_grayscale=0x7f0c0086;
-        public static int google_wallet_monochrome=0x7f0c0087;
-        public static int grayscale=0x7f0c0088;
-        public static int holo_dark=0x7f0c0071;
-        public static int holo_light=0x7f0c0072;
-        public static int home=0x7f0c000f;
-        public static int homeAsUp=0x7f0c002d;
-        public static int hybrid=0x7f0c006d;
-        public static int icon=0x7f0c0093;
-        public static int icon_group=0x7f0c00fd;
-        public static int icon_only=0x7f0c0068;
-        public static int icon_view=0x7f0c00d7;
-        public static int ifRoom=0x7f0c0046;
-        public static int image=0x7f0c0090;
-        public static int info=0x7f0c00f9;
-        public static int italic=0x7f0c004e;
-        public static int item_touch_helper_previous_elevation=0x7f0c0000;
-        public static int largeLabel=0x7f0c00df;
-        public static int left=0x7f0c0059;
-        public static int light=0x7f0c006c;
-        public static int line1=0x7f0c0014;
-        public static int line3=0x7f0c0015;
-        public static int listMode=0x7f0c0029;
-        public static int list_item=0x7f0c0092;
-        public static int live_stream_indicator=0x7f0c00cb;
-        public static int live_stream_seek_bar=0x7f0c00cd;
-        public static int loading_indicator=0x7f0c00c6;
-        public static int logo_only=0x7f0c0080;
-        public static int masked=0x7f0c010c;
-        public static int match_parent=0x7f0c0079;
-        public static int media_actions=0x7f0c00f2;
-        public static int message=0x7f0c010a;
-        public static int middle=0x7f0c003d;
-        public static int mini=0x7f0c0063;
-        public static int monochrome=0x7f0c0089;
-        public static int multiply=0x7f0c0033;
-        public static int navigation_header_container=0x7f0c00e6;
-        public static int never=0x7f0c0047;
-        public static int none=0x7f0c002e;
-        public static int normal=0x7f0c002a;
-        public static int notification_background=0x7f0c00fb;
-        public static int notification_main_column=0x7f0c00f5;
-        public static int notification_main_column_container=0x7f0c00f4;
-        public static int parallax=0x7f0c005c;
-        public static int parentPanel=0x7f0c0096;
-        public static int parent_matrix=0x7f0c0002;
-        public static int pin=0x7f0c005d;
-        public static int production=0x7f0c0073;
-        public static int progressBar=0x7f0c00da;
-        public static int progress_circular=0x7f0c0010;
-        public static int progress_horizontal=0x7f0c0011;
-        public static int radio=0x7f0c00a6;
-        public static int right=0x7f0c005a;
-        public static int right_icon=0x7f0c00fa;
-        public static int right_side=0x7f0c00f6;
-        public static int sandbox=0x7f0c0074;
-        public static int satellite=0x7f0c006e;
-        public static int save_image_matrix=0x7f0c0003;
-        public static int save_non_transition_alpha=0x7f0c0004;
-        public static int save_scale_type=0x7f0c0005;
-        public static int screen=0x7f0c0034;
-        public static int scroll=0x7f0c0052;
-        public static int scrollIndicatorDown=0x7f0c009c;
-        public static int scrollIndicatorUp=0x7f0c0098;
-        public static int scrollView=0x7f0c0099;
-        public static int scrollable=0x7f0c0065;
-        public static int search_badge=0x7f0c00b1;
-        public static int search_bar=0x7f0c00b0;
-        public static int search_button=0x7f0c00b2;
-        public static int search_close_btn=0x7f0c00b7;
-        public static int search_edit_frame=0x7f0c00b3;
-        public static int search_go_btn=0x7f0c00b9;
-        public static int search_mag_icon=0x7f0c00b4;
-        public static int search_plate=0x7f0c00b5;
-        public static int search_src_text=0x7f0c00b6;
-        public static int search_voice_btn=0x7f0c00ba;
-        public static int seek_bar=0x7f0c00cc;
-        public static int seek_bar_controls=0x7f0c00c8;
-        public static int select_dialog_listview=0x7f0c00bb;
-        public static int selectionDetails=0x7f0c0078;
-        public static int shortcut=0x7f0c00a5;
-        public static int showCustom=0x7f0c002f;
-        public static int showHome=0x7f0c0030;
-        public static int showTitle=0x7f0c0031;
-        public static int slide=0x7f0c0070;
-        public static int smallLabel=0x7f0c00de;
-        public static int snackbar_action=0x7f0c00e5;
-        public static int snackbar_text=0x7f0c00e4;
-        public static int snap=0x7f0c0053;
-        public static int spacer=0x7f0c0095;
-        public static int split_action_bar=0x7f0c0012;
-        public static int src_atop=0x7f0c0035;
-        public static int src_in=0x7f0c0036;
-        public static int src_over=0x7f0c0037;
-        public static int standard=0x7f0c0069;
-        public static int start=0x7f0c005b;
-        public static int start_text=0x7f0c00c9;
-        public static int status_bar_latest_event_content=0x7f0c00f1;
-        public static int status_text=0x7f0c00c7;
-        public static int strict_sandbox=0x7f0c0075;
-        public static int submenuarrow=0x7f0c00a7;
-        public static int submit_area=0x7f0c00b8;
-        public static int subtitle_view=0x7f0c00d9;
-        public static int tabMode=0x7f0c002b;
-        public static int tab_host=0x7f0c00db;
-        public static int terrain=0x7f0c006f;
-        public static int test=0x7f0c0076;
-        public static int text=0x7f0c0016;
-        public static int text2=0x7f0c0017;
-        public static int textSpacerNoButtons=0x7f0c009b;
-        public static int textSpacerNoTitle=0x7f0c009a;
-        public static int textTitle=0x7f0c00d3;
-        public static int text_input_password_toggle=0x7f0c00eb;
-        public static int text_list_view=0x7f0c00dc;
-        public static int textinput_counter=0x7f0c0019;
-        public static int textinput_error=0x7f0c001a;
-        public static int time=0x7f0c00f7;
-        public static int titanium_ui_checkbox=0x7f0c00ff;
-        public static int titanium_ui_date_picker_spinner=0x7f0c0100;
-        public static int titanium_ui_edittext=0x7f0c0103;
-        public static int titanium_ui_list_header_or_footer_title=0x7f0c0104;
-        public static int titanium_ui_list_item_accessoryType=0x7f0c0106;
-        public static int titanium_ui_list_item_content=0x7f0c0105;
-        public static int titanium_ui_spinner=0x7f0c0107;
-        public static int titanium_ui_switchcompat=0x7f0c0108;
-        public static int titanium_ui_time_picker_spinner=0x7f0c0109;
-        public static int title=0x7f0c0018;
-        public static int titleDividerNoCustom=0x7f0c00a2;
-        public static int title_template=0x7f0c00a0;
-        public static int title_view=0x7f0c00d8;
-        public static int toolbar=0x7f0c00bf;
-        public static int top=0x7f0c004a;
-        public static int topPanel=0x7f0c009f;
-        public static int touch_outside=0x7f0c00e2;
-        public static int transition_current_scene=0x7f0c0006;
-        public static int transition_layout_save=0x7f0c0007;
-        public static int transition_position=0x7f0c0008;
-        public static int transition_scene_layoutid_cache=0x7f0c0009;
-        public static int transition_transform=0x7f0c000a;
-        public static int uniform=0x7f0c0039;
-        public static int up=0x7f0c0013;
-        public static int useLogo=0x7f0c0032;
-        public static int view_offset_helper=0x7f0c001b;
-        public static int visible=0x7f0c010b;
-        public static int wide=0x7f0c006a;
-        public static int withText=0x7f0c0048;
-        public static int wrap_content=0x7f0c003a;
+        public static int ALT=0x7f0d003e;
+        public static int CTRL=0x7f0d003f;
+        public static int FUNCTION=0x7f0d0040;
+        public static int META=0x7f0d0041;
+        public static int SHIFT=0x7f0d0042;
+        public static int SYM=0x7f0d0043;
+        public static int action0=0x7f0d00ef;
+        public static int action_bar=0x7f0d00ad;
+        public static int action_bar_activity_content=0x7f0d000b;
+        public static int action_bar_container=0x7f0d00ac;
+        public static int action_bar_root=0x7f0d00a8;
+        public static int action_bar_spinner=0x7f0d000c;
+        public static int action_bar_subtitle=0x7f0d008c;
+        public static int action_bar_title=0x7f0d008b;
+        public static int action_container=0x7f0d00ec;
+        public static int action_context_bar=0x7f0d00ae;
+        public static int action_divider=0x7f0d00f3;
+        public static int action_image=0x7f0d00ed;
+        public static int action_menu_divider=0x7f0d000d;
+        public static int action_menu_presenter=0x7f0d000e;
+        public static int action_mode_bar=0x7f0d00aa;
+        public static int action_mode_bar_stub=0x7f0d00a9;
+        public static int action_mode_close_button=0x7f0d008d;
+        public static int action_text=0x7f0d00ee;
+        public static int actions=0x7f0d00fc;
+        public static int activity_chooser_view_content=0x7f0d008e;
+        public static int ad_container=0x7f0d00c2;
+        public static int ad_image_view=0x7f0d00c5;
+        public static int ad_in_progress_label=0x7f0d00c4;
+        public static int ad_label=0x7f0d00c3;
+        public static int add=0x7f0d0038;
+        public static int adjust_height=0x7f0d0066;
+        public static int adjust_width=0x7f0d0067;
+        public static int alertTitle=0x7f0d00a1;
+        public static int all=0x7f0d0062;
+        public static int always=0x7f0d0044;
+        public static int android_pay=0x7f0d008a;
+        public static int android_pay_dark=0x7f0d0081;
+        public static int android_pay_light=0x7f0d0082;
+        public static int android_pay_light_with_border=0x7f0d0083;
+        public static int async=0x7f0d004b;
+        public static int audio_list_view=0x7f0d00dd;
+        public static int auto=0x7f0d0054;
+        public static int background_image_view=0x7f0d00bd;
+        public static int background_place_holder_image_view=0x7f0d00c1;
+        public static int beginning=0x7f0d003b;
+        public static int blocking=0x7f0d004c;
+        public static int blurred_background_image_view=0x7f0d00be;
+        public static int book_now=0x7f0d007a;
+        public static int bottom=0x7f0d0049;
+        public static int button=0x7f0d00d4;
+        public static int buttonPanel=0x7f0d0094;
+        public static int button_0=0x7f0d00ce;
+        public static int button_1=0x7f0d00cf;
+        public static int button_2=0x7f0d00d1;
+        public static int button_3=0x7f0d00d2;
+        public static int button_play_pause_toggle=0x7f0d00d0;
+        public static int buyButton=0x7f0d0077;
+        public static int buy_now=0x7f0d007b;
+        public static int buy_with=0x7f0d007c;
+        public static int buy_with_google=0x7f0d007d;
+        public static int cancel_action=0x7f0d00f0;
+        public static int cast_button_type_closed_caption=0x7f0d001d;
+        public static int cast_button_type_custom=0x7f0d001e;
+        public static int cast_button_type_empty=0x7f0d001f;
+        public static int cast_button_type_forward_30_seconds=0x7f0d0020;
+        public static int cast_button_type_mute_toggle=0x7f0d0021;
+        public static int cast_button_type_play_pause_toggle=0x7f0d0022;
+        public static int cast_button_type_rewind_30_seconds=0x7f0d0023;
+        public static int cast_button_type_skip_next=0x7f0d0024;
+        public static int cast_button_type_skip_previous=0x7f0d0025;
+        public static int cast_featurehighlight_help_text_body_view=0x7f0d0026;
+        public static int cast_featurehighlight_help_text_header_view=0x7f0d0027;
+        public static int cast_featurehighlight_view=0x7f0d0028;
+        public static int cast_notification_id=0x7f0d001c;
+        public static int center=0x7f0d0055;
+        public static int center_horizontal=0x7f0d0056;
+        public static int center_vertical=0x7f0d0057;
+        public static int checkbox=0x7f0d00a4;
+        public static int chronometer=0x7f0d00f8;
+        public static int classic=0x7f0d0084;
+        public static int clip_horizontal=0x7f0d005e;
+        public static int clip_vertical=0x7f0d005f;
+        public static int collapseActionView=0x7f0d0045;
+        public static int container=0x7f0d00e0;
+        public static int container_all=0x7f0d00d5;
+        public static int container_current=0x7f0d00d6;
+        public static int contentPanel=0x7f0d0097;
+        public static int controllers=0x7f0d00c0;
+        public static int coordinator=0x7f0d00e1;
+        public static int custom=0x7f0d009e;
+        public static int customPanel=0x7f0d009d;
+        public static int dark=0x7f0d006b;
+        public static int decor_content_parent=0x7f0d00ab;
+        public static int default_activity_button=0x7f0d0091;
+        public static int design_bottom_sheet=0x7f0d00e3;
+        public static int design_menu_item_action_area=0x7f0d00ea;
+        public static int design_menu_item_action_area_stub=0x7f0d00e9;
+        public static int design_menu_item_text=0x7f0d00e8;
+        public static int design_navigation_view=0x7f0d00e7;
+        public static int disableHome=0x7f0d002c;
+        public static int donate_with=0x7f0d007e;
+        public static int donate_with_google=0x7f0d007f;
+        public static int drawer_layout_container=0x7f0d0101;
+        public static int drawer_layout_toolbar=0x7f0d0102;
+        public static int edit_query=0x7f0d00af;
+        public static int end=0x7f0d003c;
+        public static int end_padder=0x7f0d00fe;
+        public static int end_text=0x7f0d00ca;
+        public static int enterAlways=0x7f0d004f;
+        public static int enterAlwaysCollapsed=0x7f0d0050;
+        public static int exitUntilCollapsed=0x7f0d0051;
+        public static int expand_activities_button=0x7f0d008f;
+        public static int expanded_controller_layout=0x7f0d00bc;
+        public static int expanded_menu=0x7f0d00a3;
+        public static int fill=0x7f0d0060;
+        public static int fill_horizontal=0x7f0d0061;
+        public static int fill_vertical=0x7f0d0058;
+        public static int fixed=0x7f0d0064;
+        public static int forever=0x7f0d004d;
+        public static int ghost_view=0x7f0d0001;
+        public static int google_wallet_classic=0x7f0d0085;
+        public static int google_wallet_grayscale=0x7f0d0086;
+        public static int google_wallet_monochrome=0x7f0d0087;
+        public static int grayscale=0x7f0d0088;
+        public static int holo_dark=0x7f0d0071;
+        public static int holo_light=0x7f0d0072;
+        public static int home=0x7f0d000f;
+        public static int homeAsUp=0x7f0d002d;
+        public static int hybrid=0x7f0d006d;
+        public static int icon=0x7f0d0093;
+        public static int icon_group=0x7f0d00fd;
+        public static int icon_only=0x7f0d0068;
+        public static int icon_view=0x7f0d00d7;
+        public static int ifRoom=0x7f0d0046;
+        public static int image=0x7f0d0090;
+        public static int info=0x7f0d00f9;
+        public static int italic=0x7f0d004e;
+        public static int item_touch_helper_previous_elevation=0x7f0d0000;
+        public static int largeLabel=0x7f0d00df;
+        public static int left=0x7f0d0059;
+        public static int light=0x7f0d006c;
+        public static int line1=0x7f0d0014;
+        public static int line3=0x7f0d0015;
+        public static int listMode=0x7f0d0029;
+        public static int list_item=0x7f0d0092;
+        public static int live_stream_indicator=0x7f0d00cb;
+        public static int live_stream_seek_bar=0x7f0d00cd;
+        public static int loading_indicator=0x7f0d00c6;
+        public static int logo_only=0x7f0d0080;
+        public static int masked=0x7f0d010c;
+        public static int match_parent=0x7f0d0079;
+        public static int media_actions=0x7f0d00f2;
+        public static int message=0x7f0d010a;
+        public static int middle=0x7f0d003d;
+        public static int mini=0x7f0d0063;
+        public static int monochrome=0x7f0d0089;
+        public static int multiply=0x7f0d0033;
+        public static int navigation_header_container=0x7f0d00e6;
+        public static int never=0x7f0d0047;
+        public static int none=0x7f0d002e;
+        public static int normal=0x7f0d002a;
+        public static int notification_background=0x7f0d00fb;
+        public static int notification_main_column=0x7f0d00f5;
+        public static int notification_main_column_container=0x7f0d00f4;
+        public static int parallax=0x7f0d005c;
+        public static int parentPanel=0x7f0d0096;
+        public static int parent_matrix=0x7f0d0002;
+        public static int pin=0x7f0d005d;
+        public static int production=0x7f0d0073;
+        public static int progressBar=0x7f0d00da;
+        public static int progress_circular=0x7f0d0010;
+        public static int progress_horizontal=0x7f0d0011;
+        public static int radio=0x7f0d00a6;
+        public static int right=0x7f0d005a;
+        public static int right_icon=0x7f0d00fa;
+        public static int right_side=0x7f0d00f6;
+        public static int sandbox=0x7f0d0074;
+        public static int satellite=0x7f0d006e;
+        public static int save_image_matrix=0x7f0d0003;
+        public static int save_non_transition_alpha=0x7f0d0004;
+        public static int save_scale_type=0x7f0d0005;
+        public static int screen=0x7f0d0034;
+        public static int scroll=0x7f0d0052;
+        public static int scrollIndicatorDown=0x7f0d009c;
+        public static int scrollIndicatorUp=0x7f0d0098;
+        public static int scrollView=0x7f0d0099;
+        public static int scrollable=0x7f0d0065;
+        public static int search_badge=0x7f0d00b1;
+        public static int search_bar=0x7f0d00b0;
+        public static int search_button=0x7f0d00b2;
+        public static int search_close_btn=0x7f0d00b7;
+        public static int search_edit_frame=0x7f0d00b3;
+        public static int search_go_btn=0x7f0d00b9;
+        public static int search_mag_icon=0x7f0d00b4;
+        public static int search_plate=0x7f0d00b5;
+        public static int search_src_text=0x7f0d00b6;
+        public static int search_voice_btn=0x7f0d00ba;
+        public static int seek_bar=0x7f0d00cc;
+        public static int seek_bar_controls=0x7f0d00c8;
+        public static int select_dialog_listview=0x7f0d00bb;
+        public static int selectionDetails=0x7f0d0078;
+        public static int shortcut=0x7f0d00a5;
+        public static int showCustom=0x7f0d002f;
+        public static int showHome=0x7f0d0030;
+        public static int showTitle=0x7f0d0031;
+        public static int slide=0x7f0d0070;
+        public static int smallLabel=0x7f0d00de;
+        public static int snackbar_action=0x7f0d00e5;
+        public static int snackbar_text=0x7f0d00e4;
+        public static int snap=0x7f0d0053;
+        public static int spacer=0x7f0d0095;
+        public static int split_action_bar=0x7f0d0012;
+        public static int src_atop=0x7f0d0035;
+        public static int src_in=0x7f0d0036;
+        public static int src_over=0x7f0d0037;
+        public static int standard=0x7f0d0069;
+        public static int start=0x7f0d005b;
+        public static int start_text=0x7f0d00c9;
+        public static int status_bar_latest_event_content=0x7f0d00f1;
+        public static int status_text=0x7f0d00c7;
+        public static int strict_sandbox=0x7f0d0075;
+        public static int submenuarrow=0x7f0d00a7;
+        public static int submit_area=0x7f0d00b8;
+        public static int subtitle_view=0x7f0d00d9;
+        public static int tabMode=0x7f0d002b;
+        public static int tab_host=0x7f0d00db;
+        public static int terrain=0x7f0d006f;
+        public static int test=0x7f0d0076;
+        public static int text=0x7f0d0016;
+        public static int text2=0x7f0d0017;
+        public static int textSpacerNoButtons=0x7f0d009b;
+        public static int textSpacerNoTitle=0x7f0d009a;
+        public static int textTitle=0x7f0d00d3;
+        public static int text_input_password_toggle=0x7f0d00eb;
+        public static int text_list_view=0x7f0d00dc;
+        public static int textinput_counter=0x7f0d0019;
+        public static int textinput_error=0x7f0d001a;
+        public static int time=0x7f0d00f7;
+        public static int titanium_ui_checkbox=0x7f0d00ff;
+        public static int titanium_ui_date_picker_spinner=0x7f0d0100;
+        public static int titanium_ui_edittext=0x7f0d0103;
+        public static int titanium_ui_list_header_or_footer_title=0x7f0d0104;
+        public static int titanium_ui_list_item_accessoryType=0x7f0d0106;
+        public static int titanium_ui_list_item_content=0x7f0d0105;
+        public static int titanium_ui_spinner=0x7f0d0107;
+        public static int titanium_ui_switchcompat=0x7f0d0108;
+        public static int titanium_ui_time_picker_spinner=0x7f0d0109;
+        public static int title=0x7f0d0018;
+        public static int titleDividerNoCustom=0x7f0d00a2;
+        public static int title_template=0x7f0d00a0;
+        public static int title_view=0x7f0d00d8;
+        public static int toolbar=0x7f0d00bf;
+        public static int top=0x7f0d004a;
+        public static int topPanel=0x7f0d009f;
+        public static int touch_outside=0x7f0d00e2;
+        public static int transition_current_scene=0x7f0d0006;
+        public static int transition_layout_save=0x7f0d0007;
+        public static int transition_position=0x7f0d0008;
+        public static int transition_scene_layoutid_cache=0x7f0d0009;
+        public static int transition_transform=0x7f0d000a;
+        public static int uniform=0x7f0d0039;
+        public static int up=0x7f0d0013;
+        public static int useLogo=0x7f0d0032;
+        public static int view_offset_helper=0x7f0d001b;
+        public static int visible=0x7f0d010b;
+        public static int wide=0x7f0d006a;
+        public static int withText=0x7f0d0048;
+        public static int wrap_content=0x7f0d003a;
     }
     public static final class integer {
-        public static int abc_config_activityDefaultDur=0x7f0a0002;
-        public static int abc_config_activityShortDur=0x7f0a0003;
-        public static int app_bar_elevation_anim_duration=0x7f0a0006;
-        public static int bottom_sheet_slide_duration=0x7f0a0007;
-        public static int cancel_button_image_alpha=0x7f0a0001;
-        public static int cast_libraries_material_featurehighlight_pulse_base_alpha=0x7f0a000b;
-        public static int config_tooltipAnimTime=0x7f0a0004;
-        public static int design_snackbar_text_max_lines=0x7f0a0000;
-        public static int google_play_services_version=0x7f0a000a;
-        public static int hide_password_duration=0x7f0a0008;
-        public static int show_password_duration=0x7f0a0009;
-        public static int status_bar_notification_info_maxnum=0x7f0a0005;
+        public static int abc_config_activityDefaultDur=0x7f0b0002;
+        public static int abc_config_activityShortDur=0x7f0b0003;
+        public static int app_bar_elevation_anim_duration=0x7f0b0006;
+        public static int bottom_sheet_slide_duration=0x7f0b0007;
+        public static int cancel_button_image_alpha=0x7f0b0001;
+        public static int cast_libraries_material_featurehighlight_pulse_base_alpha=0x7f0b000b;
+        public static int config_tooltipAnimTime=0x7f0b0004;
+        public static int design_snackbar_text_max_lines=0x7f0b0000;
+        public static int google_play_services_version=0x7f0b000a;
+        public static int hide_password_duration=0x7f0b0008;
+        public static int interval=0x7f0b000c;
+        public static int show_password_duration=0x7f0b0009;
+        public static int status_bar_notification_info_maxnum=0x7f0b0005;
     }
     public static final class layout {
-        public static int abc_action_bar_title_item=0x7f030000;
-        public static int abc_action_bar_up_container=0x7f030001;
-        public static int abc_action_bar_view_list_nav_layout=0x7f030002;
-        public static int abc_action_menu_item_layout=0x7f030003;
-        public static int abc_action_menu_layout=0x7f030004;
-        public static int abc_action_mode_bar=0x7f030005;
-        public static int abc_action_mode_close_item_material=0x7f030006;
-        public static int abc_activity_chooser_view=0x7f030007;
-        public static int abc_activity_chooser_view_list_item=0x7f030008;
-        public static int abc_alert_dialog_button_bar_material=0x7f030009;
-        public static int abc_alert_dialog_material=0x7f03000a;
-        public static int abc_alert_dialog_title_material=0x7f03000b;
-        public static int abc_dialog_title_material=0x7f03000c;
-        public static int abc_expanded_menu_layout=0x7f03000d;
-        public static int abc_list_menu_item_checkbox=0x7f03000e;
-        public static int abc_list_menu_item_icon=0x7f03000f;
-        public static int abc_list_menu_item_layout=0x7f030010;
-        public static int abc_list_menu_item_radio=0x7f030011;
-        public static int abc_popup_menu_header_item_layout=0x7f030012;
-        public static int abc_popup_menu_item_layout=0x7f030013;
-        public static int abc_screen_content_include=0x7f030014;
-        public static int abc_screen_simple=0x7f030015;
-        public static int abc_screen_simple_overlay_action_mode=0x7f030016;
-        public static int abc_screen_toolbar=0x7f030017;
-        public static int abc_search_dropdown_item_icons_2line=0x7f030018;
-        public static int abc_search_view=0x7f030019;
-        public static int abc_select_dialog_material=0x7f03001a;
-        public static int cast_expanded_controller_activity=0x7f03001b;
-        public static int cast_help_text=0x7f03001c;
-        public static int cast_intro_overlay=0x7f03001d;
-        public static int cast_mini_controller=0x7f03001e;
-        public static int cast_tracks_chooser_dialog_layout=0x7f03001f;
-        public static int cast_tracks_chooser_dialog_row_layout=0x7f030020;
-        public static int design_bottom_navigation_item=0x7f030021;
-        public static int design_bottom_sheet_dialog=0x7f030022;
-        public static int design_layout_snackbar=0x7f030023;
-        public static int design_layout_snackbar_include=0x7f030024;
-        public static int design_layout_tab_icon=0x7f030025;
-        public static int design_layout_tab_text=0x7f030026;
-        public static int design_menu_item_action_area=0x7f030027;
-        public static int design_navigation_item=0x7f030028;
-        public static int design_navigation_item_header=0x7f030029;
-        public static int design_navigation_item_separator=0x7f03002a;
-        public static int design_navigation_item_subheader=0x7f03002b;
-        public static int design_navigation_menu=0x7f03002c;
-        public static int design_navigation_menu_item=0x7f03002d;
-        public static int design_text_input_password_icon=0x7f03002e;
-        public static int notification_action=0x7f03002f;
-        public static int notification_action_tombstone=0x7f030030;
-        public static int notification_media_action=0x7f030031;
-        public static int notification_media_cancel_action=0x7f030032;
-        public static int notification_template_big_media=0x7f030033;
-        public static int notification_template_big_media_custom=0x7f030034;
-        public static int notification_template_big_media_narrow=0x7f030035;
-        public static int notification_template_big_media_narrow_custom=0x7f030036;
-        public static int notification_template_custom_big=0x7f030037;
-        public static int notification_template_icon_group=0x7f030038;
-        public static int notification_template_lines_media=0x7f030039;
-        public static int notification_template_media=0x7f03003a;
-        public static int notification_template_media_custom=0x7f03003b;
-        public static int notification_template_part_chronometer=0x7f03003c;
-        public static int notification_template_part_time=0x7f03003d;
-        public static int select_dialog_item_material=0x7f03003e;
-        public static int select_dialog_multichoice_material=0x7f03003f;
-        public static int select_dialog_singlechoice_material=0x7f030040;
-        public static int support_simple_spinner_dropdown_item=0x7f030041;
-        public static int titanium_tabgroup=0x7f030042;
-        public static int titanium_ui_checkbox=0x7f030043;
-        public static int titanium_ui_date_picker_spinner=0x7f030044;
-        public static int titanium_ui_drawer_layout=0x7f030045;
-        public static int titanium_ui_edittext=0x7f030046;
-        public static int titanium_ui_list_header_or_footer=0x7f030047;
-        public static int titanium_ui_list_item=0x7f030048;
-        public static int titanium_ui_spinner=0x7f030049;
-        public static int titanium_ui_switchcompat=0x7f03004a;
-        public static int titanium_ui_time_picker_spinner=0x7f03004b;
-        public static int tooltip=0x7f03004c;
+        public static int abc_action_bar_title_item=0x7f040000;
+        public static int abc_action_bar_up_container=0x7f040001;
+        public static int abc_action_bar_view_list_nav_layout=0x7f040002;
+        public static int abc_action_menu_item_layout=0x7f040003;
+        public static int abc_action_menu_layout=0x7f040004;
+        public static int abc_action_mode_bar=0x7f040005;
+        public static int abc_action_mode_close_item_material=0x7f040006;
+        public static int abc_activity_chooser_view=0x7f040007;
+        public static int abc_activity_chooser_view_list_item=0x7f040008;
+        public static int abc_alert_dialog_button_bar_material=0x7f040009;
+        public static int abc_alert_dialog_material=0x7f04000a;
+        public static int abc_alert_dialog_title_material=0x7f04000b;
+        public static int abc_dialog_title_material=0x7f04000c;
+        public static int abc_expanded_menu_layout=0x7f04000d;
+        public static int abc_list_menu_item_checkbox=0x7f04000e;
+        public static int abc_list_menu_item_icon=0x7f04000f;
+        public static int abc_list_menu_item_layout=0x7f040010;
+        public static int abc_list_menu_item_radio=0x7f040011;
+        public static int abc_popup_menu_header_item_layout=0x7f040012;
+        public static int abc_popup_menu_item_layout=0x7f040013;
+        public static int abc_screen_content_include=0x7f040014;
+        public static int abc_screen_simple=0x7f040015;
+        public static int abc_screen_simple_overlay_action_mode=0x7f040016;
+        public static int abc_screen_toolbar=0x7f040017;
+        public static int abc_search_dropdown_item_icons_2line=0x7f040018;
+        public static int abc_search_view=0x7f040019;
+        public static int abc_select_dialog_material=0x7f04001a;
+        public static int cast_expanded_controller_activity=0x7f04001b;
+        public static int cast_help_text=0x7f04001c;
+        public static int cast_intro_overlay=0x7f04001d;
+        public static int cast_mini_controller=0x7f04001e;
+        public static int cast_tracks_chooser_dialog_layout=0x7f04001f;
+        public static int cast_tracks_chooser_dialog_row_layout=0x7f040020;
+        public static int design_bottom_navigation_item=0x7f040021;
+        public static int design_bottom_sheet_dialog=0x7f040022;
+        public static int design_layout_snackbar=0x7f040023;
+        public static int design_layout_snackbar_include=0x7f040024;
+        public static int design_layout_tab_icon=0x7f040025;
+        public static int design_layout_tab_text=0x7f040026;
+        public static int design_menu_item_action_area=0x7f040027;
+        public static int design_navigation_item=0x7f040028;
+        public static int design_navigation_item_header=0x7f040029;
+        public static int design_navigation_item_separator=0x7f04002a;
+        public static int design_navigation_item_subheader=0x7f04002b;
+        public static int design_navigation_menu=0x7f04002c;
+        public static int design_navigation_menu_item=0x7f04002d;
+        public static int design_text_input_password_icon=0x7f04002e;
+        public static int notification_action=0x7f04002f;
+        public static int notification_action_tombstone=0x7f040030;
+        public static int notification_media_action=0x7f040031;
+        public static int notification_media_cancel_action=0x7f040032;
+        public static int notification_template_big_media=0x7f040033;
+        public static int notification_template_big_media_custom=0x7f040034;
+        public static int notification_template_big_media_narrow=0x7f040035;
+        public static int notification_template_big_media_narrow_custom=0x7f040036;
+        public static int notification_template_custom_big=0x7f040037;
+        public static int notification_template_icon_group=0x7f040038;
+        public static int notification_template_lines_media=0x7f040039;
+        public static int notification_template_media=0x7f04003a;
+        public static int notification_template_media_custom=0x7f04003b;
+        public static int notification_template_part_chronometer=0x7f04003c;
+        public static int notification_template_part_time=0x7f04003d;
+        public static int select_dialog_item_material=0x7f04003e;
+        public static int select_dialog_multichoice_material=0x7f04003f;
+        public static int select_dialog_singlechoice_material=0x7f040040;
+        public static int support_simple_spinner_dropdown_item=0x7f040041;
+        public static int titanium_tabgroup=0x7f040042;
+        public static int titanium_ui_checkbox=0x7f040043;
+        public static int titanium_ui_date_picker_spinner=0x7f040044;
+        public static int titanium_ui_drawer_layout=0x7f040045;
+        public static int titanium_ui_edittext=0x7f040046;
+        public static int titanium_ui_list_header_or_footer=0x7f040047;
+        public static int titanium_ui_list_item=0x7f040048;
+        public static int titanium_ui_spinner=0x7f040049;
+        public static int titanium_ui_switchcompat=0x7f04004a;
+        public static int titanium_ui_time_picker_spinner=0x7f04004b;
+        public static int tooltip=0x7f04004c;
+    }
+    public static final class mipmap {
+        public static int ic_launcher=0x7f030000;
     }
     public static final class string {
-        public static int abc_action_bar_home_description=0x7f060000;
-        public static int abc_action_bar_home_description_format=0x7f060001;
-        public static int abc_action_bar_home_subtitle_description_format=0x7f060002;
-        public static int abc_action_bar_up_description=0x7f060003;
-        public static int abc_action_menu_overflow_description=0x7f060004;
-        public static int abc_action_mode_done=0x7f060005;
-        public static int abc_activity_chooser_view_see_all=0x7f060006;
-        public static int abc_activitychooserview_choose_application=0x7f060007;
-        public static int abc_capital_off=0x7f060008;
-        public static int abc_capital_on=0x7f060009;
-        public static int abc_font_family_body_1_material=0x7f06004c;
-        public static int abc_font_family_body_2_material=0x7f06004d;
-        public static int abc_font_family_button_material=0x7f06004e;
-        public static int abc_font_family_caption_material=0x7f06004f;
-        public static int abc_font_family_display_1_material=0x7f060050;
-        public static int abc_font_family_display_2_material=0x7f060051;
-        public static int abc_font_family_display_3_material=0x7f060052;
-        public static int abc_font_family_display_4_material=0x7f060053;
-        public static int abc_font_family_headline_material=0x7f060054;
-        public static int abc_font_family_menu_material=0x7f060055;
-        public static int abc_font_family_subhead_material=0x7f060056;
-        public static int abc_font_family_title_material=0x7f060057;
-        public static int abc_search_hint=0x7f06000a;
-        public static int abc_searchview_description_clear=0x7f06000b;
-        public static int abc_searchview_description_query=0x7f06000c;
-        public static int abc_searchview_description_search=0x7f06000d;
-        public static int abc_searchview_description_submit=0x7f06000e;
-        public static int abc_searchview_description_voice=0x7f06000f;
-        public static int abc_shareactionprovider_share_with=0x7f060010;
-        public static int abc_shareactionprovider_share_with_application=0x7f060011;
-        public static int abc_toolbar_collapse_description=0x7f060012;
-        public static int app_name=0x7f060060;
-        public static int appbar_scrolling_view_behavior=0x7f060058;
-        public static int bottom_sheet_behavior=0x7f060059;
-        public static int cast_ad_label=0x7f060029;
-        public static int cast_casting_to_device=0x7f06002a;
-        public static int cast_closed_captions=0x7f06002b;
-        public static int cast_closed_captions_unavailable=0x7f06002c;
-        public static int cast_disconnect=0x7f06002d;
-        public static int cast_expanded_controller_ad_image_description=0x7f06002e;
-        public static int cast_expanded_controller_ad_in_progress=0x7f06002f;
-        public static int cast_expanded_controller_background_image=0x7f060030;
-        public static int cast_expanded_controller_live_stream_indicator=0x7f060031;
-        public static int cast_expanded_controller_loading=0x7f060032;
-        public static int cast_expanded_controller_skip_ad_label=0x7f060033;
-        public static int cast_forward=0x7f060034;
-        public static int cast_forward_10=0x7f060035;
-        public static int cast_forward_30=0x7f060036;
-        public static int cast_intro_overlay_button_text=0x7f060037;
-        public static int cast_invalid_stream_duration_text=0x7f060063;
-        public static int cast_invalid_stream_position_text=0x7f060064;
-        public static int cast_mute=0x7f060038;
-        public static int cast_notification_connected_message=0x7f060026;
-        public static int cast_notification_connecting_message=0x7f060027;
-        public static int cast_notification_disconnect=0x7f060028;
-        public static int cast_pause=0x7f060039;
-        public static int cast_play=0x7f06003a;
-        public static int cast_rewind=0x7f06003b;
-        public static int cast_rewind_10=0x7f06003c;
-        public static int cast_rewind_30=0x7f06003d;
-        public static int cast_seek_bar=0x7f06003e;
-        public static int cast_skip_next=0x7f06003f;
-        public static int cast_skip_prev=0x7f060040;
-        public static int cast_stop=0x7f060041;
-        public static int cast_stop_live_stream=0x7f060042;
-        public static int cast_tracks_chooser_dialog_audio=0x7f060043;
-        public static int cast_tracks_chooser_dialog_cancel=0x7f060044;
-        public static int cast_tracks_chooser_dialog_closed_captions=0x7f060045;
-        public static int cast_tracks_chooser_dialog_default_track_name=0x7f060046;
-        public static int cast_tracks_chooser_dialog_none=0x7f060047;
-        public static int cast_tracks_chooser_dialog_ok=0x7f060048;
-        public static int cast_tracks_chooser_dialog_subtitles=0x7f060049;
-        public static int cast_unmute=0x7f06004a;
-        public static int character_counter_pattern=0x7f06005a;
-        public static int common_google_play_services_enable_button=0x7f060015;
-        public static int common_google_play_services_enable_text=0x7f060016;
-        public static int common_google_play_services_enable_title=0x7f060017;
-        public static int common_google_play_services_install_button=0x7f060018;
-        public static int common_google_play_services_install_text=0x7f060019;
-        public static int common_google_play_services_install_title=0x7f06001a;
-        public static int common_google_play_services_notification_ticker=0x7f06001b;
-        public static int common_google_play_services_unknown_issue=0x7f060025;
-        public static int common_google_play_services_unsupported_text=0x7f06001c;
-        public static int common_google_play_services_update_button=0x7f06001d;
-        public static int common_google_play_services_update_text=0x7f06001e;
-        public static int common_google_play_services_update_title=0x7f06001f;
-        public static int common_google_play_services_updating_text=0x7f060020;
-        public static int common_google_play_services_wear_update_text=0x7f060021;
-        public static int common_open_on_phone=0x7f060022;
-        public static int common_signin_button_text=0x7f060023;
-        public static int common_signin_button_text_long=0x7f060024;
-        public static int drawer_layout_close=0x7f060062;
-        public static int drawer_layout_open=0x7f060061;
-        public static int ic_start_tracking=0x7f060065;
-        public static int ic_stop_tracking=0x7f060066;
-        public static int password_toggle_content_description=0x7f06005b;
-        public static int path_password_eye=0x7f06005c;
-        public static int path_password_eye_mask_strike_through=0x7f06005d;
-        public static int path_password_eye_mask_visible=0x7f06005e;
-        public static int path_password_strike_through=0x7f06005f;
-        public static int search_menu_title=0x7f060013;
-        public static int status_bar_notification_info_overflow=0x7f060014;
-        public static int wallet_buy_button_place_holder=0x7f06004b;
+        public static int abc_action_bar_home_description=0x7f070000;
+        public static int abc_action_bar_home_description_format=0x7f070001;
+        public static int abc_action_bar_home_subtitle_description_format=0x7f070002;
+        public static int abc_action_bar_up_description=0x7f070003;
+        public static int abc_action_menu_overflow_description=0x7f070004;
+        public static int abc_action_mode_done=0x7f070005;
+        public static int abc_activity_chooser_view_see_all=0x7f070006;
+        public static int abc_activitychooserview_choose_application=0x7f070007;
+        public static int abc_capital_off=0x7f070008;
+        public static int abc_capital_on=0x7f070009;
+        public static int abc_font_family_body_1_material=0x7f07004c;
+        public static int abc_font_family_body_2_material=0x7f07004d;
+        public static int abc_font_family_button_material=0x7f07004e;
+        public static int abc_font_family_caption_material=0x7f07004f;
+        public static int abc_font_family_display_1_material=0x7f070050;
+        public static int abc_font_family_display_2_material=0x7f070051;
+        public static int abc_font_family_display_3_material=0x7f070052;
+        public static int abc_font_family_display_4_material=0x7f070053;
+        public static int abc_font_family_headline_material=0x7f070054;
+        public static int abc_font_family_menu_material=0x7f070055;
+        public static int abc_font_family_subhead_material=0x7f070056;
+        public static int abc_font_family_title_material=0x7f070057;
+        public static int abc_search_hint=0x7f07000a;
+        public static int abc_searchview_description_clear=0x7f07000b;
+        public static int abc_searchview_description_query=0x7f07000c;
+        public static int abc_searchview_description_search=0x7f07000d;
+        public static int abc_searchview_description_submit=0x7f07000e;
+        public static int abc_searchview_description_voice=0x7f07000f;
+        public static int abc_shareactionprovider_share_with=0x7f070010;
+        public static int abc_shareactionprovider_share_with_application=0x7f070011;
+        public static int abc_toolbar_collapse_description=0x7f070012;
+        public static int app_name=0x7f070060;
+        public static int appbar_scrolling_view_behavior=0x7f070058;
+        public static int bottom_sheet_behavior=0x7f070059;
+        public static int cast_ad_label=0x7f070029;
+        public static int cast_casting_to_device=0x7f07002a;
+        public static int cast_closed_captions=0x7f07002b;
+        public static int cast_closed_captions_unavailable=0x7f07002c;
+        public static int cast_disconnect=0x7f07002d;
+        public static int cast_expanded_controller_ad_image_description=0x7f07002e;
+        public static int cast_expanded_controller_ad_in_progress=0x7f07002f;
+        public static int cast_expanded_controller_background_image=0x7f070030;
+        public static int cast_expanded_controller_live_stream_indicator=0x7f070031;
+        public static int cast_expanded_controller_loading=0x7f070032;
+        public static int cast_expanded_controller_skip_ad_label=0x7f070033;
+        public static int cast_forward=0x7f070034;
+        public static int cast_forward_10=0x7f070035;
+        public static int cast_forward_30=0x7f070036;
+        public static int cast_intro_overlay_button_text=0x7f070037;
+        public static int cast_invalid_stream_duration_text=0x7f070063;
+        public static int cast_invalid_stream_position_text=0x7f070064;
+        public static int cast_mute=0x7f070038;
+        public static int cast_notification_connected_message=0x7f070026;
+        public static int cast_notification_connecting_message=0x7f070027;
+        public static int cast_notification_disconnect=0x7f070028;
+        public static int cast_pause=0x7f070039;
+        public static int cast_play=0x7f07003a;
+        public static int cast_rewind=0x7f07003b;
+        public static int cast_rewind_10=0x7f07003c;
+        public static int cast_rewind_30=0x7f07003d;
+        public static int cast_seek_bar=0x7f07003e;
+        public static int cast_skip_next=0x7f07003f;
+        public static int cast_skip_prev=0x7f070040;
+        public static int cast_stop=0x7f070041;
+        public static int cast_stop_live_stream=0x7f070042;
+        public static int cast_tracks_chooser_dialog_audio=0x7f070043;
+        public static int cast_tracks_chooser_dialog_cancel=0x7f070044;
+        public static int cast_tracks_chooser_dialog_closed_captions=0x7f070045;
+        public static int cast_tracks_chooser_dialog_default_track_name=0x7f070046;
+        public static int cast_tracks_chooser_dialog_none=0x7f070047;
+        public static int cast_tracks_chooser_dialog_ok=0x7f070048;
+        public static int cast_tracks_chooser_dialog_subtitles=0x7f070049;
+        public static int cast_unmute=0x7f07004a;
+        public static int channel=0x7f070068;
+        public static int character_counter_pattern=0x7f07005a;
+        public static int common_google_play_services_enable_button=0x7f070015;
+        public static int common_google_play_services_enable_text=0x7f070016;
+        public static int common_google_play_services_enable_title=0x7f070017;
+        public static int common_google_play_services_install_button=0x7f070018;
+        public static int common_google_play_services_install_text=0x7f070019;
+        public static int common_google_play_services_install_title=0x7f07001a;
+        public static int common_google_play_services_notification_ticker=0x7f07001b;
+        public static int common_google_play_services_unknown_issue=0x7f070025;
+        public static int common_google_play_services_unsupported_text=0x7f07001c;
+        public static int common_google_play_services_update_button=0x7f07001d;
+        public static int common_google_play_services_update_text=0x7f07001e;
+        public static int common_google_play_services_update_title=0x7f07001f;
+        public static int common_google_play_services_updating_text=0x7f070020;
+        public static int common_google_play_services_wear_update_text=0x7f070021;
+        public static int common_open_on_phone=0x7f070022;
+        public static int common_signin_button_text=0x7f070023;
+        public static int common_signin_button_text_long=0x7f070024;
+        public static int contentText=0x7f070066;
+        public static int contentTitle=0x7f070067;
+        public static int drawer_layout_close=0x7f070062;
+        public static int drawer_layout_open=0x7f070061;
+        public static int password_toggle_content_description=0x7f07005b;
+        public static int path_password_eye=0x7f07005c;
+        public static int path_password_eye_mask_strike_through=0x7f07005d;
+        public static int path_password_eye_mask_visible=0x7f07005e;
+        public static int path_password_strike_through=0x7f07005f;
+        public static int search_menu_title=0x7f070013;
+        public static int status_bar_notification_info_overflow=0x7f070014;
+        public static int subText=0x7f070065;
+        public static int wallet_buy_button_place_holder=0x7f07004b;
     }
     public static final class style {
-        public static int AlertDialog_AppCompat=0x7f0800ae;
-        public static int AlertDialog_AppCompat_Light=0x7f0800af;
-        public static int Animation_AppCompat_Dialog=0x7f0800b0;
-        public static int Animation_AppCompat_DropDownUp=0x7f0800b1;
-        public static int Animation_AppCompat_Tooltip=0x7f0800b2;
-        public static int Animation_Design_BottomSheetDialog=0x7f080175;
-        public static int Base_AlertDialog_AppCompat=0x7f0800b3;
-        public static int Base_AlertDialog_AppCompat_Light=0x7f0800b4;
-        public static int Base_Animation_AppCompat_Dialog=0x7f0800b5;
-        public static int Base_Animation_AppCompat_DropDownUp=0x7f0800b6;
-        public static int Base_Animation_AppCompat_Tooltip=0x7f0800b7;
-        public static int Base_CardView=0x7f080171;
-        public static int Base_DialogWindowTitle_AppCompat=0x7f0800b8;
-        public static int Base_DialogWindowTitleBackground_AppCompat=0x7f0800b9;
-        public static int Base_TextAppearance_AppCompat=0x7f08003f;
-        public static int Base_TextAppearance_AppCompat_Body1=0x7f080040;
-        public static int Base_TextAppearance_AppCompat_Body2=0x7f080041;
-        public static int Base_TextAppearance_AppCompat_Button=0x7f080029;
-        public static int Base_TextAppearance_AppCompat_Caption=0x7f080042;
-        public static int Base_TextAppearance_AppCompat_Display1=0x7f080043;
-        public static int Base_TextAppearance_AppCompat_Display2=0x7f080044;
-        public static int Base_TextAppearance_AppCompat_Display3=0x7f080045;
-        public static int Base_TextAppearance_AppCompat_Display4=0x7f080046;
-        public static int Base_TextAppearance_AppCompat_Headline=0x7f080047;
-        public static int Base_TextAppearance_AppCompat_Inverse=0x7f08000c;
-        public static int Base_TextAppearance_AppCompat_Large=0x7f080048;
-        public static int Base_TextAppearance_AppCompat_Large_Inverse=0x7f08000d;
-        public static int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f080049;
-        public static int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f08004a;
-        public static int Base_TextAppearance_AppCompat_Medium=0x7f08004b;
-        public static int Base_TextAppearance_AppCompat_Medium_Inverse=0x7f08000e;
-        public static int Base_TextAppearance_AppCompat_Menu=0x7f08004c;
-        public static int Base_TextAppearance_AppCompat_SearchResult=0x7f0800ba;
-        public static int Base_TextAppearance_AppCompat_SearchResult_Subtitle=0x7f08004d;
-        public static int Base_TextAppearance_AppCompat_SearchResult_Title=0x7f08004e;
-        public static int Base_TextAppearance_AppCompat_Small=0x7f08004f;
-        public static int Base_TextAppearance_AppCompat_Small_Inverse=0x7f08000f;
-        public static int Base_TextAppearance_AppCompat_Subhead=0x7f080050;
-        public static int Base_TextAppearance_AppCompat_Subhead_Inverse=0x7f080010;
-        public static int Base_TextAppearance_AppCompat_Title=0x7f080051;
-        public static int Base_TextAppearance_AppCompat_Title_Inverse=0x7f080011;
-        public static int Base_TextAppearance_AppCompat_Tooltip=0x7f0800bb;
-        public static int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f08009c;
-        public static int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f080052;
-        public static int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f080053;
-        public static int Base_TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f080054;
-        public static int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f080055;
-        public static int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f080056;
-        public static int Base_TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f080057;
-        public static int Base_TextAppearance_AppCompat_Widget_Button=0x7f080058;
-        public static int Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f0800a4;
-        public static int Base_TextAppearance_AppCompat_Widget_Button_Colored=0x7f0800a5;
-        public static int Base_TextAppearance_AppCompat_Widget_Button_Inverse=0x7f08009d;
-        public static int Base_TextAppearance_AppCompat_Widget_DropDownItem=0x7f0800bc;
-        public static int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f080059;
-        public static int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f08005a;
-        public static int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f08005b;
-        public static int Base_TextAppearance_AppCompat_Widget_Switch=0x7f08005c;
-        public static int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f08005d;
-        public static int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0800bd;
-        public static int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f08005e;
-        public static int Base_TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f08005f;
-        public static int Base_Theme_AppCompat=0x7f080060;
-        public static int Base_Theme_AppCompat_CompactMenu=0x7f0800be;
-        public static int Base_Theme_AppCompat_Dialog=0x7f080012;
-        public static int Base_Theme_AppCompat_Dialog_Alert=0x7f080013;
-        public static int Base_Theme_AppCompat_Dialog_FixedSize=0x7f0800bf;
-        public static int Base_Theme_AppCompat_Dialog_MinWidth=0x7f080014;
-        public static int Base_Theme_AppCompat_DialogWhenLarge=0x7f080002;
-        public static int Base_Theme_AppCompat_Light=0x7f080061;
-        public static int Base_Theme_AppCompat_Light_DarkActionBar=0x7f0800c0;
-        public static int Base_Theme_AppCompat_Light_Dialog=0x7f080015;
-        public static int Base_Theme_AppCompat_Light_Dialog_Alert=0x7f080016;
-        public static int Base_Theme_AppCompat_Light_Dialog_FixedSize=0x7f0800c1;
-        public static int Base_Theme_AppCompat_Light_Dialog_MinWidth=0x7f080017;
-        public static int Base_Theme_AppCompat_Light_DialogWhenLarge=0x7f080003;
-        public static int Base_ThemeOverlay_AppCompat=0x7f0800c2;
-        public static int Base_ThemeOverlay_AppCompat_ActionBar=0x7f0800c3;
-        public static int Base_ThemeOverlay_AppCompat_Dark=0x7f0800c4;
-        public static int Base_ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0800c5;
-        public static int Base_ThemeOverlay_AppCompat_Dialog=0x7f080018;
-        public static int Base_ThemeOverlay_AppCompat_Dialog_Alert=0x7f080019;
-        public static int Base_ThemeOverlay_AppCompat_Light=0x7f0800c6;
-        public static int Base_V11_Theme_AppCompat_Dialog=0x7f08001a;
-        public static int Base_V11_Theme_AppCompat_Light_Dialog=0x7f08001b;
-        public static int Base_V11_ThemeOverlay_AppCompat_Dialog=0x7f08001c;
-        public static int Base_V12_Widget_AppCompat_AutoCompleteTextView=0x7f080025;
-        public static int Base_V12_Widget_AppCompat_EditText=0x7f080026;
-        public static int Base_V14_Widget_Design_AppBarLayout=0x7f080176;
-        public static int Base_V21_Theme_AppCompat=0x7f080062;
-        public static int Base_V21_Theme_AppCompat_Dialog=0x7f080063;
-        public static int Base_V21_Theme_AppCompat_Light=0x7f080064;
-        public static int Base_V21_Theme_AppCompat_Light_Dialog=0x7f080065;
-        public static int Base_V21_ThemeOverlay_AppCompat_Dialog=0x7f080066;
-        public static int Base_V21_Widget_Design_AppBarLayout=0x7f080098;
-        public static int Base_V22_Theme_AppCompat=0x7f08009a;
-        public static int Base_V22_Theme_AppCompat_Light=0x7f08009b;
-        public static int Base_V23_Theme_AppCompat=0x7f08009e;
-        public static int Base_V23_Theme_AppCompat_Light=0x7f08009f;
-        public static int Base_V26_Theme_AppCompat=0x7f0800a8;
-        public static int Base_V26_Theme_AppCompat_Light=0x7f0800a9;
-        public static int Base_V26_Widget_AppCompat_Toolbar=0x7f0800aa;
-        public static int Base_V26_Widget_Design_AppBarLayout=0x7f0800ac;
-        public static int Base_V7_Theme_AppCompat=0x7f0800c7;
-        public static int Base_V7_Theme_AppCompat_Dialog=0x7f0800c8;
-        public static int Base_V7_Theme_AppCompat_Light=0x7f0800c9;
-        public static int Base_V7_Theme_AppCompat_Light_Dialog=0x7f0800ca;
-        public static int Base_V7_ThemeOverlay_AppCompat_Dialog=0x7f0800cb;
-        public static int Base_V7_Widget_AppCompat_AutoCompleteTextView=0x7f0800cc;
-        public static int Base_V7_Widget_AppCompat_EditText=0x7f0800cd;
-        public static int Base_V7_Widget_AppCompat_Toolbar=0x7f0800ce;
-        public static int Base_Widget_AppCompat_ActionBar=0x7f0800cf;
-        public static int Base_Widget_AppCompat_ActionBar_Solid=0x7f0800d0;
-        public static int Base_Widget_AppCompat_ActionBar_TabBar=0x7f0800d1;
-        public static int Base_Widget_AppCompat_ActionBar_TabText=0x7f080067;
-        public static int Base_Widget_AppCompat_ActionBar_TabView=0x7f080068;
-        public static int Base_Widget_AppCompat_ActionButton=0x7f080069;
-        public static int Base_Widget_AppCompat_ActionButton_CloseMode=0x7f08006a;
-        public static int Base_Widget_AppCompat_ActionButton_Overflow=0x7f08006b;
-        public static int Base_Widget_AppCompat_ActionMode=0x7f0800d2;
-        public static int Base_Widget_AppCompat_ActivityChooserView=0x7f0800d3;
-        public static int Base_Widget_AppCompat_AutoCompleteTextView=0x7f080027;
-        public static int Base_Widget_AppCompat_Button=0x7f08006c;
-        public static int Base_Widget_AppCompat_Button_Borderless=0x7f08006d;
-        public static int Base_Widget_AppCompat_Button_Borderless_Colored=0x7f08006e;
-        public static int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0800d4;
-        public static int Base_Widget_AppCompat_Button_Colored=0x7f0800a0;
-        public static int Base_Widget_AppCompat_Button_Small=0x7f08006f;
-        public static int Base_Widget_AppCompat_ButtonBar=0x7f080070;
-        public static int Base_Widget_AppCompat_ButtonBar_AlertDialog=0x7f0800d5;
-        public static int Base_Widget_AppCompat_CompoundButton_CheckBox=0x7f080071;
-        public static int Base_Widget_AppCompat_CompoundButton_RadioButton=0x7f080072;
-        public static int Base_Widget_AppCompat_CompoundButton_Switch=0x7f0800d6;
-        public static int Base_Widget_AppCompat_DrawerArrowToggle=0x7f080000;
-        public static int Base_Widget_AppCompat_DrawerArrowToggle_Common=0x7f0800d7;
-        public static int Base_Widget_AppCompat_DropDownItem_Spinner=0x7f080073;
-        public static int Base_Widget_AppCompat_EditText=0x7f080028;
-        public static int Base_Widget_AppCompat_ImageButton=0x7f080074;
-        public static int Base_Widget_AppCompat_Light_ActionBar=0x7f0800d8;
-        public static int Base_Widget_AppCompat_Light_ActionBar_Solid=0x7f0800d9;
-        public static int Base_Widget_AppCompat_Light_ActionBar_TabBar=0x7f0800da;
-        public static int Base_Widget_AppCompat_Light_ActionBar_TabText=0x7f080075;
-        public static int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f080076;
-        public static int Base_Widget_AppCompat_Light_ActionBar_TabView=0x7f080077;
-        public static int Base_Widget_AppCompat_Light_PopupMenu=0x7f080078;
-        public static int Base_Widget_AppCompat_Light_PopupMenu_Overflow=0x7f080079;
-        public static int Base_Widget_AppCompat_ListMenuView=0x7f0800db;
-        public static int Base_Widget_AppCompat_ListPopupWindow=0x7f08007a;
-        public static int Base_Widget_AppCompat_ListView=0x7f08007b;
-        public static int Base_Widget_AppCompat_ListView_DropDown=0x7f08007c;
-        public static int Base_Widget_AppCompat_ListView_Menu=0x7f08007d;
-        public static int Base_Widget_AppCompat_PopupMenu=0x7f08007e;
-        public static int Base_Widget_AppCompat_PopupMenu_Overflow=0x7f08007f;
-        public static int Base_Widget_AppCompat_PopupWindow=0x7f0800dc;
-        public static int Base_Widget_AppCompat_ProgressBar=0x7f08001d;
-        public static int Base_Widget_AppCompat_ProgressBar_Horizontal=0x7f08001e;
-        public static int Base_Widget_AppCompat_RatingBar=0x7f080080;
-        public static int Base_Widget_AppCompat_RatingBar_Indicator=0x7f0800a1;
-        public static int Base_Widget_AppCompat_RatingBar_Small=0x7f0800a2;
-        public static int Base_Widget_AppCompat_SearchView=0x7f0800dd;
-        public static int Base_Widget_AppCompat_SearchView_ActionBar=0x7f0800de;
-        public static int Base_Widget_AppCompat_SeekBar=0x7f080081;
-        public static int Base_Widget_AppCompat_SeekBar_Discrete=0x7f0800df;
-        public static int Base_Widget_AppCompat_Spinner=0x7f080082;
-        public static int Base_Widget_AppCompat_Spinner_Underlined=0x7f080004;
-        public static int Base_Widget_AppCompat_TextView_SpinnerItem=0x7f080083;
-        public static int Base_Widget_AppCompat_Toolbar=0x7f0800ab;
-        public static int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f080084;
-        public static int Base_Widget_Design_AppBarLayout=0x7f080099;
-        public static int Base_Widget_Design_TabLayout=0x7f080177;
-        public static int CardView=0x7f0800a3;
-        public static int CardView_Dark=0x7f080172;
-        public static int CardView_Light=0x7f080173;
-        public static int CastExpandedController=0x7f080191;
-        public static int CastIntroOverlay=0x7f080192;
-        public static int CastMiniController=0x7f080193;
-        public static int CustomCastTheme=0x7f080194;
-        public static int Platform_AppCompat=0x7f08001f;
-        public static int Platform_AppCompat_Light=0x7f080020;
-        public static int Platform_ThemeOverlay_AppCompat=0x7f080085;
-        public static int Platform_ThemeOverlay_AppCompat_Dark=0x7f080086;
-        public static int Platform_ThemeOverlay_AppCompat_Light=0x7f080087;
-        public static int Platform_V11_AppCompat=0x7f080021;
-        public static int Platform_V11_AppCompat_Light=0x7f080022;
-        public static int Platform_V14_AppCompat=0x7f08002a;
-        public static int Platform_V14_AppCompat_Light=0x7f08002b;
-        public static int Platform_V21_AppCompat=0x7f080088;
-        public static int Platform_V21_AppCompat_Light=0x7f080089;
-        public static int Platform_V25_AppCompat=0x7f0800a6;
-        public static int Platform_V25_AppCompat_Light=0x7f0800a7;
-        public static int Platform_Widget_AppCompat_Spinner=0x7f080023;
-        public static int RtlOverlay_DialogWindowTitle_AppCompat=0x7f08002d;
-        public static int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=0x7f08002e;
-        public static int RtlOverlay_Widget_AppCompat_DialogTitle_Icon=0x7f08002f;
-        public static int RtlOverlay_Widget_AppCompat_PopupMenuItem=0x7f080030;
-        public static int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=0x7f080031;
-        public static int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=0x7f080032;
-        public static int RtlOverlay_Widget_AppCompat_Search_DropDown=0x7f080033;
-        public static int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=0x7f080034;
-        public static int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=0x7f080035;
-        public static int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f080036;
-        public static int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f080037;
-        public static int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f080038;
-        public static int RtlUnderlay_Widget_AppCompat_ActionButton=0x7f080039;
-        public static int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=0x7f08003a;
-        public static int TextAppearance_AppCompat=0x7f0800e0;
-        public static int TextAppearance_AppCompat_Body1=0x7f0800e1;
-        public static int TextAppearance_AppCompat_Body2=0x7f0800e2;
-        public static int TextAppearance_AppCompat_Button=0x7f0800e3;
-        public static int TextAppearance_AppCompat_Caption=0x7f0800e4;
-        public static int TextAppearance_AppCompat_Display1=0x7f0800e5;
-        public static int TextAppearance_AppCompat_Display2=0x7f0800e6;
-        public static int TextAppearance_AppCompat_Display3=0x7f0800e7;
-        public static int TextAppearance_AppCompat_Display4=0x7f0800e8;
-        public static int TextAppearance_AppCompat_Headline=0x7f0800e9;
-        public static int TextAppearance_AppCompat_Inverse=0x7f0800ea;
-        public static int TextAppearance_AppCompat_Large=0x7f0800eb;
-        public static int TextAppearance_AppCompat_Large_Inverse=0x7f0800ec;
-        public static int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0800ed;
-        public static int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0800ee;
-        public static int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0800ef;
-        public static int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0800f0;
-        public static int TextAppearance_AppCompat_Medium=0x7f0800f1;
-        public static int TextAppearance_AppCompat_Medium_Inverse=0x7f0800f2;
-        public static int TextAppearance_AppCompat_Menu=0x7f0800f3;
-        public static int TextAppearance_AppCompat_Notification=0x7f08008a;
-        public static int TextAppearance_AppCompat_Notification_Info=0x7f08008b;
-        public static int TextAppearance_AppCompat_Notification_Info_Media=0x7f08008c;
-        public static int TextAppearance_AppCompat_Notification_Line2=0x7f0800f4;
-        public static int TextAppearance_AppCompat_Notification_Line2_Media=0x7f0800f5;
-        public static int TextAppearance_AppCompat_Notification_Media=0x7f08008d;
-        public static int TextAppearance_AppCompat_Notification_Time=0x7f08008e;
-        public static int TextAppearance_AppCompat_Notification_Time_Media=0x7f08008f;
-        public static int TextAppearance_AppCompat_Notification_Title=0x7f080090;
-        public static int TextAppearance_AppCompat_Notification_Title_Media=0x7f080091;
-        public static int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0800f6;
-        public static int TextAppearance_AppCompat_SearchResult_Title=0x7f0800f7;
-        public static int TextAppearance_AppCompat_Small=0x7f0800f8;
-        public static int TextAppearance_AppCompat_Small_Inverse=0x7f0800f9;
-        public static int TextAppearance_AppCompat_Subhead=0x7f0800fa;
-        public static int TextAppearance_AppCompat_Subhead_Inverse=0x7f0800fb;
-        public static int TextAppearance_AppCompat_Title=0x7f0800fc;
-        public static int TextAppearance_AppCompat_Title_Inverse=0x7f0800fd;
-        public static int TextAppearance_AppCompat_Tooltip=0x7f08002c;
-        public static int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0800fe;
-        public static int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0800ff;
-        public static int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f080100;
-        public static int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f080101;
-        public static int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f080102;
-        public static int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f080103;
-        public static int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f080104;
-        public static int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f080105;
-        public static int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f080106;
-        public static int TextAppearance_AppCompat_Widget_Button=0x7f080107;
-        public static int TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f080108;
-        public static int TextAppearance_AppCompat_Widget_Button_Colored=0x7f080109;
-        public static int TextAppearance_AppCompat_Widget_Button_Inverse=0x7f08010a;
-        public static int TextAppearance_AppCompat_Widget_DropDownItem=0x7f08010b;
-        public static int TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f08010c;
-        public static int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f08010d;
-        public static int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f08010e;
-        public static int TextAppearance_AppCompat_Widget_Switch=0x7f08010f;
-        public static int TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f080110;
-        public static int TextAppearance_CastIntroOverlay_Button=0x7f080195;
-        public static int TextAppearance_CastIntroOverlay_Title=0x7f080196;
-        public static int TextAppearance_CastMiniController_Subtitle=0x7f080197;
-        public static int TextAppearance_CastMiniController_Title=0x7f080198;
-        public static int TextAppearance_Compat_Notification=0x7f080092;
-        public static int TextAppearance_Compat_Notification_Info=0x7f080093;
-        public static int TextAppearance_Compat_Notification_Info_Media=0x7f08003b;
-        public static int TextAppearance_Compat_Notification_Line2=0x7f080174;
-        public static int TextAppearance_Compat_Notification_Line2_Media=0x7f0800ad;
-        public static int TextAppearance_Compat_Notification_Media=0x7f08003c;
-        public static int TextAppearance_Compat_Notification_Time=0x7f080094;
-        public static int TextAppearance_Compat_Notification_Time_Media=0x7f08003d;
-        public static int TextAppearance_Compat_Notification_Title=0x7f080095;
-        public static int TextAppearance_Compat_Notification_Title_Media=0x7f08003e;
-        public static int TextAppearance_Design_CollapsingToolbar_Expanded=0x7f080178;
-        public static int TextAppearance_Design_Counter=0x7f080179;
-        public static int TextAppearance_Design_Counter_Overflow=0x7f08017a;
-        public static int TextAppearance_Design_Error=0x7f08017b;
-        public static int TextAppearance_Design_Hint=0x7f08017c;
-        public static int TextAppearance_Design_Snackbar_Message=0x7f08017d;
-        public static int TextAppearance_Design_Tab=0x7f08017e;
-        public static int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f080111;
-        public static int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f080112;
-        public static int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f080113;
-        public static int Theme_AppCompat=0x7f080114;
-        public static int Theme_AppCompat_CompactMenu=0x7f080115;
-        public static int Theme_AppCompat_DayNight=0x7f080005;
-        public static int Theme_AppCompat_DayNight_DarkActionBar=0x7f080006;
-        public static int Theme_AppCompat_DayNight_Dialog=0x7f080007;
-        public static int Theme_AppCompat_DayNight_Dialog_Alert=0x7f080008;
-        public static int Theme_AppCompat_DayNight_Dialog_MinWidth=0x7f080009;
-        public static int Theme_AppCompat_DayNight_DialogWhenLarge=0x7f08000a;
-        public static int Theme_AppCompat_DayNight_NoActionBar=0x7f08000b;
-        public static int Theme_AppCompat_Dialog=0x7f080116;
-        public static int Theme_AppCompat_Dialog_Alert=0x7f080117;
-        public static int Theme_AppCompat_Dialog_MinWidth=0x7f080118;
-        public static int Theme_AppCompat_DialogWhenLarge=0x7f080119;
-        public static int Theme_AppCompat_Light=0x7f08011a;
-        public static int Theme_AppCompat_Light_DarkActionBar=0x7f08011b;
-        public static int Theme_AppCompat_Light_Dialog=0x7f08011c;
-        public static int Theme_AppCompat_Light_Dialog_Alert=0x7f08011d;
-        public static int Theme_AppCompat_Light_Dialog_MinWidth=0x7f08011e;
-        public static int Theme_AppCompat_Light_DialogWhenLarge=0x7f08011f;
-        public static int Theme_AppCompat_Light_NoActionBar=0x7f080120;
-        public static int Theme_AppCompat_NoActionBar=0x7f080121;
-        public static int Theme_AppInvite_Preview=0x7f080190;
-        public static int Theme_AppInvite_Preview_Base=0x7f080024;
-        public static int Theme_Design=0x7f08017f;
-        public static int Theme_Design_BottomSheetDialog=0x7f080180;
-        public static int Theme_Design_Light=0x7f080181;
-        public static int Theme_Design_Light_BottomSheetDialog=0x7f080182;
-        public static int Theme_Design_Light_NoActionBar=0x7f080183;
-        public static int Theme_Design_NoActionBar=0x7f080184;
-        public static int Theme_IAPTheme=0x7f08018f;
-        public static int ThemeOverlay_AppCompat=0x7f080122;
-        public static int ThemeOverlay_AppCompat_ActionBar=0x7f080123;
-        public static int ThemeOverlay_AppCompat_Dark=0x7f080124;
-        public static int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f080125;
-        public static int ThemeOverlay_AppCompat_Dialog=0x7f080126;
-        public static int ThemeOverlay_AppCompat_Dialog_Alert=0x7f080127;
-        public static int ThemeOverlay_AppCompat_Light=0x7f080128;
-        public static int WalletFragmentDefaultButtonTextAppearance=0x7f080199;
-        public static int WalletFragmentDefaultDetailsHeaderTextAppearance=0x7f08019a;
-        public static int WalletFragmentDefaultDetailsTextAppearance=0x7f08019b;
-        public static int WalletFragmentDefaultStyle=0x7f08019c;
-        public static int Widget_AppCompat_ActionBar=0x7f080129;
-        public static int Widget_AppCompat_ActionBar_Solid=0x7f08012a;
-        public static int Widget_AppCompat_ActionBar_TabBar=0x7f08012b;
-        public static int Widget_AppCompat_ActionBar_TabText=0x7f08012c;
-        public static int Widget_AppCompat_ActionBar_TabView=0x7f08012d;
-        public static int Widget_AppCompat_ActionButton=0x7f08012e;
-        public static int Widget_AppCompat_ActionButton_CloseMode=0x7f08012f;
-        public static int Widget_AppCompat_ActionButton_Overflow=0x7f080130;
-        public static int Widget_AppCompat_ActionMode=0x7f080131;
-        public static int Widget_AppCompat_ActivityChooserView=0x7f080132;
-        public static int Widget_AppCompat_AutoCompleteTextView=0x7f080133;
-        public static int Widget_AppCompat_Button=0x7f080134;
-        public static int Widget_AppCompat_Button_Borderless=0x7f080135;
-        public static int Widget_AppCompat_Button_Borderless_Colored=0x7f080136;
-        public static int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f080137;
-        public static int Widget_AppCompat_Button_Colored=0x7f080138;
-        public static int Widget_AppCompat_Button_Small=0x7f080139;
-        public static int Widget_AppCompat_ButtonBar=0x7f08013a;
-        public static int Widget_AppCompat_ButtonBar_AlertDialog=0x7f08013b;
-        public static int Widget_AppCompat_CompoundButton_CheckBox=0x7f08013c;
-        public static int Widget_AppCompat_CompoundButton_RadioButton=0x7f08013d;
-        public static int Widget_AppCompat_CompoundButton_Switch=0x7f08013e;
-        public static int Widget_AppCompat_DrawerArrowToggle=0x7f08013f;
-        public static int Widget_AppCompat_DropDownItem_Spinner=0x7f080140;
-        public static int Widget_AppCompat_EditText=0x7f080141;
-        public static int Widget_AppCompat_ImageButton=0x7f080142;
-        public static int Widget_AppCompat_Light_ActionBar=0x7f080143;
-        public static int Widget_AppCompat_Light_ActionBar_Solid=0x7f080144;
-        public static int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f080145;
-        public static int Widget_AppCompat_Light_ActionBar_TabBar=0x7f080146;
-        public static int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f080147;
-        public static int Widget_AppCompat_Light_ActionBar_TabText=0x7f080148;
-        public static int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f080149;
-        public static int Widget_AppCompat_Light_ActionBar_TabView=0x7f08014a;
-        public static int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f08014b;
-        public static int Widget_AppCompat_Light_ActionButton=0x7f08014c;
-        public static int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f08014d;
-        public static int Widget_AppCompat_Light_ActionButton_Overflow=0x7f08014e;
-        public static int Widget_AppCompat_Light_ActionMode_Inverse=0x7f08014f;
-        public static int Widget_AppCompat_Light_ActivityChooserView=0x7f080150;
-        public static int Widget_AppCompat_Light_AutoCompleteTextView=0x7f080151;
-        public static int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f080152;
-        public static int Widget_AppCompat_Light_ListPopupWindow=0x7f080153;
-        public static int Widget_AppCompat_Light_ListView_DropDown=0x7f080154;
-        public static int Widget_AppCompat_Light_PopupMenu=0x7f080155;
-        public static int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f080156;
-        public static int Widget_AppCompat_Light_SearchView=0x7f080157;
-        public static int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f080158;
-        public static int Widget_AppCompat_ListMenuView=0x7f080159;
-        public static int Widget_AppCompat_ListPopupWindow=0x7f08015a;
-        public static int Widget_AppCompat_ListView=0x7f08015b;
-        public static int Widget_AppCompat_ListView_DropDown=0x7f08015c;
-        public static int Widget_AppCompat_ListView_Menu=0x7f08015d;
-        public static int Widget_AppCompat_PopupMenu=0x7f08015e;
-        public static int Widget_AppCompat_PopupMenu_Overflow=0x7f08015f;
-        public static int Widget_AppCompat_PopupWindow=0x7f080160;
-        public static int Widget_AppCompat_ProgressBar=0x7f080161;
-        public static int Widget_AppCompat_ProgressBar_Horizontal=0x7f080162;
-        public static int Widget_AppCompat_RatingBar=0x7f080163;
-        public static int Widget_AppCompat_RatingBar_Indicator=0x7f080164;
-        public static int Widget_AppCompat_RatingBar_Small=0x7f080165;
-        public static int Widget_AppCompat_SearchView=0x7f080166;
-        public static int Widget_AppCompat_SearchView_ActionBar=0x7f080167;
-        public static int Widget_AppCompat_SeekBar=0x7f080168;
-        public static int Widget_AppCompat_SeekBar_Discrete=0x7f080169;
-        public static int Widget_AppCompat_Spinner=0x7f08016a;
-        public static int Widget_AppCompat_Spinner_DropDown=0x7f08016b;
-        public static int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f08016c;
-        public static int Widget_AppCompat_Spinner_Underlined=0x7f08016d;
-        public static int Widget_AppCompat_TextView_SpinnerItem=0x7f08016e;
-        public static int Widget_AppCompat_Toolbar=0x7f08016f;
-        public static int Widget_AppCompat_Toolbar_Button_Navigation=0x7f080170;
-        public static int Widget_Compat_NotificationActionContainer=0x7f080096;
-        public static int Widget_Compat_NotificationActionText=0x7f080097;
-        public static int Widget_Design_AppBarLayout=0x7f080185;
-        public static int Widget_Design_BottomNavigationView=0x7f080186;
-        public static int Widget_Design_BottomSheet_Modal=0x7f080187;
-        public static int Widget_Design_CollapsingToolbar=0x7f080188;
-        public static int Widget_Design_CoordinatorLayout=0x7f080189;
-        public static int Widget_Design_FloatingActionButton=0x7f08018a;
-        public static int Widget_Design_NavigationView=0x7f08018b;
-        public static int Widget_Design_ScrimInsetsFrameLayout=0x7f08018c;
-        public static int Widget_Design_Snackbar=0x7f08018d;
-        public static int Widget_Design_TabLayout=0x7f080001;
-        public static int Widget_Design_TextInputLayout=0x7f08018e;
+        public static int AlertDialog_AppCompat=0x7f0900ae;
+        public static int AlertDialog_AppCompat_Light=0x7f0900af;
+        public static int Animation_AppCompat_Dialog=0x7f0900b0;
+        public static int Animation_AppCompat_DropDownUp=0x7f0900b1;
+        public static int Animation_AppCompat_Tooltip=0x7f0900b2;
+        public static int Animation_Design_BottomSheetDialog=0x7f090175;
+        public static int Base_AlertDialog_AppCompat=0x7f0900b3;
+        public static int Base_AlertDialog_AppCompat_Light=0x7f0900b4;
+        public static int Base_Animation_AppCompat_Dialog=0x7f0900b5;
+        public static int Base_Animation_AppCompat_DropDownUp=0x7f0900b6;
+        public static int Base_Animation_AppCompat_Tooltip=0x7f0900b7;
+        public static int Base_CardView=0x7f090171;
+        public static int Base_DialogWindowTitle_AppCompat=0x7f0900b8;
+        public static int Base_DialogWindowTitleBackground_AppCompat=0x7f0900b9;
+        public static int Base_TextAppearance_AppCompat=0x7f09003f;
+        public static int Base_TextAppearance_AppCompat_Body1=0x7f090040;
+        public static int Base_TextAppearance_AppCompat_Body2=0x7f090041;
+        public static int Base_TextAppearance_AppCompat_Button=0x7f090029;
+        public static int Base_TextAppearance_AppCompat_Caption=0x7f090042;
+        public static int Base_TextAppearance_AppCompat_Display1=0x7f090043;
+        public static int Base_TextAppearance_AppCompat_Display2=0x7f090044;
+        public static int Base_TextAppearance_AppCompat_Display3=0x7f090045;
+        public static int Base_TextAppearance_AppCompat_Display4=0x7f090046;
+        public static int Base_TextAppearance_AppCompat_Headline=0x7f090047;
+        public static int Base_TextAppearance_AppCompat_Inverse=0x7f09000c;
+        public static int Base_TextAppearance_AppCompat_Large=0x7f090048;
+        public static int Base_TextAppearance_AppCompat_Large_Inverse=0x7f09000d;
+        public static int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f090049;
+        public static int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f09004a;
+        public static int Base_TextAppearance_AppCompat_Medium=0x7f09004b;
+        public static int Base_TextAppearance_AppCompat_Medium_Inverse=0x7f09000e;
+        public static int Base_TextAppearance_AppCompat_Menu=0x7f09004c;
+        public static int Base_TextAppearance_AppCompat_SearchResult=0x7f0900ba;
+        public static int Base_TextAppearance_AppCompat_SearchResult_Subtitle=0x7f09004d;
+        public static int Base_TextAppearance_AppCompat_SearchResult_Title=0x7f09004e;
+        public static int Base_TextAppearance_AppCompat_Small=0x7f09004f;
+        public static int Base_TextAppearance_AppCompat_Small_Inverse=0x7f09000f;
+        public static int Base_TextAppearance_AppCompat_Subhead=0x7f090050;
+        public static int Base_TextAppearance_AppCompat_Subhead_Inverse=0x7f090010;
+        public static int Base_TextAppearance_AppCompat_Title=0x7f090051;
+        public static int Base_TextAppearance_AppCompat_Title_Inverse=0x7f090011;
+        public static int Base_TextAppearance_AppCompat_Tooltip=0x7f0900bb;
+        public static int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f09009c;
+        public static int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f090052;
+        public static int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f090053;
+        public static int Base_TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f090054;
+        public static int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f090055;
+        public static int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f090056;
+        public static int Base_TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f090057;
+        public static int Base_TextAppearance_AppCompat_Widget_Button=0x7f090058;
+        public static int Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f0900a4;
+        public static int Base_TextAppearance_AppCompat_Widget_Button_Colored=0x7f0900a5;
+        public static int Base_TextAppearance_AppCompat_Widget_Button_Inverse=0x7f09009d;
+        public static int Base_TextAppearance_AppCompat_Widget_DropDownItem=0x7f0900bc;
+        public static int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f090059;
+        public static int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f09005a;
+        public static int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f09005b;
+        public static int Base_TextAppearance_AppCompat_Widget_Switch=0x7f09005c;
+        public static int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f09005d;
+        public static int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0900bd;
+        public static int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f09005e;
+        public static int Base_TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f09005f;
+        public static int Base_Theme_AppCompat=0x7f090060;
+        public static int Base_Theme_AppCompat_CompactMenu=0x7f0900be;
+        public static int Base_Theme_AppCompat_Dialog=0x7f090012;
+        public static int Base_Theme_AppCompat_Dialog_Alert=0x7f090013;
+        public static int Base_Theme_AppCompat_Dialog_FixedSize=0x7f0900bf;
+        public static int Base_Theme_AppCompat_Dialog_MinWidth=0x7f090014;
+        public static int Base_Theme_AppCompat_DialogWhenLarge=0x7f090002;
+        public static int Base_Theme_AppCompat_Light=0x7f090061;
+        public static int Base_Theme_AppCompat_Light_DarkActionBar=0x7f0900c0;
+        public static int Base_Theme_AppCompat_Light_Dialog=0x7f090015;
+        public static int Base_Theme_AppCompat_Light_Dialog_Alert=0x7f090016;
+        public static int Base_Theme_AppCompat_Light_Dialog_FixedSize=0x7f0900c1;
+        public static int Base_Theme_AppCompat_Light_Dialog_MinWidth=0x7f090017;
+        public static int Base_Theme_AppCompat_Light_DialogWhenLarge=0x7f090003;
+        public static int Base_ThemeOverlay_AppCompat=0x7f0900c2;
+        public static int Base_ThemeOverlay_AppCompat_ActionBar=0x7f0900c3;
+        public static int Base_ThemeOverlay_AppCompat_Dark=0x7f0900c4;
+        public static int Base_ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0900c5;
+        public static int Base_ThemeOverlay_AppCompat_Dialog=0x7f090018;
+        public static int Base_ThemeOverlay_AppCompat_Dialog_Alert=0x7f090019;
+        public static int Base_ThemeOverlay_AppCompat_Light=0x7f0900c6;
+        public static int Base_V11_Theme_AppCompat_Dialog=0x7f09001a;
+        public static int Base_V11_Theme_AppCompat_Light_Dialog=0x7f09001b;
+        public static int Base_V11_ThemeOverlay_AppCompat_Dialog=0x7f09001c;
+        public static int Base_V12_Widget_AppCompat_AutoCompleteTextView=0x7f090025;
+        public static int Base_V12_Widget_AppCompat_EditText=0x7f090026;
+        public static int Base_V14_Widget_Design_AppBarLayout=0x7f090176;
+        public static int Base_V21_Theme_AppCompat=0x7f090062;
+        public static int Base_V21_Theme_AppCompat_Dialog=0x7f090063;
+        public static int Base_V21_Theme_AppCompat_Light=0x7f090064;
+        public static int Base_V21_Theme_AppCompat_Light_Dialog=0x7f090065;
+        public static int Base_V21_ThemeOverlay_AppCompat_Dialog=0x7f090066;
+        public static int Base_V21_Widget_Design_AppBarLayout=0x7f090098;
+        public static int Base_V22_Theme_AppCompat=0x7f09009a;
+        public static int Base_V22_Theme_AppCompat_Light=0x7f09009b;
+        public static int Base_V23_Theme_AppCompat=0x7f09009e;
+        public static int Base_V23_Theme_AppCompat_Light=0x7f09009f;
+        public static int Base_V26_Theme_AppCompat=0x7f0900a8;
+        public static int Base_V26_Theme_AppCompat_Light=0x7f0900a9;
+        public static int Base_V26_Widget_AppCompat_Toolbar=0x7f0900aa;
+        public static int Base_V26_Widget_Design_AppBarLayout=0x7f0900ac;
+        public static int Base_V7_Theme_AppCompat=0x7f0900c7;
+        public static int Base_V7_Theme_AppCompat_Dialog=0x7f0900c8;
+        public static int Base_V7_Theme_AppCompat_Light=0x7f0900c9;
+        public static int Base_V7_Theme_AppCompat_Light_Dialog=0x7f0900ca;
+        public static int Base_V7_ThemeOverlay_AppCompat_Dialog=0x7f0900cb;
+        public static int Base_V7_Widget_AppCompat_AutoCompleteTextView=0x7f0900cc;
+        public static int Base_V7_Widget_AppCompat_EditText=0x7f0900cd;
+        public static int Base_V7_Widget_AppCompat_Toolbar=0x7f0900ce;
+        public static int Base_Widget_AppCompat_ActionBar=0x7f0900cf;
+        public static int Base_Widget_AppCompat_ActionBar_Solid=0x7f0900d0;
+        public static int Base_Widget_AppCompat_ActionBar_TabBar=0x7f0900d1;
+        public static int Base_Widget_AppCompat_ActionBar_TabText=0x7f090067;
+        public static int Base_Widget_AppCompat_ActionBar_TabView=0x7f090068;
+        public static int Base_Widget_AppCompat_ActionButton=0x7f090069;
+        public static int Base_Widget_AppCompat_ActionButton_CloseMode=0x7f09006a;
+        public static int Base_Widget_AppCompat_ActionButton_Overflow=0x7f09006b;
+        public static int Base_Widget_AppCompat_ActionMode=0x7f0900d2;
+        public static int Base_Widget_AppCompat_ActivityChooserView=0x7f0900d3;
+        public static int Base_Widget_AppCompat_AutoCompleteTextView=0x7f090027;
+        public static int Base_Widget_AppCompat_Button=0x7f09006c;
+        public static int Base_Widget_AppCompat_Button_Borderless=0x7f09006d;
+        public static int Base_Widget_AppCompat_Button_Borderless_Colored=0x7f09006e;
+        public static int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0900d4;
+        public static int Base_Widget_AppCompat_Button_Colored=0x7f0900a0;
+        public static int Base_Widget_AppCompat_Button_Small=0x7f09006f;
+        public static int Base_Widget_AppCompat_ButtonBar=0x7f090070;
+        public static int Base_Widget_AppCompat_ButtonBar_AlertDialog=0x7f0900d5;
+        public static int Base_Widget_AppCompat_CompoundButton_CheckBox=0x7f090071;
+        public static int Base_Widget_AppCompat_CompoundButton_RadioButton=0x7f090072;
+        public static int Base_Widget_AppCompat_CompoundButton_Switch=0x7f0900d6;
+        public static int Base_Widget_AppCompat_DrawerArrowToggle=0x7f090000;
+        public static int Base_Widget_AppCompat_DrawerArrowToggle_Common=0x7f0900d7;
+        public static int Base_Widget_AppCompat_DropDownItem_Spinner=0x7f090073;
+        public static int Base_Widget_AppCompat_EditText=0x7f090028;
+        public static int Base_Widget_AppCompat_ImageButton=0x7f090074;
+        public static int Base_Widget_AppCompat_Light_ActionBar=0x7f0900d8;
+        public static int Base_Widget_AppCompat_Light_ActionBar_Solid=0x7f0900d9;
+        public static int Base_Widget_AppCompat_Light_ActionBar_TabBar=0x7f0900da;
+        public static int Base_Widget_AppCompat_Light_ActionBar_TabText=0x7f090075;
+        public static int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f090076;
+        public static int Base_Widget_AppCompat_Light_ActionBar_TabView=0x7f090077;
+        public static int Base_Widget_AppCompat_Light_PopupMenu=0x7f090078;
+        public static int Base_Widget_AppCompat_Light_PopupMenu_Overflow=0x7f090079;
+        public static int Base_Widget_AppCompat_ListMenuView=0x7f0900db;
+        public static int Base_Widget_AppCompat_ListPopupWindow=0x7f09007a;
+        public static int Base_Widget_AppCompat_ListView=0x7f09007b;
+        public static int Base_Widget_AppCompat_ListView_DropDown=0x7f09007c;
+        public static int Base_Widget_AppCompat_ListView_Menu=0x7f09007d;
+        public static int Base_Widget_AppCompat_PopupMenu=0x7f09007e;
+        public static int Base_Widget_AppCompat_PopupMenu_Overflow=0x7f09007f;
+        public static int Base_Widget_AppCompat_PopupWindow=0x7f0900dc;
+        public static int Base_Widget_AppCompat_ProgressBar=0x7f09001d;
+        public static int Base_Widget_AppCompat_ProgressBar_Horizontal=0x7f09001e;
+        public static int Base_Widget_AppCompat_RatingBar=0x7f090080;
+        public static int Base_Widget_AppCompat_RatingBar_Indicator=0x7f0900a1;
+        public static int Base_Widget_AppCompat_RatingBar_Small=0x7f0900a2;
+        public static int Base_Widget_AppCompat_SearchView=0x7f0900dd;
+        public static int Base_Widget_AppCompat_SearchView_ActionBar=0x7f0900de;
+        public static int Base_Widget_AppCompat_SeekBar=0x7f090081;
+        public static int Base_Widget_AppCompat_SeekBar_Discrete=0x7f0900df;
+        public static int Base_Widget_AppCompat_Spinner=0x7f090082;
+        public static int Base_Widget_AppCompat_Spinner_Underlined=0x7f090004;
+        public static int Base_Widget_AppCompat_TextView_SpinnerItem=0x7f090083;
+        public static int Base_Widget_AppCompat_Toolbar=0x7f0900ab;
+        public static int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f090084;
+        public static int Base_Widget_Design_AppBarLayout=0x7f090099;
+        public static int Base_Widget_Design_TabLayout=0x7f090177;
+        public static int CardView=0x7f0900a3;
+        public static int CardView_Dark=0x7f090172;
+        public static int CardView_Light=0x7f090173;
+        public static int CastExpandedController=0x7f090191;
+        public static int CastIntroOverlay=0x7f090192;
+        public static int CastMiniController=0x7f090193;
+        public static int CustomCastTheme=0x7f090194;
+        public static int Platform_AppCompat=0x7f09001f;
+        public static int Platform_AppCompat_Light=0x7f090020;
+        public static int Platform_ThemeOverlay_AppCompat=0x7f090085;
+        public static int Platform_ThemeOverlay_AppCompat_Dark=0x7f090086;
+        public static int Platform_ThemeOverlay_AppCompat_Light=0x7f090087;
+        public static int Platform_V11_AppCompat=0x7f090021;
+        public static int Platform_V11_AppCompat_Light=0x7f090022;
+        public static int Platform_V14_AppCompat=0x7f09002a;
+        public static int Platform_V14_AppCompat_Light=0x7f09002b;
+        public static int Platform_V21_AppCompat=0x7f090088;
+        public static int Platform_V21_AppCompat_Light=0x7f090089;
+        public static int Platform_V25_AppCompat=0x7f0900a6;
+        public static int Platform_V25_AppCompat_Light=0x7f0900a7;
+        public static int Platform_Widget_AppCompat_Spinner=0x7f090023;
+        public static int RtlOverlay_DialogWindowTitle_AppCompat=0x7f09002d;
+        public static int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=0x7f09002e;
+        public static int RtlOverlay_Widget_AppCompat_DialogTitle_Icon=0x7f09002f;
+        public static int RtlOverlay_Widget_AppCompat_PopupMenuItem=0x7f090030;
+        public static int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=0x7f090031;
+        public static int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=0x7f090032;
+        public static int RtlOverlay_Widget_AppCompat_Search_DropDown=0x7f090033;
+        public static int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=0x7f090034;
+        public static int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=0x7f090035;
+        public static int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f090036;
+        public static int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f090037;
+        public static int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f090038;
+        public static int RtlUnderlay_Widget_AppCompat_ActionButton=0x7f090039;
+        public static int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=0x7f09003a;
+        public static int TextAppearance_AppCompat=0x7f0900e0;
+        public static int TextAppearance_AppCompat_Body1=0x7f0900e1;
+        public static int TextAppearance_AppCompat_Body2=0x7f0900e2;
+        public static int TextAppearance_AppCompat_Button=0x7f0900e3;
+        public static int TextAppearance_AppCompat_Caption=0x7f0900e4;
+        public static int TextAppearance_AppCompat_Display1=0x7f0900e5;
+        public static int TextAppearance_AppCompat_Display2=0x7f0900e6;
+        public static int TextAppearance_AppCompat_Display3=0x7f0900e7;
+        public static int TextAppearance_AppCompat_Display4=0x7f0900e8;
+        public static int TextAppearance_AppCompat_Headline=0x7f0900e9;
+        public static int TextAppearance_AppCompat_Inverse=0x7f0900ea;
+        public static int TextAppearance_AppCompat_Large=0x7f0900eb;
+        public static int TextAppearance_AppCompat_Large_Inverse=0x7f0900ec;
+        public static int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0900ed;
+        public static int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0900ee;
+        public static int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0900ef;
+        public static int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0900f0;
+        public static int TextAppearance_AppCompat_Medium=0x7f0900f1;
+        public static int TextAppearance_AppCompat_Medium_Inverse=0x7f0900f2;
+        public static int TextAppearance_AppCompat_Menu=0x7f0900f3;
+        public static int TextAppearance_AppCompat_Notification=0x7f09008a;
+        public static int TextAppearance_AppCompat_Notification_Info=0x7f09008b;
+        public static int TextAppearance_AppCompat_Notification_Info_Media=0x7f09008c;
+        public static int TextAppearance_AppCompat_Notification_Line2=0x7f0900f4;
+        public static int TextAppearance_AppCompat_Notification_Line2_Media=0x7f0900f5;
+        public static int TextAppearance_AppCompat_Notification_Media=0x7f09008d;
+        public static int TextAppearance_AppCompat_Notification_Time=0x7f09008e;
+        public static int TextAppearance_AppCompat_Notification_Time_Media=0x7f09008f;
+        public static int TextAppearance_AppCompat_Notification_Title=0x7f090090;
+        public static int TextAppearance_AppCompat_Notification_Title_Media=0x7f090091;
+        public static int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0900f6;
+        public static int TextAppearance_AppCompat_SearchResult_Title=0x7f0900f7;
+        public static int TextAppearance_AppCompat_Small=0x7f0900f8;
+        public static int TextAppearance_AppCompat_Small_Inverse=0x7f0900f9;
+        public static int TextAppearance_AppCompat_Subhead=0x7f0900fa;
+        public static int TextAppearance_AppCompat_Subhead_Inverse=0x7f0900fb;
+        public static int TextAppearance_AppCompat_Title=0x7f0900fc;
+        public static int TextAppearance_AppCompat_Title_Inverse=0x7f0900fd;
+        public static int TextAppearance_AppCompat_Tooltip=0x7f09002c;
+        public static int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0900fe;
+        public static int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0900ff;
+        public static int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f090100;
+        public static int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f090101;
+        public static int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f090102;
+        public static int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f090103;
+        public static int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f090104;
+        public static int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f090105;
+        public static int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f090106;
+        public static int TextAppearance_AppCompat_Widget_Button=0x7f090107;
+        public static int TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f090108;
+        public static int TextAppearance_AppCompat_Widget_Button_Colored=0x7f090109;
+        public static int TextAppearance_AppCompat_Widget_Button_Inverse=0x7f09010a;
+        public static int TextAppearance_AppCompat_Widget_DropDownItem=0x7f09010b;
+        public static int TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f09010c;
+        public static int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f09010d;
+        public static int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f09010e;
+        public static int TextAppearance_AppCompat_Widget_Switch=0x7f09010f;
+        public static int TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f090110;
+        public static int TextAppearance_CastIntroOverlay_Button=0x7f090195;
+        public static int TextAppearance_CastIntroOverlay_Title=0x7f090196;
+        public static int TextAppearance_CastMiniController_Subtitle=0x7f090197;
+        public static int TextAppearance_CastMiniController_Title=0x7f090198;
+        public static int TextAppearance_Compat_Notification=0x7f090092;
+        public static int TextAppearance_Compat_Notification_Info=0x7f090093;
+        public static int TextAppearance_Compat_Notification_Info_Media=0x7f09003b;
+        public static int TextAppearance_Compat_Notification_Line2=0x7f090174;
+        public static int TextAppearance_Compat_Notification_Line2_Media=0x7f0900ad;
+        public static int TextAppearance_Compat_Notification_Media=0x7f09003c;
+        public static int TextAppearance_Compat_Notification_Time=0x7f090094;
+        public static int TextAppearance_Compat_Notification_Time_Media=0x7f09003d;
+        public static int TextAppearance_Compat_Notification_Title=0x7f090095;
+        public static int TextAppearance_Compat_Notification_Title_Media=0x7f09003e;
+        public static int TextAppearance_Design_CollapsingToolbar_Expanded=0x7f090178;
+        public static int TextAppearance_Design_Counter=0x7f090179;
+        public static int TextAppearance_Design_Counter_Overflow=0x7f09017a;
+        public static int TextAppearance_Design_Error=0x7f09017b;
+        public static int TextAppearance_Design_Hint=0x7f09017c;
+        public static int TextAppearance_Design_Snackbar_Message=0x7f09017d;
+        public static int TextAppearance_Design_Tab=0x7f09017e;
+        public static int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f090111;
+        public static int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f090112;
+        public static int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f090113;
+        public static int Theme_AppCompat=0x7f090114;
+        public static int Theme_AppCompat_CompactMenu=0x7f090115;
+        public static int Theme_AppCompat_DayNight=0x7f090005;
+        public static int Theme_AppCompat_DayNight_DarkActionBar=0x7f090006;
+        public static int Theme_AppCompat_DayNight_Dialog=0x7f090007;
+        public static int Theme_AppCompat_DayNight_Dialog_Alert=0x7f090008;
+        public static int Theme_AppCompat_DayNight_Dialog_MinWidth=0x7f090009;
+        public static int Theme_AppCompat_DayNight_DialogWhenLarge=0x7f09000a;
+        public static int Theme_AppCompat_DayNight_NoActionBar=0x7f09000b;
+        public static int Theme_AppCompat_Dialog=0x7f090116;
+        public static int Theme_AppCompat_Dialog_Alert=0x7f090117;
+        public static int Theme_AppCompat_Dialog_MinWidth=0x7f090118;
+        public static int Theme_AppCompat_DialogWhenLarge=0x7f090119;
+        public static int Theme_AppCompat_Light=0x7f09011a;
+        public static int Theme_AppCompat_Light_DarkActionBar=0x7f09011b;
+        public static int Theme_AppCompat_Light_Dialog=0x7f09011c;
+        public static int Theme_AppCompat_Light_Dialog_Alert=0x7f09011d;
+        public static int Theme_AppCompat_Light_Dialog_MinWidth=0x7f09011e;
+        public static int Theme_AppCompat_Light_DialogWhenLarge=0x7f09011f;
+        public static int Theme_AppCompat_Light_NoActionBar=0x7f090120;
+        public static int Theme_AppCompat_NoActionBar=0x7f090121;
+        public static int Theme_AppInvite_Preview=0x7f090190;
+        public static int Theme_AppInvite_Preview_Base=0x7f090024;
+        public static int Theme_Design=0x7f09017f;
+        public static int Theme_Design_BottomSheetDialog=0x7f090180;
+        public static int Theme_Design_Light=0x7f090181;
+        public static int Theme_Design_Light_BottomSheetDialog=0x7f090182;
+        public static int Theme_Design_Light_NoActionBar=0x7f090183;
+        public static int Theme_Design_NoActionBar=0x7f090184;
+        public static int Theme_IAPTheme=0x7f09018f;
+        public static int ThemeOverlay_AppCompat=0x7f090122;
+        public static int ThemeOverlay_AppCompat_ActionBar=0x7f090123;
+        public static int ThemeOverlay_AppCompat_Dark=0x7f090124;
+        public static int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f090125;
+        public static int ThemeOverlay_AppCompat_Dialog=0x7f090126;
+        public static int ThemeOverlay_AppCompat_Dialog_Alert=0x7f090127;
+        public static int ThemeOverlay_AppCompat_Light=0x7f090128;
+        public static int WalletFragmentDefaultButtonTextAppearance=0x7f090199;
+        public static int WalletFragmentDefaultDetailsHeaderTextAppearance=0x7f09019a;
+        public static int WalletFragmentDefaultDetailsTextAppearance=0x7f09019b;
+        public static int WalletFragmentDefaultStyle=0x7f09019c;
+        public static int Widget_AppCompat_ActionBar=0x7f090129;
+        public static int Widget_AppCompat_ActionBar_Solid=0x7f09012a;
+        public static int Widget_AppCompat_ActionBar_TabBar=0x7f09012b;
+        public static int Widget_AppCompat_ActionBar_TabText=0x7f09012c;
+        public static int Widget_AppCompat_ActionBar_TabView=0x7f09012d;
+        public static int Widget_AppCompat_ActionButton=0x7f09012e;
+        public static int Widget_AppCompat_ActionButton_CloseMode=0x7f09012f;
+        public static int Widget_AppCompat_ActionButton_Overflow=0x7f090130;
+        public static int Widget_AppCompat_ActionMode=0x7f090131;
+        public static int Widget_AppCompat_ActivityChooserView=0x7f090132;
+        public static int Widget_AppCompat_AutoCompleteTextView=0x7f090133;
+        public static int Widget_AppCompat_Button=0x7f090134;
+        public static int Widget_AppCompat_Button_Borderless=0x7f090135;
+        public static int Widget_AppCompat_Button_Borderless_Colored=0x7f090136;
+        public static int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f090137;
+        public static int Widget_AppCompat_Button_Colored=0x7f090138;
+        public static int Widget_AppCompat_Button_Small=0x7f090139;
+        public static int Widget_AppCompat_ButtonBar=0x7f09013a;
+        public static int Widget_AppCompat_ButtonBar_AlertDialog=0x7f09013b;
+        public static int Widget_AppCompat_CompoundButton_CheckBox=0x7f09013c;
+        public static int Widget_AppCompat_CompoundButton_RadioButton=0x7f09013d;
+        public static int Widget_AppCompat_CompoundButton_Switch=0x7f09013e;
+        public static int Widget_AppCompat_DrawerArrowToggle=0x7f09013f;
+        public static int Widget_AppCompat_DropDownItem_Spinner=0x7f090140;
+        public static int Widget_AppCompat_EditText=0x7f090141;
+        public static int Widget_AppCompat_ImageButton=0x7f090142;
+        public static int Widget_AppCompat_Light_ActionBar=0x7f090143;
+        public static int Widget_AppCompat_Light_ActionBar_Solid=0x7f090144;
+        public static int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f090145;
+        public static int Widget_AppCompat_Light_ActionBar_TabBar=0x7f090146;
+        public static int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f090147;
+        public static int Widget_AppCompat_Light_ActionBar_TabText=0x7f090148;
+        public static int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f090149;
+        public static int Widget_AppCompat_Light_ActionBar_TabView=0x7f09014a;
+        public static int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f09014b;
+        public static int Widget_AppCompat_Light_ActionButton=0x7f09014c;
+        public static int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f09014d;
+        public static int Widget_AppCompat_Light_ActionButton_Overflow=0x7f09014e;
+        public static int Widget_AppCompat_Light_ActionMode_Inverse=0x7f09014f;
+        public static int Widget_AppCompat_Light_ActivityChooserView=0x7f090150;
+        public static int Widget_AppCompat_Light_AutoCompleteTextView=0x7f090151;
+        public static int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f090152;
+        public static int Widget_AppCompat_Light_ListPopupWindow=0x7f090153;
+        public static int Widget_AppCompat_Light_ListView_DropDown=0x7f090154;
+        public static int Widget_AppCompat_Light_PopupMenu=0x7f090155;
+        public static int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f090156;
+        public static int Widget_AppCompat_Light_SearchView=0x7f090157;
+        public static int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f090158;
+        public static int Widget_AppCompat_ListMenuView=0x7f090159;
+        public static int Widget_AppCompat_ListPopupWindow=0x7f09015a;
+        public static int Widget_AppCompat_ListView=0x7f09015b;
+        public static int Widget_AppCompat_ListView_DropDown=0x7f09015c;
+        public static int Widget_AppCompat_ListView_Menu=0x7f09015d;
+        public static int Widget_AppCompat_PopupMenu=0x7f09015e;
+        public static int Widget_AppCompat_PopupMenu_Overflow=0x7f09015f;
+        public static int Widget_AppCompat_PopupWindow=0x7f090160;
+        public static int Widget_AppCompat_ProgressBar=0x7f090161;
+        public static int Widget_AppCompat_ProgressBar_Horizontal=0x7f090162;
+        public static int Widget_AppCompat_RatingBar=0x7f090163;
+        public static int Widget_AppCompat_RatingBar_Indicator=0x7f090164;
+        public static int Widget_AppCompat_RatingBar_Small=0x7f090165;
+        public static int Widget_AppCompat_SearchView=0x7f090166;
+        public static int Widget_AppCompat_SearchView_ActionBar=0x7f090167;
+        public static int Widget_AppCompat_SeekBar=0x7f090168;
+        public static int Widget_AppCompat_SeekBar_Discrete=0x7f090169;
+        public static int Widget_AppCompat_Spinner=0x7f09016a;
+        public static int Widget_AppCompat_Spinner_DropDown=0x7f09016b;
+        public static int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f09016c;
+        public static int Widget_AppCompat_Spinner_Underlined=0x7f09016d;
+        public static int Widget_AppCompat_TextView_SpinnerItem=0x7f09016e;
+        public static int Widget_AppCompat_Toolbar=0x7f09016f;
+        public static int Widget_AppCompat_Toolbar_Button_Navigation=0x7f090170;
+        public static int Widget_Compat_NotificationActionContainer=0x7f090096;
+        public static int Widget_Compat_NotificationActionText=0x7f090097;
+        public static int Widget_Design_AppBarLayout=0x7f090185;
+        public static int Widget_Design_BottomNavigationView=0x7f090186;
+        public static int Widget_Design_BottomSheet_Modal=0x7f090187;
+        public static int Widget_Design_CollapsingToolbar=0x7f090188;
+        public static int Widget_Design_CoordinatorLayout=0x7f090189;
+        public static int Widget_Design_FloatingActionButton=0x7f09018a;
+        public static int Widget_Design_NavigationView=0x7f09018b;
+        public static int Widget_Design_ScrimInsetsFrameLayout=0x7f09018c;
+        public static int Widget_Design_Snackbar=0x7f09018d;
+        public static int Widget_Design_TabLayout=0x7f090001;
+        public static int Widget_Design_TextInputLayout=0x7f09018e;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.
@@ -4741,35 +4747,35 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background ti.locationupdatesservice:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit ti.locationupdatesservice:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked ti.locationupdatesservice:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd ti.locationupdatesservice:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEndWithActions ti.locationupdatesservice:contentInsetEndWithActions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft ti.locationupdatesservice:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight ti.locationupdatesservice:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart ti.locationupdatesservice:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation ti.locationupdatesservice:contentInsetStartWithNavigation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout ti.locationupdatesservice:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions ti.locationupdatesservice:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider ti.locationupdatesservice:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_elevation ti.locationupdatesservice:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height ti.locationupdatesservice:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll ti.locationupdatesservice:hideOnContentScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator ti.locationupdatesservice:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout ti.locationupdatesservice:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon ti.locationupdatesservice:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle ti.locationupdatesservice:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding ti.locationupdatesservice:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo ti.locationupdatesservice:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode ti.locationupdatesservice:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme ti.locationupdatesservice:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding ti.locationupdatesservice:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle ti.locationupdatesservice:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle ti.locationupdatesservice:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle ti.locationupdatesservice:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title ti.locationupdatesservice:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle ti.locationupdatesservice:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background ti.locationtrackerservice:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit ti.locationtrackerservice:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked ti.locationtrackerservice:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd ti.locationtrackerservice:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEndWithActions ti.locationtrackerservice:contentInsetEndWithActions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft ti.locationtrackerservice:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight ti.locationtrackerservice:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart ti.locationtrackerservice:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation ti.locationtrackerservice:contentInsetStartWithNavigation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout ti.locationtrackerservice:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions ti.locationtrackerservice:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider ti.locationtrackerservice:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation ti.locationtrackerservice:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height ti.locationtrackerservice:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll ti.locationtrackerservice:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator ti.locationtrackerservice:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout ti.locationtrackerservice:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon ti.locationtrackerservice:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle ti.locationtrackerservice:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding ti.locationtrackerservice:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo ti.locationtrackerservice:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode ti.locationtrackerservice:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme ti.locationtrackerservice:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding ti.locationtrackerservice:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle ti.locationtrackerservice:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle ti.locationtrackerservice:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle ti.locationtrackerservice:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title ti.locationtrackerservice:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle ti.locationtrackerservice:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -4812,17 +4818,17 @@ containing a value of this type.
             0x7f0101b2
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#background}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:background
+          @attr name ti.locationtrackerservice:background
         */
         public static int ActionBar_background = 8;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4830,11 +4836,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ti.locationupdatesservice:backgroundSplit
+          @attr name ti.locationtrackerservice:backgroundSplit
         */
         public static int ActionBar_backgroundSplit = 10;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4842,11 +4848,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ti.locationupdatesservice:backgroundStacked
+          @attr name ti.locationtrackerservice:backgroundStacked
         */
         public static int ActionBar_backgroundStacked = 9;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4858,11 +4864,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:contentInsetEnd
+          @attr name ti.locationtrackerservice:contentInsetEnd
         */
         public static int ActionBar_contentInsetEnd = 19;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#contentInsetEndWithActions}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#contentInsetEndWithActions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4874,11 +4880,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:contentInsetEndWithActions
+          @attr name ti.locationtrackerservice:contentInsetEndWithActions
         */
         public static int ActionBar_contentInsetEndWithActions = 23;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4890,11 +4896,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:contentInsetLeft
+          @attr name ti.locationtrackerservice:contentInsetLeft
         */
         public static int ActionBar_contentInsetLeft = 20;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4906,11 +4912,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:contentInsetRight
+          @attr name ti.locationtrackerservice:contentInsetRight
         */
         public static int ActionBar_contentInsetRight = 21;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4922,11 +4928,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:contentInsetStart
+          @attr name ti.locationtrackerservice:contentInsetStart
         */
         public static int ActionBar_contentInsetStart = 18;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#contentInsetStartWithNavigation}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#contentInsetStartWithNavigation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4938,21 +4944,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:contentInsetStartWithNavigation
+          @attr name ti.locationtrackerservice:contentInsetStartWithNavigation
         */
         public static int ActionBar_contentInsetStartWithNavigation = 22;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:customNavigationLayout
+          @attr name ti.locationtrackerservice:customNavigationLayout
         */
         public static int ActionBar_customNavigationLayout = 11;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4970,21 +4976,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:displayOptions
+          @attr name ti.locationtrackerservice:displayOptions
         */
         public static int ActionBar_displayOptions = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#divider}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:divider
+          @attr name ti.locationtrackerservice:divider
         */
         public static int ActionBar_divider = 7;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#elevation}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4996,11 +5002,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:elevation
+          @attr name ti.locationtrackerservice:elevation
         */
         public static int ActionBar_elevation = 24;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#height}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5012,11 +5018,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:height
+          @attr name ti.locationtrackerservice:height
         */
         public static int ActionBar_height = 27;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5026,51 +5032,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:hideOnContentScroll
+          @attr name ti.locationtrackerservice:hideOnContentScroll
         */
         public static int ActionBar_hideOnContentScroll = 17;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:homeAsUpIndicator
+          @attr name ti.locationtrackerservice:homeAsUpIndicator
         */
         public static int ActionBar_homeAsUpIndicator = 26;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:homeLayout
+          @attr name ti.locationtrackerservice:homeLayout
         */
         public static int ActionBar_homeLayout = 12;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#icon}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:icon
+          @attr name ti.locationtrackerservice:icon
         */
         public static int ActionBar_icon = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:indeterminateProgressStyle
+          @attr name ti.locationtrackerservice:indeterminateProgressStyle
         */
         public static int ActionBar_indeterminateProgressStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5082,21 +5088,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:itemPadding
+          @attr name ti.locationtrackerservice:itemPadding
         */
         public static int ActionBar_itemPadding = 16;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#logo}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:logo
+          @attr name ti.locationtrackerservice:logo
         */
         public static int ActionBar_logo = 6;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5110,21 +5116,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:navigationMode
+          @attr name ti.locationtrackerservice:navigationMode
         */
         public static int ActionBar_navigationMode = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:popupTheme
+          @attr name ti.locationtrackerservice:popupTheme
         */
         public static int ActionBar_popupTheme = 25;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5136,21 +5142,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:progressBarPadding
+          @attr name ti.locationtrackerservice:progressBarPadding
         */
         public static int ActionBar_progressBarPadding = 15;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:progressBarStyle
+          @attr name ti.locationtrackerservice:progressBarStyle
         */
         public static int ActionBar_progressBarStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5160,21 +5166,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:subtitle
+          @attr name ti.locationtrackerservice:subtitle
         */
         public static int ActionBar_subtitle = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:subtitleTextStyle
+          @attr name ti.locationtrackerservice:subtitleTextStyle
         */
         public static int ActionBar_subtitleTextStyle = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#title}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -5184,17 +5190,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:title
+          @attr name ti.locationtrackerservice:title
         */
         public static int ActionBar_title = 28;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:titleTextStyle
+          @attr name ti.locationtrackerservice:titleTextStyle
         */
         public static int ActionBar_titleTextStyle = 3;
         /** Attributes that can be used with a ActionBarLayout.
@@ -5246,12 +5252,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background ti.locationupdatesservice:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit ti.locationupdatesservice:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout ti.locationupdatesservice:closeItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height ti.locationupdatesservice:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle ti.locationupdatesservice:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle ti.locationupdatesservice:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background ti.locationtrackerservice:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit ti.locationtrackerservice:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout ti.locationtrackerservice:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height ti.locationtrackerservice:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle ti.locationtrackerservice:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle ti.locationtrackerservice:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -5265,17 +5271,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010023, 0x7f0101b0
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#background}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:background
+          @attr name ti.locationtrackerservice:background
         */
         public static int ActionMode_background = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -5283,21 +5289,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ti.locationupdatesservice:backgroundSplit
+          @attr name ti.locationtrackerservice:backgroundSplit
         */
         public static int ActionMode_backgroundSplit = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:closeItemLayout
+          @attr name ti.locationtrackerservice:closeItemLayout
         */
         public static int ActionMode_closeItemLayout = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#height}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -5309,27 +5315,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:height
+          @attr name ti.locationtrackerservice:height
         */
         public static int ActionMode_height = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:subtitleTextStyle
+          @attr name ti.locationtrackerservice:subtitleTextStyle
         */
         public static int ActionMode_subtitleTextStyle = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:titleTextStyle
+          @attr name ti.locationtrackerservice:titleTextStyle
         */
         public static int ActionMode_titleTextStyle = 0;
         /** Attributes that can be used with a ActivityChooserView.
@@ -5338,8 +5344,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable ti.locationupdatesservice:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount ti.locationupdatesservice:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable ti.locationtrackerservice:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount ti.locationtrackerservice:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -5348,17 +5354,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010024, 0x7f010025
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:expandActivityOverflowButtonDrawable
+          @attr name ti.locationtrackerservice:expandActivityOverflowButtonDrawable
         */
         public static int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -5368,7 +5374,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:initialActivityCount
+          @attr name ti.locationtrackerservice:initialActivityCount
         */
         public static int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a AdsAttrs.
@@ -5377,9 +5383,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AdsAttrs_adSize ti.locationupdatesservice:adSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AdsAttrs_adSizes ti.locationupdatesservice:adSizes}</code></td><td></td></tr>
-           <tr><td><code>{@link #AdsAttrs_adUnitId ti.locationupdatesservice:adUnitId}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adSize ti.locationtrackerservice:adSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adSizes ti.locationtrackerservice:adSizes}</code></td><td></td></tr>
+           <tr><td><code>{@link #AdsAttrs_adUnitId ti.locationtrackerservice:adUnitId}</code></td><td></td></tr>
            </table>
            @see #AdsAttrs_adSize
            @see #AdsAttrs_adSizes
@@ -5389,7 +5395,7 @@ containing a value of this type.
             0x7f010161, 0x7f010162, 0x7f010163
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#adSize}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#adSize}
           attribute's value can be found in the {@link #AdsAttrs} array.
 
 
@@ -5399,11 +5405,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:adSize
+          @attr name ti.locationtrackerservice:adSize
         */
         public static int AdsAttrs_adSize = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#adSizes}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#adSizes}
           attribute's value can be found in the {@link #AdsAttrs} array.
 
 
@@ -5413,11 +5419,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:adSizes
+          @attr name ti.locationtrackerservice:adSizes
         */
         public static int AdsAttrs_adSizes = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#adUnitId}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#adUnitId}
           attribute's value can be found in the {@link #AdsAttrs} array.
 
 
@@ -5427,7 +5433,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:adUnitId
+          @attr name ti.locationtrackerservice:adUnitId
         */
         public static int AdsAttrs_adUnitId = 2;
         /** Attributes that can be used with a AlertDialog.
@@ -5437,12 +5443,12 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout ti.locationupdatesservice:buttonPanelSideLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listItemLayout ti.locationupdatesservice:listItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listLayout ti.locationupdatesservice:listLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout ti.locationupdatesservice:multiChoiceItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_showTitle ti.locationupdatesservice:showTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout ti.locationupdatesservice:singleChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout ti.locationtrackerservice:buttonPanelSideLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listItemLayout ti.locationtrackerservice:listItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listLayout ti.locationtrackerservice:listLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout ti.locationtrackerservice:multiChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_showTitle ti.locationtrackerservice:showTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout ti.locationtrackerservice:singleChoiceItemLayout}</code></td><td></td></tr>
            </table>
            @see #AlertDialog_android_layout
            @see #AlertDialog_buttonPanelSideLayout
@@ -5463,47 +5469,47 @@ containing a value of this type.
         */
         public static int AlertDialog_android_layout = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#buttonPanelSideLayout}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#buttonPanelSideLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:buttonPanelSideLayout
+          @attr name ti.locationtrackerservice:buttonPanelSideLayout
         */
         public static int AlertDialog_buttonPanelSideLayout = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#listItemLayout}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#listItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:listItemLayout
+          @attr name ti.locationtrackerservice:listItemLayout
         */
         public static int AlertDialog_listItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#listLayout}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#listLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:listLayout
+          @attr name ti.locationtrackerservice:listLayout
         */
         public static int AlertDialog_listLayout = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#multiChoiceItemLayout}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#multiChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:multiChoiceItemLayout
+          @attr name ti.locationtrackerservice:multiChoiceItemLayout
         */
         public static int AlertDialog_multiChoiceItemLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#showTitle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#showTitle}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
@@ -5513,17 +5519,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:showTitle
+          @attr name ti.locationtrackerservice:showTitle
         */
         public static int AlertDialog_showTitle = 6;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#singleChoiceItemLayout}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#singleChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:singleChoiceItemLayout
+          @attr name ti.locationtrackerservice:singleChoiceItemLayout
         */
         public static int AlertDialog_singleChoiceItemLayout = 4;
         /** Attributes that can be used with a AppBarLayout.
@@ -5535,8 +5541,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
            <tr><td><code>{@link #AppBarLayout_android_keyboardNavigationCluster android:keyboardNavigationCluster}</code></td><td></td></tr>
            <tr><td><code>{@link #AppBarLayout_android_touchscreenBlocksFocus android:touchscreenBlocksFocus}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_elevation ti.locationupdatesservice:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_expanded ti.locationupdatesservice:expanded}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_elevation ti.locationtrackerservice:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_expanded ti.locationtrackerservice:expanded}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_android_background
            @see #AppBarLayout_android_keyboardNavigationCluster
@@ -5567,7 +5573,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static int AppBarLayout_android_touchscreenBlocksFocus = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#elevation}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#elevation}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -5579,11 +5585,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:elevation
+          @attr name ti.locationtrackerservice:elevation
         */
         public static int AppBarLayout_elevation = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#expanded}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#expanded}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -5593,7 +5599,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:expanded
+          @attr name ti.locationtrackerservice:expanded
         */
         public static int AppBarLayout_expanded = 4;
         /** Attributes that can be used with a AppBarLayoutStates.
@@ -5602,8 +5608,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppBarLayoutStates_state_collapsed ti.locationupdatesservice:state_collapsed}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayoutStates_state_collapsible ti.locationupdatesservice:state_collapsible}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayoutStates_state_collapsed ti.locationtrackerservice:state_collapsed}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayoutStates_state_collapsible ti.locationtrackerservice:state_collapsible}</code></td><td></td></tr>
            </table>
            @see #AppBarLayoutStates_state_collapsed
            @see #AppBarLayoutStates_state_collapsible
@@ -5612,7 +5618,7 @@ containing a value of this type.
             0x7f010110, 0x7f010111
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#state_collapsed}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#state_collapsed}
           attribute's value can be found in the {@link #AppBarLayoutStates} array.
 
 
@@ -5622,11 +5628,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:state_collapsed
+          @attr name ti.locationtrackerservice:state_collapsed
         */
         public static int AppBarLayoutStates_state_collapsed = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#state_collapsible}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#state_collapsible}
           attribute's value can be found in the {@link #AppBarLayoutStates} array.
 
 
@@ -5636,7 +5642,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:state_collapsible
+          @attr name ti.locationtrackerservice:state_collapsible
         */
         public static int AppBarLayoutStates_state_collapsible = 1;
         /** Attributes that can be used with a AppBarLayout_Layout.
@@ -5645,8 +5651,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags ti.locationupdatesservice:layout_scrollFlags}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator ti.locationupdatesservice:layout_scrollInterpolator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags ti.locationtrackerservice:layout_scrollFlags}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator ti.locationtrackerservice:layout_scrollInterpolator}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_Layout_layout_scrollFlags
            @see #AppBarLayout_Layout_layout_scrollInterpolator
@@ -5655,7 +5661,7 @@ containing a value of this type.
             0x7f010112, 0x7f010113
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#layout_scrollFlags}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#layout_scrollFlags}
           attribute's value can be found in the {@link #AppBarLayout_Layout} array.
 
 
@@ -5671,17 +5677,17 @@ containing a value of this type.
 <tr><td><code>enterAlwaysCollapsed</code></td><td>0x8</td><td></td></tr>
 <tr><td><code>snap</code></td><td>0x10</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:layout_scrollFlags
+          @attr name ti.locationtrackerservice:layout_scrollFlags
         */
         public static int AppBarLayout_Layout_layout_scrollFlags = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#layout_scrollInterpolator}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#layout_scrollInterpolator}
           attribute's value can be found in the {@link #AppBarLayout_Layout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:layout_scrollInterpolator
+          @attr name ti.locationtrackerservice:layout_scrollInterpolator
         */
         public static int AppBarLayout_Layout_layout_scrollInterpolator = 1;
         /** Attributes that can be used with a AppCompatImageView.
@@ -5691,9 +5697,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatImageView_srcCompat ti.locationupdatesservice:srcCompat}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatImageView_tint ti.locationupdatesservice:tint}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatImageView_tintMode ti.locationupdatesservice:tintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatImageView_srcCompat ti.locationtrackerservice:srcCompat}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatImageView_tint ti.locationtrackerservice:tint}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatImageView_tintMode ti.locationtrackerservice:tintMode}</code></td><td></td></tr>
            </table>
            @see #AppCompatImageView_android_src
            @see #AppCompatImageView_srcCompat
@@ -5710,17 +5716,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static int AppCompatImageView_android_src = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#srcCompat}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#srcCompat}
           attribute's value can be found in the {@link #AppCompatImageView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:srcCompat
+          @attr name ti.locationtrackerservice:srcCompat
         */
         public static int AppCompatImageView_srcCompat = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tint}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tint}
           attribute's value can be found in the {@link #AppCompatImageView} array.
 
 
@@ -5731,11 +5737,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:tint
+          @attr name ti.locationtrackerservice:tint
         */
         public static int AppCompatImageView_tint = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tintMode}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tintMode}
           attribute's value can be found in the {@link #AppCompatImageView} array.
 
 
@@ -5751,7 +5757,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:tintMode
+          @attr name ti.locationtrackerservice:tintMode
         */
         public static int AppCompatImageView_tintMode = 3;
         /** Attributes that can be used with a AppCompatSeekBar.
@@ -5761,9 +5767,9 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatSeekBar_tickMark ti.locationupdatesservice:tickMark}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint ti.locationupdatesservice:tickMarkTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode ti.locationupdatesservice:tickMarkTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatSeekBar_tickMark ti.locationtrackerservice:tickMark}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint ti.locationtrackerservice:tickMarkTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode ti.locationtrackerservice:tickMarkTintMode}</code></td><td></td></tr>
            </table>
            @see #AppCompatSeekBar_android_thumb
            @see #AppCompatSeekBar_tickMark
@@ -5780,17 +5786,17 @@ containing a value of this type.
         */
         public static int AppCompatSeekBar_android_thumb = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tickMark}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tickMark}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:tickMark
+          @attr name ti.locationtrackerservice:tickMark
         */
         public static int AppCompatSeekBar_tickMark = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tickMarkTint}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tickMarkTint}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
@@ -5801,11 +5807,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:tickMarkTint
+          @attr name ti.locationtrackerservice:tickMarkTint
         */
         public static int AppCompatSeekBar_tickMarkTint = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tickMarkTintMode}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tickMarkTintMode}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
@@ -5822,7 +5828,7 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:tickMarkTintMode
+          @attr name ti.locationtrackerservice:tickMarkTintMode
         */
         public static int AppCompatSeekBar_tickMarkTintMode = 3;
         /** Attributes that can be used with a AppCompatTextHelper.
@@ -5900,13 +5906,13 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize ti.locationupdatesservice:autoSizeMaxTextSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize ti.locationupdatesservice:autoSizeMinTextSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes ti.locationupdatesservice:autoSizePresetSizes}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity ti.locationupdatesservice:autoSizeStepGranularity}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_autoSizeTextType ti.locationupdatesservice:autoSizeTextType}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_fontFamily ti.locationupdatesservice:fontFamily}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_textAllCaps ti.locationupdatesservice:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize ti.locationtrackerservice:autoSizeMaxTextSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize ti.locationtrackerservice:autoSizeMinTextSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes ti.locationtrackerservice:autoSizePresetSizes}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity ti.locationtrackerservice:autoSizeStepGranularity}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_autoSizeTextType ti.locationtrackerservice:autoSizeTextType}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_fontFamily ti.locationtrackerservice:fontFamily}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_textAllCaps ti.locationtrackerservice:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #AppCompatTextView_android_textAppearance
            @see #AppCompatTextView_autoSizeMaxTextSize
@@ -5928,7 +5934,7 @@ containing a value of this type.
         */
         public static int AppCompatTextView_android_textAppearance = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#autoSizeMaxTextSize}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#autoSizeMaxTextSize}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
@@ -5940,11 +5946,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:autoSizeMaxTextSize
+          @attr name ti.locationtrackerservice:autoSizeMaxTextSize
         */
         public static int AppCompatTextView_autoSizeMaxTextSize = 6;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#autoSizeMinTextSize}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#autoSizeMinTextSize}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
@@ -5956,21 +5962,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:autoSizeMinTextSize
+          @attr name ti.locationtrackerservice:autoSizeMinTextSize
         */
         public static int AppCompatTextView_autoSizeMinTextSize = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#autoSizePresetSizes}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#autoSizePresetSizes}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:autoSizePresetSizes
+          @attr name ti.locationtrackerservice:autoSizePresetSizes
         */
         public static int AppCompatTextView_autoSizePresetSizes = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#autoSizeStepGranularity}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#autoSizeStepGranularity}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
@@ -5982,11 +5988,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:autoSizeStepGranularity
+          @attr name ti.locationtrackerservice:autoSizeStepGranularity
         */
         public static int AppCompatTextView_autoSizeStepGranularity = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#autoSizeTextType}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#autoSizeTextType}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
@@ -5999,11 +6005,11 @@ containing a value of this type.
 <tr><td><code>none</code></td><td>0</td><td></td></tr>
 <tr><td><code>uniform</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:autoSizeTextType
+          @attr name ti.locationtrackerservice:autoSizeTextType
         */
         public static int AppCompatTextView_autoSizeTextType = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#fontFamily}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#fontFamily}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
@@ -6013,18 +6019,18 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:fontFamily
+          @attr name ti.locationtrackerservice:fontFamily
         */
         public static int AppCompatTextView_fontFamily = 7;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#textAllCaps}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name ti.locationupdatesservice:textAllCaps
+          @attr name ti.locationtrackerservice:textAllCaps
         */
         public static int AppCompatTextView_textAllCaps = 1;
         /** Attributes that can be used with a AppCompatTheme.
@@ -6033,125 +6039,125 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarDivider ti.locationupdatesservice:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground ti.locationupdatesservice:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme ti.locationupdatesservice:actionBarPopupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarSize ti.locationupdatesservice:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle ti.locationupdatesservice:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarStyle ti.locationupdatesservice:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle ti.locationupdatesservice:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle ti.locationupdatesservice:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle ti.locationupdatesservice:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTheme ti.locationupdatesservice:actionBarTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme ti.locationupdatesservice:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionButtonStyle ti.locationupdatesservice:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle ti.locationupdatesservice:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance ti.locationupdatesservice:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor ti.locationupdatesservice:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeBackground ti.locationupdatesservice:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle ti.locationupdatesservice:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable ti.locationupdatesservice:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable ti.locationupdatesservice:actionModeCopyDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable ti.locationupdatesservice:actionModeCutDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable ti.locationupdatesservice:actionModeFindDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable ti.locationupdatesservice:actionModePasteDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle ti.locationupdatesservice:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable ti.locationupdatesservice:actionModeSelectAllDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable ti.locationupdatesservice:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground ti.locationupdatesservice:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeStyle ti.locationupdatesservice:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable ti.locationupdatesservice:actionModeWebSearchDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle ti.locationupdatesservice:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle ti.locationupdatesservice:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle ti.locationupdatesservice:activityChooserViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle ti.locationupdatesservice:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons ti.locationupdatesservice:alertDialogCenterButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogStyle ti.locationupdatesservice:alertDialogStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogTheme ti.locationupdatesservice:alertDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarDivider ti.locationtrackerservice:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground ti.locationtrackerservice:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme ti.locationtrackerservice:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSize ti.locationtrackerservice:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle ti.locationtrackerservice:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarStyle ti.locationtrackerservice:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle ti.locationtrackerservice:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle ti.locationtrackerservice:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle ti.locationtrackerservice:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTheme ti.locationtrackerservice:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme ti.locationtrackerservice:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionButtonStyle ti.locationtrackerservice:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle ti.locationtrackerservice:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance ti.locationtrackerservice:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor ti.locationtrackerservice:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeBackground ti.locationtrackerservice:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle ti.locationtrackerservice:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable ti.locationtrackerservice:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable ti.locationtrackerservice:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable ti.locationtrackerservice:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable ti.locationtrackerservice:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable ti.locationtrackerservice:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle ti.locationtrackerservice:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable ti.locationtrackerservice:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable ti.locationtrackerservice:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground ti.locationtrackerservice:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeStyle ti.locationtrackerservice:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable ti.locationtrackerservice:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle ti.locationtrackerservice:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle ti.locationtrackerservice:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle ti.locationtrackerservice:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle ti.locationtrackerservice:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons ti.locationtrackerservice:alertDialogCenterButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogStyle ti.locationtrackerservice:alertDialogStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogTheme ti.locationtrackerservice:alertDialogTheme}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle ti.locationupdatesservice:autoCompleteTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle ti.locationupdatesservice:borderlessButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle ti.locationupdatesservice:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle ti.locationupdatesservice:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle ti.locationupdatesservice:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle ti.locationupdatesservice:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarStyle ti.locationupdatesservice:buttonBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonStyle ti.locationupdatesservice:buttonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall ti.locationupdatesservice:buttonStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_checkboxStyle ti.locationupdatesservice:checkboxStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle ti.locationupdatesservice:checkedTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorAccent ti.locationupdatesservice:colorAccent}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating ti.locationupdatesservice:colorBackgroundFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorButtonNormal ti.locationupdatesservice:colorButtonNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlActivated ti.locationupdatesservice:colorControlActivated}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlHighlight ti.locationupdatesservice:colorControlHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlNormal ti.locationupdatesservice:colorControlNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorError ti.locationupdatesservice:colorError}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorPrimary ti.locationupdatesservice:colorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark ti.locationupdatesservice:colorPrimaryDark}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal ti.locationupdatesservice:colorSwitchThumbNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_controlBackground ti.locationupdatesservice:controlBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding ti.locationupdatesservice:dialogPreferredPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dialogTheme ti.locationupdatesservice:dialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dividerHorizontal ti.locationupdatesservice:dividerHorizontal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dividerVertical ti.locationupdatesservice:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle ti.locationupdatesservice:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight ti.locationupdatesservice:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextBackground ti.locationupdatesservice:editTextBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextColor ti.locationupdatesservice:editTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextStyle ti.locationupdatesservice:editTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator ti.locationupdatesservice:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_imageButtonStyle ti.locationupdatesservice:imageButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator ti.locationupdatesservice:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog ti.locationupdatesservice:listDividerAlertDialog}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle ti.locationupdatesservice:listMenuViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle ti.locationupdatesservice:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight ti.locationupdatesservice:listPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge ti.locationupdatesservice:listPreferredItemHeightLarge}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall ti.locationupdatesservice:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft ti.locationupdatesservice:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight ti.locationupdatesservice:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelBackground ti.locationupdatesservice:panelBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme ti.locationupdatesservice:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth ti.locationupdatesservice:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_popupMenuStyle ti.locationupdatesservice:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_popupWindowStyle ti.locationupdatesservice:popupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_radioButtonStyle ti.locationupdatesservice:radioButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyle ti.locationupdatesservice:ratingBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator ti.locationupdatesservice:ratingBarStyleIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall ti.locationupdatesservice:ratingBarStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_searchViewStyle ti.locationupdatesservice:searchViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_seekBarStyle ti.locationupdatesservice:seekBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_selectableItemBackground ti.locationupdatesservice:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless ti.locationupdatesservice:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle ti.locationupdatesservice:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_spinnerStyle ti.locationupdatesservice:spinnerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_switchStyle ti.locationupdatesservice:switchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu ti.locationupdatesservice:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem ti.locationupdatesservice:textAppearanceListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary ti.locationupdatesservice:textAppearanceListItemSecondary}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall ti.locationupdatesservice:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader ti.locationupdatesservice:textAppearancePopupMenuHeader}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle ti.locationupdatesservice:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle ti.locationupdatesservice:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu ti.locationupdatesservice:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem ti.locationupdatesservice:textColorAlertDialogListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl ti.locationupdatesservice:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle ti.locationupdatesservice:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_toolbarStyle ti.locationupdatesservice:toolbarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor ti.locationupdatesservice:tooltipForegroundColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground ti.locationupdatesservice:tooltipFrameBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionBar ti.locationupdatesservice:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay ti.locationupdatesservice:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay ti.locationupdatesservice:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor ti.locationupdatesservice:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor ti.locationupdatesservice:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor ti.locationupdatesservice:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor ti.locationupdatesservice:windowFixedWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor ti.locationupdatesservice:windowMinWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor ti.locationupdatesservice:windowMinWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowNoTitle ti.locationupdatesservice:windowNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle ti.locationtrackerservice:autoCompleteTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle ti.locationtrackerservice:borderlessButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle ti.locationtrackerservice:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle ti.locationtrackerservice:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle ti.locationtrackerservice:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle ti.locationtrackerservice:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarStyle ti.locationtrackerservice:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyle ti.locationtrackerservice:buttonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall ti.locationtrackerservice:buttonStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkboxStyle ti.locationtrackerservice:checkboxStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle ti.locationtrackerservice:checkedTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorAccent ti.locationtrackerservice:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating ti.locationtrackerservice:colorBackgroundFloating}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorButtonNormal ti.locationtrackerservice:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlActivated ti.locationtrackerservice:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlHighlight ti.locationtrackerservice:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlNormal ti.locationtrackerservice:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorError ti.locationtrackerservice:colorError}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimary ti.locationtrackerservice:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark ti.locationtrackerservice:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal ti.locationtrackerservice:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_controlBackground ti.locationtrackerservice:controlBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding ti.locationtrackerservice:dialogPreferredPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogTheme ti.locationtrackerservice:dialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerHorizontal ti.locationtrackerservice:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerVertical ti.locationtrackerservice:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle ti.locationtrackerservice:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight ti.locationtrackerservice:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextBackground ti.locationtrackerservice:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextColor ti.locationtrackerservice:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextStyle ti.locationtrackerservice:editTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator ti.locationtrackerservice:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_imageButtonStyle ti.locationtrackerservice:imageButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator ti.locationtrackerservice:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog ti.locationtrackerservice:listDividerAlertDialog}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle ti.locationtrackerservice:listMenuViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle ti.locationtrackerservice:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight ti.locationtrackerservice:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge ti.locationtrackerservice:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall ti.locationtrackerservice:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft ti.locationtrackerservice:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight ti.locationtrackerservice:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelBackground ti.locationtrackerservice:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme ti.locationtrackerservice:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth ti.locationtrackerservice:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupMenuStyle ti.locationtrackerservice:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupWindowStyle ti.locationtrackerservice:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_radioButtonStyle ti.locationtrackerservice:radioButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyle ti.locationtrackerservice:ratingBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator ti.locationtrackerservice:ratingBarStyleIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall ti.locationtrackerservice:ratingBarStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_searchViewStyle ti.locationtrackerservice:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_seekBarStyle ti.locationtrackerservice:seekBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackground ti.locationtrackerservice:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless ti.locationtrackerservice:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle ti.locationtrackerservice:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerStyle ti.locationtrackerservice:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_switchStyle ti.locationtrackerservice:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu ti.locationtrackerservice:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem ti.locationtrackerservice:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary ti.locationtrackerservice:textAppearanceListItemSecondary}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall ti.locationtrackerservice:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader ti.locationtrackerservice:textAppearancePopupMenuHeader}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle ti.locationtrackerservice:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle ti.locationtrackerservice:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu ti.locationtrackerservice:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem ti.locationtrackerservice:textColorAlertDialogListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl ti.locationtrackerservice:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle ti.locationtrackerservice:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarStyle ti.locationtrackerservice:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor ti.locationtrackerservice:tooltipForegroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground ti.locationtrackerservice:tooltipFrameBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBar ti.locationtrackerservice:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay ti.locationtrackerservice:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay ti.locationtrackerservice:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor ti.locationtrackerservice:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor ti.locationtrackerservice:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor ti.locationtrackerservice:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor ti.locationtrackerservice:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor ti.locationtrackerservice:windowMinWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor ti.locationtrackerservice:windowMinWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowNoTitle ti.locationtrackerservice:windowNoTitle}</code></td><td></td></tr>
            </table>
            @see #AppCompatTheme_actionBarDivider
            @see #AppCompatTheme_actionBarItemBackground
@@ -6306,37 +6312,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100ab, 0x7f0100ac, 0x7f0100ad
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionBarDivider
+          @attr name ti.locationtrackerservice:actionBarDivider
         */
         public static int AppCompatTheme_actionBarDivider = 23;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionBarItemBackground
+          @attr name ti.locationtrackerservice:actionBarItemBackground
         */
         public static int AppCompatTheme_actionBarItemBackground = 24;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionBarPopupTheme
+          @attr name ti.locationtrackerservice:actionBarPopupTheme
         */
         public static int AppCompatTheme_actionBarPopupTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionBarSize}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6356,111 +6362,111 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:actionBarSize
+          @attr name ti.locationtrackerservice:actionBarSize
         */
         public static int AppCompatTheme_actionBarSize = 22;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionBarSplitStyle
+          @attr name ti.locationtrackerservice:actionBarSplitStyle
         */
         public static int AppCompatTheme_actionBarSplitStyle = 19;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionBarStyle
+          @attr name ti.locationtrackerservice:actionBarStyle
         */
         public static int AppCompatTheme_actionBarStyle = 18;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionBarTabBarStyle
+          @attr name ti.locationtrackerservice:actionBarTabBarStyle
         */
         public static int AppCompatTheme_actionBarTabBarStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionBarTabStyle
+          @attr name ti.locationtrackerservice:actionBarTabStyle
         */
         public static int AppCompatTheme_actionBarTabStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionBarTabTextStyle
+          @attr name ti.locationtrackerservice:actionBarTabTextStyle
         */
         public static int AppCompatTheme_actionBarTabTextStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionBarTheme
+          @attr name ti.locationtrackerservice:actionBarTheme
         */
         public static int AppCompatTheme_actionBarTheme = 20;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionBarWidgetTheme
+          @attr name ti.locationtrackerservice:actionBarWidgetTheme
         */
         public static int AppCompatTheme_actionBarWidgetTheme = 21;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionButtonStyle
+          @attr name ti.locationtrackerservice:actionButtonStyle
         */
         public static int AppCompatTheme_actionButtonStyle = 50;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionDropDownStyle
+          @attr name ti.locationtrackerservice:actionDropDownStyle
         */
         public static int AppCompatTheme_actionDropDownStyle = 46;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionMenuTextAppearance
+          @attr name ti.locationtrackerservice:actionMenuTextAppearance
         */
         public static int AppCompatTheme_actionMenuTextAppearance = 25;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6468,181 +6474,181 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ti.locationupdatesservice:actionMenuTextColor
+          @attr name ti.locationtrackerservice:actionMenuTextColor
         */
         public static int AppCompatTheme_actionMenuTextColor = 26;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionModeBackground
+          @attr name ti.locationtrackerservice:actionModeBackground
         */
         public static int AppCompatTheme_actionModeBackground = 29;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionModeCloseButtonStyle
+          @attr name ti.locationtrackerservice:actionModeCloseButtonStyle
         */
         public static int AppCompatTheme_actionModeCloseButtonStyle = 28;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionModeCloseDrawable
+          @attr name ti.locationtrackerservice:actionModeCloseDrawable
         */
         public static int AppCompatTheme_actionModeCloseDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionModeCopyDrawable
+          @attr name ti.locationtrackerservice:actionModeCopyDrawable
         */
         public static int AppCompatTheme_actionModeCopyDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionModeCutDrawable
+          @attr name ti.locationtrackerservice:actionModeCutDrawable
         */
         public static int AppCompatTheme_actionModeCutDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionModeFindDrawable
+          @attr name ti.locationtrackerservice:actionModeFindDrawable
         */
         public static int AppCompatTheme_actionModeFindDrawable = 37;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionModePasteDrawable
+          @attr name ti.locationtrackerservice:actionModePasteDrawable
         */
         public static int AppCompatTheme_actionModePasteDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionModePopupWindowStyle
+          @attr name ti.locationtrackerservice:actionModePopupWindowStyle
         */
         public static int AppCompatTheme_actionModePopupWindowStyle = 39;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionModeSelectAllDrawable
+          @attr name ti.locationtrackerservice:actionModeSelectAllDrawable
         */
         public static int AppCompatTheme_actionModeSelectAllDrawable = 35;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionModeShareDrawable
+          @attr name ti.locationtrackerservice:actionModeShareDrawable
         */
         public static int AppCompatTheme_actionModeShareDrawable = 36;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionModeSplitBackground
+          @attr name ti.locationtrackerservice:actionModeSplitBackground
         */
         public static int AppCompatTheme_actionModeSplitBackground = 30;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionModeStyle
+          @attr name ti.locationtrackerservice:actionModeStyle
         */
         public static int AppCompatTheme_actionModeStyle = 27;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionModeWebSearchDrawable
+          @attr name ti.locationtrackerservice:actionModeWebSearchDrawable
         */
         public static int AppCompatTheme_actionModeWebSearchDrawable = 38;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionOverflowButtonStyle
+          @attr name ti.locationtrackerservice:actionOverflowButtonStyle
         */
         public static int AppCompatTheme_actionOverflowButtonStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionOverflowMenuStyle
+          @attr name ti.locationtrackerservice:actionOverflowMenuStyle
         */
         public static int AppCompatTheme_actionOverflowMenuStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:activityChooserViewStyle
+          @attr name ti.locationtrackerservice:activityChooserViewStyle
         */
         public static int AppCompatTheme_activityChooserViewStyle = 58;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#alertDialogButtonGroupStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#alertDialogButtonGroupStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:alertDialogButtonGroupStyle
+          @attr name ti.locationtrackerservice:alertDialogButtonGroupStyle
         */
         public static int AppCompatTheme_alertDialogButtonGroupStyle = 95;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#alertDialogCenterButtons}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#alertDialogCenterButtons}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6652,27 +6658,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:alertDialogCenterButtons
+          @attr name ti.locationtrackerservice:alertDialogCenterButtons
         */
         public static int AppCompatTheme_alertDialogCenterButtons = 96;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#alertDialogStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#alertDialogStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:alertDialogStyle
+          @attr name ti.locationtrackerservice:alertDialogStyle
         */
         public static int AppCompatTheme_alertDialogStyle = 94;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#alertDialogTheme}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#alertDialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:alertDialogTheme
+          @attr name ti.locationtrackerservice:alertDialogTheme
         */
         public static int AppCompatTheme_alertDialogTheme = 97;
         /**
@@ -6688,117 +6694,117 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static int AppCompatTheme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#autoCompleteTextViewStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#autoCompleteTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:autoCompleteTextViewStyle
+          @attr name ti.locationtrackerservice:autoCompleteTextViewStyle
         */
         public static int AppCompatTheme_autoCompleteTextViewStyle = 102;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#borderlessButtonStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#borderlessButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:borderlessButtonStyle
+          @attr name ti.locationtrackerservice:borderlessButtonStyle
         */
         public static int AppCompatTheme_borderlessButtonStyle = 55;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:buttonBarButtonStyle
+          @attr name ti.locationtrackerservice:buttonBarButtonStyle
         */
         public static int AppCompatTheme_buttonBarButtonStyle = 52;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#buttonBarNegativeButtonStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#buttonBarNegativeButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:buttonBarNegativeButtonStyle
+          @attr name ti.locationtrackerservice:buttonBarNegativeButtonStyle
         */
         public static int AppCompatTheme_buttonBarNegativeButtonStyle = 100;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#buttonBarNeutralButtonStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#buttonBarNeutralButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:buttonBarNeutralButtonStyle
+          @attr name ti.locationtrackerservice:buttonBarNeutralButtonStyle
         */
         public static int AppCompatTheme_buttonBarNeutralButtonStyle = 101;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#buttonBarPositiveButtonStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#buttonBarPositiveButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:buttonBarPositiveButtonStyle
+          @attr name ti.locationtrackerservice:buttonBarPositiveButtonStyle
         */
         public static int AppCompatTheme_buttonBarPositiveButtonStyle = 99;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:buttonBarStyle
+          @attr name ti.locationtrackerservice:buttonBarStyle
         */
         public static int AppCompatTheme_buttonBarStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#buttonStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#buttonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:buttonStyle
+          @attr name ti.locationtrackerservice:buttonStyle
         */
         public static int AppCompatTheme_buttonStyle = 103;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#buttonStyleSmall}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#buttonStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:buttonStyleSmall
+          @attr name ti.locationtrackerservice:buttonStyleSmall
         */
         public static int AppCompatTheme_buttonStyleSmall = 104;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#checkboxStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#checkboxStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:checkboxStyle
+          @attr name ti.locationtrackerservice:checkboxStyle
         */
         public static int AppCompatTheme_checkboxStyle = 105;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#checkedTextViewStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#checkedTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:checkedTextViewStyle
+          @attr name ti.locationtrackerservice:checkedTextViewStyle
         */
         public static int AppCompatTheme_checkedTextViewStyle = 106;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#colorAccent}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6809,11 +6815,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:colorAccent
+          @attr name ti.locationtrackerservice:colorAccent
         */
         public static int AppCompatTheme_colorAccent = 86;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#colorBackgroundFloating}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#colorBackgroundFloating}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6824,11 +6830,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:colorBackgroundFloating
+          @attr name ti.locationtrackerservice:colorBackgroundFloating
         */
         public static int AppCompatTheme_colorBackgroundFloating = 93;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6839,11 +6845,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:colorButtonNormal
+          @attr name ti.locationtrackerservice:colorButtonNormal
         */
         public static int AppCompatTheme_colorButtonNormal = 90;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6854,11 +6860,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:colorControlActivated
+          @attr name ti.locationtrackerservice:colorControlActivated
         */
         public static int AppCompatTheme_colorControlActivated = 88;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6869,11 +6875,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:colorControlHighlight
+          @attr name ti.locationtrackerservice:colorControlHighlight
         */
         public static int AppCompatTheme_colorControlHighlight = 89;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6884,11 +6890,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:colorControlNormal
+          @attr name ti.locationtrackerservice:colorControlNormal
         */
         public static int AppCompatTheme_colorControlNormal = 87;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#colorError}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#colorError}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6896,11 +6902,11 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ti.locationupdatesservice:colorError
+          @attr name ti.locationtrackerservice:colorError
         */
         public static int AppCompatTheme_colorError = 118;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#colorPrimary}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6911,11 +6917,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:colorPrimary
+          @attr name ti.locationtrackerservice:colorPrimary
         */
         public static int AppCompatTheme_colorPrimary = 84;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6926,11 +6932,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:colorPrimaryDark
+          @attr name ti.locationtrackerservice:colorPrimaryDark
         */
         public static int AppCompatTheme_colorPrimaryDark = 85;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6941,21 +6947,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:colorSwitchThumbNormal
+          @attr name ti.locationtrackerservice:colorSwitchThumbNormal
         */
         public static int AppCompatTheme_colorSwitchThumbNormal = 91;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#controlBackground}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#controlBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:controlBackground
+          @attr name ti.locationtrackerservice:controlBackground
         */
         public static int AppCompatTheme_controlBackground = 92;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#dialogPreferredPadding}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#dialogPreferredPadding}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6967,51 +6973,51 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:dialogPreferredPadding
+          @attr name ti.locationtrackerservice:dialogPreferredPadding
         */
         public static int AppCompatTheme_dialogPreferredPadding = 44;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#dialogTheme}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#dialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:dialogTheme
+          @attr name ti.locationtrackerservice:dialogTheme
         */
         public static int AppCompatTheme_dialogTheme = 43;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:dividerHorizontal
+          @attr name ti.locationtrackerservice:dividerHorizontal
         */
         public static int AppCompatTheme_dividerHorizontal = 57;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#dividerVertical}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:dividerVertical
+          @attr name ti.locationtrackerservice:dividerVertical
         */
         public static int AppCompatTheme_dividerVertical = 56;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:dropDownListViewStyle
+          @attr name ti.locationtrackerservice:dropDownListViewStyle
         */
         public static int AppCompatTheme_dropDownListViewStyle = 75;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7023,21 +7029,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:dropdownListPreferredItemHeight
+          @attr name ti.locationtrackerservice:dropdownListPreferredItemHeight
         */
         public static int AppCompatTheme_dropdownListPreferredItemHeight = 47;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#editTextBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:editTextBackground
+          @attr name ti.locationtrackerservice:editTextBackground
         */
         public static int AppCompatTheme_editTextBackground = 64;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#editTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7045,81 +7051,81 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ti.locationupdatesservice:editTextColor
+          @attr name ti.locationtrackerservice:editTextColor
         */
         public static int AppCompatTheme_editTextColor = 63;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#editTextStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#editTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:editTextStyle
+          @attr name ti.locationtrackerservice:editTextStyle
         */
         public static int AppCompatTheme_editTextStyle = 107;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:homeAsUpIndicator
+          @attr name ti.locationtrackerservice:homeAsUpIndicator
         */
         public static int AppCompatTheme_homeAsUpIndicator = 49;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#imageButtonStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#imageButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:imageButtonStyle
+          @attr name ti.locationtrackerservice:imageButtonStyle
         */
         public static int AppCompatTheme_imageButtonStyle = 65;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:listChoiceBackgroundIndicator
+          @attr name ti.locationtrackerservice:listChoiceBackgroundIndicator
         */
         public static int AppCompatTheme_listChoiceBackgroundIndicator = 83;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#listDividerAlertDialog}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#listDividerAlertDialog}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:listDividerAlertDialog
+          @attr name ti.locationtrackerservice:listDividerAlertDialog
         */
         public static int AppCompatTheme_listDividerAlertDialog = 45;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#listMenuViewStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#listMenuViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:listMenuViewStyle
+          @attr name ti.locationtrackerservice:listMenuViewStyle
         */
         public static int AppCompatTheme_listMenuViewStyle = 115;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:listPopupWindowStyle
+          @attr name ti.locationtrackerservice:listPopupWindowStyle
         */
         public static int AppCompatTheme_listPopupWindowStyle = 76;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7131,11 +7137,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:listPreferredItemHeight
+          @attr name ti.locationtrackerservice:listPreferredItemHeight
         */
         public static int AppCompatTheme_listPreferredItemHeight = 70;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7147,11 +7153,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:listPreferredItemHeightLarge
+          @attr name ti.locationtrackerservice:listPreferredItemHeightLarge
         */
         public static int AppCompatTheme_listPreferredItemHeightLarge = 72;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7163,11 +7169,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:listPreferredItemHeightSmall
+          @attr name ti.locationtrackerservice:listPreferredItemHeightSmall
         */
         public static int AppCompatTheme_listPreferredItemHeightSmall = 71;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7179,11 +7185,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:listPreferredItemPaddingLeft
+          @attr name ti.locationtrackerservice:listPreferredItemPaddingLeft
         */
         public static int AppCompatTheme_listPreferredItemPaddingLeft = 73;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7195,31 +7201,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:listPreferredItemPaddingRight
+          @attr name ti.locationtrackerservice:listPreferredItemPaddingRight
         */
         public static int AppCompatTheme_listPreferredItemPaddingRight = 74;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#panelBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:panelBackground
+          @attr name ti.locationtrackerservice:panelBackground
         */
         public static int AppCompatTheme_panelBackground = 80;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:panelMenuListTheme
+          @attr name ti.locationtrackerservice:panelMenuListTheme
         */
         public static int AppCompatTheme_panelMenuListTheme = 82;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7231,221 +7237,221 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:panelMenuListWidth
+          @attr name ti.locationtrackerservice:panelMenuListWidth
         */
         public static int AppCompatTheme_panelMenuListWidth = 81;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:popupMenuStyle
+          @attr name ti.locationtrackerservice:popupMenuStyle
         */
         public static int AppCompatTheme_popupMenuStyle = 61;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:popupWindowStyle
+          @attr name ti.locationtrackerservice:popupWindowStyle
         */
         public static int AppCompatTheme_popupWindowStyle = 62;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#radioButtonStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#radioButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:radioButtonStyle
+          @attr name ti.locationtrackerservice:radioButtonStyle
         */
         public static int AppCompatTheme_radioButtonStyle = 108;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#ratingBarStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#ratingBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:ratingBarStyle
+          @attr name ti.locationtrackerservice:ratingBarStyle
         */
         public static int AppCompatTheme_ratingBarStyle = 109;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#ratingBarStyleIndicator}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#ratingBarStyleIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:ratingBarStyleIndicator
+          @attr name ti.locationtrackerservice:ratingBarStyleIndicator
         */
         public static int AppCompatTheme_ratingBarStyleIndicator = 110;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#ratingBarStyleSmall}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#ratingBarStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:ratingBarStyleSmall
+          @attr name ti.locationtrackerservice:ratingBarStyleSmall
         */
         public static int AppCompatTheme_ratingBarStyleSmall = 111;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:searchViewStyle
+          @attr name ti.locationtrackerservice:searchViewStyle
         */
         public static int AppCompatTheme_searchViewStyle = 69;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#seekBarStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#seekBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:seekBarStyle
+          @attr name ti.locationtrackerservice:seekBarStyle
         */
         public static int AppCompatTheme_seekBarStyle = 112;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:selectableItemBackground
+          @attr name ti.locationtrackerservice:selectableItemBackground
         */
         public static int AppCompatTheme_selectableItemBackground = 53;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:selectableItemBackgroundBorderless
+          @attr name ti.locationtrackerservice:selectableItemBackgroundBorderless
         */
         public static int AppCompatTheme_selectableItemBackgroundBorderless = 54;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:spinnerDropDownItemStyle
+          @attr name ti.locationtrackerservice:spinnerDropDownItemStyle
         */
         public static int AppCompatTheme_spinnerDropDownItemStyle = 48;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:spinnerStyle
+          @attr name ti.locationtrackerservice:spinnerStyle
         */
         public static int AppCompatTheme_spinnerStyle = 113;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#switchStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:switchStyle
+          @attr name ti.locationtrackerservice:switchStyle
         */
         public static int AppCompatTheme_switchStyle = 114;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:textAppearanceLargePopupMenu
+          @attr name ti.locationtrackerservice:textAppearanceLargePopupMenu
         */
         public static int AppCompatTheme_textAppearanceLargePopupMenu = 40;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:textAppearanceListItem
+          @attr name ti.locationtrackerservice:textAppearanceListItem
         */
         public static int AppCompatTheme_textAppearanceListItem = 77;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#textAppearanceListItemSecondary}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#textAppearanceListItemSecondary}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:textAppearanceListItemSecondary
+          @attr name ti.locationtrackerservice:textAppearanceListItemSecondary
         */
         public static int AppCompatTheme_textAppearanceListItemSecondary = 78;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:textAppearanceListItemSmall
+          @attr name ti.locationtrackerservice:textAppearanceListItemSmall
         */
         public static int AppCompatTheme_textAppearanceListItemSmall = 79;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#textAppearancePopupMenuHeader}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#textAppearancePopupMenuHeader}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:textAppearancePopupMenuHeader
+          @attr name ti.locationtrackerservice:textAppearancePopupMenuHeader
         */
         public static int AppCompatTheme_textAppearancePopupMenuHeader = 42;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:textAppearanceSearchResultSubtitle
+          @attr name ti.locationtrackerservice:textAppearanceSearchResultSubtitle
         */
         public static int AppCompatTheme_textAppearanceSearchResultSubtitle = 67;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:textAppearanceSearchResultTitle
+          @attr name ti.locationtrackerservice:textAppearanceSearchResultTitle
         */
         public static int AppCompatTheme_textAppearanceSearchResultTitle = 66;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:textAppearanceSmallPopupMenu
+          @attr name ti.locationtrackerservice:textAppearanceSmallPopupMenu
         */
         public static int AppCompatTheme_textAppearanceSmallPopupMenu = 41;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#textColorAlertDialogListItem}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#textColorAlertDialogListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7453,11 +7459,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ti.locationupdatesservice:textColorAlertDialogListItem
+          @attr name ti.locationtrackerservice:textColorAlertDialogListItem
         */
         public static int AppCompatTheme_textColorAlertDialogListItem = 98;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7465,31 +7471,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ti.locationupdatesservice:textColorSearchUrl
+          @attr name ti.locationtrackerservice:textColorSearchUrl
         */
         public static int AppCompatTheme_textColorSearchUrl = 68;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:toolbarNavigationButtonStyle
+          @attr name ti.locationtrackerservice:toolbarNavigationButtonStyle
         */
         public static int AppCompatTheme_toolbarNavigationButtonStyle = 60;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:toolbarStyle
+          @attr name ti.locationtrackerservice:toolbarStyle
         */
         public static int AppCompatTheme_toolbarStyle = 59;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tooltipForegroundColor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tooltipForegroundColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7497,21 +7503,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ti.locationupdatesservice:tooltipForegroundColor
+          @attr name ti.locationtrackerservice:tooltipForegroundColor
         */
         public static int AppCompatTheme_tooltipForegroundColor = 117;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tooltipFrameBackground}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tooltipFrameBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:tooltipFrameBackground
+          @attr name ti.locationtrackerservice:tooltipFrameBackground
         */
         public static int AppCompatTheme_tooltipFrameBackground = 116;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#windowActionBar}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7521,11 +7527,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:windowActionBar
+          @attr name ti.locationtrackerservice:windowActionBar
         */
         public static int AppCompatTheme_windowActionBar = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7535,11 +7541,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:windowActionBarOverlay
+          @attr name ti.locationtrackerservice:windowActionBarOverlay
         */
         public static int AppCompatTheme_windowActionBarOverlay = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7549,11 +7555,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:windowActionModeOverlay
+          @attr name ti.locationtrackerservice:windowActionModeOverlay
         */
         public static int AppCompatTheme_windowActionModeOverlay = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7568,11 +7574,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:windowFixedHeightMajor
+          @attr name ti.locationtrackerservice:windowFixedHeightMajor
         */
         public static int AppCompatTheme_windowFixedHeightMajor = 9;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7587,11 +7593,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:windowFixedHeightMinor
+          @attr name ti.locationtrackerservice:windowFixedHeightMinor
         */
         public static int AppCompatTheme_windowFixedHeightMinor = 7;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7606,11 +7612,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:windowFixedWidthMajor
+          @attr name ti.locationtrackerservice:windowFixedWidthMajor
         */
         public static int AppCompatTheme_windowFixedWidthMajor = 6;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7625,11 +7631,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:windowFixedWidthMinor
+          @attr name ti.locationtrackerservice:windowFixedWidthMinor
         */
         public static int AppCompatTheme_windowFixedWidthMinor = 8;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#windowMinWidthMajor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#windowMinWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7644,11 +7650,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:windowMinWidthMajor
+          @attr name ti.locationtrackerservice:windowMinWidthMajor
         */
         public static int AppCompatTheme_windowMinWidthMajor = 10;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#windowMinWidthMinor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#windowMinWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7663,11 +7669,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:windowMinWidthMinor
+          @attr name ti.locationtrackerservice:windowMinWidthMinor
         */
         public static int AppCompatTheme_windowMinWidthMinor = 11;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#windowNoTitle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#windowNoTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7677,7 +7683,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:windowNoTitle
+          @attr name ti.locationtrackerservice:windowNoTitle
         */
         public static int AppCompatTheme_windowNoTitle = 3;
         /** Attributes that can be used with a BottomNavigationView.
@@ -7686,11 +7692,11 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #BottomNavigationView_elevation ti.locationupdatesservice:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomNavigationView_itemBackground ti.locationupdatesservice:itemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomNavigationView_itemIconTint ti.locationupdatesservice:itemIconTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomNavigationView_itemTextColor ti.locationupdatesservice:itemTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomNavigationView_menu ti.locationupdatesservice:menu}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_elevation ti.locationtrackerservice:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_itemBackground ti.locationtrackerservice:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_itemIconTint ti.locationtrackerservice:itemIconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_itemTextColor ti.locationtrackerservice:itemTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_menu ti.locationtrackerservice:menu}</code></td><td></td></tr>
            </table>
            @see #BottomNavigationView_elevation
            @see #BottomNavigationView_itemBackground
@@ -7703,7 +7709,7 @@ containing a value of this type.
             0x7f01013d
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#elevation}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#elevation}
           attribute's value can be found in the {@link #BottomNavigationView} array.
 
 
@@ -7715,21 +7721,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:elevation
+          @attr name ti.locationtrackerservice:elevation
         */
         public static int BottomNavigationView_elevation = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#itemBackground}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#itemBackground}
           attribute's value can be found in the {@link #BottomNavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:itemBackground
+          @attr name ti.locationtrackerservice:itemBackground
         */
         public static int BottomNavigationView_itemBackground = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#itemIconTint}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#itemIconTint}
           attribute's value can be found in the {@link #BottomNavigationView} array.
 
 
@@ -7740,11 +7746,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:itemIconTint
+          @attr name ti.locationtrackerservice:itemIconTint
         */
         public static int BottomNavigationView_itemIconTint = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#itemTextColor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#itemTextColor}
           attribute's value can be found in the {@link #BottomNavigationView} array.
 
 
@@ -7755,17 +7761,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:itemTextColor
+          @attr name ti.locationtrackerservice:itemTextColor
         */
         public static int BottomNavigationView_itemTextColor = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#menu}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#menu}
           attribute's value can be found in the {@link #BottomNavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:menu
+          @attr name ti.locationtrackerservice:menu
         */
         public static int BottomNavigationView_menu = 1;
         /** Attributes that can be used with a BottomSheetBehavior_Layout.
@@ -7774,9 +7780,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable ti.locationupdatesservice:behavior_hideable}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight ti.locationupdatesservice:behavior_peekHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed ti.locationupdatesservice:behavior_skipCollapsed}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable ti.locationtrackerservice:behavior_hideable}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight ti.locationtrackerservice:behavior_peekHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed ti.locationtrackerservice:behavior_skipCollapsed}</code></td><td></td></tr>
            </table>
            @see #BottomSheetBehavior_Layout_behavior_hideable
            @see #BottomSheetBehavior_Layout_behavior_peekHeight
@@ -7786,7 +7792,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010114, 0x7f010115, 0x7f010116
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#behavior_hideable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#behavior_hideable}
           attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
 
 
@@ -7796,11 +7802,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:behavior_hideable
+          @attr name ti.locationtrackerservice:behavior_hideable
         */
         public static int BottomSheetBehavior_Layout_behavior_hideable = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#behavior_peekHeight}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#behavior_peekHeight}
           attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
 
 
@@ -7820,11 +7826,11 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>auto</code></td><td>-1</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:behavior_peekHeight
+          @attr name ti.locationtrackerservice:behavior_peekHeight
         */
         public static int BottomSheetBehavior_Layout_behavior_peekHeight = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#behavior_skipCollapsed}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#behavior_skipCollapsed}
           attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
 
 
@@ -7834,7 +7840,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:behavior_skipCollapsed
+          @attr name ti.locationtrackerservice:behavior_skipCollapsed
         */
         public static int BottomSheetBehavior_Layout_behavior_skipCollapsed = 2;
         /** Attributes that can be used with a ButtonBarLayout.
@@ -7843,7 +7849,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ButtonBarLayout_allowStacking ti.locationupdatesservice:allowStacking}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarLayout_allowStacking ti.locationtrackerservice:allowStacking}</code></td><td></td></tr>
            </table>
            @see #ButtonBarLayout_allowStacking
          */
@@ -7851,7 +7857,7 @@ containing a value of this type.
             0x7f0100ae
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#allowStacking}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#allowStacking}
           attribute's value can be found in the {@link #ButtonBarLayout} array.
 
 
@@ -7861,7 +7867,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:allowStacking
+          @attr name ti.locationtrackerservice:allowStacking
         */
         public static int ButtonBarLayout_allowStacking = 0;
         /** Attributes that can be used with a CardView.
@@ -7872,17 +7878,17 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CardView_android_minHeight android:minHeight}</code></td><td></td></tr>
            <tr><td><code>{@link #CardView_android_minWidth android:minWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardBackgroundColor ti.locationupdatesservice:cardBackgroundColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardCornerRadius ti.locationupdatesservice:cardCornerRadius}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardElevation ti.locationupdatesservice:cardElevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardMaxElevation ti.locationupdatesservice:cardMaxElevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardPreventCornerOverlap ti.locationupdatesservice:cardPreventCornerOverlap}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardUseCompatPadding ti.locationupdatesservice:cardUseCompatPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPadding ti.locationupdatesservice:contentPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingBottom ti.locationupdatesservice:contentPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingLeft ti.locationupdatesservice:contentPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingRight ti.locationupdatesservice:contentPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingTop ti.locationupdatesservice:contentPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardBackgroundColor ti.locationtrackerservice:cardBackgroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardCornerRadius ti.locationtrackerservice:cardCornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardElevation ti.locationtrackerservice:cardElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardMaxElevation ti.locationtrackerservice:cardMaxElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardPreventCornerOverlap ti.locationtrackerservice:cardPreventCornerOverlap}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardUseCompatPadding ti.locationtrackerservice:cardUseCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPadding ti.locationtrackerservice:contentPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingBottom ti.locationtrackerservice:contentPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingLeft ti.locationtrackerservice:contentPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingRight ti.locationtrackerservice:contentPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingTop ti.locationtrackerservice:contentPaddingTop}</code></td><td></td></tr>
            </table>
            @see #CardView_android_minHeight
            @see #CardView_android_minWidth
@@ -7917,7 +7923,7 @@ containing a value of this type.
         */
         public static int CardView_android_minWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#cardBackgroundColor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#cardBackgroundColor}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7928,11 +7934,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:cardBackgroundColor
+          @attr name ti.locationtrackerservice:cardBackgroundColor
         */
         public static int CardView_cardBackgroundColor = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#cardCornerRadius}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#cardCornerRadius}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7944,11 +7950,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:cardCornerRadius
+          @attr name ti.locationtrackerservice:cardCornerRadius
         */
         public static int CardView_cardCornerRadius = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#cardElevation}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#cardElevation}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7960,11 +7966,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:cardElevation
+          @attr name ti.locationtrackerservice:cardElevation
         */
         public static int CardView_cardElevation = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#cardMaxElevation}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#cardMaxElevation}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7976,11 +7982,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:cardMaxElevation
+          @attr name ti.locationtrackerservice:cardMaxElevation
         */
         public static int CardView_cardMaxElevation = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#cardPreventCornerOverlap}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#cardPreventCornerOverlap}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7990,11 +7996,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:cardPreventCornerOverlap
+          @attr name ti.locationtrackerservice:cardPreventCornerOverlap
         */
         public static int CardView_cardPreventCornerOverlap = 7;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#cardUseCompatPadding}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#cardUseCompatPadding}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -8004,11 +8010,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:cardUseCompatPadding
+          @attr name ti.locationtrackerservice:cardUseCompatPadding
         */
         public static int CardView_cardUseCompatPadding = 6;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#contentPadding}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#contentPadding}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -8020,11 +8026,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:contentPadding
+          @attr name ti.locationtrackerservice:contentPadding
         */
         public static int CardView_contentPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#contentPaddingBottom}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#contentPaddingBottom}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -8036,11 +8042,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:contentPaddingBottom
+          @attr name ti.locationtrackerservice:contentPaddingBottom
         */
         public static int CardView_contentPaddingBottom = 12;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#contentPaddingLeft}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#contentPaddingLeft}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -8052,11 +8058,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:contentPaddingLeft
+          @attr name ti.locationtrackerservice:contentPaddingLeft
         */
         public static int CardView_contentPaddingLeft = 9;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#contentPaddingRight}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#contentPaddingRight}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -8068,11 +8074,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:contentPaddingRight
+          @attr name ti.locationtrackerservice:contentPaddingRight
         */
         public static int CardView_contentPaddingRight = 10;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#contentPaddingTop}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#contentPaddingTop}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -8084,7 +8090,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:contentPaddingTop
+          @attr name ti.locationtrackerservice:contentPaddingTop
         */
         public static int CardView_contentPaddingTop = 11;
         /** Attributes that can be used with a CastExpandedController.
@@ -8093,19 +8099,19 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CastExpandedController_castButtonColor ti.locationupdatesservice:castButtonColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastExpandedController_castClosedCaptionsButtonDrawable ti.locationupdatesservice:castClosedCaptionsButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastExpandedController_castControlButtons ti.locationupdatesservice:castControlButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastExpandedController_castForward30ButtonDrawable ti.locationupdatesservice:castForward30ButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastExpandedController_castMuteToggleButtonDrawable ti.locationupdatesservice:castMuteToggleButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastExpandedController_castPauseButtonDrawable ti.locationupdatesservice:castPauseButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastExpandedController_castPlayButtonDrawable ti.locationupdatesservice:castPlayButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastExpandedController_castRewind30ButtonDrawable ti.locationupdatesservice:castRewind30ButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastExpandedController_castSeekBarProgressDrawable ti.locationupdatesservice:castSeekBarProgressDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastExpandedController_castSeekBarThumbDrawable ti.locationupdatesservice:castSeekBarThumbDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastExpandedController_castSkipNextButtonDrawable ti.locationupdatesservice:castSkipNextButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastExpandedController_castSkipPreviousButtonDrawable ti.locationupdatesservice:castSkipPreviousButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastExpandedController_castStopButtonDrawable ti.locationupdatesservice:castStopButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastExpandedController_castButtonColor ti.locationtrackerservice:castButtonColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastExpandedController_castClosedCaptionsButtonDrawable ti.locationtrackerservice:castClosedCaptionsButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastExpandedController_castControlButtons ti.locationtrackerservice:castControlButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastExpandedController_castForward30ButtonDrawable ti.locationtrackerservice:castForward30ButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastExpandedController_castMuteToggleButtonDrawable ti.locationtrackerservice:castMuteToggleButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastExpandedController_castPauseButtonDrawable ti.locationtrackerservice:castPauseButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastExpandedController_castPlayButtonDrawable ti.locationtrackerservice:castPlayButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastExpandedController_castRewind30ButtonDrawable ti.locationtrackerservice:castRewind30ButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastExpandedController_castSeekBarProgressDrawable ti.locationtrackerservice:castSeekBarProgressDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastExpandedController_castSeekBarThumbDrawable ti.locationtrackerservice:castSeekBarThumbDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastExpandedController_castSkipNextButtonDrawable ti.locationtrackerservice:castSkipNextButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastExpandedController_castSkipPreviousButtonDrawable ti.locationtrackerservice:castSkipPreviousButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastExpandedController_castStopButtonDrawable ti.locationtrackerservice:castStopButtonDrawable}</code></td><td></td></tr>
            </table>
            @see #CastExpandedController_castButtonColor
            @see #CastExpandedController_castClosedCaptionsButtonDrawable
@@ -8128,7 +8134,7 @@ containing a value of this type.
             0x7f010183
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castButtonColor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castButtonColor}
           attribute's value can be found in the {@link #CastExpandedController} array.
 
 
@@ -8136,127 +8142,127 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ti.locationupdatesservice:castButtonColor
+          @attr name ti.locationtrackerservice:castButtonColor
         */
         public static int CastExpandedController_castButtonColor = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castClosedCaptionsButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castClosedCaptionsButtonDrawable}
           attribute's value can be found in the {@link #CastExpandedController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castClosedCaptionsButtonDrawable
+          @attr name ti.locationtrackerservice:castClosedCaptionsButtonDrawable
         */
         public static int CastExpandedController_castClosedCaptionsButtonDrawable = 12;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castControlButtons}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castControlButtons}
           attribute's value can be found in the {@link #CastExpandedController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castControlButtons
+          @attr name ti.locationtrackerservice:castControlButtons
         */
         public static int CastExpandedController_castControlButtons = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castForward30ButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castForward30ButtonDrawable}
           attribute's value can be found in the {@link #CastExpandedController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castForward30ButtonDrawable
+          @attr name ti.locationtrackerservice:castForward30ButtonDrawable
         */
         public static int CastExpandedController_castForward30ButtonDrawable = 10;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castMuteToggleButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castMuteToggleButtonDrawable}
           attribute's value can be found in the {@link #CastExpandedController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castMuteToggleButtonDrawable
+          @attr name ti.locationtrackerservice:castMuteToggleButtonDrawable
         */
         public static int CastExpandedController_castMuteToggleButtonDrawable = 11;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castPauseButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castPauseButtonDrawable}
           attribute's value can be found in the {@link #CastExpandedController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castPauseButtonDrawable
+          @attr name ti.locationtrackerservice:castPauseButtonDrawable
         */
         public static int CastExpandedController_castPauseButtonDrawable = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castPlayButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castPlayButtonDrawable}
           attribute's value can be found in the {@link #CastExpandedController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castPlayButtonDrawable
+          @attr name ti.locationtrackerservice:castPlayButtonDrawable
         */
         public static int CastExpandedController_castPlayButtonDrawable = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castRewind30ButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castRewind30ButtonDrawable}
           attribute's value can be found in the {@link #CastExpandedController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castRewind30ButtonDrawable
+          @attr name ti.locationtrackerservice:castRewind30ButtonDrawable
         */
         public static int CastExpandedController_castRewind30ButtonDrawable = 9;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castSeekBarProgressDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castSeekBarProgressDrawable}
           attribute's value can be found in the {@link #CastExpandedController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castSeekBarProgressDrawable
+          @attr name ti.locationtrackerservice:castSeekBarProgressDrawable
         */
         public static int CastExpandedController_castSeekBarProgressDrawable = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castSeekBarThumbDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castSeekBarThumbDrawable}
           attribute's value can be found in the {@link #CastExpandedController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castSeekBarThumbDrawable
+          @attr name ti.locationtrackerservice:castSeekBarThumbDrawable
         */
         public static int CastExpandedController_castSeekBarThumbDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castSkipNextButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castSkipNextButtonDrawable}
           attribute's value can be found in the {@link #CastExpandedController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castSkipNextButtonDrawable
+          @attr name ti.locationtrackerservice:castSkipNextButtonDrawable
         */
         public static int CastExpandedController_castSkipNextButtonDrawable = 8;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castSkipPreviousButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castSkipPreviousButtonDrawable}
           attribute's value can be found in the {@link #CastExpandedController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castSkipPreviousButtonDrawable
+          @attr name ti.locationtrackerservice:castSkipPreviousButtonDrawable
         */
         public static int CastExpandedController_castSkipPreviousButtonDrawable = 7;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castStopButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castStopButtonDrawable}
           attribute's value can be found in the {@link #CastExpandedController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castStopButtonDrawable
+          @attr name ti.locationtrackerservice:castStopButtonDrawable
         */
         public static int CastExpandedController_castStopButtonDrawable = 6;
         /** Attributes that can be used with a CastIntroOverlay.
@@ -8265,12 +8271,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CastIntroOverlay_castBackgroundColor ti.locationupdatesservice:castBackgroundColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastIntroOverlay_castButtonBackgroundColor ti.locationupdatesservice:castButtonBackgroundColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastIntroOverlay_castButtonText ti.locationupdatesservice:castButtonText}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastIntroOverlay_castButtonTextAppearance ti.locationupdatesservice:castButtonTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastIntroOverlay_castFocusRadius ti.locationupdatesservice:castFocusRadius}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastIntroOverlay_castTitleTextAppearance ti.locationupdatesservice:castTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastIntroOverlay_castBackgroundColor ti.locationtrackerservice:castBackgroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastIntroOverlay_castButtonBackgroundColor ti.locationtrackerservice:castButtonBackgroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastIntroOverlay_castButtonText ti.locationtrackerservice:castButtonText}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastIntroOverlay_castButtonTextAppearance ti.locationtrackerservice:castButtonTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastIntroOverlay_castFocusRadius ti.locationtrackerservice:castFocusRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastIntroOverlay_castTitleTextAppearance ti.locationtrackerservice:castTitleTextAppearance}</code></td><td></td></tr>
            </table>
            @see #CastIntroOverlay_castBackgroundColor
            @see #CastIntroOverlay_castButtonBackgroundColor
@@ -8284,7 +8290,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010170, 0x7f010171
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castBackgroundColor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castBackgroundColor}
           attribute's value can be found in the {@link #CastIntroOverlay} array.
 
 
@@ -8292,11 +8298,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ti.locationupdatesservice:castBackgroundColor
+          @attr name ti.locationtrackerservice:castBackgroundColor
         */
         public static int CastIntroOverlay_castBackgroundColor = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castButtonBackgroundColor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castButtonBackgroundColor}
           attribute's value can be found in the {@link #CastIntroOverlay} array.
 
 
@@ -8304,32 +8310,32 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ti.locationupdatesservice:castButtonBackgroundColor
+          @attr name ti.locationtrackerservice:castButtonBackgroundColor
         */
         public static int CastIntroOverlay_castButtonBackgroundColor = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castButtonText}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castButtonText}
           attribute's value can be found in the {@link #CastIntroOverlay} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-          @attr name ti.locationupdatesservice:castButtonText
+          @attr name ti.locationtrackerservice:castButtonText
         */
         public static int CastIntroOverlay_castButtonText = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castButtonTextAppearance}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castButtonTextAppearance}
           attribute's value can be found in the {@link #CastIntroOverlay} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castButtonTextAppearance
+          @attr name ti.locationtrackerservice:castButtonTextAppearance
         */
         public static int CastIntroOverlay_castButtonTextAppearance = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castFocusRadius}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castFocusRadius}
           attribute's value can be found in the {@link #CastIntroOverlay} array.
 
 
@@ -8338,17 +8344,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
-          @attr name ti.locationupdatesservice:castFocusRadius
+          @attr name ti.locationtrackerservice:castFocusRadius
         */
         public static int CastIntroOverlay_castFocusRadius = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castTitleTextAppearance}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castTitleTextAppearance}
           attribute's value can be found in the {@link #CastIntroOverlay} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castTitleTextAppearance
+          @attr name ti.locationtrackerservice:castTitleTextAppearance
         */
         public static int CastIntroOverlay_castTitleTextAppearance = 4;
         /** Attributes that can be used with a CastMiniController.
@@ -8357,25 +8363,25 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CastMiniController_castBackground ti.locationupdatesservice:castBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastMiniController_castButtonColor ti.locationupdatesservice:castButtonColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastMiniController_castClosedCaptionsButtonDrawable ti.locationupdatesservice:castClosedCaptionsButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastMiniController_castControlButtons ti.locationupdatesservice:castControlButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastMiniController_castForward30ButtonDrawable ti.locationupdatesservice:castForward30ButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastMiniController_castLargePauseButtonDrawable ti.locationupdatesservice:castLargePauseButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastMiniController_castLargePlayButtonDrawable ti.locationupdatesservice:castLargePlayButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastMiniController_castLargeStopButtonDrawable ti.locationupdatesservice:castLargeStopButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastMiniController_castMuteToggleButtonDrawable ti.locationupdatesservice:castMuteToggleButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastMiniController_castPauseButtonDrawable ti.locationupdatesservice:castPauseButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastMiniController_castPlayButtonDrawable ti.locationupdatesservice:castPlayButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastMiniController_castProgressBarColor ti.locationupdatesservice:castProgressBarColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastMiniController_castRewind30ButtonDrawable ti.locationupdatesservice:castRewind30ButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastMiniController_castShowImageThumbnail ti.locationupdatesservice:castShowImageThumbnail}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastMiniController_castSkipNextButtonDrawable ti.locationupdatesservice:castSkipNextButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastMiniController_castSkipPreviousButtonDrawable ti.locationupdatesservice:castSkipPreviousButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastMiniController_castStopButtonDrawable ti.locationupdatesservice:castStopButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastMiniController_castSubtitleTextAppearance ti.locationupdatesservice:castSubtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CastMiniController_castTitleTextAppearance ti.locationupdatesservice:castTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastMiniController_castBackground ti.locationtrackerservice:castBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastMiniController_castButtonColor ti.locationtrackerservice:castButtonColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastMiniController_castClosedCaptionsButtonDrawable ti.locationtrackerservice:castClosedCaptionsButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastMiniController_castControlButtons ti.locationtrackerservice:castControlButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastMiniController_castForward30ButtonDrawable ti.locationtrackerservice:castForward30ButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastMiniController_castLargePauseButtonDrawable ti.locationtrackerservice:castLargePauseButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastMiniController_castLargePlayButtonDrawable ti.locationtrackerservice:castLargePlayButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastMiniController_castLargeStopButtonDrawable ti.locationtrackerservice:castLargeStopButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastMiniController_castMuteToggleButtonDrawable ti.locationtrackerservice:castMuteToggleButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastMiniController_castPauseButtonDrawable ti.locationtrackerservice:castPauseButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastMiniController_castPlayButtonDrawable ti.locationtrackerservice:castPlayButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastMiniController_castProgressBarColor ti.locationtrackerservice:castProgressBarColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastMiniController_castRewind30ButtonDrawable ti.locationtrackerservice:castRewind30ButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastMiniController_castShowImageThumbnail ti.locationtrackerservice:castShowImageThumbnail}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastMiniController_castSkipNextButtonDrawable ti.locationtrackerservice:castSkipNextButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastMiniController_castSkipPreviousButtonDrawable ti.locationtrackerservice:castSkipPreviousButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastMiniController_castStopButtonDrawable ti.locationtrackerservice:castStopButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastMiniController_castSubtitleTextAppearance ti.locationtrackerservice:castSubtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CastMiniController_castTitleTextAppearance ti.locationtrackerservice:castTitleTextAppearance}</code></td><td></td></tr>
            </table>
            @see #CastMiniController_castBackground
            @see #CastMiniController_castButtonColor
@@ -8405,7 +8411,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010181, 0x7f010182, 0x7f010183
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castBackground}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castBackground}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
@@ -8413,11 +8419,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ti.locationupdatesservice:castBackground
+          @attr name ti.locationtrackerservice:castBackground
         */
         public static int CastMiniController_castBackground = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castButtonColor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castButtonColor}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
@@ -8425,101 +8431,101 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ti.locationupdatesservice:castButtonColor
+          @attr name ti.locationtrackerservice:castButtonColor
         */
         public static int CastMiniController_castButtonColor = 6;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castClosedCaptionsButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castClosedCaptionsButtonDrawable}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castClosedCaptionsButtonDrawable
+          @attr name ti.locationtrackerservice:castClosedCaptionsButtonDrawable
         */
         public static int CastMiniController_castClosedCaptionsButtonDrawable = 18;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castControlButtons}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castControlButtons}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castControlButtons
+          @attr name ti.locationtrackerservice:castControlButtons
         */
         public static int CastMiniController_castControlButtons = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castForward30ButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castForward30ButtonDrawable}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castForward30ButtonDrawable
+          @attr name ti.locationtrackerservice:castForward30ButtonDrawable
         */
         public static int CastMiniController_castForward30ButtonDrawable = 16;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castLargePauseButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castLargePauseButtonDrawable}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castLargePauseButtonDrawable
+          @attr name ti.locationtrackerservice:castLargePauseButtonDrawable
         */
         public static int CastMiniController_castLargePauseButtonDrawable = 11;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castLargePlayButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castLargePlayButtonDrawable}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castLargePlayButtonDrawable
+          @attr name ti.locationtrackerservice:castLargePlayButtonDrawable
         */
         public static int CastMiniController_castLargePlayButtonDrawable = 10;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castLargeStopButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castLargeStopButtonDrawable}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castLargeStopButtonDrawable
+          @attr name ti.locationtrackerservice:castLargeStopButtonDrawable
         */
         public static int CastMiniController_castLargeStopButtonDrawable = 12;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castMuteToggleButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castMuteToggleButtonDrawable}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castMuteToggleButtonDrawable
+          @attr name ti.locationtrackerservice:castMuteToggleButtonDrawable
         */
         public static int CastMiniController_castMuteToggleButtonDrawable = 17;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castPauseButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castPauseButtonDrawable}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castPauseButtonDrawable
+          @attr name ti.locationtrackerservice:castPauseButtonDrawable
         */
         public static int CastMiniController_castPauseButtonDrawable = 8;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castPlayButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castPlayButtonDrawable}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castPlayButtonDrawable
+          @attr name ti.locationtrackerservice:castPlayButtonDrawable
         */
         public static int CastMiniController_castPlayButtonDrawable = 7;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castProgressBarColor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castProgressBarColor}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
@@ -8530,21 +8536,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:castProgressBarColor
+          @attr name ti.locationtrackerservice:castProgressBarColor
         */
         public static int CastMiniController_castProgressBarColor = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castRewind30ButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castRewind30ButtonDrawable}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castRewind30ButtonDrawable
+          @attr name ti.locationtrackerservice:castRewind30ButtonDrawable
         */
         public static int CastMiniController_castRewind30ButtonDrawable = 15;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castShowImageThumbnail}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castShowImageThumbnail}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
@@ -8554,57 +8560,57 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:castShowImageThumbnail
+          @attr name ti.locationtrackerservice:castShowImageThumbnail
         */
         public static int CastMiniController_castShowImageThumbnail = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castSkipNextButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castSkipNextButtonDrawable}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castSkipNextButtonDrawable
+          @attr name ti.locationtrackerservice:castSkipNextButtonDrawable
         */
         public static int CastMiniController_castSkipNextButtonDrawable = 14;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castSkipPreviousButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castSkipPreviousButtonDrawable}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castSkipPreviousButtonDrawable
+          @attr name ti.locationtrackerservice:castSkipPreviousButtonDrawable
         */
         public static int CastMiniController_castSkipPreviousButtonDrawable = 13;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castStopButtonDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castStopButtonDrawable}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castStopButtonDrawable
+          @attr name ti.locationtrackerservice:castStopButtonDrawable
         */
         public static int CastMiniController_castStopButtonDrawable = 9;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castSubtitleTextAppearance}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castSubtitleTextAppearance}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castSubtitleTextAppearance
+          @attr name ti.locationtrackerservice:castSubtitleTextAppearance
         */
         public static int CastMiniController_castSubtitleTextAppearance = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castTitleTextAppearance}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castTitleTextAppearance}
           attribute's value can be found in the {@link #CastMiniController} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castTitleTextAppearance
+          @attr name ti.locationtrackerservice:castTitleTextAppearance
         */
         public static int CastMiniController_castTitleTextAppearance = 0;
         /** Attributes that can be used with a CollapsingToolbarLayout.
@@ -8613,22 +8619,22 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity ti.locationupdatesservice:collapsedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance ti.locationupdatesservice:collapsedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim ti.locationupdatesservice:contentScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity ti.locationupdatesservice:expandedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin ti.locationupdatesservice:expandedTitleMargin}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom ti.locationupdatesservice:expandedTitleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd ti.locationupdatesservice:expandedTitleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart ti.locationupdatesservice:expandedTitleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop ti.locationupdatesservice:expandedTitleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance ti.locationupdatesservice:expandedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration ti.locationupdatesservice:scrimAnimationDuration}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger ti.locationupdatesservice:scrimVisibleHeightTrigger}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim ti.locationupdatesservice:statusBarScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_title ti.locationupdatesservice:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled ti.locationupdatesservice:titleEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId ti.locationupdatesservice:toolbarId}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity ti.locationtrackerservice:collapsedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance ti.locationtrackerservice:collapsedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim ti.locationtrackerservice:contentScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity ti.locationtrackerservice:expandedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin ti.locationtrackerservice:expandedTitleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom ti.locationtrackerservice:expandedTitleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd ti.locationtrackerservice:expandedTitleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart ti.locationtrackerservice:expandedTitleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop ti.locationtrackerservice:expandedTitleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance ti.locationtrackerservice:expandedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration ti.locationtrackerservice:scrimAnimationDuration}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger ti.locationtrackerservice:scrimVisibleHeightTrigger}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim ti.locationtrackerservice:statusBarScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_title ti.locationtrackerservice:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled ti.locationtrackerservice:titleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId ti.locationtrackerservice:toolbarId}</code></td><td></td></tr>
            </table>
            @see #CollapsingToolbarLayout_collapsedTitleGravity
            @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -8654,7 +8660,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010123, 0x7f010124, 0x7f010125, 0x7f0101b2
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#collapsedTitleGravity}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#collapsedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8675,21 +8681,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:collapsedTitleGravity
+          @attr name ti.locationtrackerservice:collapsedTitleGravity
         */
         public static int CollapsingToolbarLayout_collapsedTitleGravity = 12;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#collapsedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#collapsedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:collapsedTitleTextAppearance
+          @attr name ti.locationtrackerservice:collapsedTitleTextAppearance
         */
         public static int CollapsingToolbarLayout_collapsedTitleTextAppearance = 6;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#contentScrim}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#contentScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8700,11 +8706,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:contentScrim
+          @attr name ti.locationtrackerservice:contentScrim
         */
         public static int CollapsingToolbarLayout_contentScrim = 7;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#expandedTitleGravity}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#expandedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8725,11 +8731,11 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:expandedTitleGravity
+          @attr name ti.locationtrackerservice:expandedTitleGravity
         */
         public static int CollapsingToolbarLayout_expandedTitleGravity = 13;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#expandedTitleMargin}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#expandedTitleMargin}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8741,11 +8747,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:expandedTitleMargin
+          @attr name ti.locationtrackerservice:expandedTitleMargin
         */
         public static int CollapsingToolbarLayout_expandedTitleMargin = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#expandedTitleMarginBottom}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#expandedTitleMarginBottom}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8757,11 +8763,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:expandedTitleMarginBottom
+          @attr name ti.locationtrackerservice:expandedTitleMarginBottom
         */
         public static int CollapsingToolbarLayout_expandedTitleMarginBottom = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#expandedTitleMarginEnd}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#expandedTitleMarginEnd}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8773,11 +8779,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:expandedTitleMarginEnd
+          @attr name ti.locationtrackerservice:expandedTitleMarginEnd
         */
         public static int CollapsingToolbarLayout_expandedTitleMarginEnd = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#expandedTitleMarginStart}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#expandedTitleMarginStart}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8789,11 +8795,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:expandedTitleMarginStart
+          @attr name ti.locationtrackerservice:expandedTitleMarginStart
         */
         public static int CollapsingToolbarLayout_expandedTitleMarginStart = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#expandedTitleMarginTop}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#expandedTitleMarginTop}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8805,21 +8811,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:expandedTitleMarginTop
+          @attr name ti.locationtrackerservice:expandedTitleMarginTop
         */
         public static int CollapsingToolbarLayout_expandedTitleMarginTop = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#expandedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#expandedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:expandedTitleTextAppearance
+          @attr name ti.locationtrackerservice:expandedTitleTextAppearance
         */
         public static int CollapsingToolbarLayout_expandedTitleTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#scrimAnimationDuration}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#scrimAnimationDuration}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8829,11 +8835,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:scrimAnimationDuration
+          @attr name ti.locationtrackerservice:scrimAnimationDuration
         */
         public static int CollapsingToolbarLayout_scrimAnimationDuration = 11;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#scrimVisibleHeightTrigger}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#scrimVisibleHeightTrigger}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8845,11 +8851,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:scrimVisibleHeightTrigger
+          @attr name ti.locationtrackerservice:scrimVisibleHeightTrigger
         */
         public static int CollapsingToolbarLayout_scrimVisibleHeightTrigger = 10;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#statusBarScrim}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#statusBarScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8860,11 +8866,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:statusBarScrim
+          @attr name ti.locationtrackerservice:statusBarScrim
         */
         public static int CollapsingToolbarLayout_statusBarScrim = 8;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#title}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#title}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8874,11 +8880,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:title
+          @attr name ti.locationtrackerservice:title
         */
         public static int CollapsingToolbarLayout_title = 15;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#titleEnabled}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#titleEnabled}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -8888,17 +8894,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:titleEnabled
+          @attr name ti.locationtrackerservice:titleEnabled
         */
         public static int CollapsingToolbarLayout_titleEnabled = 14;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#toolbarId}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#toolbarId}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:toolbarId
+          @attr name ti.locationtrackerservice:toolbarId
         */
         public static int CollapsingToolbarLayout_toolbarId = 9;
         /** Attributes that can be used with a CollapsingToolbarLayout_Layout.
@@ -8907,8 +8913,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode ti.locationupdatesservice:layout_collapseMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier ti.locationupdatesservice:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode ti.locationtrackerservice:layout_collapseMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier ti.locationtrackerservice:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
            </table>
            @see #CollapsingToolbarLayout_Layout_layout_collapseMode
            @see #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier
@@ -8917,7 +8923,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010126, 0x7f010127
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#layout_collapseMode}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#layout_collapseMode}
           attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
 
 
@@ -8931,11 +8937,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>pin</code></td><td>1</td><td></td></tr>
 <tr><td><code>parallax</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:layout_collapseMode
+          @attr name ti.locationtrackerservice:layout_collapseMode
         */
         public static int CollapsingToolbarLayout_Layout_layout_collapseMode = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#layout_collapseParallaxMultiplier}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#layout_collapseParallaxMultiplier}
           attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
 
 
@@ -8945,7 +8951,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:layout_collapseParallaxMultiplier
+          @attr name ti.locationtrackerservice:layout_collapseParallaxMultiplier
         */
         public static int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = 1;
         /** Attributes that can be used with a ColorStateListItem.
@@ -8954,7 +8960,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ColorStateListItem_alpha ti.locationupdatesservice:alpha}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorStateListItem_alpha ti.locationtrackerservice:alpha}</code></td><td></td></tr>
            <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
            <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
            </table>
@@ -8966,7 +8972,7 @@ containing a value of this type.
             0x010101a5, 0x0101031f, 0x7f0100af
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#alpha}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#alpha}
           attribute's value can be found in the {@link #ColorStateListItem} array.
 
 
@@ -8976,7 +8982,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:alpha
+          @attr name ti.locationtrackerservice:alpha
         */
         public static int ColorStateListItem_alpha = 2;
         /**
@@ -8998,8 +9004,8 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTint ti.locationupdatesservice:buttonTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTintMode ti.locationupdatesservice:buttonTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTint ti.locationtrackerservice:buttonTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTintMode ti.locationtrackerservice:buttonTintMode}</code></td><td></td></tr>
            </table>
            @see #CompoundButton_android_button
            @see #CompoundButton_buttonTint
@@ -9015,7 +9021,7 @@ containing a value of this type.
         */
         public static int CompoundButton_android_button = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#buttonTint}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#buttonTint}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -9026,11 +9032,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:buttonTint
+          @attr name ti.locationtrackerservice:buttonTint
         */
         public static int CompoundButton_buttonTint = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#buttonTintMode}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#buttonTintMode}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -9046,7 +9052,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:buttonTintMode
+          @attr name ti.locationtrackerservice:buttonTintMode
         */
         public static int CompoundButton_buttonTintMode = 2;
         /** Attributes that can be used with a CoordinatorLayout.
@@ -9055,8 +9061,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CoordinatorLayout_keylines ti.locationupdatesservice:keylines}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground ti.locationupdatesservice:statusBarBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_keylines ti.locationtrackerservice:keylines}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground ti.locationtrackerservice:statusBarBackground}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_keylines
            @see #CoordinatorLayout_statusBarBackground
@@ -9065,23 +9071,23 @@ containing a value of this type.
             0x7f010128, 0x7f010129
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#keylines}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#keylines}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:keylines
+          @attr name ti.locationtrackerservice:keylines
         */
         public static int CoordinatorLayout_keylines = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#statusBarBackground}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#statusBarBackground}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:statusBarBackground
+          @attr name ti.locationtrackerservice:statusBarBackground
         */
         public static int CoordinatorLayout_statusBarBackground = 1;
         /** Attributes that can be used with a CoordinatorLayout_Layout.
@@ -9091,12 +9097,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor ti.locationupdatesservice:layout_anchor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity ti.locationupdatesservice:layout_anchorGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior ti.locationupdatesservice:layout_behavior}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges ti.locationupdatesservice:layout_dodgeInsetEdges}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge ti.locationupdatesservice:layout_insetEdge}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline ti.locationupdatesservice:layout_keyline}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor ti.locationtrackerservice:layout_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity ti.locationtrackerservice:layout_anchorGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior ti.locationtrackerservice:layout_behavior}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges ti.locationtrackerservice:layout_dodgeInsetEdges}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge ti.locationtrackerservice:layout_insetEdge}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline ti.locationtrackerservice:layout_keyline}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_Layout_android_layout_gravity
            @see #CoordinatorLayout_Layout_layout_anchor
@@ -9117,17 +9123,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static int CoordinatorLayout_Layout_android_layout_gravity = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#layout_anchor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#layout_anchor}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:layout_anchor
+          @attr name ti.locationtrackerservice:layout_anchor
         */
         public static int CoordinatorLayout_Layout_layout_anchor = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#layout_anchorGravity}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#layout_anchorGravity}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -9152,11 +9158,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:layout_anchorGravity
+          @attr name ti.locationtrackerservice:layout_anchorGravity
         */
         public static int CoordinatorLayout_Layout_layout_anchorGravity = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#layout_behavior}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#layout_behavior}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -9166,11 +9172,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:layout_behavior
+          @attr name ti.locationtrackerservice:layout_behavior
         */
         public static int CoordinatorLayout_Layout_layout_behavior = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#layout_dodgeInsetEdges}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#layout_dodgeInsetEdges}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -9189,11 +9195,11 @@ containing a value of this type.
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 <tr><td><code>all</code></td><td>0x77</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:layout_dodgeInsetEdges
+          @attr name ti.locationtrackerservice:layout_dodgeInsetEdges
         */
         public static int CoordinatorLayout_Layout_layout_dodgeInsetEdges = 6;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#layout_insetEdge}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#layout_insetEdge}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -9211,11 +9217,11 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:layout_insetEdge
+          @attr name ti.locationtrackerservice:layout_insetEdge
         */
         public static int CoordinatorLayout_Layout_layout_insetEdge = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#layout_keyline}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#layout_keyline}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -9225,7 +9231,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:layout_keyline
+          @attr name ti.locationtrackerservice:layout_keyline
         */
         public static int CoordinatorLayout_Layout_layout_keyline = 3;
         /** Attributes that can be used with a CustomCastTheme.
@@ -9234,9 +9240,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CustomCastTheme_castExpandedControllerStyle ti.locationupdatesservice:castExpandedControllerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #CustomCastTheme_castIntroOverlayStyle ti.locationupdatesservice:castIntroOverlayStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #CustomCastTheme_castMiniControllerStyle ti.locationupdatesservice:castMiniControllerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomCastTheme_castExpandedControllerStyle ti.locationtrackerservice:castExpandedControllerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomCastTheme_castIntroOverlayStyle ti.locationtrackerservice:castIntroOverlayStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomCastTheme_castMiniControllerStyle ti.locationtrackerservice:castMiniControllerStyle}</code></td><td></td></tr>
            </table>
            @see #CustomCastTheme_castExpandedControllerStyle
            @see #CustomCastTheme_castIntroOverlayStyle
@@ -9246,33 +9252,33 @@ containing a value of this type.
             0x7f010184, 0x7f010185, 0x7f010186
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castExpandedControllerStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castExpandedControllerStyle}
           attribute's value can be found in the {@link #CustomCastTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castExpandedControllerStyle
+          @attr name ti.locationtrackerservice:castExpandedControllerStyle
         */
         public static int CustomCastTheme_castExpandedControllerStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castIntroOverlayStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castIntroOverlayStyle}
           attribute's value can be found in the {@link #CustomCastTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castIntroOverlayStyle
+          @attr name ti.locationtrackerservice:castIntroOverlayStyle
         */
         public static int CustomCastTheme_castIntroOverlayStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#castMiniControllerStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#castMiniControllerStyle}
           attribute's value can be found in the {@link #CustomCastTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:castMiniControllerStyle
+          @attr name ti.locationtrackerservice:castMiniControllerStyle
         */
         public static int CustomCastTheme_castMiniControllerStyle = 1;
         /** Attributes that can be used with a CustomWalletTheme.
@@ -9281,8 +9287,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CustomWalletTheme_toolbarTextColorStyle ti.locationupdatesservice:toolbarTextColorStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #CustomWalletTheme_windowTransitionStyle ti.locationupdatesservice:windowTransitionStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomWalletTheme_toolbarTextColorStyle ti.locationtrackerservice:toolbarTextColorStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #CustomWalletTheme_windowTransitionStyle ti.locationtrackerservice:windowTransitionStyle}</code></td><td></td></tr>
            </table>
            @see #CustomWalletTheme_toolbarTextColorStyle
            @see #CustomWalletTheme_windowTransitionStyle
@@ -9291,7 +9297,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01019e, 0x7f01019f
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#toolbarTextColorStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#toolbarTextColorStyle}
           attribute's value can be found in the {@link #CustomWalletTheme} array.
 
 
@@ -9304,11 +9310,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>light</code></td><td>1</td><td></td></tr>
 <tr><td><code>dark</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:toolbarTextColorStyle
+          @attr name ti.locationtrackerservice:toolbarTextColorStyle
         */
         public static int CustomWalletTheme_toolbarTextColorStyle = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#windowTransitionStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#windowTransitionStyle}
           attribute's value can be found in the {@link #CustomWalletTheme} array.
 
 
@@ -9321,7 +9327,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>slide</code></td><td>1</td><td></td></tr>
 <tr><td><code>none</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:windowTransitionStyle
+          @attr name ti.locationtrackerservice:windowTransitionStyle
         */
         public static int CustomWalletTheme_windowTransitionStyle = 0;
         /** Attributes that can be used with a DesignTheme.
@@ -9330,9 +9336,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme ti.locationupdatesservice:bottomSheetDialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #DesignTheme_bottomSheetStyle ti.locationupdatesservice:bottomSheetStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #DesignTheme_textColorError ti.locationupdatesservice:textColorError}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme ti.locationtrackerservice:bottomSheetDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetStyle ti.locationtrackerservice:bottomSheetStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_textColorError ti.locationtrackerservice:textColorError}</code></td><td></td></tr>
            </table>
            @see #DesignTheme_bottomSheetDialogTheme
            @see #DesignTheme_bottomSheetStyle
@@ -9342,27 +9348,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010130, 0x7f010131, 0x7f010132
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#bottomSheetDialogTheme}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#bottomSheetDialogTheme}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:bottomSheetDialogTheme
+          @attr name ti.locationtrackerservice:bottomSheetDialogTheme
         */
         public static int DesignTheme_bottomSheetDialogTheme = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#bottomSheetStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#bottomSheetStyle}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:bottomSheetStyle
+          @attr name ti.locationtrackerservice:bottomSheetStyle
         */
         public static int DesignTheme_bottomSheetStyle = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#textColorError}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#textColorError}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
@@ -9370,7 +9376,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ti.locationupdatesservice:textColorError
+          @attr name ti.locationtrackerservice:textColorError
         */
         public static int DesignTheme_textColorError = 2;
         /** Attributes that can be used with a DrawerArrowToggle.
@@ -9379,14 +9385,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength ti.locationupdatesservice:arrowHeadLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength ti.locationupdatesservice:arrowShaftLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barLength ti.locationupdatesservice:barLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color ti.locationupdatesservice:color}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize ti.locationupdatesservice:drawableSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars ti.locationupdatesservice:gapBetweenBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars ti.locationupdatesservice:spinBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness ti.locationupdatesservice:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength ti.locationtrackerservice:arrowHeadLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength ti.locationtrackerservice:arrowShaftLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barLength ti.locationtrackerservice:barLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color ti.locationtrackerservice:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize ti.locationtrackerservice:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars ti.locationtrackerservice:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars ti.locationtrackerservice:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness ti.locationtrackerservice:thickness}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_arrowHeadLength
            @see #DrawerArrowToggle_arrowShaftLength
@@ -9402,7 +9408,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100b6, 0x7f0100b7, 0x7f0100b8, 0x7f0100b9
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#arrowHeadLength}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#arrowHeadLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -9414,11 +9420,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:arrowHeadLength
+          @attr name ti.locationtrackerservice:arrowHeadLength
         */
         public static int DrawerArrowToggle_arrowHeadLength = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#arrowShaftLength}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#arrowShaftLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -9430,11 +9436,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:arrowShaftLength
+          @attr name ti.locationtrackerservice:arrowShaftLength
         */
         public static int DrawerArrowToggle_arrowShaftLength = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#barLength}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#barLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -9446,11 +9452,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:barLength
+          @attr name ti.locationtrackerservice:barLength
         */
         public static int DrawerArrowToggle_barLength = 6;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#color}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -9461,11 +9467,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:color
+          @attr name ti.locationtrackerservice:color
         */
         public static int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -9477,11 +9483,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:drawableSize
+          @attr name ti.locationtrackerservice:drawableSize
         */
         public static int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -9493,11 +9499,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:gapBetweenBars
+          @attr name ti.locationtrackerservice:gapBetweenBars
         */
         public static int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -9507,11 +9513,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:spinBars
+          @attr name ti.locationtrackerservice:spinBars
         */
         public static int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#thickness}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -9523,7 +9529,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:thickness
+          @attr name ti.locationtrackerservice:thickness
         */
         public static int DrawerArrowToggle_thickness = 7;
         /** Attributes that can be used with a FloatingActionButton.
@@ -9532,14 +9538,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTint ti.locationupdatesservice:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode ti.locationupdatesservice:backgroundTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_borderWidth ti.locationupdatesservice:borderWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_elevation ti.locationupdatesservice:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_fabSize ti.locationupdatesservice:fabSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ ti.locationupdatesservice:pressedTranslationZ}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_rippleColor ti.locationupdatesservice:rippleColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_useCompatPadding ti.locationupdatesservice:useCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTint ti.locationtrackerservice:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode ti.locationtrackerservice:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_borderWidth ti.locationtrackerservice:borderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_elevation ti.locationtrackerservice:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fabSize ti.locationtrackerservice:fabSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ ti.locationtrackerservice:pressedTranslationZ}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_rippleColor ti.locationtrackerservice:rippleColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_useCompatPadding ti.locationtrackerservice:useCompatPadding}</code></td><td></td></tr>
            </table>
            @see #FloatingActionButton_backgroundTint
            @see #FloatingActionButton_backgroundTintMode
@@ -9555,7 +9561,7 @@ containing a value of this type.
             0x7f010134, 0x7f010135, 0x7f010136, 0x7f010137
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#backgroundTint}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -9566,11 +9572,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:backgroundTint
+          @attr name ti.locationtrackerservice:backgroundTint
         */
         public static int FloatingActionButton_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -9586,11 +9592,11 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:backgroundTintMode
+          @attr name ti.locationtrackerservice:backgroundTintMode
         */
         public static int FloatingActionButton_backgroundTintMode = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#borderWidth}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#borderWidth}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -9602,11 +9608,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:borderWidth
+          @attr name ti.locationtrackerservice:borderWidth
         */
         public static int FloatingActionButton_borderWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#elevation}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#elevation}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -9618,11 +9624,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:elevation
+          @attr name ti.locationtrackerservice:elevation
         */
         public static int FloatingActionButton_elevation = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#fabSize}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#fabSize}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -9636,11 +9642,11 @@ containing a value of this type.
 <tr><td><code>normal</code></td><td>0</td><td></td></tr>
 <tr><td><code>mini</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:fabSize
+          @attr name ti.locationtrackerservice:fabSize
         */
         public static int FloatingActionButton_fabSize = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#pressedTranslationZ}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#pressedTranslationZ}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -9652,11 +9658,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:pressedTranslationZ
+          @attr name ti.locationtrackerservice:pressedTranslationZ
         */
         public static int FloatingActionButton_pressedTranslationZ = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#rippleColor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#rippleColor}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -9667,11 +9673,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:rippleColor
+          @attr name ti.locationtrackerservice:rippleColor
         */
         public static int FloatingActionButton_rippleColor = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#useCompatPadding}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#useCompatPadding}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -9681,7 +9687,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:useCompatPadding
+          @attr name ti.locationtrackerservice:useCompatPadding
         */
         public static int FloatingActionButton_useCompatPadding = 7;
         /** Attributes that can be used with a FloatingActionButton_Behavior_Layout.
@@ -9690,7 +9696,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide ti.locationupdatesservice:behavior_autoHide}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide ti.locationtrackerservice:behavior_autoHide}</code></td><td></td></tr>
            </table>
            @see #FloatingActionButton_Behavior_Layout_behavior_autoHide
          */
@@ -9698,7 +9704,7 @@ containing a value of this type.
             0x7f010138
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#behavior_autoHide}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#behavior_autoHide}
           attribute's value can be found in the {@link #FloatingActionButton_Behavior_Layout} array.
 
 
@@ -9708,7 +9714,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:behavior_autoHide
+          @attr name ti.locationtrackerservice:behavior_autoHide
         */
         public static int FloatingActionButton_Behavior_Layout_behavior_autoHide = 0;
         /** Attributes that can be used with a FontFamily.
@@ -9717,12 +9723,12 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FontFamily_fontProviderAuthority ti.locationupdatesservice:fontProviderAuthority}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamily_fontProviderCerts ti.locationupdatesservice:fontProviderCerts}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy ti.locationupdatesservice:fontProviderFetchStrategy}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout ti.locationupdatesservice:fontProviderFetchTimeout}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamily_fontProviderPackage ti.locationupdatesservice:fontProviderPackage}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamily_fontProviderQuery ti.locationupdatesservice:fontProviderQuery}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamily_fontProviderAuthority ti.locationtrackerservice:fontProviderAuthority}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamily_fontProviderCerts ti.locationtrackerservice:fontProviderCerts}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy ti.locationtrackerservice:fontProviderFetchStrategy}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout ti.locationtrackerservice:fontProviderFetchTimeout}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamily_fontProviderPackage ti.locationtrackerservice:fontProviderPackage}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamily_fontProviderQuery ti.locationtrackerservice:fontProviderQuery}</code></td><td></td></tr>
            </table>
            @see #FontFamily_fontProviderAuthority
            @see #FontFamily_fontProviderCerts
@@ -9736,7 +9742,7 @@ containing a value of this type.
             0x7f01010a, 0x7f01010b
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#fontProviderAuthority}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#fontProviderAuthority}
           attribute's value can be found in the {@link #FontFamily} array.
 
 
@@ -9746,21 +9752,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:fontProviderAuthority
+          @attr name ti.locationtrackerservice:fontProviderAuthority
         */
         public static int FontFamily_fontProviderAuthority = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#fontProviderCerts}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#fontProviderCerts}
           attribute's value can be found in the {@link #FontFamily} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:fontProviderCerts
+          @attr name ti.locationtrackerservice:fontProviderCerts
         */
         public static int FontFamily_fontProviderCerts = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#fontProviderFetchStrategy}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#fontProviderFetchStrategy}
           attribute's value can be found in the {@link #FontFamily} array.
 
 
@@ -9773,11 +9779,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>blocking</code></td><td>0</td><td></td></tr>
 <tr><td><code>async</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:fontProviderFetchStrategy
+          @attr name ti.locationtrackerservice:fontProviderFetchStrategy
         */
         public static int FontFamily_fontProviderFetchStrategy = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#fontProviderFetchTimeout}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#fontProviderFetchTimeout}
           attribute's value can be found in the {@link #FontFamily} array.
 
 
@@ -9795,11 +9801,11 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>forever</code></td><td>-1</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:fontProviderFetchTimeout
+          @attr name ti.locationtrackerservice:fontProviderFetchTimeout
         */
         public static int FontFamily_fontProviderFetchTimeout = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#fontProviderPackage}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#fontProviderPackage}
           attribute's value can be found in the {@link #FontFamily} array.
 
 
@@ -9809,11 +9815,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:fontProviderPackage
+          @attr name ti.locationtrackerservice:fontProviderPackage
         */
         public static int FontFamily_fontProviderPackage = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#fontProviderQuery}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#fontProviderQuery}
           attribute's value can be found in the {@link #FontFamily} array.
 
 
@@ -9823,7 +9829,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:fontProviderQuery
+          @attr name ti.locationtrackerservice:fontProviderQuery
         */
         public static int FontFamily_fontProviderQuery = 2;
         /** Attributes that can be used with a FontFamilyFont.
@@ -9832,9 +9838,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FontFamilyFont_font ti.locationupdatesservice:font}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamilyFont_fontStyle ti.locationupdatesservice:fontStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamilyFont_fontWeight ti.locationupdatesservice:fontWeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamilyFont_font ti.locationtrackerservice:font}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamilyFont_fontStyle ti.locationtrackerservice:fontStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamilyFont_fontWeight ti.locationtrackerservice:fontWeight}</code></td><td></td></tr>
            </table>
            @see #FontFamilyFont_font
            @see #FontFamilyFont_fontStyle
@@ -9844,17 +9850,17 @@ containing a value of this type.
             0x7f01010c, 0x7f01010d, 0x7f01010e
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#font}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#font}
           attribute's value can be found in the {@link #FontFamilyFont} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:font
+          @attr name ti.locationtrackerservice:font
         */
         public static int FontFamilyFont_font = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#fontStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#fontStyle}
           attribute's value can be found in the {@link #FontFamilyFont} array.
 
 
@@ -9867,11 +9873,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>normal</code></td><td>0</td><td></td></tr>
 <tr><td><code>italic</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:fontStyle
+          @attr name ti.locationtrackerservice:fontStyle
         */
         public static int FontFamilyFont_fontStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#fontWeight}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#fontWeight}
           attribute's value can be found in the {@link #FontFamilyFont} array.
 
 
@@ -9881,7 +9887,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:fontWeight
+          @attr name ti.locationtrackerservice:fontWeight
         */
         public static int FontFamilyFont_fontWeight = 2;
         /** Attributes that can be used with a ForegroundLinearLayout.
@@ -9892,7 +9898,7 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding ti.locationupdatesservice:foregroundInsidePadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding ti.locationtrackerservice:foregroundInsidePadding}</code></td><td></td></tr>
            </table>
            @see #ForegroundLinearLayout_android_foreground
            @see #ForegroundLinearLayout_android_foregroundGravity
@@ -9914,7 +9920,7 @@ containing a value of this type.
         */
         public static int ForegroundLinearLayout_android_foregroundGravity = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#foregroundInsidePadding}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#foregroundInsidePadding}
           attribute's value can be found in the {@link #ForegroundLinearLayout} array.
 
 
@@ -9924,7 +9930,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:foregroundInsidePadding
+          @attr name ti.locationtrackerservice:foregroundInsidePadding
         */
         public static int ForegroundLinearLayout_foregroundInsidePadding = 2;
         /** Attributes that can be used with a LinearLayoutCompat.
@@ -9938,10 +9944,10 @@ containing a value of this type.
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider ti.locationupdatesservice:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding ti.locationupdatesservice:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild ti.locationupdatesservice:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers ti.locationupdatesservice:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider ti.locationtrackerservice:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding ti.locationtrackerservice:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild ti.locationtrackerservice:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers ti.locationtrackerservice:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -9989,17 +9995,17 @@ containing a value of this type.
         */
         public static int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#divider}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:divider
+          @attr name ti.locationtrackerservice:divider
         */
         public static int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -10011,11 +10017,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:dividerPadding
+          @attr name ti.locationtrackerservice:dividerPadding
         */
         public static int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -10025,11 +10031,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:measureWithLargestChild
+          @attr name ti.locationtrackerservice:measureWithLargestChild
         */
         public static int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -10044,7 +10050,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:showDividers
+          @attr name ti.locationtrackerservice:showDividers
         */
         public static int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -10123,9 +10129,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #LoadingImageView_circleCrop ti.locationupdatesservice:circleCrop}</code></td><td></td></tr>
-           <tr><td><code>{@link #LoadingImageView_imageAspectRatio ti.locationupdatesservice:imageAspectRatio}</code></td><td></td></tr>
-           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust ti.locationupdatesservice:imageAspectRatioAdjust}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_circleCrop ti.locationtrackerservice:circleCrop}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatio ti.locationtrackerservice:imageAspectRatio}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust ti.locationtrackerservice:imageAspectRatioAdjust}</code></td><td></td></tr>
            </table>
            @see #LoadingImageView_circleCrop
            @see #LoadingImageView_imageAspectRatio
@@ -10135,7 +10141,7 @@ containing a value of this type.
             0x7f010164, 0x7f010165, 0x7f010166
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#circleCrop}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#circleCrop}
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -10145,11 +10151,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:circleCrop
+          @attr name ti.locationtrackerservice:circleCrop
         */
         public static int LoadingImageView_circleCrop = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#imageAspectRatio}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#imageAspectRatio}
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -10159,11 +10165,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:imageAspectRatio
+          @attr name ti.locationtrackerservice:imageAspectRatio
         */
         public static int LoadingImageView_imageAspectRatio = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#imageAspectRatioAdjust}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#imageAspectRatioAdjust}
           attribute's value can be found in the {@link #LoadingImageView} array.
 
 
@@ -10177,7 +10183,7 @@ containing a value of this type.
 <tr><td><code>adjust_width</code></td><td>1</td><td></td></tr>
 <tr><td><code>adjust_height</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:imageAspectRatioAdjust
+          @attr name ti.locationtrackerservice:imageAspectRatioAdjust
         */
         public static int LoadingImageView_imageAspectRatioAdjust = 0;
         /** Attributes that can be used with a MapAttrs.
@@ -10186,29 +10192,29 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MapAttrs_ambientEnabled ti.locationupdatesservice:ambientEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraBearing ti.locationupdatesservice:cameraBearing}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraMaxZoomPreference ti.locationupdatesservice:cameraMaxZoomPreference}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraMinZoomPreference ti.locationupdatesservice:cameraMinZoomPreference}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLat ti.locationupdatesservice:cameraTargetLat}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTargetLng ti.locationupdatesservice:cameraTargetLng}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraTilt ti.locationupdatesservice:cameraTilt}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_cameraZoom ti.locationupdatesservice:cameraZoom}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_latLngBoundsNorthEastLatitude ti.locationupdatesservice:latLngBoundsNorthEastLatitude}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_latLngBoundsNorthEastLongitude ti.locationupdatesservice:latLngBoundsNorthEastLongitude}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_latLngBoundsSouthWestLatitude ti.locationupdatesservice:latLngBoundsSouthWestLatitude}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_latLngBoundsSouthWestLongitude ti.locationupdatesservice:latLngBoundsSouthWestLongitude}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_liteMode ti.locationupdatesservice:liteMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_mapType ti.locationupdatesservice:mapType}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiCompass ti.locationupdatesservice:uiCompass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiMapToolbar ti.locationupdatesservice:uiMapToolbar}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiRotateGestures ti.locationupdatesservice:uiRotateGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiScrollGestures ti.locationupdatesservice:uiScrollGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiTiltGestures ti.locationupdatesservice:uiTiltGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomControls ti.locationupdatesservice:uiZoomControls}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_uiZoomGestures ti.locationupdatesservice:uiZoomGestures}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_useViewLifecycle ti.locationupdatesservice:useViewLifecycle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MapAttrs_zOrderOnTop ti.locationupdatesservice:zOrderOnTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_ambientEnabled ti.locationtrackerservice:ambientEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraBearing ti.locationtrackerservice:cameraBearing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraMaxZoomPreference ti.locationtrackerservice:cameraMaxZoomPreference}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraMinZoomPreference ti.locationtrackerservice:cameraMinZoomPreference}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLat ti.locationtrackerservice:cameraTargetLat}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLng ti.locationtrackerservice:cameraTargetLng}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTilt ti.locationtrackerservice:cameraTilt}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraZoom ti.locationtrackerservice:cameraZoom}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_latLngBoundsNorthEastLatitude ti.locationtrackerservice:latLngBoundsNorthEastLatitude}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_latLngBoundsNorthEastLongitude ti.locationtrackerservice:latLngBoundsNorthEastLongitude}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_latLngBoundsSouthWestLatitude ti.locationtrackerservice:latLngBoundsSouthWestLatitude}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_latLngBoundsSouthWestLongitude ti.locationtrackerservice:latLngBoundsSouthWestLongitude}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_liteMode ti.locationtrackerservice:liteMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_mapType ti.locationtrackerservice:mapType}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiCompass ti.locationtrackerservice:uiCompass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiMapToolbar ti.locationtrackerservice:uiMapToolbar}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiRotateGestures ti.locationtrackerservice:uiRotateGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiScrollGestures ti.locationtrackerservice:uiScrollGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiTiltGestures ti.locationtrackerservice:uiTiltGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomControls ti.locationtrackerservice:uiZoomControls}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomGestures ti.locationtrackerservice:uiZoomGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_useViewLifecycle ti.locationtrackerservice:useViewLifecycle}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_zOrderOnTop ti.locationtrackerservice:zOrderOnTop}</code></td><td></td></tr>
            </table>
            @see #MapAttrs_ambientEnabled
            @see #MapAttrs_cameraBearing
@@ -10243,7 +10249,7 @@ containing a value of this type.
             0x7f01019b, 0x7f01019c, 0x7f01019d
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#ambientEnabled}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#ambientEnabled}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10253,11 +10259,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:ambientEnabled
+          @attr name ti.locationtrackerservice:ambientEnabled
         */
         public static int MapAttrs_ambientEnabled = 16;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#cameraBearing}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#cameraBearing}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10267,11 +10273,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:cameraBearing
+          @attr name ti.locationtrackerservice:cameraBearing
         */
         public static int MapAttrs_cameraBearing = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#cameraMaxZoomPreference}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#cameraMaxZoomPreference}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10281,11 +10287,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:cameraMaxZoomPreference
+          @attr name ti.locationtrackerservice:cameraMaxZoomPreference
         */
         public static int MapAttrs_cameraMaxZoomPreference = 18;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#cameraMinZoomPreference}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#cameraMinZoomPreference}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10295,11 +10301,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:cameraMinZoomPreference
+          @attr name ti.locationtrackerservice:cameraMinZoomPreference
         */
         public static int MapAttrs_cameraMinZoomPreference = 17;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#cameraTargetLat}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#cameraTargetLat}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10309,11 +10315,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:cameraTargetLat
+          @attr name ti.locationtrackerservice:cameraTargetLat
         */
         public static int MapAttrs_cameraTargetLat = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#cameraTargetLng}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#cameraTargetLng}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10323,11 +10329,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:cameraTargetLng
+          @attr name ti.locationtrackerservice:cameraTargetLng
         */
         public static int MapAttrs_cameraTargetLng = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#cameraTilt}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#cameraTilt}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10337,11 +10343,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:cameraTilt
+          @attr name ti.locationtrackerservice:cameraTilt
         */
         public static int MapAttrs_cameraTilt = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#cameraZoom}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#cameraZoom}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10351,11 +10357,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:cameraZoom
+          @attr name ti.locationtrackerservice:cameraZoom
         */
         public static int MapAttrs_cameraZoom = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#latLngBoundsNorthEastLatitude}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#latLngBoundsNorthEastLatitude}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10365,11 +10371,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:latLngBoundsNorthEastLatitude
+          @attr name ti.locationtrackerservice:latLngBoundsNorthEastLatitude
         */
         public static int MapAttrs_latLngBoundsNorthEastLatitude = 21;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#latLngBoundsNorthEastLongitude}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#latLngBoundsNorthEastLongitude}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10379,11 +10385,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:latLngBoundsNorthEastLongitude
+          @attr name ti.locationtrackerservice:latLngBoundsNorthEastLongitude
         */
         public static int MapAttrs_latLngBoundsNorthEastLongitude = 22;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#latLngBoundsSouthWestLatitude}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#latLngBoundsSouthWestLatitude}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10393,11 +10399,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:latLngBoundsSouthWestLatitude
+          @attr name ti.locationtrackerservice:latLngBoundsSouthWestLatitude
         */
         public static int MapAttrs_latLngBoundsSouthWestLatitude = 19;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#latLngBoundsSouthWestLongitude}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#latLngBoundsSouthWestLongitude}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10407,11 +10413,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:latLngBoundsSouthWestLongitude
+          @attr name ti.locationtrackerservice:latLngBoundsSouthWestLongitude
         */
         public static int MapAttrs_latLngBoundsSouthWestLongitude = 20;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#liteMode}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#liteMode}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10421,11 +10427,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:liteMode
+          @attr name ti.locationtrackerservice:liteMode
         */
         public static int MapAttrs_liteMode = 6;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#mapType}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#mapType}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10441,11 +10447,11 @@ containing a value of this type.
 <tr><td><code>terrain</code></td><td>3</td><td></td></tr>
 <tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:mapType
+          @attr name ti.locationtrackerservice:mapType
         */
         public static int MapAttrs_mapType = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#uiCompass}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#uiCompass}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10455,11 +10461,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:uiCompass
+          @attr name ti.locationtrackerservice:uiCompass
         */
         public static int MapAttrs_uiCompass = 7;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#uiMapToolbar}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#uiMapToolbar}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10469,11 +10475,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:uiMapToolbar
+          @attr name ti.locationtrackerservice:uiMapToolbar
         */
         public static int MapAttrs_uiMapToolbar = 15;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#uiRotateGestures}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#uiRotateGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10483,11 +10489,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:uiRotateGestures
+          @attr name ti.locationtrackerservice:uiRotateGestures
         */
         public static int MapAttrs_uiRotateGestures = 8;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#uiScrollGestures}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#uiScrollGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10497,11 +10503,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:uiScrollGestures
+          @attr name ti.locationtrackerservice:uiScrollGestures
         */
         public static int MapAttrs_uiScrollGestures = 9;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#uiTiltGestures}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#uiTiltGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10511,11 +10517,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:uiTiltGestures
+          @attr name ti.locationtrackerservice:uiTiltGestures
         */
         public static int MapAttrs_uiTiltGestures = 10;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#uiZoomControls}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#uiZoomControls}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10525,11 +10531,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:uiZoomControls
+          @attr name ti.locationtrackerservice:uiZoomControls
         */
         public static int MapAttrs_uiZoomControls = 11;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#uiZoomGestures}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#uiZoomGestures}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10539,11 +10545,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:uiZoomGestures
+          @attr name ti.locationtrackerservice:uiZoomGestures
         */
         public static int MapAttrs_uiZoomGestures = 12;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#useViewLifecycle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#useViewLifecycle}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10553,11 +10559,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:useViewLifecycle
+          @attr name ti.locationtrackerservice:useViewLifecycle
         */
         public static int MapAttrs_useViewLifecycle = 13;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#zOrderOnTop}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#zOrderOnTop}
           attribute's value can be found in the {@link #MapAttrs} array.
 
 
@@ -10567,7 +10573,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:zOrderOnTop
+          @attr name ti.locationtrackerservice:zOrderOnTop
         */
         public static int MapAttrs_zOrderOnTop = 14;
         /** Attributes that can be used with a MenuGroup.
@@ -10636,10 +10642,10 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout ti.locationupdatesservice:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass ti.locationupdatesservice:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass ti.locationupdatesservice:actionViewClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_alphabeticModifiers ti.locationupdatesservice:alphabeticModifiers}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout ti.locationtrackerservice:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass ti.locationtrackerservice:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass ti.locationtrackerservice:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_alphabeticModifiers ti.locationtrackerservice:alphabeticModifiers}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -10653,12 +10659,12 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_contentDescription ti.locationupdatesservice:contentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_iconTint ti.locationupdatesservice:iconTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_iconTintMode ti.locationupdatesservice:iconTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_numericModifiers ti.locationupdatesservice:numericModifiers}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction ti.locationupdatesservice:showAsAction}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_tooltipText ti.locationupdatesservice:tooltipText}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_contentDescription ti.locationtrackerservice:contentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_iconTint ti.locationtrackerservice:iconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_iconTintMode ti.locationtrackerservice:iconTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_numericModifiers ti.locationtrackerservice:numericModifiers}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction ti.locationtrackerservice:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_tooltipText ti.locationtrackerservice:tooltipText}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -10693,17 +10699,17 @@ containing a value of this type.
             0x7f0100c4, 0x7f0100c5, 0x7f0100c6
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:actionLayout
+          @attr name ti.locationtrackerservice:actionLayout
         */
         public static int MenuItem_actionLayout = 16;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -10713,11 +10719,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:actionProviderClass
+          @attr name ti.locationtrackerservice:actionProviderClass
         */
         public static int MenuItem_actionProviderClass = 18;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -10727,11 +10733,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:actionViewClass
+          @attr name ti.locationtrackerservice:actionViewClass
         */
         public static int MenuItem_actionViewClass = 17;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#alphabeticModifiers}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#alphabeticModifiers}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -10748,7 +10754,7 @@ containing a value of this type.
 <tr><td><code>SYM</code></td><td>0x4</td><td></td></tr>
 <tr><td><code>FUNCTION</code></td><td>0x8</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:alphabeticModifiers
+          @attr name ti.locationtrackerservice:alphabeticModifiers
         */
         public static int MenuItem_alphabeticModifiers = 13;
         /**
@@ -10830,7 +10836,7 @@ containing a value of this type.
         */
         public static int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#contentDescription}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#contentDescription}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -10840,11 +10846,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:contentDescription
+          @attr name ti.locationtrackerservice:contentDescription
         */
         public static int MenuItem_contentDescription = 19;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#iconTint}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#iconTint}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -10855,11 +10861,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:iconTint
+          @attr name ti.locationtrackerservice:iconTint
         */
         public static int MenuItem_iconTint = 21;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#iconTintMode}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#iconTintMode}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -10876,11 +10882,11 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:iconTintMode
+          @attr name ti.locationtrackerservice:iconTintMode
         */
         public static int MenuItem_iconTintMode = 22;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#numericModifiers}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#numericModifiers}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -10897,11 +10903,11 @@ containing a value of this type.
 <tr><td><code>SYM</code></td><td>0x4</td><td></td></tr>
 <tr><td><code>FUNCTION</code></td><td>0x8</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:numericModifiers
+          @attr name ti.locationtrackerservice:numericModifiers
         */
         public static int MenuItem_numericModifiers = 14;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -10917,11 +10923,11 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:showAsAction
+          @attr name ti.locationtrackerservice:showAsAction
         */
         public static int MenuItem_showAsAction = 15;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tooltipText}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tooltipText}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -10931,7 +10937,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:tooltipText
+          @attr name ti.locationtrackerservice:tooltipText
         */
         public static int MenuItem_tooltipText = 20;
         /** Attributes that can be used with a MenuView.
@@ -10947,8 +10953,8 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing ti.locationupdatesservice:preserveIconSpacing}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_subMenuArrow ti.locationupdatesservice:subMenuArrow}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing ti.locationtrackerservice:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_subMenuArrow ti.locationtrackerservice:subMenuArrow}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -11008,7 +11014,7 @@ containing a value of this type.
         */
         public static int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -11018,17 +11024,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:preserveIconSpacing
+          @attr name ti.locationtrackerservice:preserveIconSpacing
         */
         public static int MenuView_preserveIconSpacing = 7;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#subMenuArrow}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#subMenuArrow}
           attribute's value can be found in the {@link #MenuView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:subMenuArrow
+          @attr name ti.locationtrackerservice:subMenuArrow
         */
         public static int MenuView_subMenuArrow = 8;
         /** Attributes that can be used with a NavigationView.
@@ -11040,13 +11046,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_elevation ti.locationupdatesservice:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_headerLayout ti.locationupdatesservice:headerLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemBackground ti.locationupdatesservice:itemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemIconTint ti.locationupdatesservice:itemIconTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextAppearance ti.locationupdatesservice:itemTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextColor ti.locationupdatesservice:itemTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_menu ti.locationupdatesservice:menu}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_elevation ti.locationtrackerservice:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_headerLayout ti.locationtrackerservice:headerLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemBackground ti.locationtrackerservice:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemIconTint ti.locationtrackerservice:itemIconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextAppearance ti.locationtrackerservice:itemTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextColor ti.locationtrackerservice:itemTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_menu ti.locationtrackerservice:menu}</code></td><td></td></tr>
            </table>
            @see #NavigationView_android_background
            @see #NavigationView_android_fitsSystemWindows
@@ -11083,7 +11089,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static int NavigationView_android_maxWidth = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#elevation}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#elevation}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -11095,31 +11101,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:elevation
+          @attr name ti.locationtrackerservice:elevation
         */
         public static int NavigationView_elevation = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#headerLayout}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#headerLayout}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:headerLayout
+          @attr name ti.locationtrackerservice:headerLayout
         */
         public static int NavigationView_headerLayout = 9;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#itemBackground}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#itemBackground}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:itemBackground
+          @attr name ti.locationtrackerservice:itemBackground
         */
         public static int NavigationView_itemBackground = 7;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#itemIconTint}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#itemIconTint}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -11130,21 +11136,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:itemIconTint
+          @attr name ti.locationtrackerservice:itemIconTint
         */
         public static int NavigationView_itemIconTint = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#itemTextAppearance}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#itemTextAppearance}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:itemTextAppearance
+          @attr name ti.locationtrackerservice:itemTextAppearance
         */
         public static int NavigationView_itemTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#itemTextColor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#itemTextColor}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -11155,17 +11161,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:itemTextColor
+          @attr name ti.locationtrackerservice:itemTextColor
         */
         public static int NavigationView_itemTextColor = 6;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#menu}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#menu}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:menu
+          @attr name ti.locationtrackerservice:menu
         */
         public static int NavigationView_menu = 4;
         /** Attributes that can be used with a PopupWindow.
@@ -11176,7 +11182,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor ti.locationupdatesservice:overlapAnchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor ti.locationtrackerservice:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupAnimationStyle
            @see #PopupWindow_android_popupBackground
@@ -11198,7 +11204,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -11208,7 +11214,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:overlapAnchor
+          @attr name ti.locationtrackerservice:overlapAnchor
         */
         public static int PopupWindow_overlapAnchor = 2;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -11217,7 +11223,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor ti.locationupdatesservice:state_above_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor ti.locationtrackerservice:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -11225,7 +11231,7 @@ containing a value of this type.
             0x7f0100ca
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -11235,7 +11241,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:state_above_anchor
+          @attr name ti.locationtrackerservice:state_above_anchor
         */
         public static int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a RecycleListView.
@@ -11244,8 +11250,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons ti.locationupdatesservice:paddingBottomNoButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecycleListView_paddingTopNoTitle ti.locationupdatesservice:paddingTopNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons ti.locationtrackerservice:paddingBottomNoButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecycleListView_paddingTopNoTitle ti.locationtrackerservice:paddingTopNoTitle}</code></td><td></td></tr>
            </table>
            @see #RecycleListView_paddingBottomNoButtons
            @see #RecycleListView_paddingTopNoTitle
@@ -11254,7 +11260,7 @@ containing a value of this type.
             0x7f0100cb, 0x7f0100cc
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#paddingBottomNoButtons}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#paddingBottomNoButtons}
           attribute's value can be found in the {@link #RecycleListView} array.
 
 
@@ -11266,11 +11272,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:paddingBottomNoButtons
+          @attr name ti.locationtrackerservice:paddingBottomNoButtons
         */
         public static int RecycleListView_paddingBottomNoButtons = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#paddingTopNoTitle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#paddingTopNoTitle}
           attribute's value can be found in the {@link #RecycleListView} array.
 
 
@@ -11282,7 +11288,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:paddingTopNoTitle
+          @attr name ti.locationtrackerservice:paddingTopNoTitle
         */
         public static int RecycleListView_paddingTopNoTitle = 1;
         /** Attributes that can be used with a RecyclerView.
@@ -11293,15 +11299,15 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #RecyclerView_android_descendantFocusability android:descendantFocusability}</code></td><td></td></tr>
            <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_fastScrollEnabled ti.locationupdatesservice:fastScrollEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable ti.locationupdatesservice:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable ti.locationupdatesservice:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable ti.locationupdatesservice:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable ti.locationupdatesservice:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_layoutManager ti.locationupdatesservice:layoutManager}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_reverseLayout ti.locationupdatesservice:reverseLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_spanCount ti.locationupdatesservice:spanCount}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_stackFromEnd ti.locationupdatesservice:stackFromEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_fastScrollEnabled ti.locationtrackerservice:fastScrollEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable ti.locationtrackerservice:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable ti.locationtrackerservice:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable ti.locationtrackerservice:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable ti.locationtrackerservice:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_layoutManager ti.locationtrackerservice:layoutManager}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_reverseLayout ti.locationtrackerservice:reverseLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_spanCount ti.locationtrackerservice:spanCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_stackFromEnd ti.locationtrackerservice:stackFromEnd}</code></td><td></td></tr>
            </table>
            @see #RecyclerView_android_descendantFocusability
            @see #RecyclerView_android_orientation
@@ -11333,7 +11339,7 @@ containing a value of this type.
         */
         public static int RecyclerView_android_orientation = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#fastScrollEnabled}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#fastScrollEnabled}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -11343,51 +11349,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:fastScrollEnabled
+          @attr name ti.locationtrackerservice:fastScrollEnabled
         */
         public static int RecyclerView_fastScrollEnabled = 6;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#fastScrollHorizontalThumbDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#fastScrollHorizontalThumbDrawable}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:fastScrollHorizontalThumbDrawable
+          @attr name ti.locationtrackerservice:fastScrollHorizontalThumbDrawable
         */
         public static int RecyclerView_fastScrollHorizontalThumbDrawable = 9;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#fastScrollHorizontalTrackDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#fastScrollHorizontalTrackDrawable}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:fastScrollHorizontalTrackDrawable
+          @attr name ti.locationtrackerservice:fastScrollHorizontalTrackDrawable
         */
         public static int RecyclerView_fastScrollHorizontalTrackDrawable = 10;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#fastScrollVerticalThumbDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#fastScrollVerticalThumbDrawable}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:fastScrollVerticalThumbDrawable
+          @attr name ti.locationtrackerservice:fastScrollVerticalThumbDrawable
         */
         public static int RecyclerView_fastScrollVerticalThumbDrawable = 7;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#fastScrollVerticalTrackDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#fastScrollVerticalTrackDrawable}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:fastScrollVerticalTrackDrawable
+          @attr name ti.locationtrackerservice:fastScrollVerticalTrackDrawable
         */
         public static int RecyclerView_fastScrollVerticalTrackDrawable = 8;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#layoutManager}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#layoutManager}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -11397,11 +11403,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:layoutManager
+          @attr name ti.locationtrackerservice:layoutManager
         */
         public static int RecyclerView_layoutManager = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#reverseLayout}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#reverseLayout}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -11411,11 +11417,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:reverseLayout
+          @attr name ti.locationtrackerservice:reverseLayout
         */
         public static int RecyclerView_reverseLayout = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#spanCount}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#spanCount}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -11425,11 +11431,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:spanCount
+          @attr name ti.locationtrackerservice:spanCount
         */
         public static int RecyclerView_spanCount = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#stackFromEnd}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#stackFromEnd}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -11439,7 +11445,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:stackFromEnd
+          @attr name ti.locationtrackerservice:stackFromEnd
         */
         public static int RecyclerView_stackFromEnd = 5;
         /** Attributes that can be used with a ScrimInsetsFrameLayout.
@@ -11448,7 +11454,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground ti.locationupdatesservice:insetForeground}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground ti.locationtrackerservice:insetForeground}</code></td><td></td></tr>
            </table>
            @see #ScrimInsetsFrameLayout_insetForeground
          */
@@ -11456,7 +11462,7 @@ containing a value of this type.
             0x7f010140
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#insetForeground}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#insetForeground}
           attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
 
 
@@ -11464,7 +11470,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ti.locationupdatesservice:insetForeground
+          @attr name ti.locationtrackerservice:insetForeground
         */
         public static int ScrimInsetsFrameLayout_insetForeground = 0;
         /** Attributes that can be used with a ScrollingViewBehavior_Layout.
@@ -11473,7 +11479,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop ti.locationupdatesservice:behavior_overlapTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop ti.locationtrackerservice:behavior_overlapTop}</code></td><td></td></tr>
            </table>
            @see #ScrollingViewBehavior_Layout_behavior_overlapTop
          */
@@ -11481,7 +11487,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010141
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#behavior_overlapTop}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#behavior_overlapTop}
           attribute's value can be found in the {@link #ScrollingViewBehavior_Layout} array.
 
 
@@ -11493,7 +11499,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:behavior_overlapTop
+          @attr name ti.locationtrackerservice:behavior_overlapTop
         */
         public static int ScrollingViewBehavior_Layout_behavior_overlapTop = 0;
         /** Attributes that can be used with a SearchView.
@@ -11506,19 +11512,19 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon ti.locationupdatesservice:closeIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon ti.locationupdatesservice:commitIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_defaultQueryHint ti.locationupdatesservice:defaultQueryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_goIcon ti.locationupdatesservice:goIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault ti.locationupdatesservice:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_layout ti.locationupdatesservice:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground ti.locationupdatesservice:queryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint ti.locationupdatesservice:queryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchHintIcon ti.locationupdatesservice:searchHintIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon ti.locationupdatesservice:searchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground ti.locationupdatesservice:submitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout ti.locationupdatesservice:suggestionRowLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon ti.locationupdatesservice:voiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon ti.locationtrackerservice:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon ti.locationtrackerservice:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_defaultQueryHint ti.locationtrackerservice:defaultQueryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon ti.locationtrackerservice:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault ti.locationtrackerservice:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout ti.locationtrackerservice:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground ti.locationtrackerservice:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint ti.locationtrackerservice:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchHintIcon ti.locationtrackerservice:searchHintIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon ti.locationtrackerservice:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground ti.locationtrackerservice:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout ti.locationtrackerservice:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon ti.locationtrackerservice:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -11570,27 +11576,27 @@ containing a value of this type.
         */
         public static int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:closeIcon
+          @attr name ti.locationtrackerservice:closeIcon
         */
         public static int SearchView_closeIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:commitIcon
+          @attr name ti.locationtrackerservice:commitIcon
         */
         public static int SearchView_commitIcon = 13;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#defaultQueryHint}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#defaultQueryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -11600,21 +11606,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:defaultQueryHint
+          @attr name ti.locationtrackerservice:defaultQueryHint
         */
         public static int SearchView_defaultQueryHint = 7;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:goIcon
+          @attr name ti.locationtrackerservice:goIcon
         */
         public static int SearchView_goIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -11624,31 +11630,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:iconifiedByDefault
+          @attr name ti.locationtrackerservice:iconifiedByDefault
         */
         public static int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#layout}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:layout
+          @attr name ti.locationtrackerservice:layout
         */
         public static int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:queryBackground
+          @attr name ti.locationtrackerservice:queryBackground
         */
         public static int SearchView_queryBackground = 15;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -11658,57 +11664,57 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:queryHint
+          @attr name ti.locationtrackerservice:queryHint
         */
         public static int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#searchHintIcon}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#searchHintIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:searchHintIcon
+          @attr name ti.locationtrackerservice:searchHintIcon
         */
         public static int SearchView_searchHintIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:searchIcon
+          @attr name ti.locationtrackerservice:searchIcon
         */
         public static int SearchView_searchIcon = 10;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:submitBackground
+          @attr name ti.locationtrackerservice:submitBackground
         */
         public static int SearchView_submitBackground = 16;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:suggestionRowLayout
+          @attr name ti.locationtrackerservice:suggestionRowLayout
         */
         public static int SearchView_suggestionRowLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:voiceIcon
+          @attr name ti.locationtrackerservice:voiceIcon
         */
         public static int SearchView_voiceIcon = 12;
         /** Attributes that can be used with a SignInButton.
@@ -11717,9 +11723,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SignInButton_buttonSize ti.locationupdatesservice:buttonSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #SignInButton_colorScheme ti.locationupdatesservice:colorScheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #SignInButton_scopeUris ti.locationupdatesservice:scopeUris}</code></td><td></td></tr>
+           <tr><td><code>{@link #SignInButton_buttonSize ti.locationtrackerservice:buttonSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #SignInButton_colorScheme ti.locationtrackerservice:colorScheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #SignInButton_scopeUris ti.locationtrackerservice:scopeUris}</code></td><td></td></tr>
            </table>
            @see #SignInButton_buttonSize
            @see #SignInButton_colorScheme
@@ -11729,7 +11735,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010167, 0x7f010168, 0x7f010169
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#buttonSize}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#buttonSize}
           attribute's value can be found in the {@link #SignInButton} array.
 
 
@@ -11745,11 +11751,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>wide</code></td><td>1</td><td></td></tr>
 <tr><td><code>icon_only</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:buttonSize
+          @attr name ti.locationtrackerservice:buttonSize
         */
         public static int SignInButton_buttonSize = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#colorScheme}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#colorScheme}
           attribute's value can be found in the {@link #SignInButton} array.
 
 
@@ -11765,18 +11771,18 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>light</code></td><td>1</td><td></td></tr>
 <tr><td><code>auto</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:colorScheme
+          @attr name ti.locationtrackerservice:colorScheme
         */
         public static int SignInButton_colorScheme = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#scopeUris}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#scopeUris}
           attribute's value can be found in the {@link #SignInButton} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-          @attr name ti.locationupdatesservice:scopeUris
+          @attr name ti.locationtrackerservice:scopeUris
         */
         public static int SignInButton_scopeUris = 2;
         /** Attributes that can be used with a SnackbarLayout.
@@ -11786,8 +11792,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_elevation ti.locationupdatesservice:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth ti.locationupdatesservice:maxActionInlineWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_elevation ti.locationtrackerservice:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth ti.locationtrackerservice:maxActionInlineWidth}</code></td><td></td></tr>
            </table>
            @see #SnackbarLayout_android_maxWidth
            @see #SnackbarLayout_elevation
@@ -11803,7 +11809,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static int SnackbarLayout_android_maxWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#elevation}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#elevation}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -11815,11 +11821,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:elevation
+          @attr name ti.locationtrackerservice:elevation
         */
         public static int SnackbarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#maxActionInlineWidth}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#maxActionInlineWidth}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -11831,7 +11837,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:maxActionInlineWidth
+          @attr name ti.locationtrackerservice:maxActionInlineWidth
         */
         public static int SnackbarLayout_maxActionInlineWidth = 2;
         /** Attributes that can be used with a Spinner.
@@ -11844,7 +11850,7 @@ containing a value of this type.
            <tr><td><code>{@link #Spinner_android_entries android:entries}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupTheme ti.locationupdatesservice:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupTheme ti.locationtrackerservice:popupTheme}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_dropDownWidth
            @see #Spinner_android_entries
@@ -11881,13 +11887,13 @@ containing a value of this type.
         */
         public static int Spinner_android_prompt = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#popupTheme}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:popupTheme
+          @attr name ti.locationtrackerservice:popupTheme
         */
         public static int Spinner_popupTheme = 4;
         /** Attributes that can be used with a SwitchCompat.
@@ -11899,17 +11905,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText ti.locationupdatesservice:showText}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack ti.locationupdatesservice:splitTrack}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth ti.locationupdatesservice:switchMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding ti.locationupdatesservice:switchPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance ti.locationupdatesservice:switchTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding ti.locationupdatesservice:thumbTextPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTint ti.locationupdatesservice:thumbTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTintMode ti.locationupdatesservice:thumbTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_track ti.locationupdatesservice:track}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_trackTint ti.locationupdatesservice:trackTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_trackTintMode ti.locationupdatesservice:trackTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText ti.locationtrackerservice:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack ti.locationtrackerservice:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth ti.locationtrackerservice:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding ti.locationtrackerservice:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance ti.locationtrackerservice:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding ti.locationtrackerservice:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTint ti.locationtrackerservice:thumbTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTintMode ti.locationtrackerservice:thumbTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track ti.locationtrackerservice:track}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_trackTint ti.locationtrackerservice:trackTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_trackTintMode ti.locationtrackerservice:trackTintMode}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -11951,7 +11957,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#showText}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -11961,11 +11967,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:showText
+          @attr name ti.locationtrackerservice:showText
         */
         public static int SwitchCompat_showText = 13;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -11975,11 +11981,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:splitTrack
+          @attr name ti.locationtrackerservice:splitTrack
         */
         public static int SwitchCompat_splitTrack = 12;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -11991,11 +11997,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:switchMinWidth
+          @attr name ti.locationtrackerservice:switchMinWidth
         */
         public static int SwitchCompat_switchMinWidth = 10;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -12007,21 +12013,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:switchPadding
+          @attr name ti.locationtrackerservice:switchPadding
         */
         public static int SwitchCompat_switchPadding = 11;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:switchTextAppearance
+          @attr name ti.locationtrackerservice:switchTextAppearance
         */
         public static int SwitchCompat_switchTextAppearance = 9;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -12033,11 +12039,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:thumbTextPadding
+          @attr name ti.locationtrackerservice:thumbTextPadding
         */
         public static int SwitchCompat_thumbTextPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#thumbTint}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#thumbTint}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -12048,11 +12054,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:thumbTint
+          @attr name ti.locationtrackerservice:thumbTint
         */
         public static int SwitchCompat_thumbTint = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#thumbTintMode}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#thumbTintMode}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -12069,21 +12075,21 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:thumbTintMode
+          @attr name ti.locationtrackerservice:thumbTintMode
         */
         public static int SwitchCompat_thumbTintMode = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#track}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:track
+          @attr name ti.locationtrackerservice:track
         */
         public static int SwitchCompat_track = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#trackTint}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#trackTint}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -12094,11 +12100,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:trackTint
+          @attr name ti.locationtrackerservice:trackTint
         */
         public static int SwitchCompat_trackTint = 6;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#trackTintMode}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#trackTintMode}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -12115,7 +12121,7 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:trackTintMode
+          @attr name ti.locationtrackerservice:trackTintMode
         */
         public static int SwitchCompat_trackTintMode = 7;
         /** Attributes that can be used with a TabItem.
@@ -12159,22 +12165,22 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #TabLayout_tabBackground ti.locationupdatesservice:tabBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabContentStart ti.locationupdatesservice:tabContentStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabGravity ti.locationupdatesservice:tabGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorColor ti.locationupdatesservice:tabIndicatorColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorHeight ti.locationupdatesservice:tabIndicatorHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMaxWidth ti.locationupdatesservice:tabMaxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMinWidth ti.locationupdatesservice:tabMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMode ti.locationupdatesservice:tabMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPadding ti.locationupdatesservice:tabPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingBottom ti.locationupdatesservice:tabPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingEnd ti.locationupdatesservice:tabPaddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingStart ti.locationupdatesservice:tabPaddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingTop ti.locationupdatesservice:tabPaddingTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabSelectedTextColor ti.locationupdatesservice:tabSelectedTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextAppearance ti.locationupdatesservice:tabTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextColor ti.locationupdatesservice:tabTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabBackground ti.locationtrackerservice:tabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabContentStart ti.locationtrackerservice:tabContentStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabGravity ti.locationtrackerservice:tabGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorColor ti.locationtrackerservice:tabIndicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorHeight ti.locationtrackerservice:tabIndicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMaxWidth ti.locationtrackerservice:tabMaxWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMinWidth ti.locationtrackerservice:tabMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMode ti.locationtrackerservice:tabMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPadding ti.locationtrackerservice:tabPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingBottom ti.locationtrackerservice:tabPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingEnd ti.locationtrackerservice:tabPaddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingStart ti.locationtrackerservice:tabPaddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingTop ti.locationtrackerservice:tabPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabSelectedTextColor ti.locationtrackerservice:tabSelectedTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextAppearance ti.locationtrackerservice:tabTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextColor ti.locationtrackerservice:tabTextColor}</code></td><td></td></tr>
            </table>
            @see #TabLayout_tabBackground
            @see #TabLayout_tabContentStart
@@ -12200,17 +12206,17 @@ containing a value of this type.
             0x7f01014f, 0x7f010150, 0x7f010151, 0x7f010152
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tabBackground}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tabBackground}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:tabBackground
+          @attr name ti.locationtrackerservice:tabBackground
         */
         public static int TabLayout_tabBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tabContentStart}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tabContentStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12222,11 +12228,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:tabContentStart
+          @attr name ti.locationtrackerservice:tabContentStart
         */
         public static int TabLayout_tabContentStart = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tabGravity}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tabGravity}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12239,11 +12245,11 @@ containing a value of this type.
 <tr><td><code>fill</code></td><td>0</td><td></td></tr>
 <tr><td><code>center</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:tabGravity
+          @attr name ti.locationtrackerservice:tabGravity
         */
         public static int TabLayout_tabGravity = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tabIndicatorColor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tabIndicatorColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12254,11 +12260,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:tabIndicatorColor
+          @attr name ti.locationtrackerservice:tabIndicatorColor
         */
         public static int TabLayout_tabIndicatorColor = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tabIndicatorHeight}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tabIndicatorHeight}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12270,11 +12276,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:tabIndicatorHeight
+          @attr name ti.locationtrackerservice:tabIndicatorHeight
         */
         public static int TabLayout_tabIndicatorHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tabMaxWidth}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tabMaxWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12286,11 +12292,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:tabMaxWidth
+          @attr name ti.locationtrackerservice:tabMaxWidth
         */
         public static int TabLayout_tabMaxWidth = 7;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tabMinWidth}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tabMinWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12302,11 +12308,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:tabMinWidth
+          @attr name ti.locationtrackerservice:tabMinWidth
         */
         public static int TabLayout_tabMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tabMode}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tabMode}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12319,11 +12325,11 @@ containing a value of this type.
 <tr><td><code>scrollable</code></td><td>0</td><td></td></tr>
 <tr><td><code>fixed</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:tabMode
+          @attr name ti.locationtrackerservice:tabMode
         */
         public static int TabLayout_tabMode = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tabPadding}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tabPadding}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12335,11 +12341,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:tabPadding
+          @attr name ti.locationtrackerservice:tabPadding
         */
         public static int TabLayout_tabPadding = 15;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tabPaddingBottom}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tabPaddingBottom}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12351,11 +12357,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:tabPaddingBottom
+          @attr name ti.locationtrackerservice:tabPaddingBottom
         */
         public static int TabLayout_tabPaddingBottom = 14;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tabPaddingEnd}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tabPaddingEnd}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12367,11 +12373,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:tabPaddingEnd
+          @attr name ti.locationtrackerservice:tabPaddingEnd
         */
         public static int TabLayout_tabPaddingEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tabPaddingStart}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tabPaddingStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12383,11 +12389,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:tabPaddingStart
+          @attr name ti.locationtrackerservice:tabPaddingStart
         */
         public static int TabLayout_tabPaddingStart = 11;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tabPaddingTop}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tabPaddingTop}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12399,11 +12405,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:tabPaddingTop
+          @attr name ti.locationtrackerservice:tabPaddingTop
         */
         public static int TabLayout_tabPaddingTop = 12;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tabSelectedTextColor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tabSelectedTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12414,21 +12420,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:tabSelectedTextColor
+          @attr name ti.locationtrackerservice:tabSelectedTextColor
         */
         public static int TabLayout_tabSelectedTextColor = 10;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tabTextAppearance}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tabTextAppearance}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:tabTextAppearance
+          @attr name ti.locationtrackerservice:tabTextAppearance
         */
         public static int TabLayout_tabTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#tabTextColor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#tabTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -12439,7 +12445,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:tabTextColor
+          @attr name ti.locationtrackerservice:tabTextColor
         */
         public static int TabLayout_tabTextColor = 9;
         /** Attributes that can be used with a TextAppearance.
@@ -12459,8 +12465,8 @@ containing a value of this type.
            <tr><td><code>{@link #TextAppearance_android_textSize android:textSize}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_textStyle android:textStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_typeface android:typeface}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextAppearance_fontFamily ti.locationupdatesservice:fontFamily}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextAppearance_textAllCaps ti.locationupdatesservice:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_fontFamily ti.locationtrackerservice:fontFamily}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_textAllCaps ti.locationtrackerservice:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #TextAppearance_android_fontFamily
            @see #TextAppearance_android_shadowColor
@@ -12549,7 +12555,7 @@ containing a value of this type.
         */
         public static int TextAppearance_android_typeface = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#fontFamily}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#fontFamily}
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
@@ -12559,18 +12565,18 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:fontFamily
+          @attr name ti.locationtrackerservice:fontFamily
         */
         public static int TextAppearance_fontFamily = 12;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#textAllCaps}
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name ti.locationupdatesservice:textAllCaps
+          @attr name ti.locationtrackerservice:textAllCaps
         */
         public static int TextAppearance_textAllCaps = 11;
         /** Attributes that can be used with a TextInputLayout.
@@ -12581,20 +12587,20 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
            <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterEnabled ti.locationupdatesservice:counterEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterMaxLength ti.locationupdatesservice:counterMaxLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance ti.locationupdatesservice:counterOverflowTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterTextAppearance ti.locationupdatesservice:counterTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorEnabled ti.locationupdatesservice:errorEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorTextAppearance ti.locationupdatesservice:errorTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled ti.locationupdatesservice:hintAnimationEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintEnabled ti.locationupdatesservice:hintEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintTextAppearance ti.locationupdatesservice:hintTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription ti.locationupdatesservice:passwordToggleContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable ti.locationupdatesservice:passwordToggleDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled ti.locationupdatesservice:passwordToggleEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleTint ti.locationupdatesservice:passwordToggleTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode ti.locationupdatesservice:passwordToggleTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterEnabled ti.locationtrackerservice:counterEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterMaxLength ti.locationtrackerservice:counterMaxLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance ti.locationtrackerservice:counterOverflowTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterTextAppearance ti.locationtrackerservice:counterTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorEnabled ti.locationtrackerservice:errorEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorTextAppearance ti.locationtrackerservice:errorTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled ti.locationtrackerservice:hintAnimationEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintEnabled ti.locationtrackerservice:hintEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintTextAppearance ti.locationtrackerservice:hintTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription ti.locationtrackerservice:passwordToggleContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable ti.locationtrackerservice:passwordToggleDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled ti.locationtrackerservice:passwordToggleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleTint ti.locationtrackerservice:passwordToggleTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode ti.locationtrackerservice:passwordToggleTintMode}</code></td><td></td></tr>
            </table>
            @see #TextInputLayout_android_hint
            @see #TextInputLayout_android_textColorHint
@@ -12632,7 +12638,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static int TextInputLayout_android_textColorHint = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#counterEnabled}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#counterEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -12642,11 +12648,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:counterEnabled
+          @attr name ti.locationtrackerservice:counterEnabled
         */
         public static int TextInputLayout_counterEnabled = 6;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#counterMaxLength}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#counterMaxLength}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -12656,31 +12662,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:counterMaxLength
+          @attr name ti.locationtrackerservice:counterMaxLength
         */
         public static int TextInputLayout_counterMaxLength = 7;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#counterOverflowTextAppearance}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#counterOverflowTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:counterOverflowTextAppearance
+          @attr name ti.locationtrackerservice:counterOverflowTextAppearance
         */
         public static int TextInputLayout_counterOverflowTextAppearance = 9;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#counterTextAppearance}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#counterTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:counterTextAppearance
+          @attr name ti.locationtrackerservice:counterTextAppearance
         */
         public static int TextInputLayout_counterTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#errorEnabled}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#errorEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -12690,21 +12696,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:errorEnabled
+          @attr name ti.locationtrackerservice:errorEnabled
         */
         public static int TextInputLayout_errorEnabled = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#errorTextAppearance}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#errorTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:errorTextAppearance
+          @attr name ti.locationtrackerservice:errorTextAppearance
         */
         public static int TextInputLayout_errorTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#hintAnimationEnabled}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#hintAnimationEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -12714,11 +12720,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:hintAnimationEnabled
+          @attr name ti.locationtrackerservice:hintAnimationEnabled
         */
         public static int TextInputLayout_hintAnimationEnabled = 10;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#hintEnabled}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#hintEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -12728,21 +12734,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:hintEnabled
+          @attr name ti.locationtrackerservice:hintEnabled
         */
         public static int TextInputLayout_hintEnabled = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#hintTextAppearance}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#hintTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:hintTextAppearance
+          @attr name ti.locationtrackerservice:hintTextAppearance
         */
         public static int TextInputLayout_hintTextAppearance = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#passwordToggleContentDescription}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#passwordToggleContentDescription}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -12752,21 +12758,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:passwordToggleContentDescription
+          @attr name ti.locationtrackerservice:passwordToggleContentDescription
         */
         public static int TextInputLayout_passwordToggleContentDescription = 13;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#passwordToggleDrawable}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#passwordToggleDrawable}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:passwordToggleDrawable
+          @attr name ti.locationtrackerservice:passwordToggleDrawable
         */
         public static int TextInputLayout_passwordToggleDrawable = 12;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#passwordToggleEnabled}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#passwordToggleEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -12776,11 +12782,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:passwordToggleEnabled
+          @attr name ti.locationtrackerservice:passwordToggleEnabled
         */
         public static int TextInputLayout_passwordToggleEnabled = 11;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#passwordToggleTint}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#passwordToggleTint}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -12791,11 +12797,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:passwordToggleTint
+          @attr name ti.locationtrackerservice:passwordToggleTint
         */
         public static int TextInputLayout_passwordToggleTint = 14;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#passwordToggleTintMode}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#passwordToggleTintMode}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -12811,7 +12817,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:passwordToggleTintMode
+          @attr name ti.locationtrackerservice:passwordToggleTintMode
         */
         public static int TextInputLayout_passwordToggleTintMode = 15;
         /** Attributes that can be used with a Toolbar.
@@ -12822,33 +12828,33 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_buttonGravity ti.locationupdatesservice:buttonGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription ti.locationupdatesservice:collapseContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon ti.locationupdatesservice:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd ti.locationupdatesservice:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEndWithActions ti.locationupdatesservice:contentInsetEndWithActions}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft ti.locationupdatesservice:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight ti.locationupdatesservice:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart ti.locationupdatesservice:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation ti.locationupdatesservice:contentInsetStartWithNavigation}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logo ti.locationupdatesservice:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logoDescription ti.locationupdatesservice:logoDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight ti.locationupdatesservice:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription ti.locationupdatesservice:navigationContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon ti.locationupdatesservice:navigationIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme ti.locationupdatesservice:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle ti.locationupdatesservice:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance ti.locationupdatesservice:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextColor ti.locationupdatesservice:subtitleTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title ti.locationupdatesservice:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargin ti.locationupdatesservice:titleMargin}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom ti.locationupdatesservice:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd ti.locationupdatesservice:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart ti.locationupdatesservice:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop ti.locationupdatesservice:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins ti.locationupdatesservice:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance ti.locationupdatesservice:titleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextColor ti.locationupdatesservice:titleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_buttonGravity ti.locationtrackerservice:buttonGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription ti.locationtrackerservice:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon ti.locationtrackerservice:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd ti.locationtrackerservice:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEndWithActions ti.locationtrackerservice:contentInsetEndWithActions}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft ti.locationtrackerservice:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight ti.locationtrackerservice:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart ti.locationtrackerservice:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation ti.locationtrackerservice:contentInsetStartWithNavigation}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logo ti.locationtrackerservice:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logoDescription ti.locationtrackerservice:logoDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight ti.locationtrackerservice:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription ti.locationtrackerservice:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon ti.locationtrackerservice:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme ti.locationtrackerservice:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle ti.locationtrackerservice:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance ti.locationtrackerservice:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextColor ti.locationtrackerservice:subtitleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title ti.locationtrackerservice:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargin ti.locationtrackerservice:titleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom ti.locationtrackerservice:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd ti.locationtrackerservice:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart ti.locationtrackerservice:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop ti.locationtrackerservice:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins ti.locationtrackerservice:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance ti.locationtrackerservice:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextColor ti.locationtrackerservice:titleTextColor}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -12903,7 +12909,7 @@ containing a value of this type.
         */
         public static int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#buttonGravity}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#buttonGravity}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12916,11 +12922,11 @@ containing a value of this type.
 <tr><td><code>top</code></td><td>0x30</td><td></td></tr>
 <tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:buttonGravity
+          @attr name ti.locationtrackerservice:buttonGravity
         */
         public static int Toolbar_buttonGravity = 20;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12930,21 +12936,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:collapseContentDescription
+          @attr name ti.locationtrackerservice:collapseContentDescription
         */
         public static int Toolbar_collapseContentDescription = 22;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:collapseIcon
+          @attr name ti.locationtrackerservice:collapseIcon
         */
         public static int Toolbar_collapseIcon = 21;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12956,11 +12962,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:contentInsetEnd
+          @attr name ti.locationtrackerservice:contentInsetEnd
         */
         public static int Toolbar_contentInsetEnd = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#contentInsetEndWithActions}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#contentInsetEndWithActions}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12972,11 +12978,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:contentInsetEndWithActions
+          @attr name ti.locationtrackerservice:contentInsetEndWithActions
         */
         public static int Toolbar_contentInsetEndWithActions = 9;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -12988,11 +12994,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:contentInsetLeft
+          @attr name ti.locationtrackerservice:contentInsetLeft
         */
         public static int Toolbar_contentInsetLeft = 6;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -13004,11 +13010,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:contentInsetRight
+          @attr name ti.locationtrackerservice:contentInsetRight
         */
         public static int Toolbar_contentInsetRight = 7;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -13020,11 +13026,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:contentInsetStart
+          @attr name ti.locationtrackerservice:contentInsetStart
         */
         public static int Toolbar_contentInsetStart = 4;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#contentInsetStartWithNavigation}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#contentInsetStartWithNavigation}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -13036,21 +13042,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:contentInsetStartWithNavigation
+          @attr name ti.locationtrackerservice:contentInsetStartWithNavigation
         */
         public static int Toolbar_contentInsetStartWithNavigation = 8;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#logo}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#logo}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:logo
+          @attr name ti.locationtrackerservice:logo
         */
         public static int Toolbar_logo = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#logoDescription}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#logoDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -13060,11 +13066,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:logoDescription
+          @attr name ti.locationtrackerservice:logoDescription
         */
         public static int Toolbar_logoDescription = 25;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -13076,11 +13082,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:maxButtonHeight
+          @attr name ti.locationtrackerservice:maxButtonHeight
         */
         public static int Toolbar_maxButtonHeight = 19;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -13090,31 +13096,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:navigationContentDescription
+          @attr name ti.locationtrackerservice:navigationContentDescription
         */
         public static int Toolbar_navigationContentDescription = 24;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:navigationIcon
+          @attr name ti.locationtrackerservice:navigationIcon
         */
         public static int Toolbar_navigationIcon = 23;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:popupTheme
+          @attr name ti.locationtrackerservice:popupTheme
         */
         public static int Toolbar_popupTheme = 10;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -13124,21 +13130,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:subtitle
+          @attr name ti.locationtrackerservice:subtitle
         */
         public static int Toolbar_subtitle = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:subtitleTextAppearance
+          @attr name ti.locationtrackerservice:subtitleTextAppearance
         */
         public static int Toolbar_subtitleTextAppearance = 12;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#subtitleTextColor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#subtitleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -13149,11 +13155,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:subtitleTextColor
+          @attr name ti.locationtrackerservice:subtitleTextColor
         */
         public static int Toolbar_subtitleTextColor = 27;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#title}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -13163,11 +13169,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:title
+          @attr name ti.locationtrackerservice:title
         */
         public static int Toolbar_title = 28;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#titleMargin}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#titleMargin}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -13179,11 +13185,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:titleMargin
+          @attr name ti.locationtrackerservice:titleMargin
         */
         public static int Toolbar_titleMargin = 13;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -13195,11 +13201,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:titleMarginBottom
+          @attr name ti.locationtrackerservice:titleMarginBottom
         */
         public static int Toolbar_titleMarginBottom = 17;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -13211,11 +13217,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:titleMarginEnd
+          @attr name ti.locationtrackerservice:titleMarginEnd
         */
         public static int Toolbar_titleMarginEnd = 15;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -13227,11 +13233,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:titleMarginStart
+          @attr name ti.locationtrackerservice:titleMarginStart
         */
         public static int Toolbar_titleMarginStart = 14;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -13243,11 +13249,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:titleMarginTop
+          @attr name ti.locationtrackerservice:titleMarginTop
         */
         public static int Toolbar_titleMarginTop = 16;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -13259,21 +13265,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:titleMargins
+          @attr name ti.locationtrackerservice:titleMargins
         */
         public static int Toolbar_titleMargins = 18;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:titleTextAppearance
+          @attr name ti.locationtrackerservice:titleTextAppearance
         */
         public static int Toolbar_titleTextAppearance = 11;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#titleTextColor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#titleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -13284,7 +13290,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:titleTextColor
+          @attr name ti.locationtrackerservice:titleTextColor
         */
         public static int Toolbar_titleTextColor = 26;
         /** Attributes that can be used with a View.
@@ -13295,9 +13301,9 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
            <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd ti.locationupdatesservice:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart ti.locationupdatesservice:paddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_theme ti.locationupdatesservice:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd ti.locationtrackerservice:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart ti.locationtrackerservice:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_theme ti.locationtrackerservice:theme}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_android_theme
@@ -13322,7 +13328,7 @@ containing a value of this type.
         */
         public static int View_android_theme = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -13334,11 +13340,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:paddingEnd
+          @attr name ti.locationtrackerservice:paddingEnd
         */
         public static int View_paddingEnd = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -13350,17 +13356,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:paddingStart
+          @attr name ti.locationtrackerservice:paddingStart
         */
         public static int View_paddingStart = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#theme}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#theme}
           attribute's value can be found in the {@link #View} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:theme
+          @attr name ti.locationtrackerservice:theme
         */
         public static int View_theme = 4;
         /** Attributes that can be used with a ViewBackgroundHelper.
@@ -13370,8 +13376,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint ti.locationupdatesservice:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode ti.locationupdatesservice:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint ti.locationtrackerservice:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode ti.locationtrackerservice:backgroundTintMode}</code></td><td></td></tr>
            </table>
            @see #ViewBackgroundHelper_android_background
            @see #ViewBackgroundHelper_backgroundTint
@@ -13387,7 +13393,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static int ViewBackgroundHelper_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#backgroundTint}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -13398,11 +13404,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:backgroundTint
+          @attr name ti.locationtrackerservice:backgroundTint
         */
         public static int ViewBackgroundHelper_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -13418,7 +13424,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:backgroundTintMode
+          @attr name ti.locationtrackerservice:backgroundTintMode
         */
         public static int ViewBackgroundHelper_backgroundTintMode = 2;
         /** Attributes that can be used with a ViewStubCompat.
@@ -13462,10 +13468,10 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_appTheme ti.locationupdatesservice:appTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_environment ti.locationupdatesservice:environment}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentMode ti.locationupdatesservice:fragmentMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle ti.locationupdatesservice:fragmentStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_appTheme ti.locationtrackerservice:appTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_environment ti.locationtrackerservice:environment}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fragmentMode ti.locationtrackerservice:fragmentMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle ti.locationtrackerservice:fragmentStyle}</code></td><td></td></tr>
            </table>
            @see #WalletFragmentOptions_appTheme
            @see #WalletFragmentOptions_environment
@@ -13476,7 +13482,7 @@ containing a value of this type.
             0x7f0101a0, 0x7f0101a1, 0x7f0101a2, 0x7f0101a3
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#appTheme}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#appTheme}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
@@ -13489,11 +13495,11 @@ containing a value of this type.
 <tr><td><code>holo_dark</code></td><td>0</td><td></td></tr>
 <tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:appTheme
+          @attr name ti.locationtrackerservice:appTheme
         */
         public static int WalletFragmentOptions_appTheme = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#environment}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#environment}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
@@ -13508,11 +13514,11 @@ containing a value of this type.
 <tr><td><code>sandbox</code></td><td>0</td><td></td></tr>
 <tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:environment
+          @attr name ti.locationtrackerservice:environment
         */
         public static int WalletFragmentOptions_environment = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#fragmentMode}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#fragmentMode}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
@@ -13525,17 +13531,17 @@ containing a value of this type.
 <tr><td><code>buyButton</code></td><td>1</td><td></td></tr>
 <tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:fragmentMode
+          @attr name ti.locationtrackerservice:fragmentMode
         */
         public static int WalletFragmentOptions_fragmentMode = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#fragmentStyle}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#fragmentStyle}
           attribute's value can be found in the {@link #WalletFragmentOptions} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:fragmentStyle
+          @attr name ti.locationtrackerservice:fragmentStyle
         */
         public static int WalletFragmentOptions_fragmentStyle = 2;
         /** Attributes that can be used with a WalletFragmentStyle.
@@ -13544,17 +13550,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance ti.locationupdatesservice:buyButtonAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight ti.locationupdatesservice:buyButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText ti.locationupdatesservice:buyButtonText}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth ti.locationupdatesservice:buyButtonWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground ti.locationupdatesservice:maskedWalletDetailsBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground ti.locationupdatesservice:maskedWalletDetailsButtonBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance ti.locationupdatesservice:maskedWalletDetailsButtonTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance ti.locationupdatesservice:maskedWalletDetailsHeaderTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType ti.locationupdatesservice:maskedWalletDetailsLogoImageType}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoTextColor ti.locationupdatesservice:maskedWalletDetailsLogoTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance ti.locationupdatesservice:maskedWalletDetailsTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance ti.locationtrackerservice:buyButtonAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight ti.locationtrackerservice:buyButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText ti.locationtrackerservice:buyButtonText}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth ti.locationtrackerservice:buyButtonWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground ti.locationtrackerservice:maskedWalletDetailsBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground ti.locationtrackerservice:maskedWalletDetailsButtonBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance ti.locationtrackerservice:maskedWalletDetailsButtonTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance ti.locationtrackerservice:maskedWalletDetailsHeaderTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType ti.locationtrackerservice:maskedWalletDetailsLogoImageType}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoTextColor ti.locationtrackerservice:maskedWalletDetailsLogoTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance ti.locationtrackerservice:maskedWalletDetailsTextAppearance}</code></td><td></td></tr>
            </table>
            @see #WalletFragmentStyle_buyButtonAppearance
            @see #WalletFragmentStyle_buyButtonHeight
@@ -13574,7 +13580,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0101ac, 0x7f0101ad, 0x7f0101ae
         };
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#buyButtonAppearance}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#buyButtonAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -13594,11 +13600,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>grayscale</code></td><td>2</td><td></td></tr>
 <tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:buyButtonAppearance
+          @attr name ti.locationtrackerservice:buyButtonAppearance
         */
         public static int WalletFragmentStyle_buyButtonAppearance = 3;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#buyButtonHeight}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#buyButtonHeight}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -13619,11 +13625,11 @@ containing a value of this type.
 <tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:buyButtonHeight
+          @attr name ti.locationtrackerservice:buyButtonHeight
         */
         public static int WalletFragmentStyle_buyButtonHeight = 0;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#buyButtonText}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#buyButtonText}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -13641,11 +13647,11 @@ containing a value of this type.
 <tr><td><code>book_now</code></td><td>3</td><td></td></tr>
 <tr><td><code>donate_with_google</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:buyButtonText
+          @attr name ti.locationtrackerservice:buyButtonText
         */
         public static int WalletFragmentStyle_buyButtonText = 2;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#buyButtonWidth}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#buyButtonWidth}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -13666,11 +13672,11 @@ containing a value of this type.
 <tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
 <tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:buyButtonWidth
+          @attr name ti.locationtrackerservice:buyButtonWidth
         */
         public static int WalletFragmentStyle_buyButtonWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#maskedWalletDetailsBackground}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#maskedWalletDetailsBackground}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -13678,11 +13684,11 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ti.locationupdatesservice:maskedWalletDetailsBackground
+          @attr name ti.locationtrackerservice:maskedWalletDetailsBackground
         */
         public static int WalletFragmentStyle_maskedWalletDetailsBackground = 6;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#maskedWalletDetailsButtonBackground}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#maskedWalletDetailsButtonBackground}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -13690,31 +13696,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name ti.locationupdatesservice:maskedWalletDetailsButtonBackground
+          @attr name ti.locationtrackerservice:maskedWalletDetailsButtonBackground
         */
         public static int WalletFragmentStyle_maskedWalletDetailsButtonBackground = 8;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#maskedWalletDetailsButtonTextAppearance}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#maskedWalletDetailsButtonTextAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:maskedWalletDetailsButtonTextAppearance
+          @attr name ti.locationtrackerservice:maskedWalletDetailsButtonTextAppearance
         */
         public static int WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#maskedWalletDetailsHeaderTextAppearance}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#maskedWalletDetailsHeaderTextAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:maskedWalletDetailsHeaderTextAppearance
+          @attr name ti.locationtrackerservice:maskedWalletDetailsHeaderTextAppearance
         */
         public static int WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#maskedWalletDetailsLogoImageType}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#maskedWalletDetailsLogoImageType}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -13730,11 +13736,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>classic</code></td><td>1</td><td></td></tr>
 <tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name ti.locationupdatesservice:maskedWalletDetailsLogoImageType
+          @attr name ti.locationtrackerservice:maskedWalletDetailsLogoImageType
         */
         public static int WalletFragmentStyle_maskedWalletDetailsLogoImageType = 10;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#maskedWalletDetailsLogoTextColor}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#maskedWalletDetailsLogoTextColor}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
@@ -13745,17 +13751,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name ti.locationupdatesservice:maskedWalletDetailsLogoTextColor
+          @attr name ti.locationtrackerservice:maskedWalletDetailsLogoTextColor
         */
         public static int WalletFragmentStyle_maskedWalletDetailsLogoTextColor = 9;
         /**
-          <p>This symbol is the offset where the {@link ti.locationupdatesservice.R.attr#maskedWalletDetailsTextAppearance}
+          <p>This symbol is the offset where the {@link ti.locationtrackerservice.R.attr#maskedWalletDetailsTextAppearance}
           attribute's value can be found in the {@link #WalletFragmentStyle} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name ti.locationupdatesservice:maskedWalletDetailsTextAppearance
+          @attr name ti.locationtrackerservice:maskedWalletDetailsTextAppearance
         */
         public static int WalletFragmentStyle_maskedWalletDetailsTextAppearance = 4;
     };

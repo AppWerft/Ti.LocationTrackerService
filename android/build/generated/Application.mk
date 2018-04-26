@@ -1,4 +1,4 @@
-# Main NDK build script for ti.locationupdatesservice
+# Main NDK build script for ti.locationtrackerservice
 
 APP_BUILD_SCRIPT := jni/Android.mk
 TARGET_PLATFORM := android-19

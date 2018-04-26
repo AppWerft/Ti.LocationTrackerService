@@ -1000,6 +1000,7 @@
 	<integer name="show_password_duration">200</integer>
 	<integer name="google_play_services_version">11020000</integer>
 	<integer name="cast_libraries_material_featurehighlight_pulse_base_alpha">138</integer>
+	<integer name="interval">10</integer>
 	<style name="TextAppearance.Compat.Notification.Info.Media"/>
 	<style name="TextAppearance.Compat.Notification.Line2.Media" parent="TextAppearance.Compat.Notification.Info.Media"/>
 	<style name="TextAppearance.Compat.Notification.Media"/>
@@ -2770,8 +2771,10 @@
 	<string name="cast_tracks_chooser_dialog_subtitles">Subtitles</string>
 	<string name="cast_unmute">Unmute</string>
 	<string name="wallet_buy_button_place_holder">Buy with Google</string>
-	<string name="ic_start_tracking">Start</string>
-	<string name="ic_stop_tracking">Stop</string>
+	<string name="subText">subText</string>
+	<string name="contentText">all texts/parameters you can edit in res/values/…</string>
+	<string name="contentTitle">contentTitle</string>
+	<string name="channel">channel</string>
 	<drawable name="notification_template_icon_bg">#3333B5E5</drawable>
 	<drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
 	<array name="cast_expanded_controller_default_control_buttons"><item>@id/cast_button_type_closed_caption</item>

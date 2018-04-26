@@ -16,7 +16,7 @@ function moduleBootstrap(moduleBinding) {
 			name, namespace, moduleBinding.getBinding);
 	}
 
-	var module = moduleBinding.getBinding("ti.locationupdatesservice.LocationupdatesserviceModule")["Locationupdatesservice"];
+	var module = moduleBinding.getBinding("ti.locationtrackerservice.LocationupdatesserviceModule")["Locationupdatesservice"];
 	var invocationAPIs = module.invocationAPIs = [];
 	module.apiName = "Locationupdatesservice";
 
@@ -24,8 +24,23 @@ function moduleBootstrap(moduleBinding) {
 		invocationAPIs.push({ namespace: namespace, api: api });
 	}
 
-	
-	return module;
+	addInvocationAPI(module, "Locationupdatesservice", "Locationupdatesservice", "createTracker");
+		if (!("__propertiesDefined__" in module)) {Object.defineProperties(module, {
+"Tracker": {
+get: function() {
+var Tracker =  lazyGet(this, "ti.locationtrackerservice.TrackerProxy", "Tracker", "Tracker");
+return Tracker;
+},
+configurable: true
+},
+
+});
+module.constructor.prototype.createTracker = function() {
+return new module["Tracker"](arguments);
+}
+}
+module.__propertiesDefined__ = true;
+return module;
 
 }
 exports.bootstrap = moduleBootstrap;
