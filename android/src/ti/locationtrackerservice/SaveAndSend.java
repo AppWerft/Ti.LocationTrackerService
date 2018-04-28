@@ -14,7 +14,7 @@ public class SaveAndSend {
 	private Context ctx;
 	private String database;
 
-	public SaveAndSend(Context ctx, Location location, String database) {
+	public SaveAndSend(Context ctx, Location location) {
 		this.ctx = ctx;
 		this.database = database;
 		saveToSQL(location);

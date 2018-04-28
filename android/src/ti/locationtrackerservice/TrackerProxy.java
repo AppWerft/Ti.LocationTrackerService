@@ -34,29 +34,6 @@ public class TrackerProxy extends KrollProxy {
 	private KrollFunction onLocationCallback;
 	private static String LCAT = LocationupdatesserviceModule.LCAT;
 
-	public static class MessageEvent {
-		public final KrollDict message;
-
-		public MessageEvent(KrollDict message) {
-			this.message = message;
-		}
-
-		public String getSubText() {
-			return (message.containsKey("subText")) ? message
-					.getString("subText") : null;
-		}
-
-		public String getContentText() {
-			return (message.containsKey("contentText")) ? message
-					.getString("contentText") : null;
-		}
-
-		public String getContentTitle() {
-			return (message.containsKey("contentTitle")) ? message
-					.getString("contentTitle") : null;
-		}
-	}
-
 	private static final String PACKAGE_NAME = TiApplication.getInstance()
 			.getPackageName();
 	static final String ACTION_BROADCAST = PACKAGE_NAME + ".broadcast";
@@ -196,7 +173,8 @@ public class TrackerProxy extends KrollProxy {
 					startTracking = notification.getString("startTracking");
 				if (notification.containsKeyAndNotNull("stopTracking"))
 					stopTracking = notification.getString("stopTracking");
-				EventBus.getDefault().post(new MessageEvent(notification));
+				EventBus.getDefault().post(
+						new Messages.TrackerEvent(notification));
 			}
 		}
 	}
@@ -227,6 +205,7 @@ public class TrackerProxy extends KrollProxy {
 
 		if (o instanceof AdapterProxy) {
 			adapter = ((AdapterProxy) o).getAdapter();
+			EventBus.getDefault().post(new Messages.AdapterEvent(adapter));
 		}
 	}
 

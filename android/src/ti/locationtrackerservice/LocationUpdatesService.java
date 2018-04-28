@@ -1,17 +1,19 @@
 package ti.locationtrackerservice;
 
+import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.titanium.TiApplication;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
-import org.greenrobot.eventbus.ThreadMode;
 
-import ti.locationtrackerservice.LocationupdatesserviceModule.MessageEvent;
+import ti.locationtrackerservice.Messages.NotificationEvent;
+import ti.locationtrackerservice.Messages.TrackerEvent;
 import android.app.ActivityManager;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -21,9 +23,6 @@ import android.os.Build;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.IBinder;
-import android.os.Message;
-import android.os.Messenger;
-import android.content.ComponentName;
 import android.os.Looper;
 //import android.support.annotation.NonNull;
 import android.support.v4.content.LocalBroadcastManager;
@@ -62,9 +61,12 @@ public class LocationUpdatesService extends Service {
 	 * The desired interval for location updates. Inexact. Updates may be more
 	 * or less frequent.
 	 */
+	private KrollDict notificationOpts = new KrollDict();
+	private KrollDict trackerOpts = new KrollDict();
+
 	private static String contentTitle = null;
 	private String contentText = null;
-	private static String subText = null;
+
 	private int priority = 102;
 	private int interval = 10;
 	private final long UPDATE_INTERVAL_IN_MILLISECONDS = interval;
@@ -116,15 +118,21 @@ public class LocationUpdatesService extends Service {
 
 	public LocationUpdatesService() {
 		// super();
+		trackerOpts.put("interval", 10000);
+		trackerOpts.put("priority", 104);
 		ctx = TiApplication.getInstance().getApplicationContext();
 		packageName = TiApplication.getInstance().getPackageName();
 		className = packageName
 				+ "."
 				+ TiApplication.getAppRootOrCurrentActivity()
 						.getLocalClassName();
-		subText = getString(R("subText", "string"));
-		contentText = getString(R("contentText", "string"));
-		contentTitle = getString(R("contentTitle", "string"));
+		notificationOpts.put("subText", getString(R("subText", "string")));
+		notificationOpts.put("contentText",
+				getString(R("contentText", "string")));
+		notificationOpts.put("contentTitle",
+				getString(R("contentTitle", "string")));
+		notificationOpts.put("channel", "Channel");
+
 	}
 
 	@Override
@@ -150,7 +158,7 @@ public class LocationUpdatesService extends Service {
 
 		// Android O requires a Notification Channel.
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-			CharSequence name = LocationupdatesserviceModule.notificationChannel;
+			CharSequence name = notificationOpts.getString("channel");
 			// Create the channel for the notification
 			NotificationChannel mChannel = new NotificationChannel(CHANNEL_ID,
 					name, NotificationManager.IMPORTANCE_DEFAULT);
@@ -240,10 +248,17 @@ public class LocationUpdatesService extends Service {
 	}
 
 	@Subscribe
-	public void onMessageEvent(MessageEvent event) {
-		contentTitle = event.getContentTitle();
-		contentText = event.getContentText();
-		subText = event.getSubText();
+	public void onNotificationEvent(NotificationEvent event) {
+		for (String key : event.message.keySet()) {
+			notificationOpts.put(key, event.message.getString(key));
+		}
+	}
+
+	@Subscribe
+	public void onTrackerEvent(TrackerEvent event) {
+		for (String key : event.message.keySet()) {
+			trackerOpts.put(key, event.message.getString(key));
+		}
 	}
 
 	@Override
@@ -299,10 +314,8 @@ public class LocationUpdatesService extends Service {
 	 */
 	@SuppressWarnings("deprecation")
 	private Notification getNotification() {
-
 		Log.i(LCAT, "getNotification started");
 		Intent intent = new Intent(this, LocationUpdatesService.class);
-
 		// Extra to help us figure out if we arrived in onStartCommand via the
 		// notification or not.
 		intent.putExtra(EXTRA_STARTED_FROM_NOTIFICATION, true);
@@ -329,21 +342,23 @@ public class LocationUpdatesService extends Service {
 		// https://stackoverflow.com/questions/45462666/notificationcompat-builder-deprecated-in-android-o
 		Log.i(LCAT, "intents built");
 		Notification.Builder builder = new Notification.Builder(ctx);
-		if (LocationupdatesserviceModule.startTracking != null)
-			builder.addAction(R("tracker_launch_icon", "drawable"),
-					LocationupdatesserviceModule.startTracking,
-					activityPendingIntent);
-		if (LocationupdatesserviceModule.stopTracking != null)
-			builder.addAction(R("tracker_cancel_icon", "drawable"),
-					LocationupdatesserviceModule.stopTracking,
-					servicePendingIntent);
+		/*
+		 * if (LocationupdatesserviceModule.startTracking != null)
+		 * builder.addAction(R("tracker_launch_icon", "drawable"),
+		 * LocationupdatesserviceModule.startTracking, activityPendingIntent);
+		 * if (LocationupdatesserviceModule.stopTracking != null)
+		 * builder.addAction(R("tracker_cancel_icon", "drawable"),
+		 * LocationupdatesserviceModule.stopTracking, servicePendingIntent);
+		 */
 		// Log.i(LCAT, LocationupdatesserviceModule.contentText);
 		builder.setContentTitle(contentTitle).setOngoing(true)
 				.setPriority(Notification.FLAG_HIGH_PRIORITY)
 				.setContentIntent(activityPendingIntent)
-				.setSmallIcon(R("ic_launcher", "mipmap")).setSubText(subText)
-				.setVibrate(null).setContentText(contentText)
-				.setWhen(System.currentTimeMillis());
+				.setSmallIcon(R("ic_launcher", "mipmap"))
+				.setSubText(notificationOpts.getString("subText"))
+				.setContentText(notificationOpts.getString("contentText"))
+				.setContentTitle(notificationOpts.getString("contentTitle"))
+				.setVibrate(null).setWhen(System.currentTimeMillis());
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 			builder.setChannelId(CHANNEL_ID); // Channel ID
 		}
@@ -383,25 +398,21 @@ public class LocationUpdatesService extends Service {
 		intent.putExtra("INFOREGROUND", isForeground);
 		LocalBroadcastManager.getInstance(getApplicationContext())
 				.sendBroadcast(intent);
+		new SaveAndSend(ctx, location);
 
-		if (LocationupdatesserviceModule.database != null) {
-			new SaveAndSend(ctx, location,
-					LocationupdatesserviceModule.database);
-		}
 	}
 
 	/**
 	 * Sets the location request parameters.
 	 */
 	private void createLocationRequest() {
-		Log.i(LCAT, "createLocationRequest: " + UPDATE_INTERVAL_IN_MILLISECONDS);
+
 		mLocationRequest = new LocationRequest();
-		mLocationRequest.setInterval(UPDATE_INTERVAL_IN_MILLISECONDS);
-		mLocationRequest
-				.setFastestInterval(FASTEST_UPDATE_INTERVAL_IN_MILLISECONDS);
+		mLocationRequest.setInterval(trackerOpts.getInt("interval"));
+		mLocationRequest.setFastestInterval(trackerOpts.getInt("interval"));
 		Log.i(LCAT, "setPriority: " + priority);
 		if (priority > 0)
-			mLocationRequest.setPriority(priority);
+			mLocationRequest.setPriority(trackerOpts.getInt("priority"));
 	}
 
 	/**
@@ -435,6 +446,11 @@ public class LocationUpdatesService extends Service {
 			}
 		}
 		return false;
+	}
+
+	public void onStop() {
+		EventBus.getDefault().unregister(this);
+		super.onStop();
 	}
 
 	/* helper function for safety getting resources */
