@@ -8,39 +8,16 @@
  */
 package ti.locationtrackerservice;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
-import org.appcelerator.kroll.KrollDict;
-import org.appcelerator.kroll.KrollFunction;
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.annotations.Kroll;
 import org.appcelerator.kroll.common.Log;
 import org.appcelerator.titanium.TiApplication;
-import org.greenrobot.eventbus.EventBus;
 
-import com.google.android.gms.location.LocationRequest;
-
-import android.os.Message;
-import android.os.Messenger;
-import android.os.RemoteException;
 import android.Manifest;
-import android.app.Activity;
-import android.content.BroadcastReceiver;
-import android.content.ComponentName;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.content.ServiceConnection;
-import android.content.SharedPreferences;
-import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.LocalBroadcastManager;
-import android.graphics.Bitmap;
-import android.location.Location;
-import android.os.IBinder;
-import android.preference.PreferenceManager;
+
+import com.google.android.gms.location.LocationRequest;
 
 @Kroll.module(name = "Locationupdatesservice", id = "ti.locationupdatesservice")
 public class LocationupdatesserviceModule extends KrollModule {
@@ -67,4 +44,10 @@ public class LocationupdatesserviceModule extends KrollModule {
 		Log.d(LCAT, "inside onAppCreate");
 	}
 
+	@Kroll.method
+	public boolean checkPermissions() {
+		return PackageManager.PERMISSION_GRANTED == ActivityCompat
+				.checkSelfPermission(TiApplication.getInstance(),
+						Manifest.permission.ACCESS_FINE_LOCATION);
+	}
 }

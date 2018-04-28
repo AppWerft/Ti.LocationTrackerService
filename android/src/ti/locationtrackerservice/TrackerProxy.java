@@ -1,7 +1,5 @@
 package ti.locationtrackerservice;
 
-import java.util.List;
-
 import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.kroll.KrollFunction;
 import org.appcelerator.kroll.KrollModule;
@@ -11,7 +9,6 @@ import org.appcelerator.kroll.common.Log;
 import org.appcelerator.titanium.TiApplication;
 import org.greenrobot.eventbus.EventBus;
 
-import ti.locationtrackerservice.LocationupdatesserviceModule.MessageEvent;
 import android.Manifest;
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -91,7 +88,7 @@ public class TrackerProxy extends KrollProxy {
 	private LocationUpdatesService locationTrackingService = null;
 	// https://stackoverflow.com/questions/6454668/sending-stringdata-from-activity-to-service-android
 	private Messenger mService = null;
-
+	private KrollDict adapter;
 	// Tracks the bound state of the service.
 	private boolean boundState = false;
 	// Monitors the state of the connection to the service.
@@ -225,17 +222,19 @@ public class TrackerProxy extends KrollProxy {
 
 	}
 
+	@Kroll.method
+	public void addAdapter(Object o) {
+
+		if (o instanceof AdapterProxy) {
+			adapter = ((AdapterProxy) o).getAdapter();
+		}
+	}
+
 	private static String getApplicationName(Context context) {
 		ApplicationInfo applicationInfo = context.getApplicationInfo();
 		int stringId = applicationInfo.labelRes;
 		return stringId == 0 ? applicationInfo.nonLocalizedLabel.toString()
 				: context.getString(stringId);
-	}
-
-	private boolean checkPermissions() {
-		return PackageManager.PERMISSION_GRANTED == ActivityCompat
-				.checkSelfPermission(ctx,
-						Manifest.permission.ACCESS_FINE_LOCATION);
 	}
 
 	/* Lifecycles */

@@ -13,12 +13,12 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/opt/android-sdk/extras/android/support/v7/appcompat/libs/android-support-v4.jar"/>
-	<classpathentry kind="lib" path="/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationUpdatesService/android/libs4ide/tasks_11.0.4.jar"/>
-	<classpathentry kind="lib" path="/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationUpdatesService/android/libs4ide/base_11.0.4.jar"/>
-	<classpathentry kind="lib" path="/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationUpdatesService/android/libs4ide/basement_11.0.4.jar"/>
-	<classpathentry kind="lib" path="/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationUpdatesService/android/libs4ide/location_11.0.4.jar"/>
-	<classpathentry kind="lib" path="/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationUpdatesService/android/libs4ide/android-support-v7_26.jar"/>
-	<classpathentry kind="lib" path="/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationUpdatesService/android/lib/eventbus-3.1.1.jar"/>
-	<classpathentry kind="lib" path="/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationUpdatesService/android/lib/android-async-http-1.4.9.jar"/>
+	<classpathentry kind="lib" path="/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/libs4ide/tasks_11.0.4.jar"/>
+	<classpathentry kind="lib" path="/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/libs4ide/base_11.0.4.jar"/>
+	<classpathentry kind="lib" path="/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/libs4ide/basement_11.0.4.jar"/>
+	<classpathentry kind="lib" path="/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/libs4ide/location_11.0.4.jar"/>
+	<classpathentry kind="lib" path="/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/libs4ide/android-support-v7_26.jar"/>
+	<classpathentry kind="lib" path="/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/lib/eventbus-3.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/lib/android-async-http-1.4.9.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

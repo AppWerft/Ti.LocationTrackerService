@@ -38,21 +38,21 @@ Tracker.setNotification(notification({
 		largeIcon : "/assets/icon_on_right_side.png"  
 
 });
-Tracker.setAdapter( {  // not yet implemetented ;-(
-		uri: "https://"
-		requestHeaders: [],
-		extraParameters : {
-			uid : "1111",
-			foo : bar
-		},
-		method : "POST",
+var Adapter = GeoService.createAdapter({  // not yet implemetented ;-(
+		uri: "https://mybackend.com/endpoint?my_extra_paramter=1234"
+		requestHeaders: ["Accesstoken:DE34B6721"],
+		method : "POST", // or PUT
 		timeout : 100000
 });
+Tracker.addAdapter(Adapter);
 
 Tracker.requestLocationUpdates();
 
 // later:
 Tracker.removeLocationUpdates();
+
+var link = Ti.Database.open(GeoService.DATABASE);
+linl.execSQL("SELECT * FROM " + GeoSewrvice.TABLE + " WHERE done=0 ORDER BY time");
 
 ```
 The parameters for notification you can modify in res folder of module or as opts
