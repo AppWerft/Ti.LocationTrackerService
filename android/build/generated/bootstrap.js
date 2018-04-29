@@ -24,8 +24,15 @@ function moduleBootstrap(moduleBinding) {
 		invocationAPIs.push({ namespace: namespace, api: api });
 	}
 
-	addInvocationAPI(module, "Locationupdatesservice", "Locationupdatesservice", "createTracker");
+	addInvocationAPI(module, "Locationupdatesservice", "Locationupdatesservice", "createAdapter");addInvocationAPI(module, "Locationupdatesservice", "Locationupdatesservice", "createTracker");
 		if (!("__propertiesDefined__" in module)) {Object.defineProperties(module, {
+"Adapter": {
+get: function() {
+var Adapter =  lazyGet(this, "ti.locationtrackerservice.AdapterProxy", "Adapter", "Adapter");
+return Adapter;
+},
+configurable: true
+},
 "Tracker": {
 get: function() {
 var Tracker =  lazyGet(this, "ti.locationtrackerservice.TrackerProxy", "Tracker", "Tracker");
@@ -35,6 +42,9 @@ configurable: true
 },
 
 });
+module.constructor.prototype.createAdapter = function() {
+return new module["Adapter"](arguments);
+}
 module.constructor.prototype.createTracker = function() {
 return new module["Tracker"](arguments);
 }

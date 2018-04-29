@@ -13,11 +13,12 @@
 
 namespace ti {
 namespace locationtrackerservice {
+	namespace locationupdatesservice {
 
-class LocationupdatesserviceModule : public titanium::Proxy
+class AdapterProxy : public titanium::Proxy
 {
 public:
-	explicit LocationupdatesserviceModule();
+	explicit AdapterProxy();
 
 	static void bindProxy(v8::Local<v8::Object>, v8::Local<v8::Context>);
 	static v8::Local<v8::FunctionTemplate> getProxyTemplate(v8::Isolate*);
@@ -29,11 +30,11 @@ private:
 	static v8::Persistent<v8::FunctionTemplate> proxyTemplate;
 
 	// Methods -----------------------------------------------------------
-	static void checkPermissions(const v8::FunctionCallbackInfo<v8::Value>&);
 
 	// Dynamic property accessors ----------------------------------------
 
 };
 
+	} // namespace locationupdatesservice
 } // locationtrackerservice
 } // ti

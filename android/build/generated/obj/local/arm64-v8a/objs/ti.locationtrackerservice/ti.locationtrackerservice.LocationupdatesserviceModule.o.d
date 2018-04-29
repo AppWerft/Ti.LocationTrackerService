@@ -1,4 +1,4 @@
-/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationUpdatesService/android/build/generated/obj/local/arm64-v8a/objs/ti.locationtrackerservice/ti.locationtrackerservice.LocationupdatesserviceModule.o: \
+/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/build/generated/obj/local/arm64-v8a/objs/ti.locationtrackerservice/ti.locationtrackerservice.LocationupdatesserviceModule.o: \
  jni/ti.locationtrackerservice.LocationupdatesserviceModule.cpp \
  jni/ti.locationtrackerservice.LocationupdatesserviceModule.h \
  /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/android/native/include/Proxy.h \
@@ -47,6 +47,7 @@
  /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/__tree \
  /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/functional \
  /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/android/native/include/V8Util.h \
+ jni/ti.locationtrackerservice.AdapterProxy.h \
  jni/ti.locationtrackerservice.TrackerProxy.h \
  /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/android/native/include/org.appcelerator.kroll.KrollModule.h \
  /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/android/native/include/Proxy.h
@@ -144,6 +145,8 @@ jni/ti.locationtrackerservice.LocationupdatesserviceModule.h:
 /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/functional:
 
 /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/android/native/include/V8Util.h:
+
+jni/ti.locationtrackerservice.AdapterProxy.h:
 
 jni/ti.locationtrackerservice.TrackerProxy.h:
 

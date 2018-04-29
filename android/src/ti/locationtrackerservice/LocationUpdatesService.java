@@ -5,6 +5,7 @@ import org.appcelerator.titanium.TiApplication;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 
+import ti.locationtrackerservice.Messages.AdapterEvent;
 import ti.locationtrackerservice.Messages.NotificationEvent;
 import ti.locationtrackerservice.Messages.TrackerEvent;
 import android.app.ActivityManager;
@@ -62,6 +63,8 @@ public class LocationUpdatesService extends Service {
 	 * or less frequent.
 	 */
 	private KrollDict notificationOpts = new KrollDict();
+	private KrollDict adapterOpts = new KrollDict();
+
 	private KrollDict trackerOpts = new KrollDict();
 
 	private static String contentTitle = null;
@@ -171,7 +174,7 @@ public class LocationUpdatesService extends Service {
 
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
-
+		EventBus.getDefault().register(this);
 		boolean startedFromNotification = intent.getBooleanExtra(
 				EXTRA_STARTED_FROM_NOTIFICATION, false);
 
@@ -256,9 +259,18 @@ public class LocationUpdatesService extends Service {
 
 	@Subscribe
 	public void onTrackerEvent(TrackerEvent event) {
+		if (event.message.containsKeyAndNotNull("interval"))
+			interval = event.message.getInt("interval");
+		if (event.message.containsKeyAndNotNull("priority"))
+			priority = event.message.getInt("priority");
+	}
+
+	@Subscribe
+	public void onAdapterEvent(AdapterEvent event) {
 		for (String key : event.message.keySet()) {
-			trackerOpts.put(key, event.message.getString(key));
+			adapterOpts.put(key, event.message.getString(key));
 		}
+
 	}
 
 	@Override
@@ -398,7 +410,7 @@ public class LocationUpdatesService extends Service {
 		intent.putExtra("INFOREGROUND", isForeground);
 		LocalBroadcastManager.getInstance(getApplicationContext())
 				.sendBroadcast(intent);
-		new SaveAndSend(ctx, location);
+		new SaveAndSend(ctx, location, adapterOpts);
 
 	}
 
@@ -406,7 +418,6 @@ public class LocationUpdatesService extends Service {
 	 * Sets the location request parameters.
 	 */
 	private void createLocationRequest() {
-
 		mLocationRequest = new LocationRequest();
 		mLocationRequest.setInterval(trackerOpts.getInt("interval"));
 		mLocationRequest.setFastestInterval(trackerOpts.getInt("interval"));
@@ -446,11 +457,6 @@ public class LocationUpdatesService extends Service {
 			}
 		}
 		return false;
-	}
-
-	public void onStop() {
-		EventBus.getDefault().unregister(this);
-		super.onStop();
 	}
 
 	/* helper function for safety getting resources */

@@ -2,6 +2,7 @@ package ti.locationtrackerservice;
 
 import java.util.Date;
 
+import org.appcelerator.kroll.KrollDict;
 import org.json.JSONArray;
 
 import android.content.Context;
@@ -12,11 +13,12 @@ import android.location.Location;
 public class SaveAndSend {
 	private static int MODE_PRIVATE = 0;
 	private Context ctx;
-	private String database;
+	private String database = "geologger";
+	private KrollDict adapterOpts;
 
-	public SaveAndSend(Context ctx, Location location) {
+	public SaveAndSend(Context ctx, Location location, KrollDict adapterOpts) {
 		this.ctx = ctx;
-		this.database = database;
+		this.adapterOpts = adapterOpts;
 		saveToSQL(location);
 		sendToServer();
 	}

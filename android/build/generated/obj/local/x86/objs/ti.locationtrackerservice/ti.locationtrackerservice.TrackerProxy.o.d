@@ -1,4 +1,4 @@
-/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationUpdatesService/android/build/generated/obj/local/x86/objs/ti.locationtrackerservice/ti.locationtrackerservice.TrackerProxy.o: \
+/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/build/generated/obj/local/x86/objs/ti.locationtrackerservice/ti.locationtrackerservice.TrackerProxy.o: \
  jni/ti.locationtrackerservice.TrackerProxy.cpp \
  jni/ti.locationtrackerservice.TrackerProxy.h \
  /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/android/native/include/Proxy.h \

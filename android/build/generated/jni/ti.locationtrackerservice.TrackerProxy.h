@@ -31,6 +31,7 @@ private:
 
 	// Methods -----------------------------------------------------------
 	static void removeLocationUpdates(const v8::FunctionCallbackInfo<v8::Value>&);
+	static void addAdapter(const v8::FunctionCallbackInfo<v8::Value>&);
 
 	// Dynamic property accessors ----------------------------------------
 

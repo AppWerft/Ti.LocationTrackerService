@@ -47,11 +47,6 @@ public class TrackerProxy extends KrollProxy {
 	public static String dbName = "geologger";
 	public static String notificationChannel = "channel1";
 
-	public static String subText = null;
-	public static String contentTitle = null;
-	public static String contentText = null;
-	public static String startTracking = null;
-	public static String stopTracking = null;
 	public static String database = null;
 	public static int interval = 10; // sec.
 	public static int duration = 0;
@@ -145,37 +140,12 @@ public class TrackerProxy extends KrollProxy {
 
 	@Override
 	public void handleCreationArgs(KrollModule createdInModule, Object[] args) {
+
 		if (args.length == 2 && args[0] instanceof KrollDict
 				&& args[0] instanceof KrollFunction) {
 			KrollDict opts = (KrollDict) args[0];
 			onLocationCallback = (KrollFunction) args[1];
-			Log.i(LCAT, "module.config " + opts.toString());
-			if (opts.containsKeyAndNotNull("database"))
-				database = opts.getString("database");
-			if (opts.containsKeyAndNotNull("notification")
-					&& opts.get("notification") instanceof KrollDict) {
-				KrollDict notification = opts.getKrollDict("notification");
-				if (notification.containsKeyAndNotNull("subText"))
-					subText = notification.getString("subText");
-				else
-					Log.w(LCAT, "no subText given");
-				if (notification.containsKeyAndNotNull("contentTitle"))
-					contentTitle = notification.getString("contentTitle");
-				else
-					Log.w(LCAT, "no contentTitle given");
-				if (notification.containsKeyAndNotNull("contentText"))
-					contentText = notification.getString("contentText");
-				else
-					Log.w(LCAT, "no contevtText given");
-				if (notification.containsKeyAndNotNull("channel"))
-					notificationChannel = notification.getString("channel");
-				if (notification.containsKeyAndNotNull("startTracking"))
-					startTracking = notification.getString("startTracking");
-				if (notification.containsKeyAndNotNull("stopTracking"))
-					stopTracking = notification.getString("stopTracking");
-				EventBus.getDefault().post(
-						new Messages.TrackerEvent(notification));
-			}
+			EventBus.getDefault().post(new Messages.TrackerEvent(opts));
 		}
 	}
 

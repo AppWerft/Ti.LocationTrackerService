@@ -17,6 +17,7 @@
 
 
 
+#include "ti.locationtrackerservice.AdapterProxy.h"
 #include "ti.locationtrackerservice.TrackerProxy.h"
 
 #include "org.appcelerator.kroll.KrollModule.h"
@@ -93,9 +94,7 @@ Local<FunctionTemplate> LocationupdatesserviceModule::getProxyTemplate(Isolate* 
 		FunctionTemplate::New(isolate, titanium::Proxy::inherit<LocationupdatesserviceModule>));
 
 	// Method bindings --------------------------------------------------------
-	titanium::SetProtoMethod(isolate, t, "removeLocationUpdates", LocationupdatesserviceModule::removeLocationUpdates);
-	titanium::SetProtoMethod(isolate, t, "config", LocationupdatesserviceModule::config);
-	titanium::SetProtoMethod(isolate, t, "requestLocationUpdates", LocationupdatesserviceModule::requestLocationUpdates);
+	titanium::SetProtoMethod(isolate, t, "checkPermissions", LocationupdatesserviceModule::checkPermissions);
 
 	Local<ObjectTemplate> prototypeTemplate = t->PrototypeTemplate();
 	Local<ObjectTemplate> instanceTemplate = t->InstanceTemplate();
@@ -112,11 +111,15 @@ Local<FunctionTemplate> LocationupdatesserviceModule::getProxyTemplate(Isolate* 
 	}
 
 
+			DEFINE_STRING_CONSTANT(isolate, prototypeTemplate, "TABLE", "geologger");
+
 			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "PRIORITY_HIGH_ACCURACY", 100);
 
 			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "PRIORITY_LOW_POWER", 104);
 
 			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "PRIORITY_BALANCED_POWER_ACCURACY", 102);
+
+			DEFINE_STRING_CONSTANT(isolate, prototypeTemplate, "DATABASE", "geologger");
 
 
 	// Dynamic properties -----------------------------------------------------
@@ -127,9 +130,9 @@ Local<FunctionTemplate> LocationupdatesserviceModule::getProxyTemplate(Isolate* 
 }
 
 // Methods --------------------------------------------------------------------
-void LocationupdatesserviceModule::removeLocationUpdates(const FunctionCallbackInfo<Value>& args)
+void LocationupdatesserviceModule::checkPermissions(const FunctionCallbackInfo<Value>& args)
 {
-	LOGD(TAG, "removeLocationUpdates()");
+	LOGD(TAG, "checkPermissions()");
 	Isolate* isolate = args.GetIsolate();
 	HandleScope scope(isolate);
 
@@ -140,9 +143,9 @@ void LocationupdatesserviceModule::removeLocationUpdates(const FunctionCallbackI
 	}
 	static jmethodID methodID = NULL;
 	if (!methodID) {
-		methodID = env->GetMethodID(LocationupdatesserviceModule::javaClass, "removeLocationUpdates", "(Ljava/lang/Object;)V");
+		methodID = env->GetMethodID(LocationupdatesserviceModule::javaClass, "checkPermissions", "()Z");
 		if (!methodID) {
-			const char *error = "Couldn't find proxy method 'removeLocationUpdates' with signature '(Ljava/lang/Object;)V'";
+			const char *error = "Couldn't find proxy method 'checkPermissions' with signature '()Z'";
 			LOGE(TAG, error);
 				titanium::JSException::Error(isolate, error);
 				return;
@@ -157,216 +160,33 @@ void LocationupdatesserviceModule::removeLocationUpdates(const FunctionCallbackI
 
 	titanium::Proxy* proxy = NativeObject::Unwrap<titanium::Proxy>(holder);
 
-
-	jvalue jArguments[1];
-
-
-
-
-	bool isNew_0;
-	if (args.Length() <= 0) {
-		jArguments[0].l = NULL;
-
-	} else {
-
-	if (!args[0]->IsNull()) {
-		Local<Value> arg_0 = args[0];
-		jArguments[0].l =
-			titanium::TypeConverter::jsValueToJavaObject(
-				isolate,
-				env, arg_0, &isNew_0);
-	} else {
-		jArguments[0].l = NULL;
-	}
-	}
+	jvalue* jArguments = 0;
 
 	jobject javaProxy = proxy->getJavaObject();
 	if (javaProxy == NULL) {
 		args.GetReturnValue().Set(v8::Undefined(isolate));
 		return;
 	}
-	env->CallVoidMethodA(javaProxy, methodID, jArguments);
+	jboolean jResult = (jboolean)env->CallBooleanMethodA(javaProxy, methodID, jArguments);
+
+
 
 	proxy->unreferenceJavaObject(javaProxy);
 
 
 
-			if (isNew_0) {
-				env->DeleteLocalRef(jArguments[0].l);
-			}
-
-
 	if (env->ExceptionCheck()) {
-		titanium::JSException::fromJavaException(isolate);
+		Local<Value> jsException = titanium::JSException::fromJavaException(isolate);
 		env->ExceptionClear();
-	}
-
-
-
-
-	args.GetReturnValue().Set(v8::Undefined(isolate));
-
-}
-void LocationupdatesserviceModule::config(const FunctionCallbackInfo<Value>& args)
-{
-	LOGD(TAG, "config()");
-	Isolate* isolate = args.GetIsolate();
-	HandleScope scope(isolate);
-
-	JNIEnv *env = titanium::JNIScope::getEnv();
-	if (!env) {
-		titanium::JSException::GetJNIEnvironmentError(isolate);
-		return;
-	}
-	static jmethodID methodID = NULL;
-	if (!methodID) {
-		methodID = env->GetMethodID(LocationupdatesserviceModule::javaClass, "config", "(Lorg/appcelerator/kroll/KrollDict;)V");
-		if (!methodID) {
-			const char *error = "Couldn't find proxy method 'config' with signature '(Lorg/appcelerator/kroll/KrollDict;)V'";
-			LOGE(TAG, error);
-				titanium::JSException::Error(isolate, error);
-				return;
-		}
-	}
-
-	Local<Object> holder = args.Holder();
-	// If holder isn't the JavaObject wrapper we expect, look up the prototype chain
-	if (!JavaObject::isJavaObject(holder)) {
-		holder = holder->FindInstanceInPrototypeChain(getProxyTemplate(isolate));
-	}
-
-	titanium::Proxy* proxy = NativeObject::Unwrap<titanium::Proxy>(holder);
-
-	if (args.Length() < 1) {
-		char errorStringBuffer[100];
-		sprintf(errorStringBuffer, "config: Invalid number of arguments. Expected 1 but got %d", args.Length());
-		titanium::JSException::Error(isolate, errorStringBuffer);
 		return;
 	}
 
-	jvalue jArguments[1];
+
+	Local<Boolean> v8Result = titanium::TypeConverter::javaBooleanToJsBoolean(isolate, env, jResult);
 
 
 
-
-	bool isNew_0;
-
-	if (!args[0]->IsNull()) {
-		Local<Value> arg_0 = args[0];
-		jArguments[0].l =
-			titanium::TypeConverter::jsObjectToJavaKrollDict(
-				isolate,
-				env, arg_0, &isNew_0);
-	} else {
-		jArguments[0].l = NULL;
-	}
-
-	jobject javaProxy = proxy->getJavaObject();
-	if (javaProxy == NULL) {
-		args.GetReturnValue().Set(v8::Undefined(isolate));
-		return;
-	}
-	env->CallVoidMethodA(javaProxy, methodID, jArguments);
-
-	proxy->unreferenceJavaObject(javaProxy);
-
-
-
-			if (isNew_0) {
-				env->DeleteLocalRef(jArguments[0].l);
-			}
-
-
-	if (env->ExceptionCheck()) {
-		titanium::JSException::fromJavaException(isolate);
-		env->ExceptionClear();
-	}
-
-
-
-
-	args.GetReturnValue().Set(v8::Undefined(isolate));
-
-}
-void LocationupdatesserviceModule::requestLocationUpdates(const FunctionCallbackInfo<Value>& args)
-{
-	LOGD(TAG, "requestLocationUpdates()");
-	Isolate* isolate = args.GetIsolate();
-	HandleScope scope(isolate);
-
-	JNIEnv *env = titanium::JNIScope::getEnv();
-	if (!env) {
-		titanium::JSException::GetJNIEnvironmentError(isolate);
-		return;
-	}
-	static jmethodID methodID = NULL;
-	if (!methodID) {
-		methodID = env->GetMethodID(LocationupdatesserviceModule::javaClass, "requestLocationUpdates", "(Lorg/appcelerator/kroll/KrollDict;)V");
-		if (!methodID) {
-			const char *error = "Couldn't find proxy method 'requestLocationUpdates' with signature '(Lorg/appcelerator/kroll/KrollDict;)V'";
-			LOGE(TAG, error);
-				titanium::JSException::Error(isolate, error);
-				return;
-		}
-	}
-
-	Local<Object> holder = args.Holder();
-	// If holder isn't the JavaObject wrapper we expect, look up the prototype chain
-	if (!JavaObject::isJavaObject(holder)) {
-		holder = holder->FindInstanceInPrototypeChain(getProxyTemplate(isolate));
-	}
-
-	titanium::Proxy* proxy = NativeObject::Unwrap<titanium::Proxy>(holder);
-
-	if (args.Length() < 1) {
-		char errorStringBuffer[100];
-		sprintf(errorStringBuffer, "requestLocationUpdates: Invalid number of arguments. Expected 1 but got %d", args.Length());
-		titanium::JSException::Error(isolate, errorStringBuffer);
-		return;
-	}
-
-	jvalue jArguments[1];
-
-
-
-
-	bool isNew_0;
-
-	if (!args[0]->IsNull()) {
-		Local<Value> arg_0 = args[0];
-		jArguments[0].l =
-			titanium::TypeConverter::jsObjectToJavaKrollDict(
-				isolate,
-				env, arg_0, &isNew_0);
-	} else {
-		jArguments[0].l = NULL;
-	}
-
-	jobject javaProxy = proxy->getJavaObject();
-	if (javaProxy == NULL) {
-		args.GetReturnValue().Set(v8::Undefined(isolate));
-		return;
-	}
-	env->CallVoidMethodA(javaProxy, methodID, jArguments);
-
-	proxy->unreferenceJavaObject(javaProxy);
-
-
-
-			if (isNew_0) {
-				env->DeleteLocalRef(jArguments[0].l);
-			}
-
-
-	if (env->ExceptionCheck()) {
-		titanium::JSException::fromJavaException(isolate);
-		env->ExceptionClear();
-	}
-
-
-
-
-	args.GetReturnValue().Set(v8::Undefined(isolate));
+	args.GetReturnValue().Set(v8Result);
 
 }
 

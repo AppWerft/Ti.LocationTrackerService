@@ -9,6 +9,7 @@
 #include <unordered_map>
 #include <KrollBindings.h>
 
+#include "ti.locationtrackerservice.AdapterProxy.h"
 #include "ti.locationtrackerservice.LocationupdatesserviceModule.h"
 #include "ti.locationtrackerservice.TrackerProxy.h"
 
@@ -46,11 +47,13 @@ namespace titanium {
 		BindEntry* LocationupdatesserviceBindings::lookupGeneratedInit(const char* name, unsigned int length) {
 			static BindEntry binds[] = {
 				{"ti.locationtrackerservice.TrackerProxy", ::ti::locationtrackerservice::locationupdatesservice::TrackerProxy::bindProxy, ::ti::locationtrackerservice::locationupdatesservice::TrackerProxy::dispose},
-				{"ti.locationtrackerservice.LocationupdatesserviceModule", ::ti::locationtrackerservice::LocationupdatesserviceModule::bindProxy, ::ti::locationtrackerservice::LocationupdatesserviceModule::dispose}
+				{"ti.locationtrackerservice.LocationupdatesserviceModule", ::ti::locationtrackerservice::LocationupdatesserviceModule::bindProxy, ::ti::locationtrackerservice::LocationupdatesserviceModule::dispose},
+				{"ti.locationtrackerservice.AdapterProxy", ::ti::locationtrackerservice::locationupdatesservice::AdapterProxy::bindProxy, ::ti::locationtrackerservice::locationupdatesservice::AdapterProxy::dispose}
 			};
 			static std::unordered_map<const char*, BindEntry&, Hash, Compare> map = {
 				{binds[0].name, binds[0]},
 				{binds[1].name, binds[1]},
+				{binds[2].name, binds[2]},
 			};
 
 			auto result = map.find(name);
