@@ -9,7 +9,6 @@ import org.appcelerator.kroll.common.Log;
 import org.appcelerator.titanium.TiApplication;
 import org.greenrobot.eventbus.EventBus;
 
-import android.Manifest;
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -18,12 +17,10 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.IBinder;
 import android.os.Messenger;
 import android.preference.PreferenceManager;
-import android.support.v4.app.ActivityCompat;
 
 import com.google.android.gms.location.LocationRequest;
 
@@ -140,7 +137,6 @@ public class TrackerProxy extends KrollProxy {
 
 	@Override
 	public void handleCreationArgs(KrollModule createdInModule, Object[] args) {
-
 		if (args.length == 2 && args[0] instanceof KrollDict
 				&& args[0] instanceof KrollFunction) {
 			KrollDict opts = (KrollDict) args[0];
@@ -172,7 +168,6 @@ public class TrackerProxy extends KrollProxy {
 
 	@Kroll.method
 	public void addAdapter(Object o) {
-
 		if (o instanceof AdapterProxy) {
 			adapter = ((AdapterProxy) o).getAdapter();
 			EventBus.getDefault().post(new Messages.AdapterEvent(adapter));

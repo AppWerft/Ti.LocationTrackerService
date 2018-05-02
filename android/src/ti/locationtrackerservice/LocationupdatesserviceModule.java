@@ -28,9 +28,9 @@ public class LocationupdatesserviceModule extends KrollModule {
 	@Kroll.constant
 	final int PRIORITY_LOW_POWER = LocationRequest.PRIORITY_LOW_POWER;
 	@Kroll.constant
-	final String DATABASE = "geologger";
+	final public static String DATABASE = "geologger";
 	@Kroll.constant
-	final String TABLE = "geologger";
+	final public static String TABLE = DATABASE;
 
 	public static final String LCAT = "🚘 TiGeoLogger";
 

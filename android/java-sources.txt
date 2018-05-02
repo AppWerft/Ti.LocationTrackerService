@@ -2,7 +2,7 @@
 "/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/src/ti/locationtrackerservice/LocationUpdatesService.java"
 "/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/src/ti/locationtrackerservice/LocationupdatesserviceModule.java"
 "/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/src/ti/locationtrackerservice/Messages.java"
-"/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/src/ti/locationtrackerservice/SaveAndSend.java"
+"/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/src/ti/locationtrackerservice/ServerAdapter.java"
 "/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/src/ti/locationtrackerservice/TrackerProxy.java"
 "/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/src/ti/locationtrackerservice/Utils.java"
 "/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/build/generated/java/ti/locationtrackerservice/LocationupdatesserviceBootstrap.java"

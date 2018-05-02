@@ -12,6 +12,8 @@ A bound and started service that is promoted to a foreground service when locati
   promotes itself to a foreground service, and location updates continue. When
   the activity comes back to the foreground, the foreground service stops, and
   the notification assocaited with that service is removed.
+  
+  For controling  the  foreground service it is mandatory to add a ``
 
 # Usage
 
@@ -34,6 +36,7 @@ Tracker.setNotification(notification({
 		channel : "cannel1",
 		subText : "Text nearby (on left) of titlebar",
 		contentTitle : "Title above the text",
+		bigText : "The expandable text in more then two lines",
 		contentText : "Longer text above",
 		largeIcon : "/assets/icon_on_right_side.png"  
 

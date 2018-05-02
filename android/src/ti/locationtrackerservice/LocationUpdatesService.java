@@ -18,6 +18,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.database.sqlite.SQLiteDatabase;
 import android.location.Location;
 import android.os.Binder;
 import android.os.Build;
@@ -48,7 +49,8 @@ public class LocationUpdatesService extends Service {
 	 * The name of the channel for notifications.
 	 */
 	private static final String CHANNEL_ID = "channel_01";
-
+	private static final String DATABASE = LocationupdatesserviceModule.DATABASE;
+	private static final String TABLE = LocationupdatesserviceModule.TABLE;
 	static final String ACTION_BROADCAST = PACKAGE_NAME + ".broadcast";
 
 	static final String EXTRA_LOCATION = PACKAGE_NAME + ".location";
@@ -73,6 +75,7 @@ public class LocationUpdatesService extends Service {
 	private int priority = 102;
 	private int interval = 10;
 	private final long UPDATE_INTERVAL_IN_MILLISECONDS = interval;
+	ServerAdapter serverAdapter;
 
 	/**
 	 * The fastest rate for active location updates. Updates will never be more
@@ -270,6 +273,7 @@ public class LocationUpdatesService extends Service {
 		for (String key : event.message.keySet()) {
 			adapterOpts.put(key, event.message.getString(key));
 		}
+		serverAdapter = new ServerAdapter(ctx, adapterOpts);
 
 	}
 
@@ -328,41 +332,16 @@ public class LocationUpdatesService extends Service {
 	private Notification getNotification() {
 		Log.i(LCAT, "getNotification started");
 		Intent intent = new Intent(this, LocationUpdatesService.class);
-		// Extra to help us figure out if we arrived in onStartCommand via the
-		// notification or not.
 		intent.putExtra(EXTRA_STARTED_FROM_NOTIFICATION, true);
-
-		// The PendingIntent that leads to a call to onStartCommand() in this
-		// service.
-		PendingIntent servicePendingIntent = PendingIntent.getService(ctx, 0,
-				intent, PendingIntent.FLAG_UPDATE_CURRENT);
-		// //////////////////////////////////////////////////////////////////
 		// The activityIntent calls the app
 		Intent activityIntent = new Intent(Intent.ACTION_MAIN);
 		activityIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
 				| Intent.FLAG_ACTIVITY_NEW_TASK);
-
 		activityIntent.setComponent(new ComponentName(packageName, className));
-
 		PendingIntent activityPendingIntent = PendingIntent.getActivity(ctx, 1,
 				activityIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-
-		// PendingIntent activityPendingIntent = PendingIntent.getActivity(this,
-		// 0,
-		// new Intent(this, MainActivity.class), 0);
-
 		// https://stackoverflow.com/questions/45462666/notificationcompat-builder-deprecated-in-android-o
-		Log.i(LCAT, "intents built");
 		Notification.Builder builder = new Notification.Builder(ctx);
-		/*
-		 * if (LocationupdatesserviceModule.startTracking != null)
-		 * builder.addAction(R("tracker_launch_icon", "drawable"),
-		 * LocationupdatesserviceModule.startTracking, activityPendingIntent);
-		 * if (LocationupdatesserviceModule.stopTracking != null)
-		 * builder.addAction(R("tracker_cancel_icon", "drawable"),
-		 * LocationupdatesserviceModule.stopTracking, servicePendingIntent);
-		 */
-		// Log.i(LCAT, LocationupdatesserviceModule.contentText);
 		builder.setContentTitle(contentTitle).setOngoing(true)
 				.setPriority(Notification.FLAG_HIGH_PRIORITY)
 				.setContentIntent(activityPendingIntent)
@@ -371,6 +350,10 @@ public class LocationUpdatesService extends Service {
 				.setContentText(notificationOpts.getString("contentText"))
 				.setContentTitle(notificationOpts.getString("contentTitle"))
 				.setVibrate(null).setWhen(System.currentTimeMillis());
+		if (notificationOpts.containsKeyAndNotNull("bigText")) {
+			// builder.setStyle(new NotificationCompat.BigTextStyle()
+			// .bigText(notificationOpts.getString("bigtext")));
+		}
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 			builder.setChannelId(CHANNEL_ID); // Channel ID
 		}
@@ -410,8 +393,18 @@ public class LocationUpdatesService extends Service {
 		intent.putExtra("INFOREGROUND", isForeground);
 		LocalBroadcastManager.getInstance(getApplicationContext())
 				.sendBroadcast(intent);
-		new SaveAndSend(ctx, location, adapterOpts);
+		SQLiteDatabase db = ctx.openOrCreateDatabase(DATABASE, MODE_PRIVATE,
+				null);
+		db.execSQL("CREATE TABLE IF NOT EXISTS "
+				+ TABLE
+				+ "(Latitude Real,Longitude Real, time Integer,  Speed Real, Accuracy Real,Done Integer);");
+		Object[] values = new Object[] { location.getLatitude(),
+				location.getLongitude(), location.getTime(),
+				location.getSpeed(), location.getAccuracy(), 0 };
+		db.execSQL("INSERT INTO " + DATABASE + " VALUES(?,?,?,?,?,?,?)", values);
 
+		db.close();
+		serverAdapter.Sync();
 	}
 
 	/**
