@@ -13,7 +13,7 @@ A bound and started service that is promoted to a foreground service when locati
   the activity comes back to the foreground, the foreground service stops, and
   the notification assocaited with that service is removed.
   
-  For controling  the  foreground service it is mandatory to add a ``
+  For controlling  the  foreground service it is mandatory to add a `lifecycleContainer` property. This is for listening of lifecycle events inside the trackerproxy. 
 
 # Usage
 
@@ -25,10 +25,10 @@ GeoService.addEventListener("ServiceConnectionChanged",function(e) {
 });
 var opts = {
 	lifecycleContainer : win, 
-	interval :10,
+	interval :10, //sec.
 	priority : GeoService.PRIORITY_BALANCED_POWER_ACCURACY,
 };
-var Tracker = GeoService.createTracker(opts,function(){
+var Tracker = GeoService.createTracker(opts,function(){ // callback is optional
 		console.log(e.coord);
 	}
 );
@@ -38,7 +38,7 @@ Tracker.setNotification(notification({
 		contentTitle : "Title above the text",
 		bigText : "The expandable text in more then two lines",
 		contentText : "Longer text above",
-		largeIcon : "/assets/icon_on_right_side.png"  
+		largeIcon : "https://avatars0.githubusercontent.com/u/2996237?s=460&v=4"  // for icon on right side
 
 });
 var Adapter = GeoService.createAdapter({  // not yet implemetented ;-(
