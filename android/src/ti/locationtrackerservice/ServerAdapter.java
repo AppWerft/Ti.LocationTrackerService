@@ -52,7 +52,6 @@ public class ServerAdapter {
 			} catch (JSONException e) {
 				e.printStackTrace();
 			}
-
 		}
 		resultSet.close();
 		db.close();

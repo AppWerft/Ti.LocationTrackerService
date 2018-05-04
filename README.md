@@ -38,7 +38,7 @@ Tracker.setNotification(notification({
 		contentTitle : "Title above the text",
 		bigText : "The expandable text in more then two lines",
 		contentText : "Longer text above",
-		largeIcon : "https://avatars0.githubusercontent.com/u/2996237?s=460&v=4"  // for icon on right side
+		largeIcon : "https://avatars0.githubusercontent.com/u/2996237?s=460&v=4"  // optionalfor icon on right side
 
 });
 var Adapter = GeoService.createAdapter({  // not yet implemetented ;-(

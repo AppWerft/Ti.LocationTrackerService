@@ -1,5 +1,7 @@
 package ti.locationtrackerservice;
 
+import java.net.URL;
+
 import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.titanium.TiApplication;
 import org.greenrobot.eventbus.EventBus;
@@ -19,7 +21,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 import android.location.Location;
+import android.net.Uri;
 import android.os.Binder;
 import android.os.Build;
 import android.os.Handler;
@@ -38,6 +43,8 @@ import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
 
 public class LocationUpdatesService extends Service {
 	private static final String PACKAGE_NAME = TiApplication.getInstance()
@@ -287,7 +294,6 @@ public class LocationUpdatesService extends Service {
 	 * log the {@link SecurityException}.
 	 */
 	public void requestLocationUpdates() {
-
 		Log.i(LCAT, "––––––––-  Requesting location updates " + contentText);
 		Utils.setRequestingLocationUpdates(this, true);
 		startService(new Intent(getApplicationContext(),
@@ -308,9 +314,7 @@ public class LocationUpdatesService extends Service {
 	 */
 	public void removeLocationUpdates() {
 		Log.i(LCAT, "Removing location updates inside service");
-
 		mNotificationManager.cancelAll();
-
 		try {
 			mFusedLocationClient.removeLocationUpdates(mLocationCallback);
 			Log.i(LCAT, "removedLocationUpdates from mFusedLocationClient");
@@ -341,7 +345,7 @@ public class LocationUpdatesService extends Service {
 		PendingIntent activityPendingIntent = PendingIntent.getActivity(ctx, 1,
 				activityIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 		// https://stackoverflow.com/questions/45462666/notificationcompat-builder-deprecated-in-android-o
-		Notification.Builder builder = new Notification.Builder(ctx);
+		final Notification.Builder builder = new Notification.Builder(ctx);
 		builder.setContentTitle(contentTitle).setOngoing(true)
 				.setPriority(Notification.FLAG_HIGH_PRIORITY)
 				.setContentIntent(activityPendingIntent)
@@ -353,6 +357,27 @@ public class LocationUpdatesService extends Service {
 		if (notificationOpts.containsKeyAndNotNull("bigText")) {
 			// builder.setStyle(new NotificationCompat.BigTextStyle()
 			// .bigText(notificationOpts.getString("bigtext")));
+		}
+		if (notificationOpts.containsKeyAndNotNull("largeIcon")) {
+			String largeIcon = notificationOpts.getString("largeIcon");
+			final Target target = new Target() {
+				@Override
+				public void onBitmapLoaded(Bitmap bitmap,
+						Picasso.LoadedFrom from) {
+					builder.setLargeIcon(bitmap);
+
+				}
+
+				@Override
+				public void onBitmapFailed(Drawable errorDrawable) {
+					Log.e(LCAT, "bitMap failed ");
+				}
+
+				@Override
+				public void onPrepareLoad(Drawable placeHolderDrawable) {
+				}
+			};
+			Picasso.with(ctx).load(largeIcon).resize(150, 150).into(target);
 		}
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 			builder.setChannelId(CHANNEL_ID); // Channel ID
