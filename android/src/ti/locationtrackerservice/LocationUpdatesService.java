@@ -12,6 +12,8 @@ import ti.locationtrackerservice.Messages.NotificationEvent;
 import ti.locationtrackerservice.Messages.TrackerEvent;
 import android.app.ActivityManager;
 import android.app.Notification;
+import android.app.Notification.BigTextStyle;
+import android.app.Notification.Style;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -24,6 +26,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
+import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Binder;
 import android.os.Build;
@@ -31,6 +34,7 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.IBinder;
 import android.os.Looper;
+//import android.support.v4.app.NotificationCompat.BigTextStyle;
 //import android.support.annotation.NonNull;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.NotificationCompat;
@@ -346,17 +350,23 @@ public class LocationUpdatesService extends Service {
 				activityIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 		// https://stackoverflow.com/questions/45462666/notificationcompat-builder-deprecated-in-android-o
 		final Notification.Builder builder = new Notification.Builder(ctx);
+		Uri defaultSoundUri = RingtoneManager
+				.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+
 		builder.setContentTitle(contentTitle).setOngoing(true)
 				.setPriority(Notification.FLAG_HIGH_PRIORITY)
 				.setContentIntent(activityPendingIntent)
 				.setSmallIcon(R("ic_launcher", "mipmap"))
 				.setSubText(notificationOpts.getString("subText"))
+				.setSound(defaultSoundUri)
 				.setContentText(notificationOpts.getString("contentText"))
 				.setContentTitle(notificationOpts.getString("contentTitle"))
 				.setVibrate(null).setWhen(System.currentTimeMillis());
 		if (notificationOpts.containsKeyAndNotNull("bigText")) {
-			// builder.setStyle(new NotificationCompat.BigTextStyle()
-			// .bigText(notificationOpts.getString("bigtext")));
+			CharSequence bigText = notificationOpts.getString("bigText");
+			BigTextStyle style = new Notification.BigTextStyle()
+					.bigText(bigText);
+			// builder.setStyle(style);
 		}
 		if (notificationOpts.containsKeyAndNotNull("largeIcon")) {
 			String largeIcon = notificationOpts.getString("largeIcon");
