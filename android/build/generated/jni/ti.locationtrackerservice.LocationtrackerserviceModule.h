@@ -14,10 +14,10 @@
 namespace ti {
 namespace locationtrackerservice {
 
-class LocationupdatesserviceModule : public titanium::Proxy
+class LocationtrackerserviceModule : public titanium::Proxy
 {
 public:
-	explicit LocationupdatesserviceModule();
+	explicit LocationtrackerserviceModule();
 
 	static void bindProxy(v8::Local<v8::Object>, v8::Local<v8::Context>);
 	static v8::Local<v8::FunctionTemplate> getProxyTemplate(v8::Isolate*);

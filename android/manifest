@@ -2,15 +2,16 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 2.0.1xapiversion: 4
+version: 2.0.3
+apiversion: 4
 architectures: arm64-v8a armeabi-v7a x86
-description: Locatio tracker service as Foregroundservice
-author: Rainer
+description: Location tracker  as Foregroundservice
+author: Rainer Schleevoigt
 license: MIT
 copyright: Copyright (c) 2018 by Hamburger Appewerft
 
 
-name: locationupdatesservice
+name: locationtrackerservice
 moduleid: ti.locationtrackerservice
 guid: eb47c697-cd26-48eb-927d-96ff42778826
 platform: android

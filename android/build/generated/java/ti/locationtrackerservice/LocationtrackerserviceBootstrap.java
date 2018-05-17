@@ -10,7 +10,7 @@ package ti.locationtrackerservice;
 
 import org.appcelerator.kroll.KrollExternalModule;
 
-public class LocationupdatesserviceBootstrap implements KrollExternalModule
+public class LocationtrackerserviceBootstrap implements KrollExternalModule
 {
 	public void bootstrap()
 	{

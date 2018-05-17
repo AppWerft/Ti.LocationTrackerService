@@ -13,7 +13,7 @@
 
 namespace ti {
 namespace locationtrackerservice {
-	namespace locationupdatesservice {
+	namespace locationtrackerservice {
 
 class TrackerProxy : public titanium::Proxy
 {
@@ -37,6 +37,6 @@ private:
 
 };
 
-	} // namespace locationupdatesservice
+	} // namespace locationtrackerservice
 } // locationtrackerservice
 } // ti

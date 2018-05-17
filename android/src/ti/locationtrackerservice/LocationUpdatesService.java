@@ -1,7 +1,5 @@
 package ti.locationtrackerservice;
 
-import java.net.URL;
-
 import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.titanium.TiApplication;
 import org.greenrobot.eventbus.EventBus;
@@ -13,7 +11,6 @@ import ti.locationtrackerservice.Messages.TrackerEvent;
 import android.app.ActivityManager;
 import android.app.Notification;
 import android.app.Notification.BigTextStyle;
-import android.app.Notification.Style;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -60,8 +57,8 @@ public class LocationUpdatesService extends Service {
 	 * The name of the channel for notifications.
 	 */
 	private static final String CHANNEL_ID = "channel_01";
-	private static final String DATABASE = LocationupdatesserviceModule.DATABASE;
-	private static final String TABLE = LocationupdatesserviceModule.TABLE;
+	private static final String DATABASE = LocationtrackerserviceModule.DATABASE;
+	private static final String TABLE = LocationtrackerserviceModule.TABLE;
 	static final String ACTION_BROADCAST = PACKAGE_NAME + ".broadcast";
 
 	static final String EXTRA_LOCATION = PACKAGE_NAME + ".location";
@@ -125,7 +122,7 @@ public class LocationUpdatesService extends Service {
 	private LocationCallback mLocationCallback;
 
 	private Handler mServiceHandler;
-	private static String LCAT = "💎" + LocationupdatesserviceModule.LCAT;
+	private static String LCAT = "💎" + LocationtrackerserviceModule.LCAT;
 	/**
 	 * The current location.
 	 */

@@ -24,13 +24,13 @@ using namespace v8;
 
 static Persistent<Object> bindingCache;
 
-static void Locationupdatesservice_getBinding(const FunctionCallbackInfo<Value>& args)
+static void Locationtrackerservice_getBinding(const FunctionCallbackInfo<Value>& args)
 {
 	Isolate* isolate = args.GetIsolate();
 	EscapableHandleScope scope(isolate);
 
 	if (args.Length() == 0) {
-		titanium::JSException::Error(isolate, "Locationupdatesservice.getBinding requires 1 argument: binding");
+		titanium::JSException::Error(isolate, "Locationtrackerservice.getBinding requires 1 argument: binding");
 		args.GetReturnValue().Set(scope.Escape(Undefined(isolate)));
 		return;
 	}
@@ -53,7 +53,7 @@ static void Locationupdatesservice_getBinding(const FunctionCallbackInfo<Value>&
 	v8::String::Utf8Value bindingValue(binding);
 	LOGD(TAG, "Looking up binding: %s", *bindingValue);
 
-	titanium::bindings::BindEntry *extBinding = titanium::bindings::LocationupdatesserviceBindings::lookupGeneratedInit(
+	titanium::bindings::BindEntry *extBinding = titanium::bindings::LocationtrackerserviceBindings::lookupGeneratedInit(
 		*bindingValue, bindingValue.length());
 
 	if (!extBinding) {
@@ -70,7 +70,7 @@ static void Locationupdatesservice_getBinding(const FunctionCallbackInfo<Value>&
 	return;
 }
 
-static void Locationupdatesservice_init(Local<Object> exports, Local<Context> context)
+static void Locationtrackerservice_init(Local<Object> exports, Local<Context> context)
 {
 	Isolate* isolate = context->GetIsolate();
 	HandleScope scope(isolate);
@@ -83,11 +83,11 @@ static void Locationupdatesservice_init(Local<Object> exports, Local<Context> co
 		exports->Set(name, source);
 	}
 
-	Local<FunctionTemplate> constructor = FunctionTemplate::New(isolate, Locationupdatesservice_getBinding);
+	Local<FunctionTemplate> constructor = FunctionTemplate::New(isolate, Locationtrackerservice_getBinding);
 	exports->Set(String::NewFromUtf8(isolate, "getBinding"), constructor->GetFunction(context).ToLocalChecked());
 }
 
-static void Locationupdatesservice_dispose(Isolate* isolate)
+static void Locationtrackerservice_dispose(Isolate* isolate)
 {
 	HandleScope scope(isolate);
 	if (bindingCache.IsEmpty()) {
@@ -102,7 +102,7 @@ static void Locationupdatesservice_dispose(Isolate* isolate)
 		int bindingLength = binding.length();
 
 		titanium::bindings::BindEntry *extBinding =
-			titanium::bindings::LocationupdatesserviceBindings::lookupGeneratedInit(*binding, bindingLength);
+			titanium::bindings::LocationtrackerserviceBindings::lookupGeneratedInit(*binding, bindingLength);
 
 		if (extBinding && extBinding->dispose) {
 			extBinding->dispose(isolate);
@@ -112,17 +112,17 @@ static void Locationupdatesservice_dispose(Isolate* isolate)
 	bindingCache.Reset();
 }
 
-static titanium::bindings::BindEntry LocationupdatesserviceBinding = {
+static titanium::bindings::BindEntry LocationtrackerserviceBinding = {
 	"ti.locationtrackerservice",
-	Locationupdatesservice_init,
-	Locationupdatesservice_dispose
+	Locationtrackerservice_init,
+	Locationtrackerservice_dispose
 };
 
 // Main module entry point
 extern "C" JNIEXPORT void JNICALL
-Java_ti_locationtrackerservice_LocationupdatesserviceBootstrap_nativeBootstrap
+Java_ti_locationtrackerservice_LocationtrackerserviceBootstrap_nativeBootstrap
 	(JNIEnv *env, jobject self)
 {
-	titanium::KrollBindings::addExternalBinding("ti.locationtrackerservice", &LocationupdatesserviceBinding);
-	titanium::KrollBindings::addExternalLookup(&(titanium::bindings::LocationupdatesserviceBindings::lookupGeneratedInit));
+	titanium::KrollBindings::addExternalBinding("ti.locationtrackerservice", &LocationtrackerserviceBinding);
+	titanium::KrollBindings::addExternalLookup(&(titanium::bindings::LocationtrackerserviceBindings::lookupGeneratedInit));
 }

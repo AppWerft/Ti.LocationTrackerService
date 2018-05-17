@@ -7,7 +7,7 @@
 
 /** This code is generated, do not edit by hand. **/
 
-#include "ti.locationtrackerservice.LocationupdatesserviceModule.h"
+#include "ti.locationtrackerservice.LocationtrackerserviceModule.h"
 
 #include "AndroidUtil.h"
 #include "JNIUtil.h"
@@ -22,7 +22,7 @@
 
 #include "org.appcelerator.kroll.KrollModule.h"
 
-#define TAG "LocationupdatesserviceModule"
+#define TAG "LocationtrackerserviceModule"
 
 using namespace v8;
 
@@ -30,14 +30,14 @@ namespace ti {
 namespace locationtrackerservice {
 
 
-Persistent<FunctionTemplate> LocationupdatesserviceModule::proxyTemplate;
-jclass LocationupdatesserviceModule::javaClass = NULL;
+Persistent<FunctionTemplate> LocationtrackerserviceModule::proxyTemplate;
+jclass LocationtrackerserviceModule::javaClass = NULL;
 
-LocationupdatesserviceModule::LocationupdatesserviceModule() : titanium::Proxy()
+LocationtrackerserviceModule::LocationtrackerserviceModule() : titanium::Proxy()
 {
 }
 
-void LocationupdatesserviceModule::bindProxy(Local<Object> exports, Local<Context> context)
+void LocationtrackerserviceModule::bindProxy(Local<Object> exports, Local<Context> context)
 {
 	Isolate* isolate = context->GetIsolate();
 
@@ -51,7 +51,7 @@ void LocationupdatesserviceModule::bindProxy(Local<Object> exports, Local<Contex
 		return;
 	}
 
-	Local<String> nameSymbol = NEW_SYMBOL(isolate, "Locationupdatesservice"); // use symbol over string for efficiency
+	Local<String> nameSymbol = NEW_SYMBOL(isolate, "Locationtrackerservice"); // use symbol over string for efficiency
 	MaybeLocal<Object> maybeInstance = constructor->NewInstance(context);
 	Local<Object> moduleInstance;
 	if (!maybeInstance.ToLocal(&moduleInstance)) {
@@ -61,7 +61,7 @@ void LocationupdatesserviceModule::bindProxy(Local<Object> exports, Local<Contex
 	exports->Set(nameSymbol, moduleInstance);
 }
 
-void LocationupdatesserviceModule::dispose(Isolate* isolate)
+void LocationtrackerserviceModule::dispose(Isolate* isolate)
 {
 	LOGD(TAG, "dispose()");
 	if (!proxyTemplate.IsEmpty()) {
@@ -71,19 +71,19 @@ void LocationupdatesserviceModule::dispose(Isolate* isolate)
 	titanium::KrollModule::dispose(isolate);
 }
 
-Local<FunctionTemplate> LocationupdatesserviceModule::getProxyTemplate(Isolate* isolate)
+Local<FunctionTemplate> LocationtrackerserviceModule::getProxyTemplate(Isolate* isolate)
 {
 	if (!proxyTemplate.IsEmpty()) {
 		return proxyTemplate.Get(isolate);
 	}
 
-	LOGD(TAG, "LocationupdatesserviceModule::getProxyTemplate()");
+	LOGD(TAG, "LocationtrackerserviceModule::getProxyTemplate()");
 
-	javaClass = titanium::JNIUtil::findClass("ti/locationtrackerservice/LocationupdatesserviceModule");
+	javaClass = titanium::JNIUtil::findClass("ti/locationtrackerservice/LocationtrackerserviceModule");
 	EscapableHandleScope scope(isolate);
 
 	// use symbol over string for efficiency
-	Local<String> nameSymbol = NEW_SYMBOL(isolate, "Locationupdatesservice");
+	Local<String> nameSymbol = NEW_SYMBOL(isolate, "Locationtrackerservice");
 
 	Local<FunctionTemplate> t = titanium::Proxy::inheritProxyTemplate(isolate,
 		titanium::KrollModule::getProxyTemplate(isolate)
@@ -91,10 +91,10 @@ Local<FunctionTemplate> LocationupdatesserviceModule::getProxyTemplate(Isolate* 
 
 	proxyTemplate.Reset(isolate, t);
 	t->Set(titanium::Proxy::inheritSymbol.Get(isolate),
-		FunctionTemplate::New(isolate, titanium::Proxy::inherit<LocationupdatesserviceModule>));
+		FunctionTemplate::New(isolate, titanium::Proxy::inherit<LocationtrackerserviceModule>));
 
 	// Method bindings --------------------------------------------------------
-	titanium::SetProtoMethod(isolate, t, "checkPermissions", LocationupdatesserviceModule::checkPermissions);
+	titanium::SetProtoMethod(isolate, t, "checkPermissions", LocationtrackerserviceModule::checkPermissions);
 
 	Local<ObjectTemplate> prototypeTemplate = t->PrototypeTemplate();
 	Local<ObjectTemplate> instanceTemplate = t->InstanceTemplate();
@@ -106,7 +106,7 @@ Local<FunctionTemplate> LocationupdatesserviceModule::getProxyTemplate(Isolate* 
 	// Constants --------------------------------------------------------------
 	JNIEnv *env = titanium::JNIScope::getEnv();
 	if (!env) {
-		LOGE(TAG, "Failed to get environment in LocationupdatesserviceModule");
+		LOGE(TAG, "Failed to get environment in LocationtrackerserviceModule");
 		//return;
 	}
 
@@ -130,7 +130,7 @@ Local<FunctionTemplate> LocationupdatesserviceModule::getProxyTemplate(Isolate* 
 }
 
 // Methods --------------------------------------------------------------------
-void LocationupdatesserviceModule::checkPermissions(const FunctionCallbackInfo<Value>& args)
+void LocationtrackerserviceModule::checkPermissions(const FunctionCallbackInfo<Value>& args)
 {
 	LOGD(TAG, "checkPermissions()");
 	Isolate* isolate = args.GetIsolate();
@@ -143,7 +143,7 @@ void LocationupdatesserviceModule::checkPermissions(const FunctionCallbackInfo<V
 	}
 	static jmethodID methodID = NULL;
 	if (!methodID) {
-		methodID = env->GetMethodID(LocationupdatesserviceModule::javaClass, "checkPermissions", "()Z");
+		methodID = env->GetMethodID(LocationtrackerserviceModule::javaClass, "checkPermissions", "()Z");
 		if (!methodID) {
 			const char *error = "Couldn't find proxy method 'checkPermissions' with signature '()Z'";
 			LOGE(TAG, error);

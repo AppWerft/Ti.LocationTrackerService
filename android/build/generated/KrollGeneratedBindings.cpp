@@ -10,7 +10,7 @@
 #include <KrollBindings.h>
 
 #include "ti.locationtrackerservice.AdapterProxy.h"
-#include "ti.locationtrackerservice.LocationupdatesserviceModule.h"
+#include "ti.locationtrackerservice.LocationtrackerserviceModule.h"
 #include "ti.locationtrackerservice.TrackerProxy.h"
 
 
@@ -39,16 +39,16 @@ namespace titanium {
 			}
 		};
 
-		class LocationupdatesserviceBindings {
+		class LocationtrackerserviceBindings {
 			public:
 				static BindEntry* lookupGeneratedInit(const char*, unsigned int);
 		};
 
-		BindEntry* LocationupdatesserviceBindings::lookupGeneratedInit(const char* name, unsigned int length) {
+		BindEntry* LocationtrackerserviceBindings::lookupGeneratedInit(const char* name, unsigned int length) {
 			static BindEntry binds[] = {
-				{"ti.locationtrackerservice.TrackerProxy", ::ti::locationtrackerservice::locationupdatesservice::TrackerProxy::bindProxy, ::ti::locationtrackerservice::locationupdatesservice::TrackerProxy::dispose},
-				{"ti.locationtrackerservice.LocationupdatesserviceModule", ::ti::locationtrackerservice::LocationupdatesserviceModule::bindProxy, ::ti::locationtrackerservice::LocationupdatesserviceModule::dispose},
-				{"ti.locationtrackerservice.AdapterProxy", ::ti::locationtrackerservice::locationupdatesservice::AdapterProxy::bindProxy, ::ti::locationtrackerservice::locationupdatesservice::AdapterProxy::dispose}
+				{"ti.locationtrackerservice.TrackerProxy", ::ti::locationtrackerservice::locationtrackerservice::TrackerProxy::bindProxy, ::ti::locationtrackerservice::locationtrackerservice::TrackerProxy::dispose},
+				{"ti.locationtrackerservice.LocationtrackerserviceModule", ::ti::locationtrackerservice::LocationtrackerserviceModule::bindProxy, ::ti::locationtrackerservice::LocationtrackerserviceModule::dispose},
+				{"ti.locationtrackerservice.AdapterProxy", ::ti::locationtrackerservice::locationtrackerservice::AdapterProxy::bindProxy, ::ti::locationtrackerservice::locationtrackerservice::AdapterProxy::dispose}
 			};
 			static std::unordered_map<const char*, BindEntry&, Hash, Compare> map = {
 				{binds[0].name, binds[0]},

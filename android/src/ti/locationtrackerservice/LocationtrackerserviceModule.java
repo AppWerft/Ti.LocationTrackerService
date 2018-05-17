@@ -19,8 +19,8 @@ import android.support.v4.app.ActivityCompat;
 
 import com.google.android.gms.location.LocationRequest;
 
-@Kroll.module(name = "Locationupdatesservice", id = "ti.locationupdatesservice")
-public class LocationupdatesserviceModule extends KrollModule {
+@Kroll.module(name = "Locationtrackerservice", id = "ti.locationtrackerservice")
+public class LocationtrackerserviceModule extends KrollModule {
 	@Kroll.constant
 	final int PRIORITY_BALANCED_POWER_ACCURACY = LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY;
 	@Kroll.constant
@@ -34,7 +34,7 @@ public class LocationupdatesserviceModule extends KrollModule {
 
 	public static final String LCAT = "🚘 TiGeoLogger";
 
-	public LocationupdatesserviceModule() {
+	public LocationtrackerserviceModule() {
 		super();
 
 	}

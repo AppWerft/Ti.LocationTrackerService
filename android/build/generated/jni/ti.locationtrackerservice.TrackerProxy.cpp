@@ -24,7 +24,7 @@ using namespace v8;
 
 namespace ti {
 namespace locationtrackerservice {
-	namespace locationupdatesservice {
+	namespace locationtrackerservice {
 
 
 Persistent<FunctionTemplate> TrackerProxy::proxyTemplate;
@@ -270,6 +270,6 @@ void TrackerProxy::addAdapter(const FunctionCallbackInfo<Value>& args)
 // Dynamic property accessors -------------------------------------------------
 
 
-	} // namespace locationupdatesservice
+	} // namespace locationtrackerservice
 } // locationtrackerservice
 } // ti

@@ -24,7 +24,7 @@ using namespace v8;
 
 namespace ti {
 namespace locationtrackerservice {
-	namespace locationupdatesservice {
+	namespace locationtrackerservice {
 
 
 Persistent<FunctionTemplate> AdapterProxy::proxyTemplate;
@@ -107,6 +107,6 @@ Local<FunctionTemplate> AdapterProxy::getProxyTemplate(Isolate* isolate)
 // Dynamic property accessors -------------------------------------------------
 
 
-	} // namespace locationupdatesservice
+	} // namespace locationtrackerservice
 } // locationtrackerservice
 } // ti

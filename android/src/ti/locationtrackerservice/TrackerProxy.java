@@ -26,10 +26,10 @@ import com.google.android.gms.location.LocationRequest;
 
 //import ti.locationtrackerservice.LocationupdatesserviceModule.MyReceiver;
 
-@Kroll.proxy(creatableInModule = LocationupdatesserviceModule.class)
+@Kroll.proxy(creatableInModule = LocationtrackerserviceModule.class)
 public class TrackerProxy extends KrollProxy {
 	private KrollFunction onLocationCallback;
-	private static String LCAT = LocationupdatesserviceModule.LCAT;
+	private static String LCAT = LocationtrackerserviceModule.LCAT;
 
 	private static final String PACKAGE_NAME = TiApplication.getInstance()
 			.getPackageName();

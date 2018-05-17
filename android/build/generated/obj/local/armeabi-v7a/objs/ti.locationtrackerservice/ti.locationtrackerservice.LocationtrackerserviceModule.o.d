@@ -1,10 +1,13 @@
-/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/build/generated/obj/local/arm64-v8a/objs/ti.locationtrackerservice/ti.locationtrackerservice.LocationupdatesserviceModule.o: \
- jni/ti.locationtrackerservice.LocationupdatesserviceModule.cpp \
- jni/ti.locationtrackerservice.LocationupdatesserviceModule.h \
+/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/build/generated/obj/local/armeabi-v7a/objs/ti.locationtrackerservice/ti.locationtrackerservice.LocationtrackerserviceModule.o: \
+ jni/ti.locationtrackerservice.LocationtrackerserviceModule.cpp \
+ jni/ti.locationtrackerservice.LocationtrackerserviceModule.h \
  /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/android/native/include/Proxy.h \
  /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/android/native/include/v8.h \
  /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/stdint.h \
  /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/stdio.h \
+ /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/wchar.h \
+ /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/wctype.h \
+ /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/xlocale.h \
  /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/memory \
  /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/__config \
  /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/type_traits \
@@ -19,7 +22,6 @@
  /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/iterator \
  /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/__functional_base \
  /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/iosfwd \
- /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/wchar.h \
  /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/initializer_list \
  /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/tuple \
  /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/cstring \
@@ -52,7 +54,7 @@
  /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/android/native/include/org.appcelerator.kroll.KrollModule.h \
  /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/android/native/include/Proxy.h
 
-jni/ti.locationtrackerservice.LocationupdatesserviceModule.h:
+jni/ti.locationtrackerservice.LocationtrackerserviceModule.h:
 
 /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/android/native/include/Proxy.h:
 
@@ -61,6 +63,12 @@ jni/ti.locationtrackerservice.LocationupdatesserviceModule.h:
 /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/stdint.h:
 
 /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/stdio.h:
+
+/Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/wchar.h:
+
+/Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/wctype.h:
+
+/Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/xlocale.h:
 
 /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/memory:
 
@@ -89,8 +97,6 @@ jni/ti.locationtrackerservice.LocationupdatesserviceModule.h:
 /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/__functional_base:
 
 /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/iosfwd:
-
-/Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/wchar.h:
 
 /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/libcxx/include/initializer_list:
 

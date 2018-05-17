@@ -16,15 +16,15 @@ function moduleBootstrap(moduleBinding) {
 			name, namespace, moduleBinding.getBinding);
 	}
 
-	var module = moduleBinding.getBinding("ti.locationtrackerservice.LocationupdatesserviceModule")["Locationupdatesservice"];
+	var module = moduleBinding.getBinding("ti.locationtrackerservice.LocationtrackerserviceModule")["Locationtrackerservice"];
 	var invocationAPIs = module.invocationAPIs = [];
-	module.apiName = "Locationupdatesservice";
+	module.apiName = "Locationtrackerservice";
 
 	function addInvocationAPI(module, moduleNamespace, namespace, api) {
 		invocationAPIs.push({ namespace: namespace, api: api });
 	}
 
-	addInvocationAPI(module, "Locationupdatesservice", "Locationupdatesservice", "createAdapter");addInvocationAPI(module, "Locationupdatesservice", "Locationupdatesservice", "createTracker");
+	addInvocationAPI(module, "Locationtrackerservice", "Locationtrackerservice", "createAdapter");addInvocationAPI(module, "Locationtrackerservice", "Locationtrackerservice", "createTracker");
 		if (!("__propertiesDefined__" in module)) {Object.defineProperties(module, {
 "Adapter": {
 get: function() {

@@ -9,7 +9,7 @@ import android.content.Context;
 
 //import ti.locationtrackerservice.LocationupdatesserviceModule.MyReceiver;
 
-@Kroll.proxy(creatableInModule = LocationupdatesserviceModule.class)
+@Kroll.proxy(creatableInModule = LocationtrackerserviceModule.class)
 public class AdapterProxy extends KrollProxy {
 
 	Context ctx;

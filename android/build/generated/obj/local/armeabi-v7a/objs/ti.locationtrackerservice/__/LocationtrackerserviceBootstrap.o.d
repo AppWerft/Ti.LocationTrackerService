@@ -1,5 +1,5 @@
-/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/build/generated/obj/local/x86/objs/ti.locationtrackerservice/__/LocationupdatesserviceBootstrap.o: \
- jni/../LocationupdatesserviceBootstrap.cpp \
+/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/build/generated/obj/local/armeabi-v7a/objs/ti.locationtrackerservice/__/LocationtrackerserviceBootstrap.o: \
+ jni/../LocationtrackerserviceBootstrap.cpp \
  /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/android/native/include/v8.h \
  /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/stdint.h \
  /Users/fuerst/Library/Android/ndk/sources/cxx-stl/llvm-libc++/../../android/support/include/stdio.h \
@@ -60,7 +60,7 @@
  /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/android/native/include/JavaObject.h \
  /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/android/native/include/EventEmitter.h \
  /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/android/native/include/NativeObject.h \
- jni/ti.locationtrackerservice.LocationupdatesserviceModule.h \
+ jni/ti.locationtrackerservice.LocationtrackerserviceModule.h \
  jni/ti.locationtrackerservice.TrackerProxy.h
 
 /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/android/native/include/v8.h:
@@ -185,6 +185,6 @@ jni/ti.locationtrackerservice.AdapterProxy.h:
 
 /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.1.0.GA/android/native/include/NativeObject.h:
 
-jni/ti.locationtrackerservice.LocationupdatesserviceModule.h:
+jni/ti.locationtrackerservice.LocationtrackerserviceModule.h:
 
 jni/ti.locationtrackerservice.TrackerProxy.h:
