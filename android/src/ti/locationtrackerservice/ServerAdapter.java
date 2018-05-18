@@ -8,7 +8,6 @@ import org.json.JSONObject;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.location.Location;
 
 import java.io.IOException;
 
@@ -27,6 +26,7 @@ public class ServerAdapter {
 	public ServerAdapter(Context ctx, KrollDict adapterOpts) {
 		this.ctx = ctx;
 		this.opts = adapterOpts;
+
 	}
 
 	public void Sync() {

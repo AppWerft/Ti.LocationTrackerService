@@ -231,11 +231,9 @@ public class TrackerProxy extends KrollProxy {
 	@Kroll.method
 	public void addAdapter(Object o) {
 		if (o instanceof AdapterProxy) {
-			EventBus.getDefault().post(
-					new Messages.AdapterEvent(((AdapterProxy) o).getAdapter()));
+			adapterOpts = ((AdapterProxy) o).getAdapter();
 		} else if (o instanceof KrollDict) {
-			EventBus.getDefault()
-					.post(new Messages.AdapterEvent((KrollDict) o));
+			adapterOpts = (KrollDict) o;
 		} else
 			Log.w(LCAT,
 					"addAdapter: parameter is no adapter either simple JS object");
