@@ -1,40 +1,41 @@
 var win = Ti.UI.createWindow();
 
-var LUS = require("ti.locationupdatesservice");
+var GeoService = require("ti.locationtrackerservice");
+
+
+var opts = {
+	lifecycleContainer : win, 
+	interval :10, //sec.
+	priority : GeoService.PRIORITY_BALANCED_POWER_ACCURACY,
+};
+var Tracker = GeoService.createTracker(opts,function(){ // callback is optional
+		console.log(e.coord);
+	}
+);
+Tracker.setNotification({
+		channel : "cannel1",
+		subText : "Text nearby (on left) of titlebar",
+		contentTitle : "Title above the text",
+		bigText : "The expandable text in more then two lines",
+		contentText : "Longer text above",
+		largeIcon : "https://avatars0.githubusercontent.com/u/2996237?s=460&v=4"  // optional for icon on right side
+
+});
+var Adapter = GeoService.createAdapter({  // not yet implemetented ;-(
+		uri: "https://mybackend.com/endpoint?my_extra_paramter=1234",
+		requestHeaders: ["Accesstoken:DE34B6721"],
+		method : "POST", // or PUT
+		timeout : 100000
+});
+Tracker.addAdapter(Adapter);
 win.addEventListener("open", function() {
-	LUS.requestLocationUpdates({
+	Tracker.requestLocationUpdates({
 		interval : 10,
-		priority : LUS.PRIORITY_BALANCED_POWER_ACCURACY,
+		priority : GeoService.PRIORITY_BALANCED_POWER_ACCURACY,
 		onlocation : function(e) {
-			e.coords && Object.keys(e.coords).forEach(function(k) {
-				console.log(k + "=" + e.coords[k]);
-			});
+			console.log(e.latitude + ',' + e.longitude + ' @' + e.time);
 		}
 	});
-});
-win.addEventListener("close", function() {
-	console.log("TiGeoLogger: close");
-	LUS.removeLocationUpdates();
-});
-
-LUS.config({
-	database : "geolog", // tablename the same
-	notification : {
-		channel : "cannel1",
-		title : "Your position",
-		subText : "Text neben Kopflinie",
-		contentText : "Sie sind hier {LOCATION}",
-		contentTitle : "Es ist {TIME}",
-		stopTracking : "Stop tracking", // or null if you don't need
-		startTracking : "Start tracking", // or null if you don't need
-
-	}
-});
-LUS.addEventListener("ServiceConnectionChanged", function(e) {
-	console.log(e.connected);
-});
-LUS.addEventListener("LocationChanged", function(e) {
-	console.log(e.latitude + ',' + e.longitude + ' @' + e.time);
 });
 
 win.open();

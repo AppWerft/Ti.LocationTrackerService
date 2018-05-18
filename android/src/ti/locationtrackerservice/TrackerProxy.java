@@ -50,6 +50,10 @@ public class TrackerProxy extends KrollProxy {
 	public static int priority = LocationRequest.PRIORITY_LOW_POWER;
 	final static String ACTION = "LocationUpdatesServiceAction";
 
+	private KrollDict adapterOpts = null;
+	private KrollDict notificationOpts = null;
+	private KrollDict trackerOpts = null;
+
 	final static String SERVICE_COMMAND_KEY = "SERVICECOMMANDKEY";
 	SharedPreferences sharedPreferences;
 
@@ -57,7 +61,7 @@ public class TrackerProxy extends KrollProxy {
 	private LocationUpdatesService locationTrackingService = null;
 	// https://stackoverflow.com/questions/6454668/sending-stringdata-from-activity-to-service-android
 	private Messenger mService = null;
-	private KrollDict adapter;
+
 	// Tracks the bound state of the service.
 	private boolean boundState = false;
 	// Monitors the state of the connection to the service.
@@ -141,13 +145,44 @@ public class TrackerProxy extends KrollProxy {
 				&& args[0] instanceof KrollFunction) {
 			KrollDict opts = (KrollDict) args[0];
 			onLocationCallback = (KrollFunction) args[1];
-			EventBus.getDefault().post(new Messages.TrackerEvent(opts));
+			trackerOpts = opts;
+			EventBus.getDefault().post(new Messages.TrackerEvent(trackerOpts));
 		}
 	}
 
 	@Kroll.method
-	public void removeLocationUpdates(
-			@Kroll.argument(optional = true) Object object) {
+	public void setNotification(KrollDict opts) {
+		notificationOpts = opts;
+
+	}
+
+	@Kroll.method
+	public void start(@Kroll.argument(optional = true) Object o) {
+		requestLocationUpdates(o);
+	}
+
+	@Kroll.method
+	public void requestLocationUpdates(@Kroll.argument(optional = true) Object o) {
+		if (o != null && o instanceof KrollDict) {
+			trackerOpts = (KrollDict) o;
+		}
+		if (locationTrackingService != null) {
+			Log.d(LCAT,
+					"locationTrackingService.requestLocationUpdates width options");
+			locationTrackingService.requestLocationUpdates(adapterOpts,
+					notificationOpts, trackerOpts);
+		} else
+			Log.e(LCAT,
+					"locationTrackingService was null, cannot requestLocationUpdates");
+	};
+
+	@Kroll.method
+	public void stop() {
+		removeLocationUpdates();
+	}
+
+	@Kroll.method
+	public void removeLocationUpdates() {
 		Log.i(LCAT, "removeLocationUpdates from JS");
 		if (locationTrackingService != null)
 			locationTrackingService.removeLocationUpdates();
@@ -167,11 +202,21 @@ public class TrackerProxy extends KrollProxy {
 	}
 
 	@Kroll.method
+	public void setAdapter(Object o) {
+		addAdapter(o);
+	}
+
+	@Kroll.method
 	public void addAdapter(Object o) {
 		if (o instanceof AdapterProxy) {
-			adapter = ((AdapterProxy) o).getAdapter();
-			EventBus.getDefault().post(new Messages.AdapterEvent(adapter));
-		}
+			EventBus.getDefault().post(
+					new Messages.AdapterEvent(((AdapterProxy) o).getAdapter()));
+		} else if (o instanceof KrollDict) {
+			EventBus.getDefault()
+					.post(new Messages.AdapterEvent((KrollDict) o));
+		} else
+			Log.w(LCAT,
+					"addAdapter: parameter is no adapter either simple JS object");
 	}
 
 	private static String getApplicationName(Context context) {
@@ -190,6 +235,16 @@ public class TrackerProxy extends KrollProxy {
 						+ ctx.bindService(intent, mServiceConnection,
 								Context.BIND_AUTO_CREATE));
 		super.onStart(activity);
+	}
+
+	@Override
+	public void onResume(Activity activity) {
+		Log.d(LCAT, ">>>>> onResume called");
+	}
+
+	@Override
+	public void onPause(Activity activity) {
+		Log.d(LCAT, "<<<<<< onPause called");
 	}
 
 }

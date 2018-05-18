@@ -47,12 +47,12 @@ var Adapter = GeoService.createAdapter({
 	method : "POST", // or PUT
 	timeout : 100000
 });
-Tracker.addAdapter(Adapter);
+Tracker.setAdapter(Adapter);
 
-Tracker.requestLocationUpdates();
+Tracker.start();
 
 // later:
-Tracker.removeLocationUpdates();
+Tracker.stop();
 
 var link = Ti.Database.open(GeoService.DATABASE);
 linl.execSQL("SELECT * FROM " + GeoSewrvice.TABLE + " WHERE done=0 ORDER BY time");

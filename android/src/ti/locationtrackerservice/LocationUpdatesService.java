@@ -294,7 +294,9 @@ public class LocationUpdatesService extends Service {
 	 * Makes a request for location updates. Note that in this sample we merely
 	 * log the {@link SecurityException}.
 	 */
-	public void requestLocationUpdates() {
+	public void requestLocationUpdates(KrollDict adapterOpts,
+			KrollDict notificationOpts, KrollDict trackerOpts) {
+		Log.d(LCAT, notificationOpts.toString());
 		Log.i(LCAT, "––––––––-  Requesting location updates " + contentText);
 		Utils.setRequestingLocationUpdates(this, true);
 		startService(new Intent(getApplicationContext(),
