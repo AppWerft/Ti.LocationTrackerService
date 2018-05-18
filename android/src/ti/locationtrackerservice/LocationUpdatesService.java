@@ -74,7 +74,6 @@ public class LocationUpdatesService extends Service {
 	 */
 	private KrollDict notificationOpts = new KrollDict();
 	private KrollDict adapterOpts = new KrollDict();
-
 	private KrollDict trackerOpts = new KrollDict();
 
 	private static String contentTitle = null;
@@ -290,6 +289,9 @@ public class LocationUpdatesService extends Service {
 	 */
 	public void requestLocationUpdates(KrollDict adapterOpts,
 			KrollDict notificationOpts, KrollDict trackerOpts) {
+		this.adapterOpts = adapterOpts;
+		this.trackerOpts = trackerOpts;
+		this.notificationOpts = notificationOpts;
 		Log.d(LCAT, notificationOpts.toString());
 		Log.i(LCAT, "––––––––-  Requesting location updates " + contentText);
 		Utils.setRequestingLocationUpdates(this, true);
@@ -303,6 +305,7 @@ public class LocationUpdatesService extends Service {
 			Log.e(LCAT, "Lost location permission. Could not request updates. "
 					+ unlikely);
 		}
+		serverAdapter = new ServerAdapter(this, adapterOpts);
 	}
 
 	/**
@@ -425,14 +428,15 @@ public class LocationUpdatesService extends Service {
 				null);
 		db.execSQL("CREATE TABLE IF NOT EXISTS "
 				+ TABLE
-				+ "(Latitude Real,Longitude Real, time Integer,  Speed Real, Accuracy Real,Done Integer);");
+				+ "(Latitude Real,Longitude Real, time Integer, Speed Real, Accuracy Real,Done Integer);");
 		Object[] values = new Object[] { location.getLatitude(),
 				location.getLongitude(), location.getTime(),
 				location.getSpeed(), location.getAccuracy(), 0 };
-		db.execSQL("INSERT INTO " + DATABASE + " VALUES(?,?,?,?,?,?,?)", values);
+		db.execSQL("INSERT INTO " + DATABASE + " VALUES(?,?,?,?,?,?)", values);
 
 		db.close();
-		serverAdapter.Sync();
+		if (serverAdapter != null)
+			serverAdapter.Sync();
 	}
 
 	/**

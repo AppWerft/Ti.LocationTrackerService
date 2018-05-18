@@ -60,7 +60,8 @@ var Adapter = GeoService.createAdapter({
 	uri: "https://mybackend.com/endpoint?my_extra_paramter=1234",
 	requestHeaders: ["Accesstoken:DE34B6721"],
 	method : "POST", // or PUT
-	timeout : 100000
+	timeout : 100000,
+	lastEntries : 1  // 10: last 10 locations, 0: for all
 });
 Tracker.setAdapter(Adapter);
 

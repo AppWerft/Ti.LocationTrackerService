@@ -11,6 +11,7 @@ import org.appcelerator.kroll.common.Log;
 import org.appcelerator.titanium.TiApplication;
 import org.greenrobot.eventbus.EventBus;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -20,11 +21,14 @@ import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.IBinder;
 import android.os.Messenger;
 import android.preference.PreferenceManager;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.LocalBroadcastManager;
+import android.widget.Toast;
 
 import com.google.android.gms.location.LocationRequest;
 
@@ -158,6 +162,7 @@ public class TrackerProxy extends KrollProxy {
 				"bindService in onStart of module was successful: "
 						+ ctx.bindService(intent, mServiceConnection,
 								Context.BIND_AUTO_CREATE));
+
 		super.handleCreationArgs(createdInModule, args);
 	}
 
@@ -169,7 +174,13 @@ public class TrackerProxy extends KrollProxy {
 
 	@Kroll.method
 	public void start(@Kroll.argument(optional = true) Object o) {
-		requestLocationUpdates(o);
+		if (checkPermissions())
+			requestLocationUpdates(o);
+		else
+			Toast.makeText(TiApplication.getAppCurrentActivity(),
+					"Module needs location permission", Toast.LENGTH_LONG)
+					.show();
+
 	}
 
 	@Kroll.method
@@ -275,6 +286,15 @@ public class TrackerProxy extends KrollProxy {
 		}
 
 		super.onStop(activity);
+	}
+
+	private boolean checkPermissions() {
+		return PackageManager.PERMISSION_GRANTED == ActivityCompat
+				.checkSelfPermission(ctx,
+						Manifest.permission.ACCESS_FINE_LOCATION)
+				|| PackageManager.PERMISSION_GRANTED == ActivityCompat
+						.checkSelfPermission(ctx,
+								Manifest.permission.ACCESS_COARSE_LOCATION);
 	}
 
 }
