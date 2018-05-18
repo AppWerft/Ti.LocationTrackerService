@@ -143,13 +143,16 @@ public class TrackerProxy extends KrollProxy {
 
 	@Override
 	public void handleCreationArgs(KrollModule createdInModule, Object[] args) {
+
 		if (args.length > 0 && args[0] instanceof HashMap) {
-			trackerOpts = (KrollDict) args[0];
+			trackerOpts = new KrollDict((HashMap) args[0]);
 			Log.d(LCAT, trackerOpts.toString());
 		}
 		if (args.length == 2 && args[1] instanceof KrollFunction) {
 			onLocationCallback = (KrollFunction) args[1];
 		}
+
+		super.handleCreationArgs(createdInModule, args);
 	}
 
 	@Kroll.method
