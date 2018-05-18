@@ -2,12 +2,12 @@ package ti.locationtrackerservice;
 
 import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.titanium.TiApplication;
-import org.greenrobot.eventbus.EventBus;
-import org.greenrobot.eventbus.Subscribe;
+//import org.greenrobot.eventbus.EventBus;
+//import org.greenrobot.eventbus.Subscribe;
 
-import ti.locationtrackerservice.Messages.AdapterEvent;
-import ti.locationtrackerservice.Messages.NotificationEvent;
-import ti.locationtrackerservice.Messages.TrackerEvent;
+//import ti.locationtrackerservice.Messages.AdapterEvent;
+//import ti.locationtrackerservice.Messages.NotificationEvent;
+//import ti.locationtrackerservice.Messages.TrackerEvent;
 import android.app.ActivityManager;
 import android.app.Notification;
 import android.app.Notification.BigTextStyle;
@@ -140,13 +140,13 @@ public class LocationUpdatesService extends Service {
 				+ "."
 				+ TiApplication.getAppRootOrCurrentActivity()
 						.getLocalClassName();
-		notificationOpts.put("subText", getString(R("subText", "string")));
-		notificationOpts.put("contentText",
-				getString(R("contentText", "string")));
-		notificationOpts.put("contentTitle",
-				getString(R("contentTitle", "string")));
-		notificationOpts.put("channel", "Channel");
-
+		/*
+		 * notificationOpts.put("subText", getString(R("subText", "string")));
+		 * notificationOpts.put("contentText", getString(R("contentText",
+		 * "string"))); notificationOpts.put("contentTitle",
+		 * getString(R("contentTitle", "string")));
+		 * notificationOpts.put("channel", "Channel");
+		 */
 	}
 
 	@Override
@@ -185,7 +185,7 @@ public class LocationUpdatesService extends Service {
 
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
-		EventBus.getDefault().register(this);
+		// EventBus.getDefault().register(this);
 		boolean startedFromNotification = intent.getBooleanExtra(
 				EXTRA_STARTED_FROM_NOTIFICATION, false);
 
@@ -216,7 +216,7 @@ public class LocationUpdatesService extends Service {
 		Log.i(LCAT, "~~~~~~> in onBind()");
 		stopForeground(true);
 		mChangingConfiguration = false;
-		EventBus.getDefault().register(this);
+		// EventBus.getDefault().register(this);
 		return mBinder;
 	}
 
@@ -257,34 +257,28 @@ public class LocationUpdatesService extends Service {
 			startForeground(NOTIFICATION_ID, getNotification());
 		} else
 			Log.w(LCAT, "onUnbind: was only a confchanging");
-		EventBus.getDefault().unregister(this);
+		// EventBus.getDefault().unregister(this);
 		return true; // Ensures onRebind() is called when a client re-binds.
 	}
 
-	@Subscribe
-	public void onNotificationEvent(NotificationEvent event) {
-		for (String key : event.message.keySet()) {
-			notificationOpts.put(key, event.message.getString(key));
-		}
-	}
-
-	@Subscribe
-	public void onTrackerEvent(TrackerEvent event) {
-		if (event.message.containsKeyAndNotNull("interval"))
-			interval = event.message.getInt("interval");
-		if (event.message.containsKeyAndNotNull("priority"))
-			priority = event.message.getInt("priority");
-	}
-
-	@Subscribe
-	public void onAdapterEvent(AdapterEvent event) {
-		for (String key : event.message.keySet()) {
-			adapterOpts.put(key, event.message.getString(key));
-		}
-		serverAdapter = new ServerAdapter(ctx, adapterOpts);
-
-	}
-
+	/*
+	 * @Subscribe public void onNotificationEvent(NotificationEvent event) { for
+	 * (String key : event.message.keySet()) { notificationOpts.put(key,
+	 * event.message.getString(key)); } }
+	 * 
+	 * @Subscribe public void onTrackerEvent(TrackerEvent event) { if
+	 * (event.message.containsKeyAndNotNull("interval")) interval =
+	 * event.message.getInt("interval"); if
+	 * (event.message.containsKeyAndNotNull("priority")) priority =
+	 * event.message.getInt("priority"); }
+	 * 
+	 * @Subscribe public void onAdapterEvent(AdapterEvent event) { for (String
+	 * key : event.message.keySet()) { adapterOpts.put(key,
+	 * event.message.getString(key)); } serverAdapter = new ServerAdapter(ctx,
+	 * adapterOpts);
+	 * 
+	 * }
+	 */
 	@Override
 	public void onDestroy() {
 		mServiceHandler.removeCallbacksAndMessages(null);
@@ -490,8 +484,8 @@ public class LocationUpdatesService extends Service {
 	private int R(String name, String type) {
 		int id = 0;
 		try {
-			id = ctx.getResources().getIdentifier(name, type,
-					ctx.getPackageName());
+			id = this.getResources().getIdentifier(name, type,
+					this.getPackageName());
 		} catch (Exception e) {
 			return id;
 		}

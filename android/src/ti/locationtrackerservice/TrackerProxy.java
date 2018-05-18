@@ -16,6 +16,7 @@ import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
@@ -23,6 +24,7 @@ import android.location.Location;
 import android.os.IBinder;
 import android.os.Messenger;
 import android.preference.PreferenceManager;
+import android.support.v4.content.LocalBroadcastManager;
 
 import com.google.android.gms.location.LocationRequest;
 
@@ -151,7 +153,11 @@ public class TrackerProxy extends KrollProxy {
 		if (args.length == 2 && args[1] instanceof KrollFunction) {
 			onLocationCallback = (KrollFunction) args[1];
 		}
-
+		Intent intent = new Intent(ctx, LocationUpdatesService.class);
+		Log.i(LCAT,
+				"bindService in onStart of module was successful: "
+						+ ctx.bindService(intent, mServiceConnection,
+								Context.BIND_AUTO_CREATE));
 		super.handleCreationArgs(createdInModule, args);
 	}
 
@@ -232,24 +238,43 @@ public class TrackerProxy extends KrollProxy {
 	}
 
 	/* Lifecycles */
+
 	@Override
 	public void onStart(Activity activity) {
+		Log.d(LCAT, ">>>>> onStart called");
 		Intent intent = new Intent(ctx, LocationUpdatesService.class);
-		Log.i(LCAT,
-				"bindService in onStart of module was successful: "
-						+ ctx.bindService(intent, mServiceConnection,
-								Context.BIND_AUTO_CREATE));
+
 		super.onStart(activity);
 	}
 
 	@Override
 	public void onResume(Activity activity) {
 		Log.d(LCAT, ">>>>> onResume called");
+		LocalBroadcastManager.getInstance(ctx).registerReceiver(myReceiver,
+				new IntentFilter(LocationUpdatesService.ACTION_BROADCAST));
 	}
 
 	@Override
 	public void onPause(Activity activity) {
 		Log.d(LCAT, "<<<<<< onPause called");
+		LocalBroadcastManager.getInstance(ctx).unregisterReceiver(myReceiver);
+		super.onPause(activity);
+	}
+
+	@Override
+	public void onStop(Activity activity) {
+		Log.d(LCAT, "<<<<<< onStop called");
+		if (boundState) {
+			// Unbind from the service. This signals to the service that this
+			// activity is no longer
+			// in the foreground, and the service can respond by promoting
+			// itself to a foreground
+			// service.
+			ctx.unbindService(mServiceConnection);
+			boundState = false;
+		}
+
+		super.onStop(activity);
 	}
 
 }

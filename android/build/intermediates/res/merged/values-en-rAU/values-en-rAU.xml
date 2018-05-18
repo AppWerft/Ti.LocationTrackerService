@@ -21,5 +21,4 @@
 	<string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Collapse"</string>
 	<string msgid="146198913615257606" name="search_menu_title">"Search"</string>
 	<string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
-	<string name="wallet_buy_button_place_holder" msgid="363496807345461806">"Buy with Google"</string>
 </resources>

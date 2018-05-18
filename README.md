@@ -15,6 +15,21 @@ A bound and started service that is promoted to a foreground service when locati
   
   For controlling  the  foreground service it is mandatory to add a `lifecycleContainer` property. This is for listening of lifecycle events inside the trackerproxy. 
 
+# Manifest
+
+Don't forget this entry in you manifest:
+
+```xml
+<manifest>
+       <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+       <uses-feature android:name="android.hardware.location.gps"/>
+       <application>
+                <service android:name="ti.locationtrackerservice.LocationUpdatesService"/>
+       </application>
+</manifest>
+```
+
+
 # Usage
 
 ```javascript
