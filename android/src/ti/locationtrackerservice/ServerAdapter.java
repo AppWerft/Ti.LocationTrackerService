@@ -22,38 +22,36 @@ public class ServerAdapter {
 	private static int MODE_PRIVATE = 0;
 	private Context ctx;
 	private String database = "geologger";
-	private KrollDict adapterOpts;
+	private KrollDict opts;
 
 	public ServerAdapter(Context ctx, KrollDict adapterOpts) {
 		this.ctx = ctx;
-		this.adapterOpts = adapterOpts;
-	}
-
-	private void saveToSQL(Location location) {
-
+		this.opts = adapterOpts;
 	}
 
 	public void Sync() {
 		JSONArray resultList = new JSONArray();
 		SQLiteDatabase db = ctx.openOrCreateDatabase(this.database,
 				MODE_PRIVATE, null);
-		Cursor resultSet = db.rawQuery("Select * from " + this.database
-				+ " Where done=0", null);
-		while (!resultSet.isLast()) {
-			JSONObject res = new JSONObject();
-			try {
-				res.put("latitude", resultSet.getFloat(0));
-				res.put("longitude", resultSet.getFloat(1));
-				res.put("time", resultSet.getInt(2));
-				res.put("speed", resultSet.getInt(3));
-				res.put("accuracy", resultSet.getInt(4));
+		Cursor c = db.rawQuery("SELECT * FROM " + this.database
+				+ " WHERE Done=0 ORDER BY Time DESC", null);
+		try {
+			// https://stackoverflow.com/questions/32284135/sqlite-identify-long-value
+			while (c.moveToNext()) {
+				JSONObject res = new JSONObject();
+				res.put("latitude", c.getFloat(c.getColumnIndex("Latitude")));
+				res.put("longitude", c.getFloat(c.getColumnIndex("Longitude")));
+				res.put("time", c.getDouble(c.getColumnIndex("time")));
+				res.put("speed", c.getDouble(c.getColumnIndex("Speed")));
+				res.put("accuracy", c.getDouble(c.getColumnIndex("Accuracy")));
 				resultList.put(res);
-				resultSet.moveToNext();
-			} catch (JSONException e) {
-				e.printStackTrace();
+
 			}
+		} catch (JSONException e) {
+			e.printStackTrace();
 		}
-		resultSet.close();
+
+		c.close();
 		db.close();
 
 		JSONObject payload = new JSONObject();
@@ -64,8 +62,8 @@ public class ServerAdapter {
 			e.printStackTrace();
 		}
 		try {
-			String status = send("post", adapterOpts.getString("endpoint"),
-					payload.toString());
+			String status = send(opts.getString("method"),
+					opts.getString("uri"), payload.toString());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -73,7 +71,8 @@ public class ServerAdapter {
 
 	}
 
-	String send(String method, String url, String json) throws IOException {
+	private String send(String method, String uri, String json)
+			throws IOException {
 		final MediaType JSON = MediaType
 				.parse("application/json; charset=utf-8");
 		OkHttpClient client = new OkHttpClient();
@@ -81,10 +80,10 @@ public class ServerAdapter {
 		Request request = null;
 		switch (method) {
 		case "post":
-			request = new Request.Builder().url(url).post(body).build();
+			request = new Request.Builder().url(uri).post(body).build();
 			break;
 		case "put":
-			request = new Request.Builder().url(url).put(body).build();
+			request = new Request.Builder().url(uri).put(body).build();
 			break;
 
 		}
