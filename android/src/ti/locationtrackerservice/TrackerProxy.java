@@ -1,5 +1,7 @@
 package ti.locationtrackerservice;
 
+import java.util.HashMap;
+
 import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.kroll.KrollFunction;
 import org.appcelerator.kroll.KrollModule;
@@ -141,12 +143,12 @@ public class TrackerProxy extends KrollProxy {
 
 	@Override
 	public void handleCreationArgs(KrollModule createdInModule, Object[] args) {
-		if (args.length == 2 && args[0] instanceof KrollDict
-				&& args[0] instanceof KrollFunction) {
-			KrollDict opts = (KrollDict) args[0];
+		if (args.length > 0 && args[0] instanceof HashMap) {
+			trackerOpts = (KrollDict) args[0];
+			Log.d(LCAT, trackerOpts.toString());
+		}
+		if (args.length == 2 && args[1] instanceof KrollFunction) {
 			onLocationCallback = (KrollFunction) args[1];
-			trackerOpts = opts;
-			EventBus.getDefault().post(new Messages.TrackerEvent(trackerOpts));
 		}
 	}
 
