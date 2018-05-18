@@ -292,8 +292,11 @@ public class LocationUpdatesService extends Service {
 		this.adapterOpts = adapterOpts;
 		this.trackerOpts = trackerOpts;
 		this.notificationOpts = notificationOpts;
+		Log.d(LCAT, "|||||||||||||\\ requestLocationUpdates");
 		Log.d(LCAT, notificationOpts.toString());
-		Log.i(LCAT, "––––––––-  Requesting location updates " + contentText);
+		Log.d(LCAT, adapterOpts.toString());
+		Log.d(LCAT, trackerOpts.toString());
+		serverAdapter = new ServerAdapter(this, adapterOpts);
 		Utils.setRequestingLocationUpdates(this, true);
 		startService(new Intent(getApplicationContext(),
 				LocationUpdatesService.class));
@@ -305,7 +308,7 @@ public class LocationUpdatesService extends Service {
 			Log.e(LCAT, "Lost location permission. Could not request updates. "
 					+ unlikely);
 		}
-		serverAdapter = new ServerAdapter(this, adapterOpts);
+
 	}
 
 	/**
@@ -366,12 +369,13 @@ public class LocationUpdatesService extends Service {
 		}
 		if (notificationOpts.containsKeyAndNotNull("largeIcon")) {
 			String largeIcon = notificationOpts.getString("largeIcon");
+			Log.d(LCAT, "try to render largeIcon");
 			final Target target = new Target() {
 				@Override
 				public void onBitmapLoaded(Bitmap bitmap,
 						Picasso.LoadedFrom from) {
+					Log.d(LCAT, "setLargeIcon");
 					builder.setLargeIcon(bitmap);
-
 				}
 
 				@Override
@@ -381,6 +385,7 @@ public class LocationUpdatesService extends Service {
 
 				@Override
 				public void onPrepareLoad(Drawable placeHolderDrawable) {
+					Log.d(LCAT, "onPrepareLoad");
 				}
 			};
 			Picasso.with(ctx).load(largeIcon).resize(150, 150).into(target);

@@ -58,9 +58,9 @@ public class TrackerProxy extends KrollProxy {
 	public static int priority = LocationRequest.PRIORITY_LOW_POWER;
 	final static String ACTION = "LocationUpdatesServiceAction";
 
-	private KrollDict adapterOpts = null;
-	private KrollDict notificationOpts = null;
-	private KrollDict trackerOpts = null;
+	private KrollDict adapterOpts = new KrollDict();
+	private KrollDict notificationOpts = new KrollDict();
+	private KrollDict trackerOpts = new KrollDict();
 
 	final static String SERVICE_COMMAND_KEY = "SERVICECOMMANDKEY";
 	SharedPreferences sharedPreferences;
@@ -77,7 +77,6 @@ public class TrackerProxy extends KrollProxy {
 		@Override
 		public void onServiceConnected(ComponentName name, IBinder service) {
 			Log.i(LCAT, "ServiceConnection: locationTrackingService connected");
-
 			locationTrackingService = ((LocationUpdatesService.LocalBinder) service)
 					.getService();
 			Log.i(LCAT, service.toString());
@@ -86,11 +85,9 @@ public class TrackerProxy extends KrollProxy {
 			// Log.i(LCAT, mService.toString());
 
 			boundState = true;
-			Log.i(LCAT, service.toString());
 
 			KrollDict res = new KrollDict();
 			res.put("connected", true);
-			Log.i(LCAT, res.toString());
 			if (hasListeners("ServiceConnectionChanged"))
 				fireEvent("ServiceConnectionChanged", boundState);
 		}
@@ -149,10 +146,8 @@ public class TrackerProxy extends KrollProxy {
 
 	@Override
 	public void handleCreationArgs(KrollModule createdInModule, Object[] args) {
-
 		if (args.length > 0 && args[0] instanceof HashMap) {
-			trackerOpts = new KrollDict((HashMap) args[0]);
-			Log.d(LCAT, trackerOpts.toString());
+			this.trackerOpts = new KrollDict((HashMap) args[0]);
 		}
 		if (args.length == 2 && args[1] instanceof KrollFunction) {
 			onLocationCallback = (KrollFunction) args[1];
@@ -162,7 +157,6 @@ public class TrackerProxy extends KrollProxy {
 				"bindService in onStart of module was successful: "
 						+ ctx.bindService(intent, mServiceConnection,
 								Context.BIND_AUTO_CREATE));
-
 		super.handleCreationArgs(createdInModule, args);
 	}
 
@@ -173,9 +167,9 @@ public class TrackerProxy extends KrollProxy {
 	}
 
 	@Kroll.method
-	public void start(@Kroll.argument(optional = true) Object o) {
+	public void start() {
 		if (checkPermissions())
-			requestLocationUpdates(o);
+			requestLocationUpdates();
 		else
 			Toast.makeText(TiApplication.getAppCurrentActivity(),
 					"Module needs location permission", Toast.LENGTH_LONG)
@@ -184,13 +178,9 @@ public class TrackerProxy extends KrollProxy {
 	}
 
 	@Kroll.method
-	public void requestLocationUpdates(@Kroll.argument(optional = true) Object o) {
-		if (o != null && o instanceof KrollDict) {
-			trackerOpts = (KrollDict) o;
-		}
+	public void requestLocationUpdates() {
 		if (locationTrackingService != null) {
-			Log.d(LCAT,
-					"locationTrackingService.requestLocationUpdates width options");
+
 			locationTrackingService.requestLocationUpdates(adapterOpts,
 					notificationOpts, trackerOpts);
 		} else
@@ -224,19 +214,8 @@ public class TrackerProxy extends KrollProxy {
 	}
 
 	@Kroll.method
-	public void setAdapter(Object o) {
-		addAdapter(o);
-	}
-
-	@Kroll.method
-	public void addAdapter(Object o) {
-		if (o instanceof AdapterProxy) {
-			adapterOpts = ((AdapterProxy) o).getAdapter();
-		} else if (o instanceof KrollDict) {
-			adapterOpts = (KrollDict) o;
-		} else
-			Log.w(LCAT,
-					"addAdapter: parameter is no adapter either simple JS object");
+	public void setAdapter(KrollDict opts) {
+		adapterOpts = opts;
 	}
 
 	private static String getApplicationName(Context context) {

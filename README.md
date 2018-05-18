@@ -38,12 +38,12 @@ var GeoService = require("ti.locationtrackerservice");
 GeoService.addEventListener("ServiceConnectionChanged",function(e) {
 	console.log(e);
 });
-var opts = {
+´
+var Tracker = GeoService.createTracker({
 	lifecycleContainer : win, 
 	interval :10, //sec.
 	priority : GeoService.PRIORITY_BALANCED_POWER_ACCURACY,
-};
-var Tracker = GeoService.createTracker(opts,function(){ // callback is optional
+   },function(){ // callback is optional
 		console.log(e.coord);
 	}
 );
@@ -56,14 +56,14 @@ Tracker.setNotification({
 	largeIcon : "https://avatars0.githubusercontent.com/u/2996237?s=460&v=4"  // optionalfor icon on right side
 
 });
-var Adapter = GeoService.createAdapter({  
+
+Tracker.setAdapter({  
 	uri: "https://mybackend.com/endpoint?my_extra_paramter=1234",
 	requestHeaders: ["Accesstoken:DE34B6721"],
 	method : "POST", // or PUT
 	timeout : 100000,
 	lastEntries : 1  // 10: last 10 locations, 0: for all
 });
-Tracker.setAdapter(Adapter);
 
 Tracker.start();
 

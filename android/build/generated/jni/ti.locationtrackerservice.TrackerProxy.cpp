@@ -89,7 +89,6 @@ Local<FunctionTemplate> TrackerProxy::getProxyTemplate(Isolate* isolate)
 	titanium::SetProtoMethod(isolate, t, "stop", TrackerProxy::stop);
 	titanium::SetProtoMethod(isolate, t, "requestLocationUpdates", TrackerProxy::requestLocationUpdates);
 	titanium::SetProtoMethod(isolate, t, "setAdapter", TrackerProxy::setAdapter);
-	titanium::SetProtoMethod(isolate, t, "addAdapter", TrackerProxy::addAdapter);
 	titanium::SetProtoMethod(isolate, t, "start", TrackerProxy::start);
 	titanium::SetProtoMethod(isolate, t, "setNotification", TrackerProxy::setNotification);
 
@@ -231,9 +230,9 @@ void TrackerProxy::requestLocationUpdates(const FunctionCallbackInfo<Value>& arg
 	}
 	static jmethodID methodID = NULL;
 	if (!methodID) {
-		methodID = env->GetMethodID(TrackerProxy::javaClass, "requestLocationUpdates", "(Ljava/lang/Object;)V");
+		methodID = env->GetMethodID(TrackerProxy::javaClass, "requestLocationUpdates", "()V");
 		if (!methodID) {
-			const char *error = "Couldn't find proxy method 'requestLocationUpdates' with signature '(Ljava/lang/Object;)V'";
+			const char *error = "Couldn't find proxy method 'requestLocationUpdates' with signature '()V'";
 			LOGE(TAG, error);
 				titanium::JSException::Error(isolate, error);
 				return;
@@ -248,28 +247,7 @@ void TrackerProxy::requestLocationUpdates(const FunctionCallbackInfo<Value>& arg
 
 	titanium::Proxy* proxy = NativeObject::Unwrap<titanium::Proxy>(holder);
 
-
-	jvalue jArguments[1];
-
-
-
-
-	bool isNew_0;
-	if (args.Length() <= 0) {
-		jArguments[0].l = NULL;
-
-	} else {
-
-	if (!args[0]->IsNull()) {
-		Local<Value> arg_0 = args[0];
-		jArguments[0].l =
-			titanium::TypeConverter::jsValueToJavaObject(
-				isolate,
-				env, arg_0, &isNew_0);
-	} else {
-		jArguments[0].l = NULL;
-	}
-	}
+	jvalue* jArguments = 0;
 
 	jobject javaProxy = proxy->getJavaObject();
 	if (javaProxy == NULL) {
@@ -280,11 +258,6 @@ void TrackerProxy::requestLocationUpdates(const FunctionCallbackInfo<Value>& arg
 
 	proxy->unreferenceJavaObject(javaProxy);
 
-
-
-			if (isNew_0) {
-				env->DeleteLocalRef(jArguments[0].l);
-			}
 
 
 	if (env->ExceptionCheck()) {
@@ -311,9 +284,9 @@ void TrackerProxy::setAdapter(const FunctionCallbackInfo<Value>& args)
 	}
 	static jmethodID methodID = NULL;
 	if (!methodID) {
-		methodID = env->GetMethodID(TrackerProxy::javaClass, "setAdapter", "(Ljava/lang/Object;)V");
+		methodID = env->GetMethodID(TrackerProxy::javaClass, "setAdapter", "(Lorg/appcelerator/kroll/KrollDict;)V");
 		if (!methodID) {
-			const char *error = "Couldn't find proxy method 'setAdapter' with signature '(Ljava/lang/Object;)V'";
+			const char *error = "Couldn't find proxy method 'setAdapter' with signature '(Lorg/appcelerator/kroll/KrollDict;)V'";
 			LOGE(TAG, error);
 				titanium::JSException::Error(isolate, error);
 				return;
@@ -345,88 +318,7 @@ void TrackerProxy::setAdapter(const FunctionCallbackInfo<Value>& args)
 	if (!args[0]->IsNull()) {
 		Local<Value> arg_0 = args[0];
 		jArguments[0].l =
-			titanium::TypeConverter::jsValueToJavaObject(
-				isolate,
-				env, arg_0, &isNew_0);
-	} else {
-		jArguments[0].l = NULL;
-	}
-
-	jobject javaProxy = proxy->getJavaObject();
-	if (javaProxy == NULL) {
-		args.GetReturnValue().Set(v8::Undefined(isolate));
-		return;
-	}
-	env->CallVoidMethodA(javaProxy, methodID, jArguments);
-
-	proxy->unreferenceJavaObject(javaProxy);
-
-
-
-			if (isNew_0) {
-				env->DeleteLocalRef(jArguments[0].l);
-			}
-
-
-	if (env->ExceptionCheck()) {
-		titanium::JSException::fromJavaException(isolate);
-		env->ExceptionClear();
-	}
-
-
-
-
-	args.GetReturnValue().Set(v8::Undefined(isolate));
-
-}
-void TrackerProxy::addAdapter(const FunctionCallbackInfo<Value>& args)
-{
-	LOGD(TAG, "addAdapter()");
-	Isolate* isolate = args.GetIsolate();
-	HandleScope scope(isolate);
-
-	JNIEnv *env = titanium::JNIScope::getEnv();
-	if (!env) {
-		titanium::JSException::GetJNIEnvironmentError(isolate);
-		return;
-	}
-	static jmethodID methodID = NULL;
-	if (!methodID) {
-		methodID = env->GetMethodID(TrackerProxy::javaClass, "addAdapter", "(Ljava/lang/Object;)V");
-		if (!methodID) {
-			const char *error = "Couldn't find proxy method 'addAdapter' with signature '(Ljava/lang/Object;)V'";
-			LOGE(TAG, error);
-				titanium::JSException::Error(isolate, error);
-				return;
-		}
-	}
-
-	Local<Object> holder = args.Holder();
-	// If holder isn't the JavaObject wrapper we expect, look up the prototype chain
-	if (!JavaObject::isJavaObject(holder)) {
-		holder = holder->FindInstanceInPrototypeChain(getProxyTemplate(isolate));
-	}
-
-	titanium::Proxy* proxy = NativeObject::Unwrap<titanium::Proxy>(holder);
-
-	if (args.Length() < 1) {
-		char errorStringBuffer[100];
-		sprintf(errorStringBuffer, "addAdapter: Invalid number of arguments. Expected 1 but got %d", args.Length());
-		titanium::JSException::Error(isolate, errorStringBuffer);
-		return;
-	}
-
-	jvalue jArguments[1];
-
-
-
-
-	bool isNew_0;
-
-	if (!args[0]->IsNull()) {
-		Local<Value> arg_0 = args[0];
-		jArguments[0].l =
-			titanium::TypeConverter::jsValueToJavaObject(
+			titanium::TypeConverter::jsObjectToJavaKrollDict(
 				isolate,
 				env, arg_0, &isNew_0);
 	} else {
@@ -473,9 +365,9 @@ void TrackerProxy::start(const FunctionCallbackInfo<Value>& args)
 	}
 	static jmethodID methodID = NULL;
 	if (!methodID) {
-		methodID = env->GetMethodID(TrackerProxy::javaClass, "start", "(Ljava/lang/Object;)V");
+		methodID = env->GetMethodID(TrackerProxy::javaClass, "start", "()V");
 		if (!methodID) {
-			const char *error = "Couldn't find proxy method 'start' with signature '(Ljava/lang/Object;)V'";
+			const char *error = "Couldn't find proxy method 'start' with signature '()V'";
 			LOGE(TAG, error);
 				titanium::JSException::Error(isolate, error);
 				return;
@@ -490,28 +382,7 @@ void TrackerProxy::start(const FunctionCallbackInfo<Value>& args)
 
 	titanium::Proxy* proxy = NativeObject::Unwrap<titanium::Proxy>(holder);
 
-
-	jvalue jArguments[1];
-
-
-
-
-	bool isNew_0;
-	if (args.Length() <= 0) {
-		jArguments[0].l = NULL;
-
-	} else {
-
-	if (!args[0]->IsNull()) {
-		Local<Value> arg_0 = args[0];
-		jArguments[0].l =
-			titanium::TypeConverter::jsValueToJavaObject(
-				isolate,
-				env, arg_0, &isNew_0);
-	} else {
-		jArguments[0].l = NULL;
-	}
-	}
+	jvalue* jArguments = 0;
 
 	jobject javaProxy = proxy->getJavaObject();
 	if (javaProxy == NULL) {
@@ -522,11 +393,6 @@ void TrackerProxy::start(const FunctionCallbackInfo<Value>& args)
 
 	proxy->unreferenceJavaObject(javaProxy);
 
-
-
-			if (isNew_0) {
-				env->DeleteLocalRef(jArguments[0].l);
-			}
 
 
 	if (env->ExceptionCheck()) {

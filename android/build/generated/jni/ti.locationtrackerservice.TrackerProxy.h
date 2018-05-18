@@ -34,7 +34,6 @@ private:
 	static void stop(const v8::FunctionCallbackInfo<v8::Value>&);
 	static void requestLocationUpdates(const v8::FunctionCallbackInfo<v8::Value>&);
 	static void setAdapter(const v8::FunctionCallbackInfo<v8::Value>&);
-	static void addAdapter(const v8::FunctionCallbackInfo<v8::Value>&);
 	static void start(const v8::FunctionCallbackInfo<v8::Value>&);
 	static void setNotification(const v8::FunctionCallbackInfo<v8::Value>&);
 

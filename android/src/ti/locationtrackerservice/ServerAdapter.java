@@ -21,7 +21,7 @@ public class ServerAdapter {
 	private static int MODE_PRIVATE = 0;
 	private Context ctx;
 	private String database = "geologger";
-	private KrollDict opts;
+	private KrollDict opts = null;
 
 	public ServerAdapter(Context ctx, KrollDict adapterOpts) {
 		this.ctx = ctx;
@@ -29,8 +29,13 @@ public class ServerAdapter {
 
 	}
 
+	public void setOpts(KrollDict opts) {
+		this.opts = opts;
+	}
+
 	public void Sync() {
 		JSONArray resultList = new JSONArray();
+		JSONObject payload = new JSONObject();
 		SQLiteDatabase db = ctx.openOrCreateDatabase(this.database,
 				MODE_PRIVATE, null);
 		Cursor c = db.rawQuery("SELECT * FROM " + this.database
@@ -50,25 +55,20 @@ public class ServerAdapter {
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
-
 		c.close();
 		db.close();
-
-		JSONObject payload = new JSONObject();
 		try {
 			payload.put("list", resultList);
 		} catch (JSONException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		try {
-			String status = send(opts.getString("method"),
-					opts.getString("uri"), payload.toString());
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
+		/*
+		 * if (this.opts != null) {
+		 * 
+		 * try { String status = send(opts.getString("method"),
+		 * opts.getString("uri"), payload.toString()); } catch (IOException e) {
+		 * e.printStackTrace(); } }
+		 */
 	}
 
 	private String send(String method, String uri, String json)
