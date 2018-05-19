@@ -311,6 +311,10 @@ public class LocationUpdatesService extends Service {
 
 	}
 
+	public void cancelNotification() {
+		mNotificationManager.cancelAll();
+	}
+
 	/**
 	 * Removes location updates. Note that in this sample we merely log the
 	 * {@link SecurityException}.
@@ -353,11 +357,10 @@ public class LocationUpdatesService extends Service {
 				.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 
 		builder.setContentTitle(contentTitle).setOngoing(true)
-				.setPriority(Notification.FLAG_HIGH_PRIORITY)
+				.setPriority(Notification.FLAG_FOREGROUND_SERVICE)
 				.setContentIntent(activityPendingIntent)
 				.setSmallIcon(R("ic_launcher", "mipmap"))
 				.setSubText(notificationOpts.getString("subText"))
-				.setSound(defaultSoundUri)
 				.setContentText(notificationOpts.getString("contentText"))
 				.setContentTitle(notificationOpts.getString("contentTitle"))
 				.setVibrate(null).setWhen(System.currentTimeMillis());

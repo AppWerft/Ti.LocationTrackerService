@@ -61,8 +61,9 @@ Tracker.setAdapter({
 	uri: "https://mybackend.com/endpoint?my_extra_paramter=1234",
 	requestHeaders: ["Accesstoken:DE34B6721"],
 	method : "POST", // or PUT
-	timeout : 100000,
-	lastEntries : 1  // 10: last 10 locations, 0: for all
+	timeout : 10000, // for hhtp request
+	ttl : 60000,   // optional
+	okState  : 200  // this http result state is for db updating
 });
 
 Tracker.start();

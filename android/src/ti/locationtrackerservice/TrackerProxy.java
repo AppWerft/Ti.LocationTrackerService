@@ -196,9 +196,10 @@ public class TrackerProxy extends KrollProxy {
 	@Kroll.method
 	public void removeLocationUpdates() {
 		Log.i(LCAT, "removeLocationUpdates from JS");
-		if (locationTrackingService != null)
+		if (locationTrackingService != null) {
 			locationTrackingService.removeLocationUpdates();
-		else
+
+		} else
 			Log.e(LCAT,
 					"locationTrackingService was null, cannot removeLocationUpdates");
 		if (boundState && mServiceConnection != null) {
@@ -250,9 +251,17 @@ public class TrackerProxy extends KrollProxy {
 	}
 
 	@Override
+	public void onDestroy(Activity activity) {
+		if (locationTrackingService != null)
+			locationTrackingService.removeLocationUpdates();
+		super.onDestroy(activity);
+	}
+
+	@Override
 	public void onStop(Activity activity) {
 		Log.d(LCAT, "<<<<<< onStop called");
 		if (boundState) {
+
 			// Unbind from the service. This signals to the service that this
 			// activity is no longer
 			// in the foreground, and the service can respond by promoting
