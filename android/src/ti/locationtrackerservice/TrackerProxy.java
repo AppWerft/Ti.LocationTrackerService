@@ -23,6 +23,7 @@ import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.location.Location;
+import android.os.Bundle;
 import android.os.IBinder;
 import android.os.Messenger;
 import android.preference.PreferenceManager;
@@ -58,17 +59,15 @@ public class TrackerProxy extends KrollProxy {
 	public static int priority = LocationRequest.PRIORITY_LOW_POWER;
 	final static String ACTION = "LocationUpdatesServiceAction";
 
-	private KrollDict adapterOpts = new KrollDict();
-	private KrollDict notificationOpts = new KrollDict();
-	private KrollDict trackerOpts = new KrollDict();
+	private KrollDict adapterOpts = null;
+	private KrollDict notificationOpts = null;
+	private KrollDict trackerOpts = null;
 
 	final static String SERVICE_COMMAND_KEY = "SERVICECOMMANDKEY";
 	SharedPreferences sharedPreferences;
 
 	// A reference to the service used to get location updates.
 	private LocationUpdatesService locationTrackingService = null;
-	// https://stackoverflow.com/questions/6454668/sending-stringdata-from-activity-to-service-android
-	private Messenger mService = null;
 
 	// Tracks the bound state of the service.
 	private boolean boundState = false;
@@ -163,7 +162,6 @@ public class TrackerProxy extends KrollProxy {
 	@Kroll.method
 	public void setNotification(KrollDict opts) {
 		notificationOpts = opts;
-
 	}
 
 	@Kroll.method
@@ -228,16 +226,25 @@ public class TrackerProxy extends KrollProxy {
 
 	/* Lifecycles */
 
+	/*
+	 * @Override public void onCreate(Bundle b) { super.onCreate(b); }
+	 */
+
 	@Override
 	public void onStart(Activity activity) {
-		Log.d(LCAT, ">>>>> onStart called");
-		Intent intent = new Intent(ctx, LocationUpdatesService.class);
-
 		super.onStart(activity);
+		Log.d(LCAT, ">>>>> onStart called");
+		// Bind to the service. If the service is in foreground mode, this
+		// signals to the service
+		// that since this activity is in the foreground, the service can exit
+		// foreground mode.
+		ctx.bindService(new Intent(ctx, LocationUpdatesService.class),
+				mServiceConnection, Context.BIND_AUTO_CREATE);
 	}
 
 	@Override
 	public void onResume(Activity activity) {
+		super.onResume(activity);
 		Log.d(LCAT, ">>>>> onResume called");
 		LocalBroadcastManager.getInstance(ctx).registerReceiver(myReceiver,
 				new IntentFilter(LocationUpdatesService.ACTION_BROADCAST));
@@ -251,17 +258,9 @@ public class TrackerProxy extends KrollProxy {
 	}
 
 	@Override
-	public void onDestroy(Activity activity) {
-		if (locationTrackingService != null)
-			locationTrackingService.removeLocationUpdates();
-		super.onDestroy(activity);
-	}
-
-	@Override
 	public void onStop(Activity activity) {
 		Log.d(LCAT, "<<<<<< onStop called");
 		if (boundState) {
-
 			// Unbind from the service. This signals to the service that this
 			// activity is no longer
 			// in the foreground, and the service can respond by promoting
@@ -270,8 +269,14 @@ public class TrackerProxy extends KrollProxy {
 			ctx.unbindService(mServiceConnection);
 			boundState = false;
 		}
-
 		super.onStop(activity);
+	}
+
+	@Override
+	public void onDestroy(Activity activity) {
+		if (locationTrackingService != null)
+			locationTrackingService.removeLocationUpdates();
+		super.onDestroy(activity);
 	}
 
 	private boolean checkPermissions() {

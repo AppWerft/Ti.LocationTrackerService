@@ -1,20 +1,18 @@
-# Ti.LocationUpdateService
-A bound and started service that is promoted to a foreground service when location updates have been requested and all clients unbind.
+# Ti.LocationTrackerService
  
- For apps running in the background on "O" devices, location is computed only
-  once every 10 minutes and delivered batched every 30 minutes. This
-  restriction applies even to apps targeting "N" or lower which are run on "O"
-  devices.
+ Note: for apps running in the background on "O" devices (regardless of the targetSdkVersion),  location may be computed less frequently than requested when the app is not in the foreground.
  
-  This module realizes a solution for it. When
-  an activity is bound to this service, frequent location updates are
-  permitted. When the activity is removed from the foreground, the service
-  promotes itself to a foreground service, and location updates continue. When
-  the activity comes back to the foreground, the foreground service stops, and
-  the notification assocaited with that service is removed.
-  
-  For controlling  the  foreground service it is mandatory to add a `lifecycleContainer` property. This is for listening of lifecycle events inside the trackerproxy. 
+Apps that use a foreground service -  which involves displaying a non-dismissable notification -  can bypass the background location limits and request location updates as before.
+ 
+ This Titanium module uses a long-running bound and started service for location updates. The service is aware of foreground status of the window  which is the only bound client in this sample. 
 
+After requesting location updates, when the window ceases to be in the foreground, the service promotes itself to a foreground service and continues receiving location updates.
+
+ When the window comes back to the foreground, the foreground service stops, and the notification associated with that foreground service is removed.
+ 
+ While the foreground service notification is displayed, the user has the option to launch the appfrom the notification. 
+ 
+ 
 # Manifest
 
 Don't forget this entry in you manifest:
@@ -72,7 +70,7 @@ Tracker.start();
 Tracker.stop();
 
 var link = Ti.Database.open(GeoService.DATABASE);
-linl.execSQL("SELECT * FROM " + GeoSewrvice.TABLE + " WHERE done=0 ORDER BY time");
+link.execSQL("SELECT * FROM " + GeoService.TABLE + " WHERE done=0 ORDER BY time");
 
 ```
 The parameters for notification you can modify in res folder of module or as opts

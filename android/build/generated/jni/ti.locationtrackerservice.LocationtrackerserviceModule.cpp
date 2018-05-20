@@ -94,7 +94,6 @@ Local<FunctionTemplate> LocationtrackerserviceModule::getProxyTemplate(Isolate* 
 		FunctionTemplate::New(isolate, titanium::Proxy::inherit<LocationtrackerserviceModule>));
 
 	// Method bindings --------------------------------------------------------
-	titanium::SetProtoMethod(isolate, t, "checkPermissions", LocationtrackerserviceModule::checkPermissions);
 
 	Local<ObjectTemplate> prototypeTemplate = t->PrototypeTemplate();
 	Local<ObjectTemplate> instanceTemplate = t->InstanceTemplate();
@@ -130,65 +129,6 @@ Local<FunctionTemplate> LocationtrackerserviceModule::getProxyTemplate(Isolate* 
 }
 
 // Methods --------------------------------------------------------------------
-void LocationtrackerserviceModule::checkPermissions(const FunctionCallbackInfo<Value>& args)
-{
-	LOGD(TAG, "checkPermissions()");
-	Isolate* isolate = args.GetIsolate();
-	HandleScope scope(isolate);
-
-	JNIEnv *env = titanium::JNIScope::getEnv();
-	if (!env) {
-		titanium::JSException::GetJNIEnvironmentError(isolate);
-		return;
-	}
-	static jmethodID methodID = NULL;
-	if (!methodID) {
-		methodID = env->GetMethodID(LocationtrackerserviceModule::javaClass, "checkPermissions", "()Z");
-		if (!methodID) {
-			const char *error = "Couldn't find proxy method 'checkPermissions' with signature '()Z'";
-			LOGE(TAG, error);
-				titanium::JSException::Error(isolate, error);
-				return;
-		}
-	}
-
-	Local<Object> holder = args.Holder();
-	// If holder isn't the JavaObject wrapper we expect, look up the prototype chain
-	if (!JavaObject::isJavaObject(holder)) {
-		holder = holder->FindInstanceInPrototypeChain(getProxyTemplate(isolate));
-	}
-
-	titanium::Proxy* proxy = NativeObject::Unwrap<titanium::Proxy>(holder);
-
-	jvalue* jArguments = 0;
-
-	jobject javaProxy = proxy->getJavaObject();
-	if (javaProxy == NULL) {
-		args.GetReturnValue().Set(v8::Undefined(isolate));
-		return;
-	}
-	jboolean jResult = (jboolean)env->CallBooleanMethodA(javaProxy, methodID, jArguments);
-
-
-
-	proxy->unreferenceJavaObject(javaProxy);
-
-
-
-	if (env->ExceptionCheck()) {
-		Local<Value> jsException = titanium::JSException::fromJavaException(isolate);
-		env->ExceptionClear();
-		return;
-	}
-
-
-	Local<Boolean> v8Result = titanium::TypeConverter::javaBooleanToJsBoolean(isolate, env, jResult);
-
-
-
-	args.GetReturnValue().Set(v8Result);
-
-}
 
 // Dynamic property accessors -------------------------------------------------
 

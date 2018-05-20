@@ -72,9 +72,9 @@ public class LocationUpdatesService extends Service {
 	 * The desired interval for location updates. Inexact. Updates may be more
 	 * or less frequent.
 	 */
-	private KrollDict notificationOpts = new KrollDict();
-	private KrollDict adapterOpts = new KrollDict();
-	private KrollDict trackerOpts = new KrollDict();
+	private KrollDict notificationOpts = null;
+	private KrollDict adapterOpts = null;
+	private KrollDict trackerOpts = null;
 
 	private static String contentTitle = null;
 	private String contentText = null;
@@ -131,8 +131,8 @@ public class LocationUpdatesService extends Service {
 
 	public LocationUpdatesService() {
 		// super();
-		trackerOpts.put("interval", 10000);
-		trackerOpts.put("priority", 104);
+		trackerOpts.put("interval", 10000); // default
+		trackerOpts.put("priority", 104); // default
 		ctx = TiApplication.getInstance().getApplicationContext();
 		packageName = TiApplication.getInstance().getPackageName();
 		className = packageName
@@ -293,9 +293,13 @@ public class LocationUpdatesService extends Service {
 		this.trackerOpts = trackerOpts;
 		this.notificationOpts = notificationOpts;
 		Log.d(LCAT, "|||||||||||||\\ requestLocationUpdates");
-		Log.d(LCAT, notificationOpts.toString());
-		Log.d(LCAT, adapterOpts.toString());
-		Log.d(LCAT, trackerOpts.toString());
+		if (notificationOpts != null)
+			Log.d(LCAT, notificationOpts.toString());
+		if (adapterOpts != null)
+			Log.d(LCAT, adapterOpts.toString());
+		if (trackerOpts != null)
+			Log.d(LCAT, trackerOpts.toString());
+
 		serverAdapter = new ServerAdapter(this, adapterOpts);
 		Utils.setRequestingLocationUpdates(this, true);
 		startService(new Intent(getApplicationContext(),
@@ -309,10 +313,6 @@ public class LocationUpdatesService extends Service {
 					+ unlikely);
 		}
 
-	}
-
-	public void cancelNotification() {
-		mNotificationManager.cancelAll();
 	}
 
 	/**
@@ -368,16 +368,14 @@ public class LocationUpdatesService extends Service {
 			CharSequence bigText = notificationOpts.getString("bigText");
 			BigTextStyle style = new Notification.BigTextStyle()
 					.bigText(bigText);
-			// builder.setStyle(style);
+			builder.setStyle(style);
 		}
 		if (notificationOpts.containsKeyAndNotNull("largeIcon")) {
 			String largeIcon = notificationOpts.getString("largeIcon");
-			Log.d(LCAT, "try to render largeIcon");
 			final Target target = new Target() {
 				@Override
 				public void onBitmapLoaded(Bitmap bitmap,
 						Picasso.LoadedFrom from) {
-					Log.d(LCAT, "setLargeIcon");
 					builder.setLargeIcon(bitmap);
 				}
 
@@ -396,7 +394,6 @@ public class LocationUpdatesService extends Service {
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 			builder.setChannelId(CHANNEL_ID); // Channel ID
 		}
-		Log.i(LCAT, builder.toString());
 		return builder.build();
 	}
 
@@ -421,11 +418,10 @@ public class LocationUpdatesService extends Service {
 	private void onNewLocation(Location location) {
 		mLocation = location;
 		boolean isForeground = serviceIsRunningInForeground(ctx);
-		if (isForeground || true) {
-			Log.i(LCAT, "Foreground");
+		Log.i(LCAT, "LocationTrackingService is in Foreground " + isForeground);
+		if (isForeground) {
 			mNotificationManager.notify(NOTIFICATION_ID, getNotification());
-		} else
-			Log.i(LCAT, "Backgroundground");
+		}
 		// Notify anyone listening for broadcasts about the new location.
 		Intent intent = new Intent(ACTION_BROADCAST);
 		intent.putExtra(EXTRA_LOCATION, location);
@@ -441,7 +437,6 @@ public class LocationUpdatesService extends Service {
 				location.getLongitude(), location.getTime(),
 				location.getSpeed(), location.getAccuracy(), 0 };
 		db.execSQL("INSERT INTO " + DATABASE + " VALUES(?,?,?,?,?,?)", values);
-
 		db.close();
 		if (serverAdapter != null)
 			serverAdapter.Sync();

@@ -27,27 +27,18 @@ public class LocationtrackerserviceModule extends KrollModule {
 	final int PRIORITY_HIGH_ACCURACY = LocationRequest.PRIORITY_HIGH_ACCURACY;
 	@Kroll.constant
 	final int PRIORITY_LOW_POWER = LocationRequest.PRIORITY_LOW_POWER;
+
 	@Kroll.constant
 	final public static String DATABASE = "geologger";
 	@Kroll.constant
 	final public static String TABLE = DATABASE;
-
 	public static final String LCAT = "🚘 TiGeoLogger";
 
 	public LocationtrackerserviceModule() {
 		super();
-
 	}
 
 	@Kroll.onAppCreate
 	public static void onAppCreate(TiApplication app) {
-		Log.d(LCAT, "inside onAppCreate");
-	}
-
-	@Kroll.method
-	public boolean checkPermissions() {
-		return PackageManager.PERMISSION_GRANTED == ActivityCompat
-				.checkSelfPermission(TiApplication.getInstance(),
-						Manifest.permission.ACCESS_FINE_LOCATION);
 	}
 }
