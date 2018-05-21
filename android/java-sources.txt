@@ -1,4 +1,5 @@
 "/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/src/ti/locationtrackerservice/AdapterProxy.java"
+"/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/src/ti/locationtrackerservice/BasicAuthInterceptor.java"
 "/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/src/ti/locationtrackerservice/LocationUpdatesService.java"
 "/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/src/ti/locationtrackerservice/LocationtrackerserviceModule.java"
 "/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/src/ti/locationtrackerservice/Messages.java"

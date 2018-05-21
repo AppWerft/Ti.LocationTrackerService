@@ -63,6 +63,8 @@ public class TrackerProxy extends KrollProxy {
 	private KrollDict notificationOpts = null;
 	private KrollDict trackerOpts = null;
 
+	private Messenger mService = null;
+
 	final static String SERVICE_COMMAND_KEY = "SERVICECOMMANDKEY";
 	SharedPreferences sharedPreferences;
 
@@ -118,7 +120,6 @@ public class TrackerProxy extends KrollProxy {
 			res.put("bearing", location.getBearing());
 			res.put("provider", location.getProvider());
 			res.put("speed", location.getSpeed());
-			Log.i(LCAT, res.toString());
 			if (!isforeground) {
 				try {
 					if (location != null && hasListeners("location")) {

@@ -1,5 +1,6 @@
 package ti.locationtrackerservice;
 
+import org.apache.commons.lang.StringUtils;
 import org.appcelerator.kroll.KrollDict;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -8,11 +9,14 @@ import org.json.JSONObject;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import okhttp3.Call;
+import okhttp3.Callback;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -24,6 +28,7 @@ public class ServerAdapter {
 	private Context ctx;
 	final private String DATABASE = "geologger";
 	final private String TABLE = DATABASE;
+	final private String LCAT = LocationtrackerserviceModule.LCAT;
 	private KrollDict opts = null;
 
 	public ServerAdapter(Context ctx, KrollDict adapterOpts) {
@@ -86,25 +91,66 @@ public class ServerAdapter {
 
 	}
 
-	private String send(String method, String uri, String json,
-			List<Double> timestamp) throws IOException {
+	private void updateDB(List<Double> timestamps) {
+		SQLiteDatabase db = ctx.openOrCreateDatabase(DATABASE, MODE_PRIVATE,
+				null);
+		String sql = "UPDATE " + TABLE + " SET done=1 WHERE time IN ("
+				+ StringUtils.join(timestamps, ",") + ")";
+		db.rawQuery(sql, null);
+		db.close();
+	}
+
+	private void send(String method, String uri, String json,
+			final List<Double> timestamps) throws IOException {
+		Callback loginCallback = new Callback() {
+			@Override
+			public void onFailure(Call call, IOException e) {
+				try {
+					Log.i(LCAT, "login failed: " + call.execute().code());
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
+			}
+
+			@Override
+			public void onResponse(Call call, Response response)
+					throws IOException {
+				boolean success = false;
+				int code = response.code();
+				if (opts.containsKeyAndNotNull("successCode")) {
+					if (opts.getInt("successCode") == code) {
+						success = true;
+					}
+				} else {
+					if (code >= 200 && code < 300) {
+						success = true;
+					}
+				}
+				if (success)
+					updateDB(timestamps);
+
+			}
+		};
 		final MediaType JSON = MediaType
 				.parse("application/json; charset=utf-8");
 		OkHttpClient client = new OkHttpClient();
 		RequestBody body = RequestBody.create(JSON, json);
-		Request request = null;
+		Request.Builder builder = new Request.Builder().url(uri);
 		switch (method) {
 		case "post":
-			request = new Request.Builder().url(uri).post(body).build();
+			builder = builder.post(body);
 			break;
 		case "put":
-			request = new Request.Builder().url(uri).put(body).build();
+			builder = builder.put(body);
 			break;
+		}
 
+		if (opts.containsKeyAndNotNull("userName")
+				&& opts.containsKeyAndNotNull("password")) {
+			// builder = builder.addInterceptor(new BasicAuthInterceptor(opts
+			// .getString("userName"), opts.getString("password")));
 		}
-		try (Response response = client.newCall(request).execute()) {
-			return response.body().string();
-		}
+		client.newCall(builder.build()).enqueue(loginCallback);
+
 	}
-
 }

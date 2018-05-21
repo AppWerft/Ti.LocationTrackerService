@@ -130,7 +130,8 @@ public class LocationUpdatesService extends Service {
 	private String className;
 
 	public LocationUpdatesService() {
-		// super();
+		super();
+		trackerOpts = new KrollDict();
 		trackerOpts.put("interval", 10000); // default
 		trackerOpts.put("priority", 104); // default
 		ctx = TiApplication.getInstance().getApplicationContext();

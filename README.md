@@ -12,7 +12,16 @@ After requesting location updates, when the window ceases to be in the foregroun
  
  While the foreground service notification is displayed, the user has the option to launch the appfrom the notification. 
  
- 
+
+# Adding ti.playservices
+
+```xml
+<modules>
+      <module platform="android">ti.playservices</module>
+      <module platform="android">ti.locationtrackerservice</module>
+ </modules>
+```    
+
 # Manifest
 
 Don't forget this entry in you manifest:
@@ -59,10 +68,14 @@ Tracker.setAdapter({
 	uri: "https://mybackend.com/endpoint?my_extra_paramter=1234",
 	requestHeaders: ["Accesstoken:DE34B6721"],
 	method : "POST", // or PUT
-	timeout : 10000, // for hhtp request
+	timeout : 10000, // for http request
 	ttl : 60000,   // optional
-	okState  : 200  // this http result state is for db updating
+	userName : "locatrionupdater",
+	password : "v3ryS3cr3t",
+	successCode  : 200  // this http result state is for db updating
 });
+Tracker.addEventListener('location',function(e) {
+};
 
 Tracker.start();
 
