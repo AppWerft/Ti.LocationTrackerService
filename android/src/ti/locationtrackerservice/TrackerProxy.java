@@ -120,19 +120,19 @@ public class TrackerProxy extends KrollProxy {
 			res.put("bearing", location.getBearing());
 			res.put("provider", location.getProvider());
 			res.put("speed", location.getSpeed());
-			if (!isforeground) {
-				try {
-					if (location != null && hasListeners("location")) {
-						fireEvent("location", res);
-					}
-					if (onLocationCallback != null) {
-						onLocationCallback.call(getKrollObject(), res);
-					}
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+			// if (!isforeground) {
+			try {
+				if (location != null && hasListeners("location")) {
+					fireEvent("location", res);
 				}
+				if (onLocationCallback != null) {
+					onLocationCallback.call(getKrollObject(), res);
+				}
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
+			// }
 		}
 	}
 
