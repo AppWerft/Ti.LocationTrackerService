@@ -97,6 +97,7 @@ public class ServerAdapter {
 		String sql = "UPDATE " + TABLE + " SET done=1 WHERE time IN ("
 				+ StringUtils.join(timestamps, ",") + ")";
 		db.rawQuery(sql, null);
+		Log.d(LCAT, sql);
 		db.close();
 	}
 
