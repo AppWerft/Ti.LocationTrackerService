@@ -51,7 +51,7 @@ public class ServerAdapter {
 		if (this.opts.containsKeyAndNotNull("ttl")) {
 			int oldest = (int) (System.currentTimeMillis() - this.opts
 					.getInt("ttl"));
-			db.rawQuery("DELETE * FROM " + TABLE + " WHERE time < " + oldest,
+			db.rawQuery("DELETE FROM " + TABLE + " WHERE time < " + oldest,
 					null);
 		}
 		Cursor c = db.rawQuery("SELECT * FROM " + TABLE
@@ -103,7 +103,7 @@ public class ServerAdapter {
 
 	private void send(String method, String uri, String json,
 			final List<Double> timestamps) throws IOException {
-		Callback loginCallback = new Callback() {
+		Callback reqestCallback = new Callback() {
 			@Override
 			public void onFailure(Call call, IOException e) {
 				try {
@@ -118,6 +118,7 @@ public class ServerAdapter {
 					throws IOException {
 				boolean success = false;
 				int code = response.code();
+				Log.d(LCAT, "responseCode = " + code);
 				if (opts.containsKeyAndNotNull("successCode")) {
 					if (opts.getInt("successCode") == code) {
 						success = true;
@@ -138,12 +139,13 @@ public class ServerAdapter {
 		RequestBody body = RequestBody.create(JSON, json);
 		Request.Builder builder = new Request.Builder().url(uri);
 		switch (method) {
-		case "post":
+		case "POST":
 			builder = builder.post(body);
 			break;
-		case "put":
+		case "PUT":
 			builder = builder.put(body);
-			break;
+		default:
+			builder = builder.post(body);
 		}
 
 		if (opts.containsKeyAndNotNull("userName")
@@ -151,7 +153,7 @@ public class ServerAdapter {
 			// builder = builder.addInterceptor(new BasicAuthInterceptor(opts
 			// .getString("userName"), opts.getString("password")));
 		}
-		client.newCall(builder.build()).enqueue(loginCallback);
+		client.newCall(builder.build()).enqueue(reqestCallback);
 
 	}
 }
