@@ -78,13 +78,12 @@ Tracker.setAdapter({
 	uri: "https://mybackend.com/endpoint?my_extra_paramter=1234",
 	requestHeaders: ["Accesstoken:DE34B6721"],
 	method : "POST", // or PUT
-	timeout : 10000, // for http request
-	ttl : 60000,   // optional
-	userName : "locatrionupdater",
-	password : "v3ryS3cr3t",
+	timeout : 5000, // for http request
+	ttl : 60000,   // optional, life cycle of location, older will deleted and not send
 	successCode  : 200  // this http result state is for db updating
 });
 Tracker.addEventListener('location',function(e) {
+	console.log(e.coords);
 };
 
 Tracker.start();

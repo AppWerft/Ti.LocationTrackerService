@@ -112,13 +112,19 @@ Local<FunctionTemplate> LocationtrackerserviceModule::getProxyTemplate(Isolate* 
 
 			DEFINE_STRING_CONSTANT(isolate, prototypeTemplate, "TABLE", "geologger");
 
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "VISIBILITY_SECRET", -1);
+
+			DEFINE_STRING_CONSTANT(isolate, prototypeTemplate, "DATABASE", "geologger");
+
 			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "PRIORITY_HIGH_ACCURACY", 100);
 
 			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "PRIORITY_LOW_POWER", 104);
 
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "VISIBILITY_PUBLIC", 1);
+
 			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "PRIORITY_BALANCED_POWER_ACCURACY", 102);
 
-			DEFINE_STRING_CONSTANT(isolate, prototypeTemplate, "DATABASE", "geologger");
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "VISIBILITY_PRIVATE", 0);
 
 
 	// Dynamic properties -----------------------------------------------------

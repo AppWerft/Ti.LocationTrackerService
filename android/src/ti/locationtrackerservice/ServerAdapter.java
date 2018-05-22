@@ -83,8 +83,7 @@ public class ServerAdapter {
 
 		if (this.opts != null) {
 			try {
-				send(opts.getString("method"), opts.getString("uri"),
-						payload.toString(), timestamps);
+				send(payload.toString(), timestamps);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -96,18 +95,15 @@ public class ServerAdapter {
 		SQLiteDatabase db = ctx.openOrCreateDatabase(DATABASE, MODE_PRIVATE,
 				null);
 		for (int timestamp : timestamps) {
-
+			String sql = "UPDATE " + TABLE + " SET done=1 WHERE time="
+					+ timestamp;
+			db.rawQuery(sql, null);
 		}
-
-		String sql = "UPDATE " + TABLE + " SET done=1 WHERE time IN ("
-				+ StringUtils.join(timestamps, ",") + ")";
-		db.rawQuery(sql, null);
-		Log.d(LCAT, sql);
 		db.close();
 	}
 
-	private void send(String method, String uri, String json,
-			final List<Integer> timestamps) throws IOException {
+	private void send(String json, final List<Integer> timestamps)
+			throws IOException {
 		Callback reqestCallback = new Callback() {
 			@Override
 			public void onFailure(Call call, IOException e) {
@@ -135,15 +131,15 @@ public class ServerAdapter {
 				}
 				if (success)
 					updateDB(timestamps);
-
 			}
 		};
 		final MediaType JSON = MediaType
 				.parse("application/json; charset=utf-8");
 		OkHttpClient client = new OkHttpClient();
 		RequestBody body = RequestBody.create(JSON, json);
-		Request.Builder builder = new Request.Builder().url(uri);
-		switch (method) {
+		Request.Builder builder = new Request.Builder().url(opts
+				.getString("uri"));
+		switch (opts.getString("method")) {
 		case "POST":
 			builder = builder.post(body);
 			break;
@@ -158,6 +154,13 @@ public class ServerAdapter {
 			// builder = builder.addInterceptor(new BasicAuthInterceptor(opts
 			// .getString("userName"), opts.getString("password")));
 		}
+		if (opts.containsKeyAndNotNull("requestHeaders")) {
+			for (String requestHeader : opts.getStringArray("requestHeaders")) {
+				String[] parts = StringUtils.split(requestHeader, ":");
+				builder.addHeader(parts[0], parts[1]);
+			}
+		}
+
 		client.newCall(builder.build()).enqueue(reqestCallback);
 
 	}

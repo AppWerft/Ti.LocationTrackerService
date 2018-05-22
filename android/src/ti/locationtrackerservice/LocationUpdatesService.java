@@ -379,6 +379,10 @@ public class LocationUpdatesService extends Service {
 		 * new Notification.BigTextStyle() .bigText(bigText);
 		 * builder.setStyle(style); }
 		 */
+		if (notificationOpts.containsKeyAndNotNull("lockscreenVisibility")) {
+			builder.setVisibility(notificationOpts
+					.getInt("lockscreenVisibility"));
+		}
 		if (notificationOpts.containsKeyAndNotNull("largeIcon")) {
 			String largeIcon = notificationOpts.getString("largeIcon");
 			final Target target = new Target() {
@@ -400,7 +404,6 @@ public class LocationUpdatesService extends Service {
 			};
 			Picasso.with(ctx).load(largeIcon).resize(150, 150).into(target);
 		}
-		Log.d(LCAT, builder.toString());
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 			// builder.setChannelId(CHANNEL_ID); // Channel ID
 		}
