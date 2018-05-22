@@ -16,6 +16,7 @@ import org.appcelerator.titanium.TiApplication;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.NotificationCompat;
 
 import com.google.android.gms.location.LocationRequest;
 
@@ -27,6 +28,13 @@ public class LocationtrackerserviceModule extends KrollModule {
 	final int PRIORITY_HIGH_ACCURACY = LocationRequest.PRIORITY_HIGH_ACCURACY;
 	@Kroll.constant
 	final int PRIORITY_LOW_POWER = LocationRequest.PRIORITY_LOW_POWER;
+
+	@Kroll.constant
+	final int VISIBILITY_PUBLIC = NotificationCompat.VISIBILITY_PUBLIC;
+	@Kroll.constant
+	final int VISIBILITY_PRIVATE = NotificationCompat.VISIBILITY_PRIVATE;
+	@Kroll.constant
+	final int VISIBILITY_SECRET = NotificationCompat.VISIBILITY_SECRET;
 
 	@Kroll.constant
 	final public static String DATABASE = "geologger";

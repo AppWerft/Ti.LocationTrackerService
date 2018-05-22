@@ -36,6 +36,14 @@ Don't forget these entries in you manifest:
        </application>
 </manifest>
 ```
+# Constants
+
+* PRIORITY\_BALANCED\_POWER_ACCURACY
+* PRIORITY\_HIGH_ACCURACY
+* PRIORITY\_LOW_POWER
+* VISIBILITY_PUBLIC
+* VISIBILITY_PRIVATE
+* VISIBILITY_SECRET
 
 
 # Usage
@@ -61,6 +69,7 @@ Tracker.setNotification({
 	contentTitle : "Title above the text",
 	bigText : "The expandable text in more then two lines",
 	contentText : "Longer text above",
+	lockscreenVisibility : GeoService.VISIBILITY_PRIVATE, // || SECRET || PUBLIC
 	largeIcon : "https://avatars0.githubusercontent.com/u/2996237?s=460&v=4"  // optionalfor icon on right side
 
 });

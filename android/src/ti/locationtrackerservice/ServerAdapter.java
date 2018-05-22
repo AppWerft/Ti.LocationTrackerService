@@ -44,7 +44,7 @@ public class ServerAdapter {
 	public void Sync() {
 		JSONArray resultList = new JSONArray();
 		JSONObject payload = new JSONObject();
-		List<Double> timestamps = new ArrayList<>();
+		List<Integer> timestamps = new ArrayList<>();
 		SQLiteDatabase db = ctx.openOrCreateDatabase(DATABASE, MODE_PRIVATE,
 				null);
 
@@ -60,11 +60,11 @@ public class ServerAdapter {
 		try {
 			// https://stackoverflow.com/questions/32284135/sqlite-identify-long-value
 			while (c.moveToNext()) {
-				timestamps.add(c.getDouble(c.getColumnIndex("time")));
+				timestamps.add(c.getInt(c.getColumnIndex("time")));
 				JSONObject res = new JSONObject();
 				res.put("latitude", c.getFloat(c.getColumnIndex("Latitude")));
 				res.put("longitude", c.getFloat(c.getColumnIndex("Longitude")));
-				res.put("time", c.getDouble(c.getColumnIndex("time")));
+				res.put("time", c.getInt(c.getColumnIndex("time")));
 				res.put("speed", c.getDouble(c.getColumnIndex("Speed")));
 				res.put("accuracy", c.getDouble(c.getColumnIndex("Accuracy")));
 				resultList.put(res);
@@ -92,9 +92,13 @@ public class ServerAdapter {
 
 	}
 
-	private void updateDB(List<Double> timestamps) {
+	private void updateDB(List<Integer> timestamps) {
 		SQLiteDatabase db = ctx.openOrCreateDatabase(DATABASE, MODE_PRIVATE,
 				null);
+		for (int timestamp : timestamps) {
+
+		}
+
 		String sql = "UPDATE " + TABLE + " SET done=1 WHERE time IN ("
 				+ StringUtils.join(timestamps, ",") + ")";
 		db.rawQuery(sql, null);
@@ -103,7 +107,7 @@ public class ServerAdapter {
 	}
 
 	private void send(String method, String uri, String json,
-			final List<Double> timestamps) throws IOException {
+			final List<Integer> timestamps) throws IOException {
 		Callback reqestCallback = new Callback() {
 			@Override
 			public void onFailure(Call call, IOException e) {

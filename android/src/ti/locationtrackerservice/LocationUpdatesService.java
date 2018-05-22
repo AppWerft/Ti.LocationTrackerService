@@ -444,7 +444,8 @@ public class LocationUpdatesService extends Service {
 				+ TABLE
 				+ "(Latitude Real,Longitude Real, time Integer, Speed Real, Accuracy Real,Done Integer);");
 		Object[] values = new Object[] { location.getLatitude(),
-				location.getLongitude(), Math.round(location.getTime() / 1000),
+				location.getLongitude(),
+				(int) Math.round(location.getTime() / 1000),
 				location.getSpeed(), location.getAccuracy(), 0 };
 		db.execSQL("INSERT INTO " + DATABASE + " VALUES(?,?,?,?,?,?)", values);
 		db.close();
