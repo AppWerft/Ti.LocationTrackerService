@@ -10,7 +10,6 @@ import org.appcelerator.titanium.TiApplication;
 //import ti.locationtrackerservice.Messages.TrackerEvent;
 import android.app.ActivityManager;
 import android.app.Notification;
-import android.app.Notification.BigTextStyle;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -24,16 +23,14 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
-import android.media.RingtoneManager;
-import android.net.Uri;
 import android.os.Binder;
 import android.os.Build;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.IBinder;
 import android.os.Looper;
-import android.support.v4.content.LocalBroadcastManager;
 import android.support.v4.app.NotificationCompat;
+import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -55,7 +52,7 @@ public class LocationUpdatesService extends Service {
 	/**
 	 * The name of the channel for notifications.
 	 */
-	private static final String CHANNEL_ID = "channel_01";
+
 	private static final String DATABASE = LocationtrackerserviceModule.DATABASE;
 	private static final String TABLE = LocationtrackerserviceModule.TABLE;
 	static final String ACTION_BROADCAST = PACKAGE_NAME + ".broadcast";
@@ -82,7 +79,7 @@ public class LocationUpdatesService extends Service {
 	private int interval = 10;
 
 	public static final String NOTIFICATION_CHANNEL_ID = "1337";
-	public static final String NOTIFICATION_CHANNEL_NAME = "geotracker";
+	public static final String NOTIFICATION_CHANNEL_NAME = "Geotracker";
 
 	private final long UPDATE_INTERVAL_IN_MILLISECONDS = interval;
 	ServerAdapter serverAdapter;
@@ -158,7 +155,6 @@ public class LocationUpdatesService extends Service {
 		Log.i(LCAT, "------  onCreate of services");
 		mFusedLocationClient = LocationServices
 				.getFusedLocationProviderClient(this);
-
 		mLocationCallback = new LocationCallback() {
 			@Override
 			public void onLocationResult(LocationResult locationResult) {
@@ -168,13 +164,10 @@ public class LocationUpdatesService extends Service {
 		};
 		createLocationRequest();
 		getLastLocation();
-
 		HandlerThread handlerThread = new HandlerThread(TAG);
 		handlerThread.start();
 		mServiceHandler = new Handler(handlerThread.getLooper());
-
 		notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-
 	}
 
 	@Override
@@ -286,16 +279,13 @@ public class LocationUpdatesService extends Service {
 			KrollDict notificationOpts, KrollDict trackerOpts) {
 		this.adapterOpts = adapterOpts;
 		this.trackerOpts = trackerOpts;
-		this.notificationOpts = notificationOpts;
-		Log.d(LCAT, "|||||||||||||\\ requestLocationUpdates");
-		if (notificationOpts != null)
-			Log.d(LCAT, notificationOpts.toString());
-		if (adapterOpts != null)
-			Log.d(LCAT, adapterOpts.toString());
-		if (trackerOpts != null)
-			Log.d(LCAT, trackerOpts.toString());
 
-		serverAdapter = new ServerAdapter(this, adapterOpts);
+		this.notificationOpts = notificationOpts;
+		if (notificationOpts != null)
+			if (adapterOpts != null)
+				if (trackerOpts != null)
+
+					serverAdapter = new ServerAdapter(this, adapterOpts);
 		Utils.setRequestingLocationUpdates(this, true);
 		startService(new Intent(getApplicationContext(),
 				LocationUpdatesService.class));
@@ -351,9 +341,13 @@ public class LocationUpdatesService extends Service {
 				ctx);
 		// Android O requires a Notification Channel.
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+			int importance = NotificationManager.IMPORTANCE_DEFAULT;
+			if (notificationOpts.containsKeyAndNotNull("importance")) {
+				importance = notificationOpts.getInt("importance");
+			}
 			NotificationChannel notificationChannel = new NotificationChannel(
 					NOTIFICATION_CHANNEL_ID, NOTIFICATION_CHANNEL_NAME,
-					NotificationManager.IMPORTANCE_LOW);
+					importance);
 			notificationChannel.enableLights(true);
 			notificationChannel.setLightColor(Color.BLUE);
 			NotificationManager notificationManager = (NotificationManager) ctx
@@ -368,7 +362,7 @@ public class LocationUpdatesService extends Service {
 		builder.setContentTitle(contentTitle).setOngoing(true)
 				.setPriority(Notification.FLAG_FOREGROUND_SERVICE)
 				.setContentIntent(activityPendingIntent)
-				.setSmallIcon(R("ic_launcher", "mipmap"))
+				.setSmallIcon(R("ic_launcher", "mipmap")).setSound(null)
 				.setSubText(notificationOpts.getString("subText"))
 				.setContentText(notificationOpts.getString("contentText"))
 				.setContentTitle(notificationOpts.getString("contentTitle"))
@@ -463,8 +457,9 @@ public class LocationUpdatesService extends Service {
 		mLocationRequest = new LocationRequest();
 		mLocationRequest.setInterval(trackerOpts.getInt("interval"));
 		mLocationRequest.setFastestInterval(trackerOpts.getInt("interval"));
-		if (priority > 0)
-			mLocationRequest.setPriority(trackerOpts.getInt("priority"));
+		int locationPriority = trackerOpts.getInt("priority");
+		if (locationPriority > 0)
+			mLocationRequest.setPriority(locationPriority);
 	}
 
 	/**

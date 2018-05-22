@@ -14,6 +14,7 @@ import org.appcelerator.kroll.common.Log;
 import org.appcelerator.titanium.TiApplication;
 
 import android.Manifest;
+import android.app.NotificationManager;
 import android.content.pm.PackageManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.NotificationCompat;
@@ -23,18 +24,42 @@ import com.google.android.gms.location.LocationRequest;
 @Kroll.module(name = "Locationtrackerservice", id = "ti.locationtrackerservice")
 public class LocationtrackerserviceModule extends KrollModule {
 	@Kroll.constant
-	final int PRIORITY_BALANCED_POWER_ACCURACY = LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY;
+	final int LOCATION_PRIORITY_BALANCED_POWER_ACCURACY = LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY;
 	@Kroll.constant
-	final int PRIORITY_HIGH_ACCURACY = LocationRequest.PRIORITY_HIGH_ACCURACY;
+	final int LOCATION_PRIORITY_HIGH_ACCURACY = LocationRequest.PRIORITY_HIGH_ACCURACY;
 	@Kroll.constant
-	final int PRIORITY_LOW_POWER = LocationRequest.PRIORITY_LOW_POWER;
+	final int LOCATION_PRIORITY_LOW_POWER = LocationRequest.PRIORITY_LOW_POWER;
 
 	@Kroll.constant
-	final int VISIBILITY_PUBLIC = NotificationCompat.VISIBILITY_PUBLIC;
+	final int NOTIFICATION_VISIBILITY_PUBLIC = NotificationCompat.VISIBILITY_PUBLIC;
 	@Kroll.constant
-	final int VISIBILITY_PRIVATE = NotificationCompat.VISIBILITY_PRIVATE;
+	final int NOTIFICATION_VISIBILITY_PRIVATE = NotificationCompat.VISIBILITY_PRIVATE;
 	@Kroll.constant
-	final int VISIBILITY_SECRET = NotificationCompat.VISIBILITY_SECRET;
+	final int NOTIFICATION_VISIBILITY_SECRET = NotificationCompat.VISIBILITY_SECRET;
+
+	@Kroll.constant
+	final int NOTIFICATION_PRIORITY_MAX = NotificationCompat.PRIORITY_MAX;
+	@Kroll.constant
+	final int NOTIFICATION_PRIORITY_DEFAULT = NotificationCompat.PRIORITY_DEFAULT;
+	@Kroll.constant
+	final int NOTIFICATION_PRIORITY_HIGHT = NotificationCompat.PRIORITY_HIGH;
+	@Kroll.constant
+	final int NOTIFICATION_PRIORITY_MIN = NotificationCompat.PRIORITY_MIN;
+	@Kroll.constant
+	final int NOTIFICATION_PRIORITY_LOW = NotificationCompat.PRIORITY_LOW;
+
+	@Kroll.constant
+	final int NOTIFICATION_IMPORTANCE_MAX = NotificationManager.IMPORTANCE_MAX;
+	@Kroll.constant
+	final int NOTIFICATION_IMPORTANCE_HIGHT = NotificationManager.IMPORTANCE_HIGH;
+	@Kroll.constant
+	final int NOTIFICATION_IMPORTANCE_DEFAULT = NotificationManager.IMPORTANCE_DEFAULT;
+	@Kroll.constant
+	final int NOTIFICATION_IMPORTANCE_LOW = NotificationManager.IMPORTANCE_LOW;
+	@Kroll.constant
+	final int NOTIFICATION_IMPORTANCE_MIN = NotificationManager.IMPORTANCE_MIN;
+	@Kroll.constant
+	final int NOTIFICATION_IMPORTANCE_NONE = NotificationManager.IMPORTANCE_NONE;
 
 	@Kroll.constant
 	final public static String DATABASE = "geologger";

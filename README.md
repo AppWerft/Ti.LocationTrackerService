@@ -37,13 +37,39 @@ Don't forget these entries in you manifest:
 </manifest>
 ```
 # Constants
+## Location
 
-* PRIORITY\_BALANCED\_POWER_ACCURACY
-* PRIORITY\_HIGH_ACCURACY
-* PRIORITY\_LOW_POWER
-* VISIBILITY_PUBLIC
-* VISIBILITY_PRIVATE
-* VISIBILITY_SECRET
+* LOCATION\_PRIORITY\_BALANCED\_POWER_ACCURACY
+* LOCATION\_PRIORITY\_HIGH_ACCURACY
+* LOCATION\_PRIORITY\_LOW_POWER
+
+## Visibility of notification
+* NOTIFICATION\_VISIBILITY_PUBLIC
+* NOTIFICATION\_VISIBILITY_PRIVATE
+* NOTIFICATION\_VISIBILITY_SECRET
+
+## Priority of notification	
+Set the relative priority for this notification. Priority is an indication of how much of the user's valuable attention should be consumed by this notification. Low-priority notifications may be hidden from the user in certain situations, while the user might be interrupted for a higher-priority notification. The system sets a notification's priority based on various factors including the setPriority value. The effect may differ slightly on different platforms.
+
+* NOTIFICATION\_PRIORITY_MAX
+* NOTIFICATION\_PRIORITY_DEFAULT
+* NOTIFICATION\_PRIORITY_HIGHT
+* NOTIFICATION\_PRIORITY_MIN
+* NOTIFICATION\_PRIORITY_LOW
+
+## Importance of notification (since OREON)
+Android uses the importance of a notification to determine how much the notification should interrupt the user (visually and audibly). The higher the importance of a notification, the more interruptive the notification will be.
+
+Android uses the importance of a notification to determine how much the notification should interrupt the user (visually and audibly). The higher the importance of a notification, the more interruptive the notification will be.
+
+On Android 8.0 (API level 26) and above, importance of a notification is determined by the importance of the channel the notification was posted to. Users can change the importance of a notification channel in the system settings (figure 12). On Android 7.1 (API level 25) and below, importance of each notification is determined by the notification's priority.
+
+* NOTIFICATION\_IMPORTANCE_NONE
+* NOTIFICATION\_IMPORTANCE_MIN
+* NOTIFICATION\_IMPORTANCE_LOW
+* NOTIFICATION\_IMPORTANCE_DEFAULT
+* NOTIFICATION\_IMPORTANCE_HIGHT
+* NOTIFICATION\_IMPORTANCE_MAX
 
 
 # Usage
@@ -58,17 +84,15 @@ GeoService.addEventListener("ServiceConnectionChanged",function(e) {
 var Tracker = GeoService.createTracker({
 	lifecycleContainer : win, 
 	interval :10, //sec.
-	priority : GeoService.PRIORITY_BALANCED_POWER_ACCURACY,
-   },function(){ // callback is optional
-		console.log(e.coord);
-	}
-);
+	priority : GeoService.LOCATION_PRIORITY_BALANCED_POWER_ACCURACY
+});
 Tracker.setNotification({
-	channel : "cannel1",
+	channelName : "My Geolocation",
 	subText : "Text nearby (on left) of titlebar",
 	contentTitle : "Title above the text",
 	bigText : "The expandable text in more then two lines",
-	contentText : "Longer text above",
+	contentText : "Longer text below",
+	importance : GeoService.NOTIFICATION_IMPORTANCE_HIGHT,
 	lockscreenVisibility : GeoService.VISIBILITY_PRIVATE, // || SECRET || PUBLIC
 	largeIcon : "https://avatars0.githubusercontent.com/u/2996237?s=460&v=4"  // optionalfor icon on right side
 
@@ -79,6 +103,8 @@ Tracker.setAdapter({
 	requestHeaders: ["Accesstoken:DE34B6721"],
 	method : "POST", // or PUT
 	timeout : 5000, // for http request
+	userName : "geotracker",
+	password : "toosecrettoknow",
 	ttl : 60000,   // optional, life cycle of location, older will deleted and not send
 	successCode  : 200  // this http result state is for db updating
 });

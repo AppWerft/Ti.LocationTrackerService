@@ -110,21 +110,43 @@ Local<FunctionTemplate> LocationtrackerserviceModule::getProxyTemplate(Isolate* 
 	}
 
 
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "LOCATION_PRIORITY_LOW_POWER", 104);
+
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "NOTIFICATION_VISIBILITY_PRIVATE", 0);
+
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "NOTIFICATION_PRIORITY_MAX", 2);
+
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "NOTIFICATION_IMPORTANCE_NONE", 0);
+
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "NOTIFICATION_IMPORTANCE_DEFAULT", 3);
+
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "NOTIFICATION_IMPORTANCE_MAX", 5);
+
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "LOCATION_PRIORITY_BALANCED_POWER_ACCURACY", 102);
+
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "LOCATION_PRIORITY_HIGH_ACCURACY", 100);
+
 			DEFINE_STRING_CONSTANT(isolate, prototypeTemplate, "TABLE", "geologger");
 
-			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "VISIBILITY_SECRET", -1);
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "NOTIFICATION_PRIORITY_HIGHT", 1);
+
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "NOTIFICATION_PRIORITY_MIN", -2);
+
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "NOTIFICATION_VISIBILITY_PUBLIC", 1);
+
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "NOTIFICATION_PRIORITY_LOW", -1);
 
 			DEFINE_STRING_CONSTANT(isolate, prototypeTemplate, "DATABASE", "geologger");
 
-			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "PRIORITY_HIGH_ACCURACY", 100);
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "NOTIFICATION_IMPORTANCE_LOW", 2);
 
-			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "PRIORITY_LOW_POWER", 104);
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "NOTIFICATION_IMPORTANCE_HIGHT", 4);
 
-			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "VISIBILITY_PUBLIC", 1);
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "NOTIFICATION_VISIBILITY_SECRET", -1);
 
-			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "PRIORITY_BALANCED_POWER_ACCURACY", 102);
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "NOTIFICATION_PRIORITY_DEFAULT", 0);
 
-			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "VISIBILITY_PRIVATE", 0);
+			DEFINE_INT_CONSTANT(isolate, prototypeTemplate, "NOTIFICATION_IMPORTANCE_MIN", 1);
 
 
 	// Dynamic properties -----------------------------------------------------
