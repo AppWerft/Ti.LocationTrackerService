@@ -6,7 +6,6 @@
 "/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/src/ti/locationtrackerservice/ServerAdapter.java"
 "/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/src/ti/locationtrackerservice/TrackerProxy.java"
 "/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/src/ti/locationtrackerservice/Utils.java"
-"/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/build/generated/java/ti/locationtrackerservice/LocationtrackerserviceBootstrap.java"
 "/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/build/generated/r/android/support/compat/R.java"
 "/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/build/generated/r/android/support/design/R.java"
 "/Users/fuerst/Documents/APPC_WORKSPACE/Ti.LocationTrackerService/android/build/generated/r/android/support/v7/appcompat/R.java"

@@ -21,6 +21,7 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.media.RingtoneManager;
@@ -31,10 +32,8 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.IBinder;
 import android.os.Looper;
-//import android.support.v4.app.NotificationCompat.BigTextStyle;
-//import android.support.annotation.NonNull;
 import android.support.v4.content.LocalBroadcastManager;
-import android.support.v7.app.NotificationCompat;
+import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -81,6 +80,10 @@ public class LocationUpdatesService extends Service {
 
 	private int priority = 102;
 	private int interval = 10;
+
+	public static final String NOTIFICATION_CHANNEL_ID = "1337";
+	public static final String NOTIFICATION_CHANNEL_NAME = "geotracker";
+
 	private final long UPDATE_INTERVAL_IN_MILLISECONDS = interval;
 	ServerAdapter serverAdapter;
 
@@ -102,7 +105,7 @@ public class LocationUpdatesService extends Service {
 	 */
 	private boolean mChangingConfiguration = false;
 
-	private NotificationManager mNotificationManager;
+	private NotificationManager notificationManager;
 
 	/**
 	 * Contains parameters used by
@@ -132,6 +135,7 @@ public class LocationUpdatesService extends Service {
 	public LocationUpdatesService() {
 		super();
 		trackerOpts = new KrollDict();
+		notificationOpts = new KrollDict();
 		trackerOpts.put("interval", 10000); // default
 		trackerOpts.put("priority", 104); // default
 		ctx = TiApplication.getInstance().getApplicationContext();
@@ -168,19 +172,9 @@ public class LocationUpdatesService extends Service {
 		HandlerThread handlerThread = new HandlerThread(TAG);
 		handlerThread.start();
 		mServiceHandler = new Handler(handlerThread.getLooper());
-		mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 
-		// Android O requires a Notification Channel.
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-			CharSequence name = notificationOpts.getString("channel");
-			// Create the channel for the notification
-			NotificationChannel mChannel = new NotificationChannel(CHANNEL_ID,
-					name, NotificationManager.IMPORTANCE_DEFAULT);
+		notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 
-			// Set the Notification Channel for the Notification Manager.
-			mNotificationManager.createNotificationChannel(mChannel);
-
-		}
 	}
 
 	@Override
@@ -249,7 +243,7 @@ public class LocationUpdatesService extends Service {
 			/*
 			 * // TODO(developer). If targeting O, use the following code. if
 			 * (Build.VERSION.SDK_INT == Build.VERSION_CODES.O) {
-			 * mNotificationManager.startServiceInForeground(new Intent(this,
+			 * notificationManager.startServiceInForeground(new Intent(this,
 			 * LocationUpdatesService.class), NOTIFICATION_ID,
 			 * getNotification()); } else { startForeground(NOTIFICATION_ID,
 			 * getNotification()); }
@@ -322,7 +316,7 @@ public class LocationUpdatesService extends Service {
 	 */
 	public void removeLocationUpdates() {
 		Log.i(LCAT, "Removing location updates inside service");
-		mNotificationManager.cancelAll();
+		notificationManager.cancelAll();
 		try {
 			mFusedLocationClient.removeLocationUpdates(mLocationCallback);
 			Log.i(LCAT, "removedLocationUpdates from mFusedLocationClient");
@@ -353,9 +347,23 @@ public class LocationUpdatesService extends Service {
 		PendingIntent activityPendingIntent = PendingIntent.getActivity(ctx, 1,
 				activityIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 		// https://stackoverflow.com/questions/45462666/notificationcompat-builder-deprecated-in-android-o
-		final Notification.Builder builder = new Notification.Builder(ctx);
-		Uri defaultSoundUri = RingtoneManager
-				.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+		final NotificationCompat.Builder builder = new NotificationCompat.Builder(
+				ctx);
+		// Android O requires a Notification Channel.
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+			NotificationChannel notificationChannel = new NotificationChannel(
+					NOTIFICATION_CHANNEL_ID, NOTIFICATION_CHANNEL_NAME,
+					NotificationManager.IMPORTANCE_LOW);
+			notificationChannel.enableLights(true);
+			notificationChannel.setLightColor(Color.BLUE);
+			NotificationManager notificationManager = (NotificationManager) ctx
+					.getSystemService(Context.NOTIFICATION_SERVICE);
+			notificationManager.createNotificationChannel(notificationChannel);
+			builder.setChannelId(NOTIFICATION_CHANNEL_ID);
+		}
+
+		// Uri defaultSoundUri = RingtoneManager
+		// .getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 
 		builder.setContentTitle(contentTitle).setOngoing(true)
 				.setPriority(Notification.FLAG_FOREGROUND_SERVICE)
@@ -365,12 +373,12 @@ public class LocationUpdatesService extends Service {
 				.setContentText(notificationOpts.getString("contentText"))
 				.setContentTitle(notificationOpts.getString("contentTitle"))
 				.setVibrate(null).setWhen(System.currentTimeMillis());
-		if (notificationOpts.containsKeyAndNotNull("bigText")) {
-			CharSequence bigText = notificationOpts.getString("bigText");
-			BigTextStyle style = new Notification.BigTextStyle()
-					.bigText(bigText);
-			builder.setStyle(style);
-		}
+		/*
+		 * if (notificationOpts.containsKeyAndNotNull("bigText")) { CharSequence
+		 * bigText = notificationOpts.getString("bigText"); BigTextStyle style =
+		 * new Notification.BigTextStyle() .bigText(bigText);
+		 * builder.setStyle(style); }
+		 */
 		if (notificationOpts.containsKeyAndNotNull("largeIcon")) {
 			String largeIcon = notificationOpts.getString("largeIcon");
 			final Target target = new Target() {
@@ -392,8 +400,9 @@ public class LocationUpdatesService extends Service {
 			};
 			Picasso.with(ctx).load(largeIcon).resize(150, 150).into(target);
 		}
+		Log.d(LCAT, builder.toString());
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-			builder.setChannelId(CHANNEL_ID); // Channel ID
+			// builder.setChannelId(CHANNEL_ID); // Channel ID
 		}
 		return builder.build();
 	}
@@ -421,7 +430,7 @@ public class LocationUpdatesService extends Service {
 		boolean isForeground = serviceIsRunningInForeground(ctx);
 		Log.i(LCAT, "LocationTrackingService is in Foreground " + isForeground);
 		if (isForeground) {
-			mNotificationManager.notify(NOTIFICATION_ID, getNotification());
+			notificationManager.notify(NOTIFICATION_ID, getNotification());
 		}
 		// Notify anyone listening for broadcasts about the new location.
 		Intent intent = new Intent(ACTION_BROADCAST);
@@ -435,7 +444,7 @@ public class LocationUpdatesService extends Service {
 				+ TABLE
 				+ "(Latitude Real,Longitude Real, time Integer, Speed Real, Accuracy Real,Done Integer);");
 		Object[] values = new Object[] { location.getLatitude(),
-				location.getLongitude(), location.getTime(),
+				location.getLongitude(), Math.round(location.getTime() / 1000),
 				location.getSpeed(), location.getAccuracy(), 0 };
 		db.execSQL("INSERT INTO " + DATABASE + " VALUES(?,?,?,?,?,?)", values);
 		db.close();
@@ -450,7 +459,6 @@ public class LocationUpdatesService extends Service {
 		mLocationRequest = new LocationRequest();
 		mLocationRequest.setInterval(trackerOpts.getInt("interval"));
 		mLocationRequest.setFastestInterval(trackerOpts.getInt("interval"));
-		Log.i(LCAT, "setPriority: " + priority);
 		if (priority > 0)
 			mLocationRequest.setPriority(trackerOpts.getInt("priority"));
 	}

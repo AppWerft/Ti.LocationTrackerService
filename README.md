@@ -24,12 +24,13 @@ After requesting location updates, when the window ceases to be in the foregroun
 
 # Manifest
 
-Don't forget this entry in you manifest:
+Don't forget these entries in you manifest:
 
 ```xml
 <manifest>
        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
        <uses-feature android:name="android.hardware.location.gps"/>
+       <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="26"/>
        <application>
                 <service android:name="ti.locationtrackerservice.LocationUpdatesService"/>
        </application>
