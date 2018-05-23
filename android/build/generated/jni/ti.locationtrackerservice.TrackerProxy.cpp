@@ -85,6 +85,7 @@ Local<FunctionTemplate> TrackerProxy::getProxyTemplate(Isolate* isolate)
 		FunctionTemplate::New(isolate, titanium::Proxy::inherit<TrackerProxy>));
 
 	// Method bindings --------------------------------------------------------
+	titanium::SetProtoMethod(isolate, t, "setLocationCallback", TrackerProxy::setLocationCallback);
 	titanium::SetProtoMethod(isolate, t, "removeLocationUpdates", TrackerProxy::removeLocationUpdates);
 	titanium::SetProtoMethod(isolate, t, "stop", TrackerProxy::stop);
 	titanium::SetProtoMethod(isolate, t, "requestLocationUpdates", TrackerProxy::requestLocationUpdates);
@@ -109,6 +110,87 @@ Local<FunctionTemplate> TrackerProxy::getProxyTemplate(Isolate* isolate)
 }
 
 // Methods --------------------------------------------------------------------
+void TrackerProxy::setLocationCallback(const FunctionCallbackInfo<Value>& args)
+{
+	LOGD(TAG, "setLocationCallback()");
+	Isolate* isolate = args.GetIsolate();
+	HandleScope scope(isolate);
+
+	JNIEnv *env = titanium::JNIScope::getEnv();
+	if (!env) {
+		titanium::JSException::GetJNIEnvironmentError(isolate);
+		return;
+	}
+	static jmethodID methodID = NULL;
+	if (!methodID) {
+		methodID = env->GetMethodID(TrackerProxy::javaClass, "setLocationCallback", "(Lorg/appcelerator/kroll/KrollFunction;)V");
+		if (!methodID) {
+			const char *error = "Couldn't find proxy method 'setLocationCallback' with signature '(Lorg/appcelerator/kroll/KrollFunction;)V'";
+			LOGE(TAG, error);
+				titanium::JSException::Error(isolate, error);
+				return;
+		}
+	}
+
+	Local<Object> holder = args.Holder();
+	// If holder isn't the JavaObject wrapper we expect, look up the prototype chain
+	if (!JavaObject::isJavaObject(holder)) {
+		holder = holder->FindInstanceInPrototypeChain(getProxyTemplate(isolate));
+	}
+
+	titanium::Proxy* proxy = NativeObject::Unwrap<titanium::Proxy>(holder);
+
+	if (args.Length() < 1) {
+		char errorStringBuffer[100];
+		sprintf(errorStringBuffer, "setLocationCallback: Invalid number of arguments. Expected 1 but got %d", args.Length());
+		titanium::JSException::Error(isolate, errorStringBuffer);
+		return;
+	}
+
+	jvalue jArguments[1];
+
+
+
+
+	bool isNew_0;
+
+	if (!args[0]->IsNull()) {
+		Local<Value> arg_0 = args[0];
+		jArguments[0].l =
+			titanium::TypeConverter::jsValueToJavaObject(
+				isolate,
+				env, arg_0, &isNew_0);
+	} else {
+		jArguments[0].l = NULL;
+	}
+
+	jobject javaProxy = proxy->getJavaObject();
+	if (javaProxy == NULL) {
+		args.GetReturnValue().Set(v8::Undefined(isolate));
+		return;
+	}
+	env->CallVoidMethodA(javaProxy, methodID, jArguments);
+
+	proxy->unreferenceJavaObject(javaProxy);
+
+
+
+			if (isNew_0) {
+				env->DeleteLocalRef(jArguments[0].l);
+			}
+
+
+	if (env->ExceptionCheck()) {
+		titanium::JSException::fromJavaException(isolate);
+		env->ExceptionClear();
+	}
+
+
+
+
+	args.GetReturnValue().Set(v8::Undefined(isolate));
+
+}
 void TrackerProxy::removeLocationUpdates(const FunctionCallbackInfo<Value>& args)
 {
 	LOGD(TAG, "removeLocationUpdates()");

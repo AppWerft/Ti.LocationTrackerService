@@ -353,13 +353,15 @@ public class LocationUpdatesService extends Service {
 
 		// Uri defaultSoundUri = RingtoneManager
 		// .getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-
+		String contentText = notificationOpts.getString("contentText").replace(
+				"{LOCATION}",
+				"" + mLocation.getLatitude() + "," + mLocation.getLongitude());
 		builder.setContentTitle(contentTitle).setOngoing(true)
 				.setPriority(Notification.FLAG_FOREGROUND_SERVICE)
 				.setContentIntent(activityPendingIntent)
 				.setSmallIcon(R("ic_launcher", "mipmap")).setSound(null)
 				.setSubText(notificationOpts.getString("subText"))
-				.setContentText(notificationOpts.getString("contentText"))
+				.setContentText(contentText)
 				.setContentTitle(notificationOpts.getString("contentTitle"))
 				.setVibrate(null).setWhen(System.currentTimeMillis());
 		/*

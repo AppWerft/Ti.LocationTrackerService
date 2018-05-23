@@ -30,6 +30,7 @@ private:
 	static v8::Persistent<v8::FunctionTemplate> proxyTemplate;
 
 	// Methods -----------------------------------------------------------
+	static void setLocationCallback(const v8::FunctionCallbackInfo<v8::Value>&);
 	static void removeLocationUpdates(const v8::FunctionCallbackInfo<v8::Value>&);
 	static void stop(const v8::FunctionCallbackInfo<v8::Value>&);
 	static void requestLocationUpdates(const v8::FunctionCallbackInfo<v8::Value>&);

@@ -83,15 +83,18 @@ GeoService.addEventListener("ServiceConnectionChanged",function(e) {
 ´
 var Tracker = GeoService.createTracker({
 	lifecycleContainer : win, 
-	interval :10, //sec.
+	interval : 10, //sec.
 	priority : GeoService.LOCATION_PRIORITY_BALANCED_POWER_ACCURACY
+	},
+	onLocation // second paramter is optional, see below 
 });
+
 Tracker.setNotification({
 	channelName : "My Geolocation",
 	subText : "Text nearby (on left) of titlebar",
 	contentTitle : "Title above the text",
 	bigText : "The expandable text in more then two lines",
-	contentText : "Longer text below",
+	contentText : "Longer text below {LOCATION}",
 	importance : GeoService.NOTIFICATION_IMPORTANCE_HIGHT,
 	lockscreenVisibility : GeoService.VISIBILITY_PRIVATE, // || SECRET || PUBLIC
 	largeIcon : "https://avatars0.githubusercontent.com/u/2996237?s=460&v=4"  // optionalfor icon on right side
@@ -102,10 +105,10 @@ Tracker.setAdapter({
 	uri: "https://mybackend.com/endpoint?my_extra_paramter=1234",
 	requestHeaders: ["Accesstoken:DE34B6721"],
 	method : "POST", // or PUT
-	timeout : 5000, // for http request
+	timeout : 5, // for http request
 	userName : "geotracker",
 	password : "toosecrettoknow",
-	ttl : 60000,   // optional, life cycle of location, older will deleted and not send
+	ttl : 60,   // optional, life cycle of location, older will deleted and not send
 	successCode  : 200  // this http result state is for db updating
 });
 
@@ -130,6 +133,15 @@ link.execSQL("SELECT * FROM " + GeoService.TABLE + " WHERE done=0 ORDER BY time"
 
 ```
 The parameters for notification you can modify in res folder of module or as defaults.
+
+## Reading location
+
+You have fore ways:
+
+* second parameter in createTracker()
+* event `location`
+* property of Tracker
+* setLocationCallback() method of tracker
 
 The result of event listener has the format:
 
