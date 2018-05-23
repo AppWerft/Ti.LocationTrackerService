@@ -108,9 +108,17 @@ Tracker.setAdapter({
 	ttl : 60000,   // optional, life cycle of location, older will deleted and not send
 	successCode  : 200  // this http result state is for db updating
 });
-Tracker.addEventListener('location',function(e) {
-	console.log(e.coords);
-};
+
+function onLocation(e) {
+	console.log(e.coords)
+}
+
+Tracker.addEventListener('location', onLocation);
+
+//Alternatively you can use:
+Tracker.onLocation = onLocation;
+// or:
+Tracker.setLocationCallback(onLocation);
 
 Tracker.start();
 

@@ -130,6 +130,11 @@ public class TrackerProxy extends KrollProxy {
 				if (onLocationCallback != null) {
 					onLocationCallback.call(getKrollObject(), result);
 				}
+				if (hasProperty("onLocation")) {
+					KrollFunction onLocation = (KrollFunction) getProperty("onLocation");
+					onLocation.call(getKrollObject(), result);
+				}
+
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -164,6 +169,11 @@ public class TrackerProxy extends KrollProxy {
 	@Kroll.method
 	public void setNotification(KrollDict opts) {
 		notificationOpts = opts;
+	}
+
+	@Kroll.method
+	public void setLocationCallback(KrollFunction fn) {
+		onLocationCallback = fn;
 	}
 
 	@Kroll.method
