@@ -9,6 +9,7 @@ import org.json.JSONObject;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+
 import android.util.Log;
 
 import java.io.IOException;
@@ -22,6 +23,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
+import java.util.concurrent.TimeUnit;
 
 public class ServerAdapter {
 	private static int MODE_PRIVATE = 0;
@@ -30,15 +32,12 @@ public class ServerAdapter {
 	final private String TABLE = DATABASE;
 	final private String LCAT = LocationtrackerserviceModule.LCAT;
 	private KrollDict opts = null;
+	Long start = 0L;
 
 	public ServerAdapter(Context ctx, KrollDict adapterOpts) {
 		this.ctx = ctx;
 		this.opts = adapterOpts;
-
-	}
-
-	public void setOpts(KrollDict opts) {
-		this.opts = opts;
+		Sync();
 	}
 
 	public void Sync() {
@@ -68,7 +67,6 @@ public class ServerAdapter {
 				res.put("speed", c.getDouble(c.getColumnIndex("Speed")));
 				res.put("accuracy", c.getDouble(c.getColumnIndex("Accuracy")));
 				resultList.put(res);
-
 			}
 		} catch (JSONException e) {
 			e.printStackTrace();
@@ -119,7 +117,9 @@ public class ServerAdapter {
 					throws IOException {
 				boolean success = false;
 				int code = response.code();
-				Log.d(LCAT, "responseCode = " + code);
+				long duration = System.currentTimeMillis() - start;
+				Log.d(LCAT, "responseCode = " + code + "  Duration = "
+						+ duration);
 				if (opts.containsKeyAndNotNull("successCode")) {
 					if (opts.getInt("successCode") == code) {
 						success = true;
@@ -133,12 +133,17 @@ public class ServerAdapter {
 					updateDB(timestamps);
 			}
 		};
+		start = System.currentTimeMillis();
 		final MediaType JSON = MediaType
 				.parse("application/json; charset=utf-8");
+
 		OkHttpClient client = new OkHttpClient();
+		// client.connectTimeoutMillis(3000);
+
 		RequestBody body = RequestBody.create(JSON, json);
 		Request.Builder builder = new Request.Builder().url(opts
 				.getString("uri"));
+
 		switch (opts.getString("method")) {
 		case "POST":
 			builder = builder.post(body);

@@ -112,27 +112,28 @@ public class TrackerProxy extends KrollProxy {
 					.getParcelableExtra(LocationUpdatesService.EXTRA_LOCATION);
 			boolean isforeground = intent
 					.getBooleanExtra("INFOREGROUND", false);
-			KrollDict res = new KrollDict();
-			res.put("time", location.getTime());
-			res.put("latitude", location.getLatitude());
-			res.put("longitude", location.getLongitude());
-			res.put("accuracy", location.getAccuracy());
-			res.put("bearing", location.getBearing());
-			res.put("provider", location.getProvider());
-			res.put("speed", location.getSpeed());
-			if (!isforeground) {
-				try {
-					if (location != null && hasListeners("location")) {
-						fireEvent("location", res);
-					}
-					if (onLocationCallback != null) {
-						onLocationCallback.call(getKrollObject(), res);
-					}
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+			KrollDict coords = new KrollDict();
+			coords.put("time", location.getTime());
+			coords.put("latitude", location.getLatitude());
+			coords.put("longitude", location.getLongitude());
+			coords.put("accuracy", location.getAccuracy());
+			coords.put("bearing", location.getBearing());
+			coords.put("provider", location.getProvider());
+			coords.put("speed", location.getSpeed());
+			KrollDict result = new KrollDict();
+			result.put("coords", coords);
+			// if (!isforeground) {
+			try {
+				if (location != null && hasListeners("location")) {
+					fireEvent("location", result);
 				}
+				if (onLocationCallback != null) {
+					onLocationCallback.call(getKrollObject(), result);
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
 			}
+			// }
 		}
 	}
 

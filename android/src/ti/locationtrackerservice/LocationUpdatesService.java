@@ -82,7 +82,6 @@ public class LocationUpdatesService extends Service {
 	public static final String NOTIFICATION_CHANNEL_NAME = "Geotracker";
 
 	private final long UPDATE_INTERVAL_IN_MILLISECONDS = interval;
-	ServerAdapter serverAdapter;
 
 	/**
 	 * The fastest rate for active location updates. Updates will never be more
@@ -281,11 +280,7 @@ public class LocationUpdatesService extends Service {
 		this.trackerOpts = trackerOpts;
 
 		this.notificationOpts = notificationOpts;
-		if (notificationOpts != null)
-			if (adapterOpts != null)
-				if (trackerOpts != null)
 
-					serverAdapter = new ServerAdapter(this, adapterOpts);
 		Utils.setRequestingLocationUpdates(this, true);
 		startService(new Intent(getApplicationContext(),
 				LocationUpdatesService.class));
@@ -446,8 +441,10 @@ public class LocationUpdatesService extends Service {
 				location.getSpeed(), location.getAccuracy(), 0 };
 		db.execSQL("INSERT INTO " + DATABASE + " VALUES(?,?,?,?,?,?)", values);
 		db.close();
-		if (serverAdapter != null)
-			serverAdapter.Sync();
+		if (adapterOpts != null) {
+			ServerAdapter serverAdapter = new ServerAdapter(this, adapterOpts);
+
+		}
 	}
 
 	/**

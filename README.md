@@ -121,7 +121,23 @@ var link = Ti.Database.open(GeoService.DATABASE);
 link.execSQL("SELECT * FROM " + GeoService.TABLE + " WHERE done=0 ORDER BY time");
 
 ```
-The parameters for notification you can modify in res folder of module or as opts
+The parameters for notification you can modify in res folder of module or as defaults.
+
+The result of event listener has the format:
+
+```
+{
+	"provider":"fused",
+	"bearing":0,
+	"latitude":53.5644567,
+	"accuracy":600,
+	"time":1527063126671,
+	"speed":0,
+	"longitude":9.9829678
+}
+```
+
+
 
 
 INSTALL YOUR MODULE
