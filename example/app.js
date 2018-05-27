@@ -3,38 +3,33 @@ var win = Ti.UI.createWindow();
 var GeoService = require("ti.locationtrackerservice");
 
 
-var opts = {
+
+var Tracker = GeoService.createTracker({
 	lifecycleContainer : win, 
-	interval :10, //sec.
+	interval : 10, //millisec.
 	priority : GeoService.PRIORITY_BALANCED_POWER_ACCURACY,
-};
-var Tracker = GeoService.createTracker(opts,function(){ // callback is optional
-		console.log(e.coord);
-	}
-);
+});
+
 Tracker.setNotification({
 		channel : "cannel1",
 		subText : "Text nearby (on left) of titlebar",
 		contentTitle : "Title above the text",
 		bigText : "The expandable text in more then two lines",
-		contentText : "Longer text above",
+		contentText : "Longer text below {LOCATION}",
 		largeIcon : "https://avatars0.githubusercontent.com/u/2996237?s=460&v=4"  // optional for icon on right side
-
 });
-var Adapter = GeoService.createAdapter({  // not yet implemetented ;-(
-		uri: "https://mybackend.com/endpoint?my_extra_paramter=1234",
+Tracker.setAdapter({  
+		uri: "https://jsonplaceholder.typicode.com/posts/",
 		requestHeaders: ["Accesstoken:DE34B6721"],
 		method : "POST", // or PUT
-		timeout : 100000
+		timeout : 5,
+		successCode : 201,
+		ttl : 6
 });
-Tracker.addAdapter(Adapter);
+
 win.addEventListener("open", function() {
-	Tracker.requestLocationUpdates({
-		interval : 10,
-		priority : GeoService.PRIORITY_BALANCED_POWER_ACCURACY,
-		onlocation : function(e) {
-			console.log(e.latitude + ',' + e.longitude + ' @' + e.time);
-		}
+	Tracker.start();
+	Tracker.addEventListener('location',function(e){
 	});
 });
 

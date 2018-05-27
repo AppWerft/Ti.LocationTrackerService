@@ -353,15 +353,20 @@ public class LocationUpdatesService extends Service {
 
 		// Uri defaultSoundUri = RingtoneManager
 		// .getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-		String contentText = notificationOpts.getString("contentText").replace(
-				"{LOCATION}",
-				"" + mLocation.getLatitude() + "," + mLocation.getLongitude());
+		if (notificationOpts.containsKeyAndNotNull("contentText")) {
+			String contentText = notificationOpts.getString("contentText")
+					.replace(
+							"{LOCATION}",
+							"" + mLocation.getLatitude() + ","
+									+ mLocation.getLongitude());
+			builder.setContentText(contentText);
+		}
 		builder.setContentTitle(contentTitle).setOngoing(true)
 				.setPriority(Notification.FLAG_FOREGROUND_SERVICE)
 				.setContentIntent(activityPendingIntent)
 				.setSmallIcon(R("ic_launcher", "mipmap")).setSound(null)
 				.setSubText(notificationOpts.getString("subText"))
-				.setContentText(contentText)
+
 				.setContentTitle(notificationOpts.getString("contentTitle"))
 				.setVibrate(null).setWhen(System.currentTimeMillis());
 		/*
@@ -454,7 +459,7 @@ public class LocationUpdatesService extends Service {
 	 */
 	private void createLocationRequest() {
 		mLocationRequest = new LocationRequest();
-		mLocationRequest.setInterval(trackerOpts.getInt("interval"));
+		mLocationRequest.setInterval(trackerOpts.getInt("interval") * 1000);
 		mLocationRequest.setFastestInterval(trackerOpts.getInt("interval"));
 		int locationPriority = trackerOpts.getInt("priority");
 		if (locationPriority > 0)

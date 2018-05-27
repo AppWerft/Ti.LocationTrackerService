@@ -50,7 +50,7 @@ public class ServerAdapter {
 		if (this.opts.containsKeyAndNotNull("ttl")) {
 			int oldest = Math
 					.round((int) (System.currentTimeMillis() - this.opts
-							.getInt("ttl")) / 1000);
+							.getInt("ttl")));
 			db.rawQuery("DELETE FROM " + TABLE + " WHERE time < " + oldest,
 					null);
 		}
